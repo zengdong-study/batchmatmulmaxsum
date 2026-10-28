@@ -1,4 +1,5 @@
 vim /tmp/amd-oneclick-sshd_config
+/usr/sbin/sshd -t -f /tmp/amd-oneclick-sshd_config && kill -HUP 476
 
 vim ~/.bashrc 
 # SSH 
@@ -8,7 +9,6 @@ HTTP_PROXY="$http_proxy"
 HTTPS_PROXY="$https_proxy"
 no_proxy="localhost,127.0.0.1,::1"
 NO_PROXY="$no_proxy"
-
 
 source ~/.bashrc
 
