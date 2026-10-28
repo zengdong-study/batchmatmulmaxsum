@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "family": "split",
+  "case": 15,
+  "config": "gb4_w1_n32",
+  "shape": [
+    4,
+    32,
+    1024,
+    128
+  ],
+  "dtype": "bfloat16",
+  "t1": true,
+  "t2": false,
+  "device_us": 620.56884765625,
+  "total_device_ms": 62.056884765625,
+  "warmups": 10,
+  "iterations": 100,
+  "max_abs": 1.9073486328125e-06,
+  "max_rel": 2.1041968838106668e-07,
+  "repeat_equal": true
+}

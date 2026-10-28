@@ -19,10 +19,10 @@ Status make_plan(const Problem& p,const Config& r,Plan* plan) {
         const int gn=r.groupBaseN==0 ? 32 : r.groupBaseN;
         if(gb<1 || gb>8 || wpb<1 || wpb>8 || (gb&(gb-1)) ||
            (wpb&(wpb-1)) || gb*wpb>8) return Status::InvalidArgument;
-        int wm=wpb;
-        while(wm>1 && wm>(p.M+15)/16) wm>>=1;
-        if((gn!=16 && gn!=32 && gn!=64) ||
-           (r.splitAxis!=SplitAxis::Auto && r.splitAxis!=SplitAxis::B) ||
+        // Validate before deriving ntiles: unsupported gn could divide by zero.
+        if(gn!=16 && gn!=32 && gn!=64) return Status::NotImplemented;
+        const int wm=detail::waves_m(static_cast<int>(p.M),static_cast<int>(p.N),wpb,gn/16);
+        if((r.splitAxis!=SplitAxis::Auto && r.splitAxis!=SplitAxis::B) ||
            (r.finalizeMode!=FinalizeMode::Auto && r.finalizeMode!=FinalizeMode::WithinTask) ||
            (r.baseM!=0 && r.baseM!=16) || (r.baseN!=0 && r.baseN!=16) ||
            (r.baseK!=0 && r.baseK!=16) ||

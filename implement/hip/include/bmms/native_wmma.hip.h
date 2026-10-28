@@ -9,23 +9,6 @@ using Half16=_Float16 __attribute__((ext_vector_type(16)));
 using Signed16=short __attribute__((ext_vector_type(16)));
 using Float8=float __attribute__((ext_vector_type(8)));
 
-// Keep each 16-bit load in an independent full VGPR. D16 low/high writes
-// otherwise create a preserved-half dependency and serialize VMEM completion.
-__device__ __forceinline__ Bits16 load_strided_full(const unsigned short* base,int token,int k0,int tokens) {
-    unsigned words[16];
-    #pragma unroll
-    for(int i=0;i<16;++i) {
-        const auto* ptr=base+(k0+i)*tokens+token;
-        asm volatile("global_load_u16 %0, %1, off" : "=v"(words[i]) : "v"(ptr) : "memory");
-    }
-    // Tied operands prohibit arithmetic using loaded values before completion.
-    asm volatile("s_waitcnt vmcnt(0)" : "+v"(words[0]), "+v"(words[1]), "+v"(words[2]), "+v"(words[3]), "+v"(words[4]), "+v"(words[5]), "+v"(words[6]), "+v"(words[7]), "+v"(words[8]), "+v"(words[9]), "+v"(words[10]), "+v"(words[11]), "+v"(words[12]), "+v"(words[13]), "+v"(words[14]), "+v"(words[15]) :: "memory");
-    Words8 packed;
-    #pragma unroll
-    for(int i=0;i<8;++i) packed[i]=words[2*i]|(words[2*i+1]<<16);
-    return __builtin_bit_cast(Bits16,packed);
-}
-
 // Cooperative 32-bit loads: 32 lanes load the full 16x16 tile in four
 // transactions per lane, then gather K-pairs into duplicated WMMA operands.
 // This replaces sixteen scalar half loads per lane and avoids D16 dependencies.
@@ -50,26 +33,53 @@ __device__ __forceinline__ Bits16 load_coalesced(const unsigned short* base,int 
     return __builtin_bit_cast(Bits16,packed);
 }
 
+// Half-waves load alternating K values for the same 16 tokens. Eight
+// full-VGPR half loads and eight cross-half-wave exchanges reconstruct the
+// operand, including odd leading dimensions without unaligned dword loads.
+__device__ __forceinline__ Bits16 load_coalesced_halves(const unsigned short* base,int tile,int k0,int tokens) {
+    unsigned r[8]={};
+    const int lane=threadIdx.x&31;
+    if(tile+(lane&15)<tokens) {
+        #pragma unroll
+        for(int i=0;i<8;++i) {
+            const auto* p=base+(k0+2*i+(lane>>4))*tokens+tile+(lane&15);
+            asm volatile("global_load_u16 %0, %1, off" : "=v"(r[i]) : "v"(p) : "memory");
+        }
+    }
+    asm volatile("s_waitcnt vmcnt(0)" : "+v"(r[0]),"+v"(r[1]),"+v"(r[2]),"+v"(r[3]),
+                 "+v"(r[4]),"+v"(r[5]),"+v"(r[6]),"+v"(r[7]) :: "memory");
+    Words8 packed;
+    #pragma unroll
+    for(int i=0;i<8;++i) {
+        const unsigned other=__shfl_xor(r[i],16,32);
+        const unsigned lo=lane<16 ? r[i] : other;
+        const unsigned hi=lane<16 ? other : r[i];
+        packed[i]=lo|(hi<<16);
+    }
+    return __builtin_bit_cast(Bits16,packed);
+}
+
 // gfx1100/wave32 register contract, verified by an independent coordinate probe:
 // A: row=lane%16, B: column=lane%16, 16 K values replicated in both half-waves.
 // C[i]: row=2*i+lane/16, column=lane%16. No LDS store/fragment transform required.
 template<bool ContiguousK>
 __device__ __forceinline__ Bits16 load_native(const unsigned short* base,int token,int k0,int tokens,int K) {
+    // All lanes participate in operand exchange, including padded tokens.
+    // Mask only the loads, then reconverge before cross-half-wave shuffles.
+    if constexpr(!ContiguousK) {
+        if(k0+16<=K) {
+            const int tile=token-(threadIdx.x&15);
+            if((tokens&1)==0 && tile+16<=tokens)
+                return load_coalesced(base,tile,k0,tokens);
+            return load_coalesced_halves(base,tile,k0,tokens);
+        }
+    }
     Bits16 v{};
     if(token<tokens) {
         if constexpr(ContiguousK) {
             if(k0+16<=K) {
-                // memcpy supports valid but non-32-byte-aligned row starts.
                 __builtin_memcpy(&v,base+token*K+k0,32);
                 return v;
-            }
-        }
-        if constexpr(!ContiguousK) {
-            if(k0+16<=K) {
-                const int tile=token-(threadIdx.x&15);
-                if((tokens&1)==0 && tile+16<=tokens)
-                    return load_coalesced(base,tile,k0,tokens);
-                return load_strided_full(base,token,k0,tokens);
             }
         }
         #pragma unroll
@@ -79,6 +89,63 @@ __device__ __forceinline__ Bits16 load_native(const unsigned short* base,int tok
         }
     }
     return v;
+}
+
+// Pending operands keep VMEM results in full VGPRs until finish_operand.
+// The next K tile is issued before the current tile's independent WMMA work.
+struct PendingOperand { unsigned r[8]; };
+template<bool ContiguousK>
+__device__ __forceinline__ PendingOperand issue_operand(const unsigned short* base,int token,int k0,int tokens,int K) {
+    PendingOperand result{};
+    const int lane=threadIdx.x&31;
+    if(token<tokens) {
+        if(k0+16<=K) {
+            #pragma unroll
+            for(int i=0;i<8;++i) {
+                if constexpr(ContiguousK) {
+                    const auto* p=reinterpret_cast<const unsigned*>(base+token*K+k0+2*i);
+                    asm volatile("global_load_b32 %0, %1, off" : "=v"(result.r[i]) : "v"(p) : "memory");
+                } else {
+                    const auto* p=base+(k0+2*i+(lane>>4))*tokens+token;
+                    asm volatile("global_load_u16 %0, %1, off" : "=v"(result.r[i]) : "v"(p) : "memory");
+                }
+            }
+        } else {
+            #pragma unroll
+            for(int i=0;i<8;++i) {
+                if constexpr(ContiguousK) {
+                    if(k0+2*i<K) {
+                        const auto* p=reinterpret_cast<const unsigned*>(base+token*K+k0+2*i);
+                        asm volatile("global_load_b32 %0, %1, off" : "=v"(result.r[i]) : "v"(p) : "memory");
+                    }
+                } else {
+                    const int k=k0+2*i+(lane>>4);
+                    if(k<K) {
+                        const auto* p=base+k*tokens+token;
+                        asm volatile("global_load_u16 %0, %1, off" : "=v"(result.r[i]) : "v"(p) : "memory");
+                    }
+                }
+            }
+        }
+    }
+    return result;
+}
+template<bool ContiguousK>
+__device__ __forceinline__ Bits16 finish_operand(PendingOperand value) {
+    asm volatile("s_waitcnt vmcnt(0)" : "+v"(value.r[0]),"+v"(value.r[1]),"+v"(value.r[2]),"+v"(value.r[3]),
+                 "+v"(value.r[4]),"+v"(value.r[5]),"+v"(value.r[6]),"+v"(value.r[7]) :: "memory");
+    Words8 packed;
+    #pragma unroll
+    for(int i=0;i<8;++i) {
+        if constexpr(ContiguousK) packed[i]=value.r[i];
+        else {
+            const unsigned other=__shfl_xor(value.r[i],16,32);
+            const unsigned lo=(threadIdx.x&16)==0 ? value.r[i] : other;
+            const unsigned hi=(threadIdx.x&16)==0 ? other : value.r[i];
+            packed[i]=lo|(hi<<16);
+        }
+    }
+    return __builtin_bit_cast(Bits16,packed);
 }
 
 template<DataType D>
@@ -99,8 +166,7 @@ __device__ __forceinline__ void native_batch(KernelArguments args,float* shared)
     const int gb=SingleWave ? 1 : args.config.groupB;
     const int wShift=__builtin_ctz(static_cast<unsigned>(wpb));
     const int wi=wave&(wpb-1), batch=blockIdx.x*gb+(wave>>wShift);
-    int wm=wpb;
-    while(wm>1 && wm>(M+15)/16) wm>>=1;
+    const int wm=waves_m(M,N,wpb,NTiles);
     const int mShift=__builtin_ctz(static_cast<unsigned>(wm));
     const int wn=wpb>>mShift,mi=wi&(wm-1),ni=wi>>mShift;
     float total=0.0f;
@@ -115,19 +181,51 @@ __device__ __forceinline__ void native_batch(KernelArguments args,float* shared)
                 Float8 acc[NTiles];
                 #pragma unroll
                 for(int j=0;j<NTiles;++j) acc[j]=Float8{};
-                // Two K steps: next A/B are loaded before dependent MMA work.
-                // Multiple accumulators remain independent across adjacent N tiles.
-                for(int k0=0;k0<K;k0+=32) {
-                    Bits16 a0=load_native<!T1>(x,m0+(lane&15),k0,M,K);
-                    Bits16 a1=load_native<!T1>(x,m0+(lane&15),k0+16,M,K);
+                if constexpr(!T2) {
+                    Bits16 a=finish_operand<!T1>(issue_operand<!T1>(x,m0+(lane&15),0,M,K));
+                    Bits16 bs[NTiles];
                     #pragma unroll
-                    for(int j=0;j<NTiles;++j) {
-                        const int n=ng+j*16+(lane&15);
-                        if(ng+j*16<N) {
-                            Bits16 b0=load_native<T2>(z,n,k0,N,K);
-                            Bits16 b1=load_native<T2>(z,n,k0+16,N,K);
-                            acc[j]=native_mma<D>(a0,b0,acc[j]);
-                            if(k0+16<K) acc[j]=native_mma<D>(a1,b1,acc[j]);
+                    for(int j=0;j<NTiles;++j)
+                        bs[j]=finish_operand<T2>(issue_operand<T2>(z,ng+j*16+(lane&15),0,N,K));
+                    for(int k0=0;k0<K;k0+=16) {
+                        PendingOperand nextA{},nextB[NTiles]{};
+                        if(k0+16<K) {
+                            nextA=issue_operand<!T1>(x,m0+(lane&15),k0+16,M,K);
+                            #pragma unroll
+                            for(int j=0;j<NTiles;++j)
+                                nextB[j]=issue_operand<T2>(z,ng+j*16+(lane&15),k0+16,N,K);
+                        }
+                        #pragma unroll
+                        for(int j=0;j<NTiles;++j)
+                            if(ng+j*16<N) acc[j]=native_mma<D>(a,bs[j],acc[j]);
+                        // Keep the wait below the current MMA: without an explicit
+                        // dependency LLVM may hoist finish_operand above the MMA.
+#ifdef __HIP_DEVICE_COMPILE__
+                        #pragma unroll
+                        for(int j=0;j<NTiles;++j)
+                            asm volatile("" :: "v"(acc[j]) : "memory");
+#endif
+                        if(k0+16<K) {
+                            a=finish_operand<!T1>(nextA);
+                            #pragma unroll
+                            for(int j=0;j<NTiles;++j) bs[j]=finish_operand<T2>(nextB[j]);
+                        }
+                    }
+                } else {
+                    // Two K steps: next A/B are loaded before dependent MMA work.
+                    // Multiple accumulators remain independent across adjacent N tiles.
+                    for(int k0=0;k0<K;k0+=32) {
+                        Bits16 a0=load_native<!T1>(x,m0+(lane&15),k0,M,K);
+                        Bits16 a1=load_native<!T1>(x,m0+(lane&15),k0+16,M,K);
+                        #pragma unroll
+                        for(int j=0;j<NTiles;++j) {
+                            const int n=ng+j*16+(lane&15);
+                            if(ng+j*16<N) {
+                                Bits16 b0=load_native<T2>(z,n,k0,N,K);
+                                Bits16 b1=load_native<T2>(z,n,k0+16,N,K);
+                                acc[j]=native_mma<D>(a0,b0,acc[j]);
+                                if(k0+16<K) acc[j]=native_mma<D>(a1,b1,acc[j]);
+                            }
                         }
                     }
                 }
@@ -154,7 +252,7 @@ __device__ __forceinline__ void native_batch(KernelArguments args,float* shared)
                 if(lane==0) total+=halfSum;
             } else if((lane&15)==0) {
                 // N splitting occurs only when M has fewer tiles than wpb.
-                // wm=floor_pow2(tileM), hence each wave owns at most two M tiles.
+                // waves_m enforces at most two M tiles per wave when wn>1.
                 const int slot=(m0>>4)>>mShift;
                 #pragma unroll
                 for(int i=0;i<8;++i)

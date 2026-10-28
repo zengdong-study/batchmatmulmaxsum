@@ -1,0 +1,59 @@
+{
+  "operator_calls": 2,
+  "fused_kernel_dispatches": 2,
+  "one_kernel_per_call": true,
+  "dispatches": [
+    {
+      "name": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, false, false, false>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "correlation_id": "58",
+      "api": "hipLaunchKernel"
+    },
+    {
+      "name": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, false, false, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "correlation_id": "91",
+      "api": "hipLaunchKernel"
+    }
+  ],
+  "other_dispatches": [
+    {
+      "name": "__amd_rocclr_copyBuffer",
+      "correlation_id": "25",
+      "api": "hipMemcpyWithStream"
+    },
+    {
+      "name": "__amd_rocclr_copyBuffer",
+      "correlation_id": "36",
+      "api": "hipMemcpyWithStream"
+    },
+    {
+      "name": "__amd_rocclr_copyBuffer",
+      "correlation_id": "52",
+      "api": "hipMemcpyWithStream"
+    },
+    {
+      "name": "__amd_rocclr_copyBuffer",
+      "correlation_id": "67",
+      "api": "hipMemcpyWithStream"
+    },
+    {
+      "name": "__amd_rocclr_copyBuffer",
+      "correlation_id": "74",
+      "api": "hipMemcpyWithStream"
+    },
+    {
+      "name": "__amd_rocclr_copyBuffer",
+      "correlation_id": "85",
+      "api": "hipMemcpyWithStream"
+    },
+    {
+      "name": "__amd_rocclr_copyBuffer",
+      "correlation_id": "100",
+      "api": "hipMemcpyWithStream"
+    },
+    {
+      "name": "__amd_rocclr_copyBuffer",
+      "correlation_id": "107",
+      "api": "hipMemcpyWithStream"
+    }
+  ]
+}

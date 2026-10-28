@@ -1,0 +1,2634 @@
+[
+  {
+    "case": 1,
+    "stage": "bmm",
+    "name": "Cijk_Ailk_Bljk_SB_MT32x32x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+    "kernel_id": "1004",
+    "correlation_id": "425",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 14.6,
+    "workgroup": [
+      64,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      128,
+      1,
+      3
+    ],
+    "grid_blocks": [
+      2,
+      1,
+      3
+    ],
+    "lds_bytes": 4096,
+    "scratch_bytes": 0,
+    "vgpr": 56,
+    "sgpr": 128
+  },
+  {
+    "case": 1,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "438",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 6.0,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      128,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      4,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 1,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "452",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 5.96,
+    "workgroup": [
+      16,
+      2,
+      1
+    ],
+    "grid_workitems": [
+      32,
+      2,
+      1
+    ],
+    "grid_blocks": [
+      2,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 2,
+    "stage": "bmm",
+    "name": "Cijk_Alik_Bljk_SB_MT64x64x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_16_1_WGM4",
+    "kernel_id": "1718",
+    "correlation_id": "854",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 10.6,
+    "workgroup": [
+      256,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      256,
+      1,
+      3
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      3
+    ],
+    "lds_bytes": 8192,
+    "scratch_bytes": 0,
+    "vgpr": 48,
+    "sgpr": 128
+  },
+  {
+    "case": 2,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "867",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 9.68,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      128,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      4,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 2,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "881",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 10.52,
+    "workgroup": [
+      16,
+      2,
+      1
+    ],
+    "grid_workitems": [
+      32,
+      2,
+      1
+    ],
+    "grid_blocks": [
+      2,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 3,
+    "stage": "bmm",
+    "name": "Cijk_Ailk_Bjlk_SB_MT64x32x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM4",
+    "kernel_id": "1926",
+    "correlation_id": "1285",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 10.88,
+    "workgroup": [
+      128,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      128,
+      1,
+      3
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      3
+    ],
+    "lds_bytes": 7168,
+    "scratch_bytes": 0,
+    "vgpr": 56,
+    "sgpr": 128
+  },
+  {
+    "case": 3,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "1298",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 9.6,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      128,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      4,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 3,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "1312",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 10.28,
+    "workgroup": [
+      16,
+      2,
+      1
+    ],
+    "grid_workitems": [
+      32,
+      2,
+      1
+    ],
+    "grid_blocks": [
+      2,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 4,
+    "stage": "bmm",
+    "name": "Cijk_Alik_Bjlk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+    "kernel_id": "2425",
+    "correlation_id": "1718",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 3.84,
+    "workgroup": [
+      64,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      192,
+      2,
+      3
+    ],
+    "grid_blocks": [
+      3,
+      2,
+      3
+    ],
+    "lds_bytes": 2048,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 4,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "1731",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 5.72,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      128,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      4,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 4,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "1745",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 5.92,
+    "workgroup": [
+      16,
+      2,
+      1
+    ],
+    "grid_workitems": [
+      32,
+      2,
+      1
+    ],
+    "grid_blocks": [
+      2,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 9,
+    "stage": "bmm",
+    "name": "Cijk_Ailk_Bljk_SB_MT32x16x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM4",
+    "kernel_id": "674",
+    "correlation_id": "2148",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 17.0,
+    "workgroup": [
+      128,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      4096,
+      2,
+      4
+    ],
+    "grid_blocks": [
+      32,
+      2,
+      4
+    ],
+    "lds_bytes": 7168,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 9,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "2161",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 14.64,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      256,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      8,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 9,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "2175",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 9.76,
+    "workgroup": [
+      32,
+      4,
+      1
+    ],
+    "grid_workitems": [
+      32,
+      4,
+      1
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 10,
+    "stage": "bmm",
+    "name": "Cijk_Alik_Bljk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+    "kernel_id": "1468",
+    "correlation_id": "2581",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 13.84,
+    "workgroup": [
+      64,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      4096,
+      2,
+      4
+    ],
+    "grid_blocks": [
+      64,
+      2,
+      4
+    ],
+    "lds_bytes": 2048,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 10,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "2594",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 8.56,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      256,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      8,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 10,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "2608",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 10.36,
+    "workgroup": [
+      32,
+      4,
+      1
+    ],
+    "grid_workitems": [
+      32,
+      4,
+      1
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 11,
+    "stage": "bmm",
+    "name": "Cijk_Ailk_Bjlk_SB_MT32x32x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_16_1_WGM1",
+    "kernel_id": "1937",
+    "correlation_id": "3016",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 8.4,
+    "workgroup": [
+      256,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      8192,
+      1,
+      4
+    ],
+    "grid_blocks": [
+      32,
+      1,
+      4
+    ],
+    "lds_bytes": 8192,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 11,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "3029",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 9.12,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      256,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      8,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 11,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "3043",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 9.84,
+    "workgroup": [
+      32,
+      4,
+      1
+    ],
+    "grid_workitems": [
+      32,
+      4,
+      1
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 12,
+    "stage": "bmm",
+    "name": "Cijk_Alik_Bjlk_SB_MT32x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM1",
+    "kernel_id": "2522",
+    "correlation_id": "3453",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 10.88,
+    "workgroup": [
+      128,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      4096,
+      2,
+      4
+    ],
+    "grid_blocks": [
+      32,
+      2,
+      4
+    ],
+    "lds_bytes": 3584,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 12,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "3466",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 12.44,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      256,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      8,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 12,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "3480",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 9.84,
+    "workgroup": [
+      32,
+      4,
+      1
+    ],
+    "grid_workitems": [
+      32,
+      4,
+      1
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 17,
+    "stage": "bmm",
+    "name": "Cijk_Ailk_Bljk_SB_MT128x256x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_16_1_WGM1",
+    "kernel_id": "655",
+    "correlation_id": "3884",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 1096.522,
+    "workgroup": [
+      256,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      512,
+      1,
+      1
+    ],
+    "grid_blocks": [
+      2,
+      1,
+      1
+    ],
+    "lds_bytes": 57344,
+    "scratch_bytes": 0,
+    "vgpr": 216,
+    "sgpr": 128
+  },
+  {
+    "case": 17,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "3897",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 17.08,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      160,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      5,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 17,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "3911",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 13.961,
+    "workgroup": [
+      64,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      64,
+      1,
+      1
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 18,
+    "stage": "bmm",
+    "name": "Cijk_Alik_Bljk_SB_MT128x64x32_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_8_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM8",
+    "kernel_id": "1460",
+    "correlation_id": "4317",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 537.641,
+    "workgroup": [
+      128,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      256,
+      2,
+      1
+    ],
+    "grid_blocks": [
+      2,
+      2,
+      1
+    ],
+    "lds_bytes": 57344,
+    "scratch_bytes": 0,
+    "vgpr": 160,
+    "sgpr": 128
+  },
+  {
+    "case": 18,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "4330",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 8.68,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      160,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      5,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 18,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "4344",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 9.28,
+    "workgroup": [
+      64,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      64,
+      1,
+      1
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 19,
+    "stage": "bmm",
+    "name": "Cijk_Ailk_Bjlk_SB_MT32x32x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+    "kernel_id": "2248",
+    "correlation_id": "4752",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 449.681,
+    "workgroup": [
+      64,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      320,
+      3,
+      1
+    ],
+    "grid_blocks": [
+      5,
+      3,
+      1
+    ],
+    "lds_bytes": 4096,
+    "scratch_bytes": 0,
+    "vgpr": 56,
+    "sgpr": 128
+  },
+  {
+    "case": 19,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "4765",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 6.48,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      160,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      5,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 19,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "4779",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 5.76,
+    "workgroup": [
+      64,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      64,
+      1,
+      1
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 20,
+    "stage": "bmm",
+    "name": "Cijk_Alik_Bjlk_SB_MT16x16x32_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+    "kernel_id": "2408",
+    "correlation_id": "5189",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 171.481,
+    "workgroup": [
+      64,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      576,
+      5,
+      1
+    ],
+    "grid_blocks": [
+      9,
+      5,
+      1
+    ],
+    "lds_bytes": 8192,
+    "scratch_bytes": 0,
+    "vgpr": 40,
+    "sgpr": 128
+  },
+  {
+    "case": 20,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "5202",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 14.8,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      160,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      5,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 20,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "5216",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 8.92,
+    "workgroup": [
+      64,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      64,
+      1,
+      1
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 25,
+    "stage": "bmm",
+    "name": "Cijk_Alik_Bljk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+    "kernel_id": "1766",
+    "correlation_id": "5596",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 13.76,
+    "workgroup": [
+      64,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      64,
+      1,
+      1
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      1
+    ],
+    "lds_bytes": 2048,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 25,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "5608",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 6.36,
+    "workgroup": [
+      1,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      1,
+      1,
+      1
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 25,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "5621",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 6.92,
+    "workgroup": [
+      1,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      1,
+      1,
+      1
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 26,
+    "stage": "bmm",
+    "name": "Cijk_Alik_Bljk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+    "kernel_id": "1766",
+    "correlation_id": "6006",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 3.76,
+    "workgroup": [
+      64,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      1088,
+      1,
+      2
+    ],
+    "grid_blocks": [
+      17,
+      1,
+      2
+    ],
+    "lds_bytes": 2048,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 26,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "6019",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 7.16,
+    "workgroup": [
+      64,
+      2,
+      1
+    ],
+    "grid_workitems": [
+      64,
+      2,
+      1
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 26,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<256, 2, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1290",
+    "correlation_id": "6032",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 5.4,
+    "workgroup": [
+      1,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      1,
+      1,
+      1
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 40,
+    "sgpr": 128
+  },
+  {
+    "case": 27,
+    "stage": "bmm",
+    "name": "Cijk_Ailk_Bljk_SB_MT32x16x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM8",
+    "kernel_id": "1059",
+    "correlation_id": "6420",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 4.76,
+    "workgroup": [
+      128,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      1152,
+      1,
+      3
+    ],
+    "grid_blocks": [
+      9,
+      1,
+      3
+    ],
+    "lds_bytes": 7168,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 27,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "6432",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 8.84,
+    "workgroup": [
+      512,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      1024,
+      1,
+      1
+    ],
+    "grid_blocks": [
+      2,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 27,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "6446",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 9.72,
+    "workgroup": [
+      64,
+      2,
+      1
+    ],
+    "grid_workitems": [
+      128,
+      2,
+      1
+    ],
+    "grid_blocks": [
+      2,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 30,
+    "stage": "bmm",
+    "name": "Cijk_Ailk_Bjlk_SB_MT32x32x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+    "kernel_id": "2248",
+    "correlation_id": "6846",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 452.001,
+    "workgroup": [
+      64,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      192,
+      2,
+      2
+    ],
+    "grid_blocks": [
+      3,
+      2,
+      2
+    ],
+    "lds_bytes": 4096,
+    "scratch_bytes": 0,
+    "vgpr": 56,
+    "sgpr": 128
+  },
+  {
+    "case": 30,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "6859",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 5.96,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      160,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      5,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 30,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "6873",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 6.0,
+    "workgroup": [
+      32,
+      2,
+      1
+    ],
+    "grid_workitems": [
+      32,
+      2,
+      1
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 31,
+    "stage": "bmm",
+    "name": "Cijk_Alik_Bjlk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+    "kernel_id": "2624",
+    "correlation_id": "7279",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 6.48,
+    "workgroup": [
+      64,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      576,
+      2,
+      2
+    ],
+    "grid_blocks": [
+      9,
+      2,
+      2
+    ],
+    "lds_bytes": 2048,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 31,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "7292",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 9.08,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      96,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      3,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 31,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "7306",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 5.56,
+    "workgroup": [
+      16,
+      2,
+      1
+    ],
+    "grid_workitems": [
+      16,
+      2,
+      1
+    ],
+    "grid_blocks": [
+      1,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 32,
+    "stage": "bmm",
+    "name": "Cijk_Alik_Bljk_SB_MT32x8x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_4_1_WGM8",
+    "kernel_id": "1737",
+    "correlation_id": "7689",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 13.4,
+    "workgroup": [
+      64,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      16384,
+      1,
+      2
+    ],
+    "grid_blocks": [
+      256,
+      1,
+      2
+    ],
+    "lds_bytes": 3584,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 32,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<128, 4, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1158",
+    "correlation_id": "7701",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 7.121,
+    "workgroup": [
+      128,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      4096,
+      1,
+      1
+    ],
+    "grid_blocks": [
+      32,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 56,
+    "sgpr": 128
+  },
+  {
+    "case": 32,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "7714",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 10.84,
+    "workgroup": [
+      256,
+      2,
+      1
+    ],
+    "grid_workitems": [
+      512,
+      2,
+      1
+    ],
+    "grid_blocks": [
+      2,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 37,
+    "stage": "bmm",
+    "name": "Cijk_Ailk_Bljk_SB_MT128x128x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM1",
+    "kernel_id": "724",
+    "correlation_id": "8578",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 48865.774,
+    "workgroup": [
+      128,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      8192,
+      64,
+      64
+    ],
+    "grid_blocks": [
+      64,
+      64,
+      64
+    ],
+    "lds_bytes": 16384,
+    "scratch_bytes": 0,
+    "vgpr": 208,
+    "sgpr": 128
+  },
+  {
+    "case": 37,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "8590",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2609.685,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 37,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "8596",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2525.045,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 37,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "8602",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2527.485,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 37,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "8608",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2529.405,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 37,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "8614",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2530.805,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 37,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "8620",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2527.605,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 37,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "8626",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2530.205,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 37,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "8632",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2527.204,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 37,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "8645",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 18.2,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2048,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      64,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 38,
+    "stage": "bmm",
+    "name": "Cijk_Alik_Bljk_SB_MT128x128x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM1",
+    "kernel_id": "1559",
+    "correlation_id": "9516",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 55838.67,
+    "workgroup": [
+      128,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      8192,
+      64,
+      64
+    ],
+    "grid_blocks": [
+      64,
+      64,
+      64
+    ],
+    "lds_bytes": 32768,
+    "scratch_bytes": 0,
+    "vgpr": 224,
+    "sgpr": 128
+  },
+  {
+    "case": 38,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "9528",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2590.405,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 38,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "9534",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2531.525,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 38,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "9540",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2528.365,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 38,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "9546",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2525.765,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 38,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "9552",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2524.525,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 38,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "9558",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2527.925,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 38,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "9564",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2524.605,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 38,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "9570",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2528.565,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 38,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "9583",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 12.36,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2048,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      64,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 39,
+    "stage": "bmm",
+    "name": "Cijk_Ailk_Bjlk_SB_MT128x128x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM8",
+    "kernel_id": "2220",
+    "correlation_id": "10456",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 50714.381,
+    "workgroup": [
+      128,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      8192,
+      64,
+      64
+    ],
+    "grid_blocks": [
+      64,
+      64,
+      64
+    ],
+    "lds_bytes": 32768,
+    "scratch_bytes": 0,
+    "vgpr": 232,
+    "sgpr": 128
+  },
+  {
+    "case": 39,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "10468",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2640.245,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 39,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "10474",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2527.725,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 39,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "10480",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2525.805,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 39,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "10486",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2523.045,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 39,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "10492",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2529.325,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 39,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "10498",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2528.965,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 39,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "10504",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2526.285,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 39,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "10510",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2525.525,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 39,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "10523",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 14.68,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2048,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      64,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 40,
+    "stage": "bmm",
+    "name": "Cijk_Alik_Bjlk_SB_MT128x128x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM4",
+    "kernel_id": "2571",
+    "correlation_id": "11398",
+    "api": "hipExtModuleLaunchKernel",
+    "trace_device_us": 53783.589,
+    "workgroup": [
+      128,
+      1,
+      1
+    ],
+    "grid_workitems": [
+      8192,
+      64,
+      64
+    ],
+    "grid_blocks": [
+      64,
+      64,
+      64
+    ],
+    "lds_bytes": 32768,
+    "scratch_bytes": 0,
+    "vgpr": 232,
+    "sgpr": 128
+  },
+  {
+    "case": 40,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "11410",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2635.445,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 40,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "11416",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2526.286,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 40,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "11422",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2527.045,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 40,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "11428",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2525.845,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 40,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "11434",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2524.645,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 40,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "11440",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2526.805,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 40,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "11446",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2525.605,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 40,
+    "stage": "amax",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)",
+    "kernel_id": "1205",
+    "correlation_id": "11452",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 2531.406,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2097152,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      65536,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  },
+  {
+    "case": 40,
+    "stage": "sum",
+    "name": "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)",
+    "kernel_id": "1278",
+    "correlation_id": "11465",
+    "api": "hipLaunchKernel",
+    "trace_device_us": 12.72,
+    "workgroup": [
+      32,
+      16,
+      1
+    ],
+    "grid_workitems": [
+      2048,
+      16,
+      1
+    ],
+    "grid_blocks": [
+      64,
+      1,
+      1
+    ],
+    "lds_bytes": 512,
+    "scratch_bytes": 0,
+    "vgpr": 32,
+    "sgpr": 128
+  }
+]

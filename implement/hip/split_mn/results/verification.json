@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "correctness": {
+    "status": "complete",
+    "cases": 32,
+    "checks": 224,
+    "mode": "validate",
+    "max_abs": 0.0206298828125
+  },
+  "final_timing_rows": {
+    "final_timing": 64,
+    "balanced_timing": 64
+  },
+  "old_serial_timing_rows": 64,
+  "same_device_and_protocol": true,
+  "one_kernel_per_operator": true,
+  "host_validation": "planning, invalid parameters, tampered plans, null/short/misaligned workspace rejected without GPU launch",
+  "scope": "existing cases 1-32 only; cases 33-40 not validated",
+  "library_sha256": "5215130c54241850ace63132435efead472aa7ed4b7537a6d2c0695ae39e98e4"
+}

@@ -1,0 +1,38 @@
+{
+  "all_88_kernel_codes_identical": true,
+  "invalid_groupBaseN_checks": [
+    {
+      "groupBaseN": -32,
+      "status": 2
+    },
+    {
+      "groupBaseN": -1,
+      "status": 2
+    },
+    {
+      "groupBaseN": 1,
+      "status": 2
+    },
+    {
+      "groupBaseN": 8,
+      "status": 2
+    },
+    {
+      "groupBaseN": 15,
+      "status": 2
+    },
+    {
+      "groupBaseN": 17,
+      "status": 2
+    },
+    {
+      "groupBaseN": 48,
+      "status": 2
+    },
+    {
+      "groupBaseN": 128,
+      "status": 2
+    }
+  ],
+  "measurement_reuse": "Device code is byte-for-byte identical; host fix rejects invalid groupBaseN before division, valid-plan GPU graph unchanged; measured library retained separately."
+}

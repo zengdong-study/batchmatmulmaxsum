@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "family": "baseline",
+  "case": 29,
+  "config": "fp32_split",
+  "shape": [
+    2,
+    17,
+    33,
+    64
+  ],
+  "dtype": "float16",
+  "t1": false,
+  "t2": true,
+  "baseline_us": 15.172419548034668,
+  "total_device_ms": 1.5172419548034668,
+  "warmups": 10,
+  "iterations": 100,
+  "max_abs": 0.0,
+  "max_rel": 0.0,
+  "fp32_a_stride": [
+    1088,
+    64,
+    1
+  ],
+  "fp32_b_stride": [
+    2112,
+    1,
+    64
+  ],
+  "similarity_bytes": 4488
+}

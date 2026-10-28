@@ -1,0 +1,7 @@
+{
+  "other_client_language": "C++",
+  "other_client_action": "hipMalloc only, no kernel; own controlled probe",
+  "rejected": true,
+  "error": "Other target-GPU clients detected: [26908, 488113]; no process stopped",
+  "no_other_process_stopped": true
+}

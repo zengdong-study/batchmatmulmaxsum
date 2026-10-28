@@ -1,0 +1,111 @@
+{
+  "library": "/tmp/bmms-final-checked-build/libbmms_small.so",
+  "scope": "Matrix checked without a subsequent SIMD overwrite; both layouts, single/multiwave, long K and tails; shared read-only inputs, independent outputs",
+  "results": [
+    {
+      "case": 1,
+      "path": "matrix",
+      "two_stream_outputs_equal": true,
+      "checks": [
+        {
+          "max_abs": 1.9073486328125e-06,
+          "max_rel": 1.3625979401334418e-07
+        },
+        {
+          "max_abs": 1.9073486328125e-06,
+          "max_rel": 1.3625979401334418e-07
+        }
+      ]
+    },
+    {
+      "case": 2,
+      "path": "matrix",
+      "two_stream_outputs_equal": true,
+      "checks": [
+        {
+          "max_abs": 1.9073486328125e-06,
+          "max_rel": 1.3625979401334418e-07
+        },
+        {
+          "max_abs": 1.9073486328125e-06,
+          "max_rel": 1.3625979401334418e-07
+        }
+      ]
+    },
+    {
+      "case": 3,
+      "path": "matrix",
+      "two_stream_outputs_equal": true,
+      "checks": [
+        {
+          "max_abs": 1.9073486328125e-06,
+          "max_rel": 1.3625979401334418e-07
+        },
+        {
+          "max_abs": 1.9073486328125e-06,
+          "max_rel": 1.3625979401334418e-07
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "path": "matrix",
+      "two_stream_outputs_equal": true,
+      "checks": [
+        {
+          "max_abs": 1.9073486328125e-06,
+          "max_rel": 1.3625979401334418e-07
+        },
+        {
+          "max_abs": 1.9073486328125e-06,
+          "max_rel": 1.3625979401334418e-07
+        }
+      ]
+    },
+    {
+      "case": 17,
+      "path": "matrix",
+      "two_stream_outputs_equal": true,
+      "checks": [
+        {
+          "max_abs": 0.02056884765625,
+          "max_rel": 2.153561044189539e-05
+        },
+        {
+          "max_abs": 0.02056884765625,
+          "max_rel": 2.153561044189539e-05
+        }
+      ]
+    },
+    {
+      "case": 25,
+      "path": "matrix",
+      "two_stream_outputs_equal": true,
+      "checks": [
+        {
+          "max_abs": 0.0,
+          "max_rel": 0.0
+        },
+        {
+          "max_abs": 0.0,
+          "max_rel": 0.0
+        }
+      ]
+    },
+    {
+      "case": 30,
+      "path": "matrix",
+      "two_stream_outputs_equal": true,
+      "checks": [
+        {
+          "max_abs": 0.0,
+          "max_rel": 0.0
+        },
+        {
+          "max_abs": 0.0,
+          "max_rel": 0.0
+        }
+      ]
+    }
+  ]
+}

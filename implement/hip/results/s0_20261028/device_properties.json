@@ -1,0 +1,10 @@
+{
+  "max_threads_per_block": 1024,
+  "registers_per_block": 196608,
+  "registers_per_multiprocessor": 196608,
+  "shared_bytes_per_block": 65536,
+  "shared_bytes_per_multiprocessor": 65536,
+  "warp_size": 32,
+  "multiprocessor_count_reported": 48,
+  "physical_cu_interpretation": "HIP reported multiprocessor count; do not equate automatically with physical CU count"
+}

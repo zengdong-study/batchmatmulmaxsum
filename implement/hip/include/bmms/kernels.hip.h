@@ -4,6 +4,26 @@
 
 namespace bmms::detail {
 
+// Minimize the maximum tile groups assigned to a wave. N splitting stores
+// at most two M tiles per wave in the existing 32-float row scratch.
+__host__ __device__ inline int waves_m(int M,int N,int waves,int ntiles) {
+    const int mt=(M+15)/16,ng=(N+16*ntiles-1)/(16*ntiles);
+    int original=waves;
+    while(original>1 && original>mt) original>>=1;
+    // Regular M tile counts already divide the wave group exactly.
+    if(mt>=waves || (mt&(mt-1))==0) return original;
+    int best=waves,bestWork=0x7fffffff;
+    const int shift=__builtin_ctz(static_cast<unsigned>(waves));
+    for(int ms=shift;ms>=0;--ms) {
+        const int wm=1<<ms,ns=shift-ms,wn=1<<ns;
+        const int rows=(mt+wm-1)>>ms;
+        if(wn>1 && rows>2) continue;
+        const int work=rows*((ng+wn-1)>>ns);
+        if(work<bestWork) { best=wm;bestWork=work; }
+    }
+    return best;
+}
+
 struct KernelArguments {
     const void* x1;
     const void* x2;

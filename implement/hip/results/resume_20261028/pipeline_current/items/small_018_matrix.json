@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "family": "small",
+  "case": 18,
+  "config": "matrix",
+  "shape": [
+    1,
+    65,
+    129,
+    8192
+  ],
+  "dtype": "float16",
+  "t1": false,
+  "t2": true,
+  "golden_passed": true,
+  "max_abs": 0.0205078125,
+  "max_rel": 2.147170655334377e-05,
+  "device_us": 1842.4626159667969,
+  "total_device_ms": 184.2462615966797,
+  "warmups": 10,
+  "iterations": 100,
+  "repeat_equal": true
+}

@@ -1,0 +1,28 @@
+{
+  "metadata_cases": 40,
+  "verified_data_cases": 36,
+  "chain_timed_cases": 36,
+  "standalone_stage_timings": 108,
+  "profiled_cases": 22,
+  "marked_stages": 66,
+  "labeled_kernel_dispatches": 94,
+  "unique_labeled_kernels": 24,
+  "unmatched_code_kernels": [],
+  "golden": "all measured/profiled cases passed",
+  "timing_arithmetic": "all passed",
+  "gpu_audits_valid": true,
+  "missing_data_cases": [
+    33,
+    34,
+    35,
+    36
+  ],
+  "workspace_init_permission": "not established by problem text; conditional M/N candidate",
+  "fusion_implementation_changed": false,
+  "implementation_hashes_unchanged": true,
+  "library_hashes_unchanged": true,
+  "nonpython_client_rejected": true,
+  "legacy_python_guard_wrapper_test": true,
+  "properties_query_audit_valid": true,
+  "s0_status": "complete; scope/initialization/precision conditions explicit; S1 not started"
+}

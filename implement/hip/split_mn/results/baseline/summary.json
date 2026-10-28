@@ -1,0 +1,6 @@
+{
+  "status": "complete",
+  "cases": 32,
+  "warmups": 10,
+  "iterations": 100
+}

@@ -1,0 +1,3702 @@
+{
+  "coalesced": {
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb1ELb1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 143,
+        "TotalNumSgprs": 74,
+        "ScratchSize": 0,
+        "Occupancy": 10
+      },
+      "static_instructions": {
+        "global_load_u16": 32,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 70,
+        "s_barrier": 1,
+        "s_waitcnt": 76,
+        "v_wmma_f32_16x16x16_f16": 2,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "3167e59270699ffa52c91fa1503fa38cb0275ba2e09986299e709278189c5617"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb1ELb1ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 167,
+        "TotalNumSgprs": 103,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 32,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 70,
+        "s_barrier": 1,
+        "s_waitcnt": 81,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "345afe898becd8a0f1f9b385ae9cebdfe31c39ad5f68f353d90822926be4d6e5"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb1ELb1ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 167,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 32,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 16,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 70,
+        "s_barrier": 1,
+        "s_waitcnt": 89,
+        "v_wmma_f32_16x16x16_f16": 8,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "66ef4bd6f33f6be478f44f203bc79b140ef57496b0050e31f2bcf84c8074132a"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 135,
+        "TotalNumSgprs": 93,
+        "ScratchSize": 0,
+        "Occupancy": 10
+      },
+      "static_instructions": {
+        "global_load_u16": 32,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 65,
+        "s_barrier": 0,
+        "s_waitcnt": 68,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "f898929cacc34e3ebd3ce8c49033a56d0d5b74d7f3f214e7d0049ebb5d954829"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 167,
+        "TotalNumSgprs": 103,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 32,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 70,
+        "s_barrier": 1,
+        "s_waitcnt": 81,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "d56ed789b69e04607ee166a14813d5817c2206651950861e92875d4ee8adf283"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 24,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 17,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "0302a09ce2b4d93e1ff08840b2e9202695b5866c41287387827eea70df48125d"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 31,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 18,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "e3fa2902e5406d9ce27e68ef8a837ce5fc5d612ccc363562641baa709e4c6717"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 19,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "ca0dfb04dd682d46b3b7b6ee20c2d15cb19a686fd188aee53376fe1b00931953"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 33,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 20,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "02313a4e120519cb29392d9b76fc79b9667abfd19bb836a95d827ab77cdda095"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 34,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 21,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "2c1cd83ec3a811a6bf3710b0742fe3fe120345e3cf35cae854142dd65883af57"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 33,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "1829ee35080db0309220b6a48bae101fe77c789f7631c2cbc9b287733d20d543"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb1ELb0ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 109,
+        "TotalNumSgprs": 80,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 64,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 102,
+        "s_barrier": 1,
+        "s_waitcnt": 110,
+        "v_wmma_f32_16x16x16_f16": 2,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "6cc56e06ce5a5a701679f466fbdcc3de2c101ef1032aa661b97717d364a17a37"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb1ELb0ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 128,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 10
+      },
+      "static_instructions": {
+        "global_load_u16": 96,
+        "global_load_b32": 24,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 134,
+        "s_barrier": 1,
+        "s_waitcnt": 145,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "456191e1cb0de0b8a2f104cef06600e8883bf143e0b80bc0b17be0254c68aec0"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb1ELb0ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 153,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 160,
+        "global_load_b32": 40,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 198,
+        "s_barrier": 1,
+        "s_waitcnt": 219,
+        "v_wmma_f32_16x16x16_f16": 8,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "e5f56088998fc00266c3b8c8f0e9255307bd68d8895449d315671aef2c1dcc80"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 120,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 96,
+        "global_load_b32": 24,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 129,
+        "s_barrier": 0,
+        "s_waitcnt": 133,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "139e8c1a461fff950ac44e0852e4369c61c08dc5b65b998e9ab5e744d8986ff7"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 128,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 10
+      },
+      "static_instructions": {
+        "global_load_u16": 96,
+        "global_load_b32": 24,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 134,
+        "s_barrier": 1,
+        "s_waitcnt": 145,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "0973c9c2508c36df5f8605a3a830ba80e53596fd6c6df0406099366d9160dbdb"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 25,
+        "TotalNumSgprs": 40,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 17,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "143bacf1979ae39e1b19a0850a8bd48fbfb36737ea297e17ae440f42e35973a8"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 36,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 18,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "e5f02807c727225c9388fdbb532120ba45cab735c22447e558e56e8f9e6cb025"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 38,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 19,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "d14d3d9c0c24935c0c0f6d0131ccd69bc4bafafe799bbf7d18db26a96ac8f593"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 39,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 20,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "a9333f423c9cc509962e016a605ab91b93a09d51247672dd0fa9b4bec5cbea2b"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 40,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 21,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "4b260f0b4f64191b9815f273fd8d6e1088fb86d93f31b5582d292f79aa74673b"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 39,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "fb4d130aac8f394702a6430a0499811d0f76085004c0a6a7258f194e5f4c9a40"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb0ELb1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 88,
+        "TotalNumSgprs": 37,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 37,
+        "v_wmma_f32_16x16x16_f16": 2,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "6f7630a690426a6e89dd029ed21955bbb4655935175898e81b1f0cb0aac58d0d"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb0ELb1ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 99,
+        "TotalNumSgprs": 71,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 12,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 41,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "4f275a9ec410d965472964304fc32b6c567ce97ec5c5a9e833ac66005f12a566"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb0ELb1ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 119,
+        "TotalNumSgprs": 73,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 20,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 50,
+        "v_wmma_f32_16x16x16_f16": 8,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "0b928678c4c05321bc477bd45981beb9421e06e7389f2b886a609611db300530"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 90,
+        "TotalNumSgprs": 60,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 12,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 33,
+        "s_barrier": 0,
+        "s_waitcnt": 32,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "008d43848411694cc5dad885645958350dd615cafd9ff430fb49cff2ce3f0b7f"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 99,
+        "TotalNumSgprs": 71,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 12,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 41,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "9442bb8335d2634c646688efd9f5bb339316b2c484a48c9fb80a8dfddbbd9ade"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 24,
+        "TotalNumSgprs": 27,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 17,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "e5af0966519d1aa78760c38de4f036c8b083182535da73ab784ad327c7be89a2"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 28,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 18,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "c257a488ad65e55635220e57ac9bcf1392e266808ceddbb55c48f4711e7c7d20"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 30,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 19,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "e130a4557992ef0d6dfbfc9a1cf4d7aabb24d165077f090a75802e7dacfc99a6"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 31,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 20,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "62c45cb94110a5395106e4c0efee5dcea0480a2ec02f2a77c26eabaaf1eab1e4"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 21,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "33b3bb6fc92f399c9e4f997c1d54192b8effba80e22144da2cbcdea1e742fd99"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 27,
+        "TotalNumSgprs": 27,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "89faeb20721bbf55e6bf59f93ddf7772f573196ab31fa5ee976b07905d27a5ec"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb0ELb0ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 167,
+        "TotalNumSgprs": 74,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 32,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 70,
+        "s_barrier": 1,
+        "s_waitcnt": 76,
+        "v_wmma_f32_16x16x16_f16": 2,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "820cbd0b4c6ad14a1a7bd44e14dcb71f89ee6be2c5c7a5075b8c79a1db6660f2"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb0ELb0ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 199,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 7
+      },
+      "static_instructions": {
+        "global_load_u16": 64,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 102,
+        "s_barrier": 1,
+        "s_waitcnt": 110,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "42bcaadb56e1603d189c9245751aac977a3a8be3ff908404b31f8d77f13a00fd"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb0ELb0ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 224,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 6
+      },
+      "static_instructions": {
+        "global_load_u16": 128,
+        "global_load_b32": 32,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 166,
+        "s_barrier": 1,
+        "s_waitcnt": 184,
+        "v_wmma_f32_16x16x16_f16": 8,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "20836b6c9b79dd0de265177c0d27afb0565cae87cd540f132fc5a979f65a5d96"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 188,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 8
+      },
+      "static_instructions": {
+        "global_load_u16": 64,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 97,
+        "s_barrier": 0,
+        "s_waitcnt": 98,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "6dd9a795110e9a05ac19eade6188e388f9c06ee9cbacabd2f5888799ab3853fd"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 199,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 7
+      },
+      "static_instructions": {
+        "global_load_u16": 64,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 102,
+        "s_barrier": 1,
+        "s_waitcnt": 110,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "adeca529d4be4767e6d1a98e4c8a8ebec9c22199cbcdad8322f60048e58a1a16"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 25,
+        "TotalNumSgprs": 34,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 17,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "b9ca57fbd2973f867fc4f5f98870ceb4393e116a010ccdd79a0730c1a472f2b3"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 18,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "386be3edab4c3889c901b70a278bb84731f04366194dce6897109a4ff8539ae1"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 34,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 19,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "a15f0e8fd868ff2f8cfbc8c7d76d665b8c51f9d0154f8650096c4921d7334361"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 35,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 20,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "6fa1c106ec7f35569bb04d6c7f249dd3b02565100a9218c5f3f9b814157fcedc"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 36,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 21,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "c5adbc039cea81b9f2fa0815709a2c5f786cf8cd8bcb320ffce6c8c9944d4d42"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "e9dfff37f7364ab2b4a385844052a2dacb7f96b8c6e2e7e5ecb4285ce3821907"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb1ELb1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 143,
+        "TotalNumSgprs": 74,
+        "ScratchSize": 0,
+        "Occupancy": 10
+      },
+      "static_instructions": {
+        "global_load_u16": 32,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 70,
+        "s_barrier": 1,
+        "s_waitcnt": 76,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 2
+      },
+      "assembly_sha256": "83103b44a0ac190837d0970aec1aee964939930892b01c0f70e4a2fc3bd2b68d"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb1ELb1ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 167,
+        "TotalNumSgprs": 103,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 32,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 70,
+        "s_barrier": 1,
+        "s_waitcnt": 81,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "e6a5056ba2bff4acfae7e8ac672e93575492a0ad9a807bf57de3e2452f3c57d8"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb1ELb1ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 167,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 32,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 16,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 70,
+        "s_barrier": 1,
+        "s_waitcnt": 89,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 8
+      },
+      "assembly_sha256": "d0f933f7b6a698338c4739877ccd924bb24a5e687be83aeddcb04c07ecb33055"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 135,
+        "TotalNumSgprs": 93,
+        "ScratchSize": 0,
+        "Occupancy": 10
+      },
+      "static_instructions": {
+        "global_load_u16": 32,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 65,
+        "s_barrier": 0,
+        "s_waitcnt": 68,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "d76e7bc19c18c1e05e38906aaa4f5c4efdaee8a2ad7acd945f71fb331ac83458"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 167,
+        "TotalNumSgprs": 103,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 32,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 70,
+        "s_barrier": 1,
+        "s_waitcnt": 81,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "e6bbb2fdc2bad89a9154edfbbc4dc05ae9fbad80f06e42b06ea33621f5cb9ba2"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 24,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "2ceb4f6c0c1e634eb061d39c28fbd26b1fc28e2fabacf3d22837c170a50ba89a"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 30,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 23,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "b0cf40c18b1822de1016ff64b21aa8f7f8d8dc95b844a118701391c9602e53d1"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 24,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "69b318052c5ea0a14ff36556e5a47138f3379035fe33d9f65b624342c4c00581"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 33,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 25,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "9efef6ab6e664c699c6e3255d0571864bb7d2b173831f03a6df42f9fa2ac46f7"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 34,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 26,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "9ef9f57ab698d20880c74a28bccbb0456de067b084f17b32722e675793b61123"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 33,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 27,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "5374f74a6bf40c075f93b7cdae731f9f843a34193f42088c39e9175d45316bc4"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb1ELb0ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 109,
+        "TotalNumSgprs": 80,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 64,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 102,
+        "s_barrier": 1,
+        "s_waitcnt": 110,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 2
+      },
+      "assembly_sha256": "a1a5b75f2d913dcfe60d5b248f22fa1d5c6fff52bb7d512ddebadd814513318c"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb1ELb0ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 128,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 10
+      },
+      "static_instructions": {
+        "global_load_u16": 96,
+        "global_load_b32": 24,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 134,
+        "s_barrier": 1,
+        "s_waitcnt": 145,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "11beda4fe0fe17db1990211ad32586b1df6fc8d4284c88297598ac3fe39e0747"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb1ELb0ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 153,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 160,
+        "global_load_b32": 40,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 198,
+        "s_barrier": 1,
+        "s_waitcnt": 219,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 8
+      },
+      "assembly_sha256": "7061782513a40d4ef8a388ad65318609fc44929175714a0bdaaa19ffee417804"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 120,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 96,
+        "global_load_b32": 24,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 129,
+        "s_barrier": 0,
+        "s_waitcnt": 133,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "270213e267471ea6ef3220aead6a6ef689522974d715cc028703d9e80d986452"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 128,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 10
+      },
+      "static_instructions": {
+        "global_load_u16": 96,
+        "global_load_b32": 24,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 134,
+        "s_barrier": 1,
+        "s_waitcnt": 145,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "3c2ed2bdfdf5b9e6574ab675ea3f15ebb89efcdbebeaa23e7c68aa9090952200"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 25,
+        "TotalNumSgprs": 40,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "190def7a3cc6c53ca8a8d7d001b00d952a1ef71006322280c33d566e50ef6bfc"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 36,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 23,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "8ecf9234d1173397a543591d50f76256df7e010f4f880399bf7ea60e56567f39"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 38,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 24,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "486129afa693a50e533ad25d7ac5e6e7933c99b7a42cfaf0d104ecb85fb48400"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 39,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 25,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "8de20f187fe4d3db637304e582ef1b515cfe6120a417a9ea26a09d369484ad3e"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 40,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 26,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "ff2f41bc95bd72fa484a50fda67c74b78a07dbe06ffa6c516311f9f6fdc6b735"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 39,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 27,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "6f7e6e0c0613ed70c69dd8d5cb3ed21ee6cbf963c2ce8eb213a6542b539d9ee2"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb0ELb1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 88,
+        "TotalNumSgprs": 37,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 37,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 2
+      },
+      "assembly_sha256": "37055a3f417cb6707261188cd7428bd1679344994eed498633d0bf194d48e7e2"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb0ELb1ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 99,
+        "TotalNumSgprs": 71,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 12,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 41,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "59f1a2c16f0372b831cd7c5f3163f958f3443541a0ef932c4a751d04e0d8c869"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb0ELb1ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 119,
+        "TotalNumSgprs": 73,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 20,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 50,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 8
+      },
+      "assembly_sha256": "50fe87b4e018ffc966bddbb91dce131810384354ac261733fd06914d61947caf"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 90,
+        "TotalNumSgprs": 60,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 12,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 33,
+        "s_barrier": 0,
+        "s_waitcnt": 32,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "19d47cdc21b695264d4717bd3e4aa3e22e1398820aad3fdee2e70970667ed47b"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 99,
+        "TotalNumSgprs": 71,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 12,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 41,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "f4b14f44f56ff62174154b6acfc5fef9576d4850b4f9524cc59709d5f69b259b"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 24,
+        "TotalNumSgprs": 27,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "d018836234d56a2a993b7a793520a43be86d330d2faba452eee78515e702a125"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 28,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 23,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "d4b7a565a33429b12a3e8c2c313f5d7d5991c001bf2f2743e00b7ad565b46cc2"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 30,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 24,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "0e5bb31a7f0a626cb04b309f37ef9822e9227d6a8a18d26bdc33ac1892e33b3d"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 31,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 25,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "0fc244a0da264c438026c946ea945d2c64ea54035808019c49371fd759a9744f"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 26,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "4dedcad74ff3d7785bf4a0717d1ab71e46dd9ec8a604079223ef07422fac1b6f"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 27,
+        "TotalNumSgprs": 27,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 27,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "750680760441f8d90f01f13f9cca86bd85d19cc721c293635709f8cdd205723a"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb0ELb0ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 167,
+        "TotalNumSgprs": 74,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 32,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 70,
+        "s_barrier": 1,
+        "s_waitcnt": 76,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 2
+      },
+      "assembly_sha256": "6218a39f39dd019d6eb58a1c3cda5c149f1fe02f50615bf7f35822d82a781090"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb0ELb0ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 199,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 7
+      },
+      "static_instructions": {
+        "global_load_u16": 64,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 102,
+        "s_barrier": 1,
+        "s_waitcnt": 110,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "497db10272da209cb15b9cb40e20bc6a30e65ac39164be86202e7109bc54ce67"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb0ELb0ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 224,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 6
+      },
+      "static_instructions": {
+        "global_load_u16": 128,
+        "global_load_b32": 32,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 166,
+        "s_barrier": 1,
+        "s_waitcnt": 184,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 8
+      },
+      "assembly_sha256": "ba90f4721b6aeb5abaecc07b728eb6cbb15b2c266e742579a49bb1478c5a101f"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 188,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 8
+      },
+      "static_instructions": {
+        "global_load_u16": 64,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 97,
+        "s_barrier": 0,
+        "s_waitcnt": 98,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "3a26699a1bd630166d64035589f360e95c3e497876617a95722e5e6c066f00e1"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 199,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 7
+      },
+      "static_instructions": {
+        "global_load_u16": 64,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 102,
+        "s_barrier": 1,
+        "s_waitcnt": 110,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "985b1b31556f2778854fed24c4456bce41be7fa93b292b1b562ce3e7ec01157b"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 25,
+        "TotalNumSgprs": 34,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "5b6421f267a3883bc47b0db8d56ee3a612f250062638c24e1c82cd187e384bab"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 23,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "8de053feaaa53ec0542a59d9a96d03df092d2b86b5c7d2625c101353e6c8d59c"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 34,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 24,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "9d0f228ec9d226c295984ad24cbe17eae014da8dfeebcfabaf2645eee26290db"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 35,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 25,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "d0f809a587110c675832ebee6825e382df75e2e72f9b7e45479b8527810e7ef2"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 36,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 26,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "5b6cb40c4ba912f7ef1920a4e8cf5cf775d434f94b2f78d9e3f0a24fb277be0d"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 27,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "a65a67d4a9df818e1a412797739832278b030db3d956eb10e907c9b0a3278f02"
+    }
+  },
+  "halves": {
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb1ELb1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 168,
+        "TotalNumSgprs": 76,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 48,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 86,
+        "s_barrier": 1,
+        "s_waitcnt": 91,
+        "v_wmma_f32_16x16x16_f16": 2,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "887943ac7307c2c99d4788b4dbcf93a2ba42f79be11958ece27cb8597991ab7a"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb1ELb1ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 168,
+        "TotalNumSgprs": 104,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 48,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 86,
+        "s_barrier": 1,
+        "s_waitcnt": 98,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "73b1663a1a11c775b0c8d596d2d4d8352c7eaee6c7a5e89505b297e6415cdbc0"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb1ELb1ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 192,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 8
+      },
+      "static_instructions": {
+        "global_load_u16": 48,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 16,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 86,
+        "s_barrier": 1,
+        "s_waitcnt": 102,
+        "v_wmma_f32_16x16x16_f16": 8,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "37689529ef9a652352e72ff6e301737d7769b4677395f15ef1f2dc33094c0460"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 153,
+        "TotalNumSgprs": 94,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 48,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 81,
+        "s_barrier": 0,
+        "s_waitcnt": 83,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "933b7e83ab428f5b25052da47438924611c60621c94c0b9a2a264abe8d1f56d5"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 168,
+        "TotalNumSgprs": 104,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 48,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 86,
+        "s_barrier": 1,
+        "s_waitcnt": 98,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "0fff894a5ef4860d911d456d1d76c58da50f71759a7494a901f2abb57c115f84"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 24,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 17,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "0302a09ce2b4d93e1ff08840b2e9202695b5866c41287387827eea70df48125d"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 31,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 18,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "e3fa2902e5406d9ce27e68ef8a837ce5fc5d612ccc363562641baa709e4c6717"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 19,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "ca0dfb04dd682d46b3b7b6ee20c2d15cb19a686fd188aee53376fe1b00931953"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 33,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 20,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "02313a4e120519cb29392d9b76fc79b9667abfd19bb836a95d827ab77cdda095"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 34,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 21,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "2c1cd83ec3a811a6bf3710b0742fe3fe120345e3cf35cae854142dd65883af57"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb1ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 33,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "1829ee35080db0309220b6a48bae101fe77c789f7631c2cbc9b287733d20d543"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb1ELb0ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 111,
+        "TotalNumSgprs": 82,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 96,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 134,
+        "s_barrier": 1,
+        "s_waitcnt": 145,
+        "v_wmma_f32_16x16x16_f16": 2,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "82053776a0d0ab970d84fde3e3bc4a3f4e3d15e40f8bb3da554d4ccc5974abab"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb1ELb0ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 164,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 144,
+        "global_load_b32": 24,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 182,
+        "s_barrier": 1,
+        "s_waitcnt": 196,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "6ca7360e3f153ddbd813625a7c0966d80019b29c31fcdb784819596ca459b091"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb1ELb0ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 195,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 7
+      },
+      "static_instructions": {
+        "global_load_u16": 240,
+        "global_load_b32": 40,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 278,
+        "s_barrier": 1,
+        "s_waitcnt": 306,
+        "v_wmma_f32_16x16x16_f16": 8,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "b5f5931f3265a3b0d6e75a569775ced0d11ef12b8c36c18d5e9ab638b9eb2fa3"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 154,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 144,
+        "global_load_b32": 24,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 177,
+        "s_barrier": 0,
+        "s_waitcnt": 183,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "40bc1b70c5097411b92352e95c447d3a440fd1be7fc54d073cf2a1d38896113b"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 164,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 144,
+        "global_load_b32": 24,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 182,
+        "s_barrier": 1,
+        "s_waitcnt": 196,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "2b8222964be72c40227bcb3929135b6a660c9baeb648b9b570ebcd051ac8fd86"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 25,
+        "TotalNumSgprs": 40,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 17,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "143bacf1979ae39e1b19a0850a8bd48fbfb36737ea297e17ae440f42e35973a8"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 36,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 18,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "e5f02807c727225c9388fdbb532120ba45cab735c22447e558e56e8f9e6cb025"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 38,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 19,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "d14d3d9c0c24935c0c0f6d0131ccd69bc4bafafe799bbf7d18db26a96ac8f593"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 39,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 20,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "a9333f423c9cc509962e016a605ab91b93a09d51247672dd0fa9b4bec5cbea2b"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 40,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 21,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "4b260f0b4f64191b9815f273fd8d6e1088fb86d93f31b5582d292f79aa74673b"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb1ELb0ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 39,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "fb4d130aac8f394702a6430a0499811d0f76085004c0a6a7258f194e5f4c9a40"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb0ELb1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 88,
+        "TotalNumSgprs": 37,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 37,
+        "v_wmma_f32_16x16x16_f16": 2,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "6f7630a690426a6e89dd029ed21955bbb4655935175898e81b1f0cb0aac58d0d"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb0ELb1ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 99,
+        "TotalNumSgprs": 71,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 12,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 41,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "4f275a9ec410d965472964304fc32b6c567ce97ec5c5a9e833ac66005f12a566"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb0ELb1ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 119,
+        "TotalNumSgprs": 73,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 20,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 50,
+        "v_wmma_f32_16x16x16_f16": 8,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "0b928678c4c05321bc477bd45981beb9421e06e7389f2b886a609611db300530"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 90,
+        "TotalNumSgprs": 60,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 12,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 33,
+        "s_barrier": 0,
+        "s_waitcnt": 32,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "008d43848411694cc5dad885645958350dd615cafd9ff430fb49cff2ce3f0b7f"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 99,
+        "TotalNumSgprs": 71,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 12,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 41,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "9442bb8335d2634c646688efd9f5bb339316b2c484a48c9fb80a8dfddbbd9ade"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 24,
+        "TotalNumSgprs": 27,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 17,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "e5af0966519d1aa78760c38de4f036c8b083182535da73ab784ad327c7be89a2"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 28,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 18,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "c257a488ad65e55635220e57ac9bcf1392e266808ceddbb55c48f4711e7c7d20"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 30,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 19,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "e130a4557992ef0d6dfbfc9a1cf4d7aabb24d165077f090a75802e7dacfc99a6"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 31,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 20,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "62c45cb94110a5395106e4c0efee5dcea0480a2ec02f2a77c26eabaaf1eab1e4"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 21,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "33b3bb6fc92f399c9e4f997c1d54192b8effba80e22144da2cbcdea1e742fd99"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb1ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 27,
+        "TotalNumSgprs": 27,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "89faeb20721bbf55e6bf59f93ddf7772f573196ab31fa5ee976b07905d27a5ec"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb0ELb0ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 192,
+        "TotalNumSgprs": 74,
+        "ScratchSize": 0,
+        "Occupancy": 8
+      },
+      "static_instructions": {
+        "global_load_u16": 48,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 86,
+        "s_barrier": 1,
+        "s_waitcnt": 91,
+        "v_wmma_f32_16x16x16_f16": 2,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "318e53f24058c2c09353dd4dc9c9388307ae2bddc639da56b8c5c2d7771981cb"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb0ELb0ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 251,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 5
+      },
+      "static_instructions": {
+        "global_load_u16": 96,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 134,
+        "s_barrier": 1,
+        "s_waitcnt": 147,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "bed992920f2447d8c87610d6f82e33b861b98c3df6df641754c1f3c9ea44100c"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE0ELb0ELb0ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 256,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 8,
+        "Occupancy": 5
+      },
+      "static_instructions": {
+        "global_load_u16": 192,
+        "global_load_b32": 32,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 230,
+        "s_barrier": 1,
+        "s_waitcnt": 261,
+        "v_wmma_f32_16x16x16_f16": 8,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "5a218adbe50b21df33835cb652b21d124792dcca0feecf4834bcd2577382d205"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 242,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 5
+      },
+      "static_instructions": {
+        "global_load_u16": 96,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 129,
+        "s_barrier": 0,
+        "s_waitcnt": 132,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "ab91da3cbb48c62166921794fa7d4ab0b6468ec15aba5c92d3989c80c8cb7f3f"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 251,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 5
+      },
+      "static_instructions": {
+        "global_load_u16": 96,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 134,
+        "s_barrier": 1,
+        "s_waitcnt": 147,
+        "v_wmma_f32_16x16x16_f16": 4,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "4f56be9e86340745e45ebd0963797ffff4367c1dc41c960d705398b6db0022ef"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 25,
+        "TotalNumSgprs": 34,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 17,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "b9ca57fbd2973f867fc4f5f98870ceb4393e116a010ccdd79a0730c1a472f2b3"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 18,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "386be3edab4c3889c901b70a278bb84731f04366194dce6897109a4ff8539ae1"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 34,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 19,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "a15f0e8fd868ff2f8cfbc8c7d76d665b8c51f9d0154f8650096c4921d7334361"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 35,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 20,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "6fa1c106ec7f35569bb04d6c7f249dd3b02565100a9218c5f3f9b814157fcedc"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 36,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 21,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "c5adbc039cea81b9f2fa0815709a2c5f786cf8cd8bcb320ffce6c8c9944d4d42"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE0ELb0ELb0ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "e9dfff37f7364ab2b4a385844052a2dacb7f96b8c6e2e7e5ecb4285ce3821907"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb1ELb1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 168,
+        "TotalNumSgprs": 76,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 48,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 86,
+        "s_barrier": 1,
+        "s_waitcnt": 91,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 2
+      },
+      "assembly_sha256": "09cc8c2d95e8279abac14f922833e83fa5e4296df1313748dfb55904369f570b"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb1ELb1ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 168,
+        "TotalNumSgprs": 104,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 48,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 86,
+        "s_barrier": 1,
+        "s_waitcnt": 98,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "cacac2296a91c4c83058d37dfb82a09aac1dfe3d5a733728512d5086b69a0aaa"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb1ELb1ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 192,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 8
+      },
+      "static_instructions": {
+        "global_load_u16": 48,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 16,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 86,
+        "s_barrier": 1,
+        "s_waitcnt": 102,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 8
+      },
+      "assembly_sha256": "a4bd7d39dda3a113e83c3ea60f49a5af48b04aded6ee6e0d2f10eb383f9008fc"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 153,
+        "TotalNumSgprs": 94,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 48,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 81,
+        "s_barrier": 0,
+        "s_waitcnt": 83,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "6e6446f331b253b511b8ec240e3eeadaeec058f3ca354710734026efc10671f2"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 168,
+        "TotalNumSgprs": 104,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 48,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 86,
+        "s_barrier": 1,
+        "s_waitcnt": 98,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "110ba826946a347504363e1a23cd58fe29712167e22f7d865b6e7c255fe3adf9"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 24,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "2ceb4f6c0c1e634eb061d39c28fbd26b1fc28e2fabacf3d22837c170a50ba89a"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 30,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 23,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "b0cf40c18b1822de1016ff64b21aa8f7f8d8dc95b844a118701391c9602e53d1"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 24,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "69b318052c5ea0a14ff36556e5a47138f3379035fe33d9f65b624342c4c00581"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 33,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 25,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "9efef6ab6e664c699c6e3255d0571864bb7d2b173831f03a6df42f9fa2ac46f7"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 34,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 26,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "9ef9f57ab698d20880c74a28bccbb0456de067b084f17b32722e675793b61123"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb1ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 33,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 27,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "5374f74a6bf40c075f93b7cdae731f9f843a34193f42088c39e9175d45316bc4"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb1ELb0ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 111,
+        "TotalNumSgprs": 82,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 96,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 134,
+        "s_barrier": 1,
+        "s_waitcnt": 145,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 2
+      },
+      "assembly_sha256": "202227ca587cb5620b359da6ace64def479e0787bf40b79dc96729b925d3811d"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb1ELb0ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 164,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 144,
+        "global_load_b32": 24,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 182,
+        "s_barrier": 1,
+        "s_waitcnt": 196,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "39ab7c0506e0d6516086ed6b5a4bb439cd8960973932a89c1004e4f96a563237"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb1ELb0ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 195,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 7
+      },
+      "static_instructions": {
+        "global_load_u16": 240,
+        "global_load_b32": 40,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 278,
+        "s_barrier": 1,
+        "s_waitcnt": 306,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 8
+      },
+      "assembly_sha256": "fdb1360c1ed3fc30bc77146f759e104fbcff4394a4d153a5982f4c47c8ac900c"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 154,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 144,
+        "global_load_b32": 24,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 177,
+        "s_barrier": 0,
+        "s_waitcnt": 183,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "cc1cd3a3d8581ec2367aac3f7e9ce0bb17a9c2042a4c106e78d26c1efc1f8502"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 164,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 9
+      },
+      "static_instructions": {
+        "global_load_u16": 144,
+        "global_load_b32": 24,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 182,
+        "s_barrier": 1,
+        "s_waitcnt": 196,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "355787802647b66655cd963378e56ff1c2294489cf45bb103e72c432cb0513fa"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 25,
+        "TotalNumSgprs": 40,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "190def7a3cc6c53ca8a8d7d001b00d952a1ef71006322280c33d566e50ef6bfc"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 36,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 23,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "8ecf9234d1173397a543591d50f76256df7e010f4f880399bf7ea60e56567f39"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 38,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 24,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "486129afa693a50e533ad25d7ac5e6e7933c99b7a42cfaf0d104ecb85fb48400"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 39,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 25,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "8de20f187fe4d3db637304e582ef1b515cfe6120a417a9ea26a09d369484ad3e"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 40,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 26,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "ff2f41bc95bd72fa484a50fda67c74b78a07dbe06ffa6c516311f9f6fdc6b735"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb1ELb0ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 39,
+        "TotalNumSgprs": 38,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 27,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "6f7e6e0c0613ed70c69dd8d5cb3ed21ee6cbf963c2ce8eb213a6542b539d9ee2"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb0ELb1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 88,
+        "TotalNumSgprs": 37,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 8,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 37,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 2
+      },
+      "assembly_sha256": "37055a3f417cb6707261188cd7428bd1679344994eed498633d0bf194d48e7e2"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb0ELb1ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 99,
+        "TotalNumSgprs": 71,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 12,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 41,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "59f1a2c16f0372b831cd7c5f3163f958f3443541a0ef932c4a751d04e0d8c869"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb0ELb1ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 119,
+        "TotalNumSgprs": 73,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 20,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 50,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 8
+      },
+      "assembly_sha256": "50fe87b4e018ffc966bddbb91dce131810384354ac261733fd06914d61947caf"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 90,
+        "TotalNumSgprs": 60,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 12,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 33,
+        "s_barrier": 0,
+        "s_waitcnt": 32,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "19d47cdc21b695264d4717bd3e4aa3e22e1398820aad3fdee2e70970667ed47b"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 99,
+        "TotalNumSgprs": 71,
+        "ScratchSize": 0,
+        "Occupancy": 12
+      },
+      "static_instructions": {
+        "global_load_u16": 0,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 12,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 38,
+        "s_barrier": 1,
+        "s_waitcnt": 41,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "f4b14f44f56ff62174154b6acfc5fef9576d4850b4f9524cc59709d5f69b259b"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 24,
+        "TotalNumSgprs": 27,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "d018836234d56a2a993b7a793520a43be86d330d2faba452eee78515e702a125"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 28,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 23,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "d4b7a565a33429b12a3e8c2c313f5d7d5991c001bf2f2743e00b7ad565b46cc2"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 30,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 24,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "0e5bb31a7f0a626cb04b309f37ef9822e9227d6a8a18d26bdc33ac1892e33b3d"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 31,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 25,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "0fc244a0da264c438026c946ea945d2c64ea54035808019c49371fd759a9744f"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 30,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 26,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "4dedcad74ff3d7785bf4a0717d1ab71e46dd9ec8a604079223ef07422fac1b6f"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb1ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 27,
+        "TotalNumSgprs": 27,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 27,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "750680760441f8d90f01f13f9cca86bd85d19cc721c293635709f8cdd205723a"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb0ELb0ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 192,
+        "TotalNumSgprs": 74,
+        "ScratchSize": 0,
+        "Occupancy": 8
+      },
+      "static_instructions": {
+        "global_load_u16": 48,
+        "global_load_b32": 8,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 86,
+        "s_barrier": 1,
+        "s_waitcnt": 91,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 2
+      },
+      "assembly_sha256": "78289f681e07092b13677734e4fa6f8897f42267b85806b7e84ee6fe94ed3f65"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb0ELb0ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 251,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 5
+      },
+      "static_instructions": {
+        "global_load_u16": 96,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 134,
+        "s_barrier": 1,
+        "s_waitcnt": 147,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "2852dd000ec9418d462efab972c8f859769469f6362bf7d30b7faa16fa621d3c"
+    },
+    "_ZN4bmms6detail13fused_split_bILNS_8DataTypeE1ELb0ELb0ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 256,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 8,
+        "Occupancy": 5
+      },
+      "static_instructions": {
+        "global_load_u16": 192,
+        "global_load_b32": 32,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 230,
+        "s_barrier": 1,
+        "s_waitcnt": 261,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 8
+      },
+      "assembly_sha256": "7fe99b2284ccf7eaad83e8e496eee0409f9414e73b2b9a6998f1f13b97578d36"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE1ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 242,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 5
+      },
+      "static_instructions": {
+        "global_load_u16": 96,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 129,
+        "s_barrier": 0,
+        "s_waitcnt": 132,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "aeb74ed2cc97fce00ac18a89327f7237c28cb9f1ec7be8f1656ece976f7a50f3"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE1ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 251,
+        "TotalNumSgprs": 107,
+        "ScratchSize": 0,
+        "Occupancy": 5
+      },
+      "static_instructions": {
+        "global_load_u16": 96,
+        "global_load_b32": 16,
+        "global_load_b64": 0,
+        "global_load_b128": 4,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 134,
+        "s_barrier": 1,
+        "s_waitcnt": 147,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 4
+      },
+      "assembly_sha256": "a7f5d1f342c9de0f562bfd5563ab5a5b0e9865fdeee8d6e301cb0c95b019ce9c"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE2ELi1EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 25,
+        "TotalNumSgprs": 34,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 10,
+        "s_barrier": 0,
+        "s_waitcnt": 22,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "5b6421f267a3883bc47b0db8d56ee3a612f250062638c24e1c82cd187e384bab"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE2ELi2EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 11,
+        "s_barrier": 0,
+        "s_waitcnt": 23,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "8de053feaaa53ec0542a59d9a96d03df092d2b86b5c7d2625c101353e6c8d59c"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE2ELi4EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 34,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 12,
+        "s_barrier": 0,
+        "s_waitcnt": 24,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "9d0f228ec9d226c295984ad24cbe17eae014da8dfeebcfabaf2645eee26290db"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE2ELi8EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 35,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 13,
+        "s_barrier": 0,
+        "s_waitcnt": 25,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "d0f809a587110c675832ebee6825e382df75e2e72f9b7e45479b8527810e7ef2"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE2ELi16EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 36,
+        "TotalNumSgprs": 36,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 14,
+        "s_barrier": 0,
+        "s_waitcnt": 26,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "5b6cb40c4ba912f7ef1920a4e8cf5cf775d434f94b2f78d9e3f0a24fb277be0d"
+    },
+    "_ZN4bmms6detail11fused_smallILNS_8DataTypeE1ELb0ELb0ELNS_11ComputePathE2ELi32EEEvNS0_15KernelArgumentsE": {
+      "resources": {
+        "NumVgprs": 32,
+        "TotalNumSgprs": 32,
+        "ScratchSize": 0,
+        "Occupancy": 16
+      },
+      "static_instructions": {
+        "global_load_u16": 8,
+        "global_load_b32": 0,
+        "global_load_b64": 0,
+        "global_load_b128": 0,
+        "global_load_d16_u16": 0,
+        "ds_bpermute_b32": 15,
+        "s_barrier": 0,
+        "s_waitcnt": 27,
+        "v_wmma_f32_16x16x16_f16": 0,
+        "v_wmma_f32_16x16x16_bf16": 0
+      },
+      "assembly_sha256": "a65a67d4a9df818e1a412797739832278b030db3d956eb10e907c9b0a3278f02"
+    }
+  }
+}

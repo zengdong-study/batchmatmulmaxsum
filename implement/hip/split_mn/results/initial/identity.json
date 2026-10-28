@@ -1,0 +1,14 @@
+{
+  "library_sha256": "63aa3d23c7f4e3b80846e8a99727c1e7a63356569ace0b8b429744c52e2308c5",
+  "script_sha256": "061217a46e8737fe3df4af264997780b66a23118c90362c50e4e90823433e515",
+  "manifest_sha256": "e017661d506da0bd4f6c34f806acfcecc605719a258cf857b4416230bc862889",
+  "mode": "validate",
+  "sources": {
+    "src/split_mn.hip": "b510e4b3776edfe72bd8b3ef005e4ea5f62e25a8da77cc41afdd59b923240ede",
+    "include/bmms/split_mn.h": "252258fceaa4f07e6ffb145a4edbbf469ec23290644dc7aa1c38740807f359e3",
+    "include/bmms/wmma_load.hip.h": "6abe8960abff1835d4b2363cfd79fea4a6700bbe5471e25578f69a8efa89fb8f"
+  },
+  "warmups": 10,
+  "iterations": 100,
+  "criterion": "abs <= 1e-4 + 1e-4*abs(saved golden), provisional"
+}

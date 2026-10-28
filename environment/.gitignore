@@ -1,0 +1,4 @@
+/runtime/
+/bin/
+
+# Installers are versioned using Git LFS; generated runtime/bin stay local.

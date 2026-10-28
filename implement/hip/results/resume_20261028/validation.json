@@ -1,0 +1,37 @@
+{
+  "before_rows": 122,
+  "final_rows": 122,
+  "baseline_cases": 34,
+  "simd_rows": 110,
+  "same_device": true,
+  "timing_arithmetic": "all passed",
+  "complete_small_six_path_grid": true,
+  "baseline_source": "baseline_isolated",
+  "baseline_diagnostic_rechecked_ids": [
+    11,
+    15
+  ],
+  "final_small_validation": {
+    "checks": 192,
+    "max_abs": 0.02056884765625,
+    "max_rel": 2.153561044189539e-05,
+    "concurrent_streams": "passed, separate outputs, read-only shared inputs"
+  },
+  "final_split_validation": {
+    "checks": 384,
+    "max_abs": 0.02056884765625,
+    "max_rel": 2.153561044189539e-05,
+    "concurrent_streams": "passed"
+  },
+  "profile_one_kernel_per_call": true,
+  "host_fix_device_code_unchanged": true,
+  "dedicated_matrix_two_stream_cases": [
+    1,
+    2,
+    3,
+    4,
+    17,
+    25,
+    30
+  ]
+}

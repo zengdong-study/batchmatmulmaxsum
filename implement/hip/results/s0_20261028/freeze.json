@@ -1,0 +1,50 @@
+{
+  "case_manifest_sha256": "e017661d506da0bd4f6c34f806acfcecc605719a258cf857b4416230bc862889",
+  "files": {
+    "/root/batchmatmulmaxsum/implement/hip/CMakeLists.txt": "5c168b5131f708d2d15d8dfc5b38ad74cf3d7faf72410c772faa99dd44055fd7",
+    "/root/batchmatmulmaxsum/BatchMatmulMaxSum.md": "09570c27fd5c4d5fbc8e48a3811509ded0d305856ecf239ff4b22d30f1f7226f",
+    "/root/batchmatmulmaxsum/implement/cases/manifest.json": "e017661d506da0bd4f6c34f806acfcecc605719a258cf857b4416230bc862889",
+    "/root/batchmatmulmaxsum/implement/hip/include/bmms/batch_matmul_max_sum.h": "81d76920a328fcdb76d7a20198091a62ba61bef1c97b4916fd453a0209d3caab",
+    "/root/batchmatmulmaxsum/implement/hip/include/bmms/kernels.hip.h": "16ca7c983ef920818217e76f2470e78dcead33f417e13b86914ea2392894008b",
+    "/root/batchmatmulmaxsum/implement/hip/include/bmms/native_wmma.hip.h": "18b06ace0c7d10965712181776a2a4c3ef37b7b7294a9803ce882b3b69b48b13",
+    "/root/batchmatmulmaxsum/implement/hip/include/bmms/small_c.h": "ae7e63b13979e9136d7df9aaff532b74cd1f40f604f9282ea850360c5eb90539",
+    "/root/batchmatmulmaxsum/implement/hip/include/bmms/small_impl.hip.h": "05629cad457998356ce8e328c6f4cce0e90a46f9904c8694b31d4bf46d554004",
+    "/root/batchmatmulmaxsum/implement/hip/include/bmms/split_b_c.h": "f671f8209357f3b52901db9a4815ab28f9e5ab32da5e5e732644ddedef4aa48b",
+    "/root/batchmatmulmaxsum/implement/hip/include/bmms/split_b_impl.hip.h": "b4f2f49332b131a03df4ec92a53d499f452651a90bbbee7aeb836ccfaa3d0e1a",
+    "/root/batchmatmulmaxsum/implement/hip/src/batch_matmul_max_sum.hip": "57899a38f28ba5045d566b4241209bdc98e1cc97f97980cedd7208a6a1d9fc67",
+    "/root/batchmatmulmaxsum/implement/hip/split_mn/include/bmms/split_mn.h": "252258fceaa4f07e6ffb145a4edbbf469ec23290644dc7aa1c38740807f359e3",
+    "/root/batchmatmulmaxsum/implement/hip/split_mn/include/bmms/wmma_load.hip.h": "6abe8960abff1835d4b2363cfd79fea4a6700bbe5471e25578f69a8efa89fb8f",
+    "/root/batchmatmulmaxsum/implement/hip/split_mn/src/split_mn.hip": "b686b2b319e6132cd8053fbe989d4e05bfda1adfe20c18653b5b437fc269ae1b",
+    "/root/batchmatmulmaxsum/implement/hip/tools/analyze_gfx1100.py": "6bf7372cb8db4cf55ff8af71c15142e78485e2fb32437d3d0f55db2b406d8035",
+    "/root/batchmatmulmaxsum/implement/hip/tools/benchmark_baseline.py": "1de2f830875848c7b742e7e9ff006565a0ce646456b7817f50baa987006f79bc",
+    "/root/batchmatmulmaxsum/implement/hip/tools/benchmark_fused.py": "1599314a70d8dfdd452a619c071ec0d42eb394b2cefb80d95f203473d105ed4c",
+    "/root/batchmatmulmaxsum/implement/hip/tools/benchmark_revision.py": "350e8a9269a4c4d2dda01a92ed4490d047d305a27ed2f5aadaf46d36dbf22a62",
+    "/root/batchmatmulmaxsum/implement/hip/tools/experiment_small.py": "81e457d4ec5de786baf1d0fd56565098c3416101324d34155692a6d969b8c3d4",
+    "/root/batchmatmulmaxsum/implement/hip/tools/experiment_split_b.py": "29511db8a2fb6e08d89f9ac9256fb8b79dfb3e0ef5db51e163cf5ffafbb200c5",
+    "/root/batchmatmulmaxsum/implement/hip/tools/gpu_exclusive.py": "a5fe0e5ba31b9027f3e591ecb98a0e238df43bd8b96f8e64c2890d4f5d5629f6",
+    "/root/batchmatmulmaxsum/implement/hip/tools/profile_revision.py": "91c686e7b234443c4488225213af103fe8bf38697f6502867c97ce1e399c93b2",
+    "/root/batchmatmulmaxsum/implement/hip/tools/recheck_baseline.py": "c32a9ac7e58344b04c10706e3c0fea1f6ace0cfa3229d2ec5d18dfaaa868434d",
+    "/root/batchmatmulmaxsum/implement/hip/tools/s0_native.py": "abe60e89870e1f9bc52430463eadc379bc2237a024fb007b6c86baeee4dd1a65",
+    "/root/batchmatmulmaxsum/implement/hip/tools/summarize_fused.py": "845419ca69efdde8f985324f56924e7da072da842685bec97511a23ea73c5e07",
+    "/root/batchmatmulmaxsum/implement/hip/tools/summarize_revision.py": "d0f147f5fe81f7f3e9bd9269c084a7f3e365eda748314e931adfbde47de3f325",
+    "/root/batchmatmulmaxsum/implement/hip/tools/summarize_small.py": "8aa6f623ece2209877f0749921de96623dc98a71ec0036d3e37ac4633c6f166f",
+    "/root/batchmatmulmaxsum/implement/hip/tools/summarize_split_b.py": "921897bf0f62304fc091f5449cb1f88a63f35ed54c8891f695b4b79178d4a500",
+    "/root/batchmatmulmaxsum/implement/hip/tools/verify_revision_profile.py": "7eace0c4bfa409ea0f0b8c12cc4505f5255bec4d8d8ec74edf8fdd50265c762c"
+  },
+  "libraries": {
+    "/root/batchmatmulmaxsum/implement/hip/archive/final_20261028/libbmms_small.so": "7766fc3c850fbd130009bceb156ce3dcff12c71ca74fd5f289de31d5bd4eddd8",
+    "/root/batchmatmulmaxsum/implement/hip/archive/final_measured_20261028/libbmms_small.so": "50b9b586de413084b2d2db5297f8b2fe17dd960878cbfff07e17504a82804e29",
+    "/root/batchmatmulmaxsum/implement/hip/split_mn/results/artifacts/libbmms_split_mn.so": "5215130c54241850ace63132435efead472aa7ed4b7537a6d2c0695ae39e98e4"
+  },
+  "baseline": "FP32 torch.bmm -> torch.amax(N) -> torch.sum(M, FP32)",
+  "precision": "highest, allow_tf32=False; actual low-precision input values converted before timing; no extra contiguous conversion",
+  "warmups": 10,
+  "iterations": 100,
+  "criterion": "abs <= 1e-4 + 1e-4*abs(golden), existing provisional criterion",
+  "workspace_contract": {
+    "small_split_b": "zero workspace, no initialization",
+    "split_mn": "conditional: external first-use B uint32 zero counters, reset inside kernel, disjoint workspace for concurrency",
+    "problem_text_authorizes_external_counter_init": false,
+    "decision": "Do not admit initialization-dependent Split-M/N as an unconditional final implementation; S1 may compare it as a conditional candidate."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "case": 14,
+  "axis": "N",
+  "group": 256,
+  "waves": 4,
+  "shape": [
+    4,
+    32,
+    1024,
+    128
+  ],
+  "dtype": "bfloat16",
+  "t1": false,
+  "t2": true,
+  "workspace_bytes": 2304,
+  "case_sha256": "28fd0b9de100a145132bef4286ef4b51796267e7d32cbc5362b9c3710d01607e",
+  "max_abs": 1.9073486328125e-06,
+  "max_rel": 2.1040392714721942e-07,
+  "warmups": 10,
+  "iterations": 100,
+  "total_device_ms": 2.775331974029541,
+  "device_us": 27.75331974029541
+}

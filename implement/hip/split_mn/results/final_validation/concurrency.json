@@ -1,0 +1,10 @@
+{
+  "streams": 2,
+  "independent_workspaces": true,
+  "calls_per_stream": 20,
+  "axes": [
+    "M",
+    "N"
+  ],
+  "status": "passed"
+}

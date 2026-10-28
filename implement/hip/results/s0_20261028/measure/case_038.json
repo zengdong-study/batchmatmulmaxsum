@@ -1,0 +1,72 @@
+{
+  "status": "complete",
+  "case": 38,
+  "metadata": {
+    "shape": [
+      64,
+      8192,
+      8192,
+      128
+    ],
+    "dtype": "float16",
+    "t1": false,
+    "t2": true,
+    "kind": "normalized",
+    "id": 38,
+    "seed": 20261065,
+    "version": 1
+  },
+  "chain": {
+    "baseline_us": 75881.279296875,
+    "total_device_ms": 7588.1279296875,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 0.000244140625,
+    "max_rel": 9.088941748154332e-08,
+    "fp32_a_stride": [
+      1048576,
+      128,
+      1
+    ],
+    "fp32_b_stride": [
+      1048576,
+      1,
+      128
+    ],
+    "similarity_bytes": 17179869184
+  },
+  "stages": {
+    "bmm": {
+      "mean_us": 58472.34375,
+      "total_device_ms": 5847.234375,
+      "warmups": 10,
+      "iterations": 100
+    },
+    "amax": {
+      "mean_us": 20308.6376953125,
+      "total_device_ms": 2030.86376953125,
+      "warmups": 10,
+      "iterations": 100
+    },
+    "sum": {
+      "mean_us": 6.585620045661926,
+      "total_device_ms": 0.6585620045661926,
+      "warmups": 10,
+      "iterations": 100
+    }
+  },
+  "start_unix": 1793196915.615627,
+  "end_unix": 1793196933.3493767,
+  "a_stride": [
+    1048576,
+    128,
+    1
+  ],
+  "b_stride": [
+    1048576,
+    1,
+    128
+  ],
+  "golden": "passed",
+  "distinction": "Stage timings are standalone hot-intermediate diagnostics; do not sum them to replace measured whole-chain time. Profile durations are not formal timing."
+}

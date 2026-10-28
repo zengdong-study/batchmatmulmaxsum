@@ -1,0 +1,11 @@
+"Kind","Agent_Id","Queue_Id","Stream_Id","Thread_Id","Dispatch_Id","Kernel_Id","Kernel_Name","Correlation_Id","Start_Timestamp","End_Timestamp","LDS_Block_Size","Scratch_Size","VGPR_Count","Accum_VGPR_Count","SGPR_Count","Workgroup_Size_X","Workgroup_Size_Y","Workgroup_Size_Z","Grid_Size_X","Grid_Size_Y","Grid_Size_Z"
+"KERNEL_DISPATCH","Agent 2",1,0,10435,1,4,"__amd_rocclr_copyBuffer",25,10466911606018430,10466911606029790,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,10435,2,4,"__amd_rocclr_copyBuffer",36,10466911606133970,10466911606138490,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,10435,3,4,"__amd_rocclr_copyBuffer",52,10466911606472590,10466911606477630,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,10435,4,28,"void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, false, false, false>(bmms::split_mn::(anonymous namespace)::KernelArgs)",58,10466911608439133,10466911608476973,512,0,120,0,128,128,1,1,768,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,10435,5,4,"__amd_rocclr_copyBuffer",67,10466911608555863,10466911608561623,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,10435,6,4,"__amd_rocclr_copyBuffer",74,10466911609510714,10466911609516194,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,10435,7,4,"__amd_rocclr_copyBuffer",85,10466911609620214,10466911609624974,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,10435,8,26,"void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, false, false, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",91,10466911609693654,10466911609725094,0,0,120,0,128,128,1,1,1152,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,10435,9,4,"__amd_rocclr_copyBuffer",100,10466911609773614,10466911609778694,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,10435,10,4,"__amd_rocclr_copyBuffer",107,10466911609940055,10466911609944815,0,0,16,0,128,512,1,1,512,1,1

@@ -1,6 +1,10 @@
 # HIP 融合算子：Small 与 SplitB 分支
 
-已实现 `fused_small` 的 Matrix/SIMD 和 `fused_split_b` 的 Matrix 路径，当前支持 gfx1100 / wave32。SplitB 支持 groupB 和多 wave；沿 M/N 分配独立 block 与自动路径选择尚未实现。
+S0阶段已完成：40case规格冻结、36case原生整链及独立阶段10/100、22case原生kernel跟踪和实际汇编匹配；融合实现未改。见[S0结论](results/s0_20261028/S0结论.md)与[S0报告](results/s0_20261028/S0报告.md)。后续性能比较以阶段身份明确的基线为准，不把不同轮次计时直接拼接。
+
+> 2026-10-28 更新：当前源码已经使用原生 gfx1100 WMMA、寄存器内 Max、1–8 wave 的 Small Matrix、按布局选择的 K 预取流水和不规则 M tile 负载平衡。下文早期“单 wave / rocWMMA / LDS 整理”等描述为初版实验记录；最新实现、10/100 同机对照和限制见 [续测分析](results/resume_20261028/analysis.md) 与 [逐 case 比较](results/resume_20261028/comparison.md)。原始实验结果保留。
+
+已实现 `fused_small` 的 Matrix/SIMD 和 `fused_split_b` 的 Matrix 路径，当前支持 gfx1100 / wave32。SplitB 支持 groupB 和多 wave；本 Small/SplitB 库不包含沿 M/N 分配独立 block 的路径，自动路径选择尚未实现。
 
 ## Small 实现范围
 
@@ -168,3 +172,44 @@ case33–36的B=1、M/N/K同时极大，不作为SplitB的合适测试。现有4
 [主要测试结果](results/split_b_v1/summary.md)、[大B代表配置](results/split_b_v1/large_summary.md)、[正确性](results/split_b_v1/correctness.json)、[单kernel检查](results/split_b_v1/profile/verification.json)。所有正式性能数据采用10次预热、100次device算术平均；pilot不是正式平均值。
 
 SplitB 最终合并结果见 [conclusions.md](results/split_b_v1/conclusions.md)，可用 `python implement/hip/tools/summarize_split_b.py` 离线复核。
+
+
+## 2026-10-28 续测：协作加载、K 流水与 wave 分工
+
+- 优化前快照：`archive/coalesced_20261028/`；最终快照：`archive/final_20261028/`。此前 `archive/pre_opt_20261027/` 等历史版本也保留。
+- 版本核对：[initial_audit.json](results/resume_20261028/initial_audit.json)；最终指纹：[final_build.json](results/resume_20261028/final_build.json)。
+- 正式结果：[comparison.md](results/resume_20261028/comparison.md)；汇编、失败方案与瓶颈：[analysis.md](results/resume_20261028/analysis.md)。
+- `tools/benchmark_revision.py`：现有 case 限域、逐配置原子保存、输入/库/设备/脚本指纹锁定；被中断且未保存的配置从完整10/100重新开始。输出目录改变版本时必须新建，不绕过指纹。
+- Small 正式范围依旧是22case，Matrix与5个SIMD lane配置分目录记录；Split-B主范围仍为case9–16×12配置，大B仅case37–40各一个`gb1_w4_n64`。不加入扫描形状或case33–36。
+- 相同SIMD机器码在优化前后共用一次当前设备测量，见[assembly报告](results/resume_20261028/assembly/kernel_code_resources.json)。
+
+从项目根目录构建最终源码，或使用已保留的同指纹快照库：
+
+```bash
+cmake -S implement/hip -B /tmp/bmms-resume-build \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_HIP_COMPILER=/opt/rocm/llvm/bin/clang++ \
+  -DCMAKE_HIP_ARCHITECTURES=gfx1100
+cmake --build /tmp/bmms-resume-build -j2
+
+# 两条验证命令串行执行；只读取已有持久化 case
+/opt/venv/bin/python implement/hip/tools/experiment_small.py \
+  --library /tmp/bmms-resume-build/libbmms_small.so --mode validate --extended \
+  --output /tmp/bmms-resume-small-validation
+/opt/venv/bin/python implement/hip/tools/experiment_split_b.py \
+  --library /tmp/bmms-resume-build/libbmms_small.so --mode smoke \
+  --output /tmp/bmms-resume-split-smoke
+
+# 新构建使用新输出目录；不要覆盖历史输出
+/opt/venv/bin/python implement/hip/tools/benchmark_revision.py \
+  --library /tmp/bmms-resume-build/libbmms_small.so \
+  --output /tmp/bmms-resume-matrix-split --families small split large
+/opt/venv/bin/python implement/hip/tools/benchmark_revision.py \
+  --library /tmp/bmms-resume-build/libbmms_small.so \
+  --output /tmp/bmms-resume-simd --families simd
+
+# 已保存结果的离线算式/覆盖检查与汇总，不使用 GPU
+python3 implement/hip/tools/summarize_revision.py
+```
+
+运行前确保case文件不是Git LFS占位文本。当前恢复的36个case按原始SHA256与大小验证通过，见[restored_cases.json](results/resume_20261028/restored_cases.json)。不重新生成输入或golden。正式计时期间不要并行运行其他GPU任务。

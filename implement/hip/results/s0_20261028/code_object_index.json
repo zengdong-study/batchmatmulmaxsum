@@ -1,0 +1,1453 @@
+{
+  "kernels": {
+    "Cijk_Ailk_Bljk_SB_MT128x128x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM1": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0002.o",
+        "symbol": "Cijk_Ailk_Bljk_SB_MT128x128x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM1",
+        "address": 6983424,
+        "bytes": 41472,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 16384,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "0ca9435168c0f2008f161faf41325bc92819a0c2eeafba0609f904edcc645e34",
+        "object_sha256": "939af39879185be9e22b422c371227f3fe3993a116556e845556e6ad3cfddcb2",
+        "code_object_resources": {
+          "vgpr_count": 205,
+          "sgpr_count": 54,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 16384,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 3456,
+          "v_fmac": 3456,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 184,
+          "flat_load": 0,
+          "ds_load": 144,
+          "ds_read": 0,
+          "ds_store": 30,
+          "ds_write": 0,
+          "s_waitcnt": 79,
+          "s_barrier": 4
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_04.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0002.o",
+        "symbol": "Cijk_Ailk_Bljk_SB_MT128x128x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM1",
+        "address": 6983424,
+        "bytes": 41472,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 16384,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "0ca9435168c0f2008f161faf41325bc92819a0c2eeafba0609f904edcc645e34",
+        "object_sha256": "939af39879185be9e22b422c371227f3fe3993a116556e845556e6ad3cfddcb2",
+        "code_object_resources": {
+          "vgpr_count": 205,
+          "sgpr_count": 54,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 16384,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Ailk_Bljk_SB_MT128x256x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_16_1_WGM1": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0002.o",
+        "symbol": "Cijk_Ailk_Bljk_SB_MT128x256x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_16_1_WGM1",
+        "address": 7431936,
+        "bytes": 56064,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 57344,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "93b0b1e681ab39a384a8bc8ba2b7be940331a04608d3074669bd69a1183b56f3",
+        "object_sha256": "939af39879185be9e22b422c371227f3fe3993a116556e845556e6ad3cfddcb2",
+        "code_object_resources": {
+          "vgpr_count": 215,
+          "sgpr_count": 60,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 14336,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 6528,
+          "v_fmac": 6528,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 196,
+          "flat_load": 0,
+          "ds_load": 288,
+          "ds_read": 0,
+          "ds_store": 54,
+          "ds_write": 0,
+          "s_waitcnt": 105,
+          "s_barrier": 4
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_05.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0002.o",
+        "symbol": "Cijk_Ailk_Bljk_SB_MT128x256x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_16_1_WGM1",
+        "address": 7431936,
+        "bytes": 56064,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 57344,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "93b0b1e681ab39a384a8bc8ba2b7be940331a04608d3074669bd69a1183b56f3",
+        "object_sha256": "939af39879185be9e22b422c371227f3fe3993a116556e845556e6ad3cfddcb2",
+        "code_object_resources": {
+          "vgpr_count": 215,
+          "sgpr_count": 60,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 14336,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Ailk_Bljk_SB_MT32x32x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0002.o",
+        "symbol": "Cijk_Ailk_Bljk_SB_MT32x32x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+        "address": 10582528,
+        "bytes": 9984,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 4096,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "c5edf4acb92c2609ea8318dc7ad1cb311542d11873bdee26f1f3c813e0dd3975",
+        "object_sha256": "939af39879185be9e22b422c371227f3fe3993a116556e845556e6ad3cfddcb2",
+        "code_object_resources": {
+          "vgpr_count": 51,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 3584,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 560,
+          "v_fmac": 560,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 64,
+          "flat_load": 0,
+          "ds_load": 256,
+          "ds_read": 0,
+          "ds_store": 32,
+          "ds_write": 0,
+          "s_waitcnt": 81,
+          "s_barrier": 5
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_08.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0002.o",
+        "symbol": "Cijk_Ailk_Bljk_SB_MT32x32x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+        "address": 10582528,
+        "bytes": 9984,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 4096,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "c5edf4acb92c2609ea8318dc7ad1cb311542d11873bdee26f1f3c813e0dd3975",
+        "object_sha256": "939af39879185be9e22b422c371227f3fe3993a116556e845556e6ad3cfddcb2",
+        "code_object_resources": {
+          "vgpr_count": 51,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 3584,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Ailk_Bljk_SB_MT32x16x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM4": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0002.o",
+        "symbol": "Cijk_Ailk_Bljk_SB_MT32x16x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM4",
+        "address": 10828288,
+        "bytes": 6656,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 7168,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "297cbaba6c667bc1277c8d532af1b21b8a7b38bf9c2e0ae3cf3628f23c3056a7",
+        "object_sha256": "939af39879185be9e22b422c371227f3fe3993a116556e845556e6ad3cfddcb2",
+        "code_object_resources": {
+          "vgpr_count": 29,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 14336,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 268,
+          "v_fmac": 268,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 32,
+          "flat_load": 0,
+          "ds_load": 256,
+          "ds_read": 0,
+          "ds_store": 24,
+          "ds_write": 0,
+          "s_waitcnt": 95,
+          "s_barrier": 5
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_06.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0002.o",
+        "symbol": "Cijk_Ailk_Bljk_SB_MT32x16x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM4",
+        "address": 10828288,
+        "bytes": 6656,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 7168,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "297cbaba6c667bc1277c8d532af1b21b8a7b38bf9c2e0ae3cf3628f23c3056a7",
+        "object_sha256": "939af39879185be9e22b422c371227f3fe3993a116556e845556e6ad3cfddcb2",
+        "code_object_resources": {
+          "vgpr_count": 29,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 14336,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Ailk_Bljk_SB_MT32x16x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM8": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0002.o",
+        "symbol": "Cijk_Ailk_Bljk_SB_MT32x16x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM8",
+        "address": 10974720,
+        "bytes": 6656,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 7168,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "ad4fc11895bf8509820f6ceef3733872cb07e0d475d5a33e65bbdc31fa563d3d",
+        "object_sha256": "939af39879185be9e22b422c371227f3fe3993a116556e845556e6ad3cfddcb2",
+        "code_object_resources": {
+          "vgpr_count": 29,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 14336,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 268,
+          "v_fmac": 268,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 32,
+          "flat_load": 0,
+          "ds_load": 256,
+          "ds_read": 0,
+          "ds_store": 24,
+          "ds_write": 0,
+          "s_waitcnt": 95,
+          "s_barrier": 5
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_07.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0002.o",
+        "symbol": "Cijk_Ailk_Bljk_SB_MT32x16x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM8",
+        "address": 10974720,
+        "bytes": 6656,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 7168,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "ad4fc11895bf8509820f6ceef3733872cb07e0d475d5a33e65bbdc31fa563d3d",
+        "object_sha256": "939af39879185be9e22b422c371227f3fe3993a116556e845556e6ad3cfddcb2",
+        "code_object_resources": {
+          "vgpr_count": 29,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 14336,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "void at::native::reduce_kernel<128, 4, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0003.o",
+        "symbol": "_ZN2at6native13reduce_kernelILi128ELi4ENS0_8ReduceOpIfNS0_14func_wrapper_tIfNS0_13MaxNanFunctorIfEEEEjfLi4ELi4EEEEEvT1_",
+        "address": 479488,
+        "bytes": 23940,
+        "declared_symbol_bytes": 23940,
+        "kernel_descriptor": {
+          "group_segment_bytes": 1,
+          "private_segment_bytes": 0,
+          "kernarg_field": 976
+        },
+        "span_includes_possible_alignment_padding": false,
+        "code_sha256": "7d98b47f2888dabcf37829e9c9a95a70361b4b939f508e6da41c14f68dcabc70",
+        "object_sha256": "cf59778ef9eed695b9a181c705ad2493b3c482c4b03f480a533fd7e43ec6c112",
+        "code_object_resources": {
+          "vgpr_count": 50,
+          "sgpr_count": 64,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 1,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 0,
+          "v_fmac": 0,
+          "v_dual": 99,
+          "global_load": 43,
+          "buffer_load": 0,
+          "flat_load": 0,
+          "ds_load": 9,
+          "ds_read": 0,
+          "ds_store": 17,
+          "ds_write": 0,
+          "s_waitcnt": 168,
+          "s_barrier": 9
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_20.s"
+      }
+    ],
+    "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::MaxNanFunctor<float> >, unsigned int, float, 4, 4>)": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0003.o",
+        "symbol": "_ZN2at6native13reduce_kernelILi512ELi1ENS0_8ReduceOpIfNS0_14func_wrapper_tIfNS0_13MaxNanFunctorIfEEEEjfLi4ELi4EEEEEvT1_",
+        "address": 521984,
+        "bytes": 15704,
+        "declared_symbol_bytes": 15704,
+        "kernel_descriptor": {
+          "group_segment_bytes": 1,
+          "private_segment_bytes": 0,
+          "kernarg_field": 976
+        },
+        "span_includes_possible_alignment_padding": false,
+        "code_sha256": "98966cffd6aa297868b7d35abe1cf47ca7794989338f69948a9d03c1d934650f",
+        "object_sha256": "cf59778ef9eed695b9a181c705ad2493b3c482c4b03f480a533fd7e43ec6c112",
+        "code_object_resources": {
+          "vgpr_count": 29,
+          "sgpr_count": 66,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 1,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 0,
+          "v_fmac": 0,
+          "v_dual": 39,
+          "global_load": 40,
+          "buffer_load": 0,
+          "flat_load": 0,
+          "ds_load": 5,
+          "ds_read": 0,
+          "ds_store": 9,
+          "ds_write": 0,
+          "s_waitcnt": 129,
+          "s_barrier": 9
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_22.s"
+      }
+    ],
+    "void at::native::reduce_kernel<256, 2, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0004.o",
+        "symbol": "_ZN2at6native13reduce_kernelILi256ELi2ENS0_8ReduceOpIfNS0_14func_wrapper_tIfZNS0_11sum_functorIfffEclERNS_14TensorIteratorEEUlffE0_EEjfLi4ELi4EEEEEvT1_",
+        "address": 1035008,
+        "bytes": 16036,
+        "declared_symbol_bytes": 16036,
+        "kernel_descriptor": {
+          "group_segment_bytes": 1,
+          "private_segment_bytes": 0,
+          "kernarg_field": 976
+        },
+        "span_includes_possible_alignment_padding": false,
+        "code_sha256": "fd0b14728171b37e027e4a348f24851186975fb8ef09c66ed2278443788db579",
+        "object_sha256": "b51fafc3e38e37f31390f67df4387d181644d47310b957acf6f41e2a608ca30f",
+        "code_object_resources": {
+          "vgpr_count": 35,
+          "sgpr_count": 66,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 1,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 0,
+          "v_fmac": 0,
+          "v_dual": 105,
+          "global_load": 39,
+          "buffer_load": 0,
+          "flat_load": 0,
+          "ds_load": 5,
+          "ds_read": 0,
+          "ds_store": 9,
+          "ds_write": 0,
+          "s_waitcnt": 131,
+          "s_barrier": 9
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_21.s"
+      }
+    ],
+    "void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::func_wrapper_t<float, at::native::sum_functor<float, float, float>::operator()(at::TensorIterator&)::{lambda(float, float)#2}>, unsigned int, float, 4, 4>)": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0004.o",
+        "symbol": "_ZN2at6native13reduce_kernelILi512ELi1ENS0_8ReduceOpIfNS0_14func_wrapper_tIfZNS0_11sum_functorIfffEclERNS_14TensorIteratorEEUlffE0_EEjfLi4ELi4EEEEEvT1_",
+        "address": 1051136,
+        "bytes": 14584,
+        "declared_symbol_bytes": 14584,
+        "kernel_descriptor": {
+          "group_segment_bytes": 1,
+          "private_segment_bytes": 0,
+          "kernarg_field": 976
+        },
+        "span_includes_possible_alignment_padding": false,
+        "code_sha256": "8f8ea92a568f10f0e61bde3aa9a42897d11278b150486b34c68d1b908fde4804",
+        "object_sha256": "b51fafc3e38e37f31390f67df4387d181644d47310b957acf6f41e2a608ca30f",
+        "code_object_resources": {
+          "vgpr_count": 29,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 1,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 0,
+          "v_fmac": 0,
+          "v_dual": 49,
+          "global_load": 40,
+          "buffer_load": 0,
+          "flat_load": 0,
+          "ds_load": 5,
+          "ds_read": 0,
+          "ds_store": 9,
+          "ds_write": 0,
+          "s_waitcnt": 125,
+          "s_barrier": 9
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_23.s"
+      }
+    ],
+    "Cijk_Alik_Bljk_SB_MT128x128x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM1": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0005.o",
+        "symbol": "Cijk_Alik_Bljk_SB_MT128x128x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM1",
+        "address": 8712448,
+        "bytes": 54784,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 32768,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "8dcc1d379d5223b1854367b53763f9902d3e03ab0aae88026d1d232238b35a89",
+        "object_sha256": "eafdbf00fbe9a4ee1e03f6fd344535b4aeb2c005d015ba64fe6b95e3fdda7825",
+        "code_object_resources": {
+          "vgpr_count": 219,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 32768,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 6528,
+          "v_fmac": 6528,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 208,
+          "flat_load": 0,
+          "ds_load": 288,
+          "ds_read": 0,
+          "ds_store": 96,
+          "ds_write": 0,
+          "s_waitcnt": 107,
+          "s_barrier": 4
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_14.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0005.o",
+        "symbol": "Cijk_Alik_Bljk_SB_MT128x128x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM1",
+        "address": 8712448,
+        "bytes": 54784,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 32768,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "8dcc1d379d5223b1854367b53763f9902d3e03ab0aae88026d1d232238b35a89",
+        "object_sha256": "eafdbf00fbe9a4ee1e03f6fd344535b4aeb2c005d015ba64fe6b95e3fdda7825",
+        "code_object_resources": {
+          "vgpr_count": 219,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 32768,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Alik_Bljk_SB_MT128x64x32_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_8_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM8": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0005.o",
+        "symbol": "Cijk_Alik_Bljk_SB_MT128x64x32_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_8_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM8",
+        "address": 13162752,
+        "bytes": 55040,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 57344,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "4ed247077f756c35246dfb8a789ab4767134a15b59d9904316e4b01e0a5528c9",
+        "object_sha256": "eafdbf00fbe9a4ee1e03f6fd344535b4aeb2c005d015ba64fe6b95e3fdda7825",
+        "code_object_resources": {
+          "vgpr_count": 155,
+          "sgpr_count": 73,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 57344,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 8384,
+          "v_fmac": 8384,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 164,
+          "flat_load": 0,
+          "ds_load": 512,
+          "ds_read": 0,
+          "ds_store": 192,
+          "ds_write": 0,
+          "s_waitcnt": 185,
+          "s_barrier": 5
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_15.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0005.o",
+        "symbol": "Cijk_Alik_Bljk_SB_MT128x64x32_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_8_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM8",
+        "address": 13162752,
+        "bytes": 55040,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 57344,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "4ed247077f756c35246dfb8a789ab4767134a15b59d9904316e4b01e0a5528c9",
+        "object_sha256": "eafdbf00fbe9a4ee1e03f6fd344535b4aeb2c005d015ba64fe6b95e3fdda7825",
+        "code_object_resources": {
+          "vgpr_count": 155,
+          "sgpr_count": 73,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 57344,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Alik_Bljk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0005.o",
+        "symbol": "Cijk_Alik_Bljk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+        "address": 14049536,
+        "bytes": 4608,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 2048,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "a768aa32768199f710ad02b64fdd9e32bc8e065977010aa80efd11129b2250bc",
+        "object_sha256": "eafdbf00fbe9a4ee1e03f6fd344535b4aeb2c005d015ba64fe6b95e3fdda7825",
+        "code_object_resources": {
+          "vgpr_count": 27,
+          "sgpr_count": 57,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 4096,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 140,
+          "v_fmac": 140,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 24,
+          "flat_load": 0,
+          "ds_load": 128,
+          "ds_read": 0,
+          "ds_store": 16,
+          "ds_write": 0,
+          "s_waitcnt": 59,
+          "s_barrier": 5
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_16.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0005.o",
+        "symbol": "Cijk_Alik_Bljk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+        "address": 14049536,
+        "bytes": 4608,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 2048,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "a768aa32768199f710ad02b64fdd9e32bc8e065977010aa80efd11129b2250bc",
+        "object_sha256": "eafdbf00fbe9a4ee1e03f6fd344535b4aeb2c005d015ba64fe6b95e3fdda7825",
+        "code_object_resources": {
+          "vgpr_count": 27,
+          "sgpr_count": 57,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 4096,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Alik_Bljk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0005.o",
+        "symbol": "Cijk_Alik_Bljk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+        "address": 14125568,
+        "bytes": 4864,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 2048,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "ada37e05f07a6be9160f5cb07d7a86f04cada40f6f3d66d891707c3a0943e484",
+        "object_sha256": "eafdbf00fbe9a4ee1e03f6fd344535b4aeb2c005d015ba64fe6b95e3fdda7825",
+        "code_object_resources": {
+          "vgpr_count": 27,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 4096,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 140,
+          "v_fmac": 140,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 24,
+          "flat_load": 0,
+          "ds_load": 128,
+          "ds_read": 0,
+          "ds_store": 16,
+          "ds_write": 0,
+          "s_waitcnt": 59,
+          "s_barrier": 5
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_17.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0005.o",
+        "symbol": "Cijk_Alik_Bljk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+        "address": 14125568,
+        "bytes": 4864,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 2048,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "ada37e05f07a6be9160f5cb07d7a86f04cada40f6f3d66d891707c3a0943e484",
+        "object_sha256": "eafdbf00fbe9a4ee1e03f6fd344535b4aeb2c005d015ba64fe6b95e3fdda7825",
+        "code_object_resources": {
+          "vgpr_count": 27,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 4096,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Alik_Bljk_SB_MT64x64x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_16_1_WGM4": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0005.o",
+        "symbol": "Cijk_Alik_Bljk_SB_MT64x64x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_16_1_WGM4",
+        "address": 14234112,
+        "bytes": 9728,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 8192,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "355f58209c6df1c7e5b9ec4e36d5b9528d9017618ecb1387dfd0afc6c99ad5ec",
+        "object_sha256": "eafdbf00fbe9a4ee1e03f6fd344535b4aeb2c005d015ba64fe6b95e3fdda7825",
+        "code_object_resources": {
+          "vgpr_count": 47,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 4096,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 560,
+          "v_fmac": 560,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 48,
+          "flat_load": 0,
+          "ds_load": 256,
+          "ds_read": 0,
+          "ds_store": 16,
+          "ds_write": 0,
+          "s_waitcnt": 73,
+          "s_barrier": 5
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_19.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0005.o",
+        "symbol": "Cijk_Alik_Bljk_SB_MT64x64x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_16_1_WGM4",
+        "address": 14234112,
+        "bytes": 9728,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 8192,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "355f58209c6df1c7e5b9ec4e36d5b9528d9017618ecb1387dfd0afc6c99ad5ec",
+        "object_sha256": "eafdbf00fbe9a4ee1e03f6fd344535b4aeb2c005d015ba64fe6b95e3fdda7825",
+        "code_object_resources": {
+          "vgpr_count": 47,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 4096,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Alik_Bljk_SB_MT32x8x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_4_1_WGM8": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0005.o",
+        "symbol": "Cijk_Alik_Bljk_SB_MT32x8x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_4_1_WGM8",
+        "address": 14706176,
+        "bytes": 5120,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 3328,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "9f4419b299744000c238fda225c459634275e9eb881b936d3cb4065e947b5b6c",
+        "object_sha256": "eafdbf00fbe9a4ee1e03f6fd344535b4aeb2c005d015ba64fe6b95e3fdda7825",
+        "code_object_resources": {
+          "vgpr_count": 28,
+          "sgpr_count": 66,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 6656,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 140,
+          "v_fmac": 140,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 28,
+          "flat_load": 0,
+          "ds_load": 128,
+          "ds_read": 0,
+          "ds_store": 20,
+          "ds_write": 0,
+          "s_waitcnt": 61,
+          "s_barrier": 5
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_18.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0005.o",
+        "symbol": "Cijk_Alik_Bljk_SB_MT32x8x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_4_1_WGM8",
+        "address": 14706176,
+        "bytes": 5120,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 3328,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "9f4419b299744000c238fda225c459634275e9eb881b936d3cb4065e947b5b6c",
+        "object_sha256": "eafdbf00fbe9a4ee1e03f6fd344535b4aeb2c005d015ba64fe6b95e3fdda7825",
+        "code_object_resources": {
+          "vgpr_count": 28,
+          "sgpr_count": 66,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 6656,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Ailk_Bjlk_SB_MT128x128x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM8": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0006.o",
+        "symbol": "Cijk_Ailk_Bjlk_SB_MT128x128x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM8",
+        "address": 9195008,
+        "bytes": 57088,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 32768,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "2fd094a86f63f72c1968e6952c6dba6e716a81d53c5da2dab5bcf1209a36ff5c",
+        "object_sha256": "f4a6c15043c8b50354d142292b393a6c4e1e7059a921431d76059fd4dbade3f1",
+        "code_object_resources": {
+          "vgpr_count": 225,
+          "sgpr_count": 58,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 32768,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 6528,
+          "v_fmac": 6528,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 208,
+          "flat_load": 0,
+          "ds_load": 288,
+          "ds_read": 0,
+          "ds_store": 24,
+          "ds_write": 0,
+          "s_waitcnt": 105,
+          "s_barrier": 4
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_00.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0006.o",
+        "symbol": "Cijk_Ailk_Bjlk_SB_MT128x128x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM8",
+        "address": 9195008,
+        "bytes": 57088,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 32768,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "2fd094a86f63f72c1968e6952c6dba6e716a81d53c5da2dab5bcf1209a36ff5c",
+        "object_sha256": "f4a6c15043c8b50354d142292b393a6c4e1e7059a921431d76059fd4dbade3f1",
+        "code_object_resources": {
+          "vgpr_count": 225,
+          "sgpr_count": 58,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 32768,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Ailk_Bjlk_SB_MT32x32x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0006.o",
+        "symbol": "Cijk_Ailk_Bjlk_SB_MT32x32x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+        "address": 12054784,
+        "bytes": 9984,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 4096,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "ce0912773fb687b247fca7f1bd396a0ebdf7152169322f1d5be21c74f092ca6f",
+        "object_sha256": "f4a6c15043c8b50354d142292b393a6c4e1e7059a921431d76059fd4dbade3f1",
+        "code_object_resources": {
+          "vgpr_count": 51,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 3584,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 560,
+          "v_fmac": 560,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 64,
+          "flat_load": 0,
+          "ds_load": 256,
+          "ds_read": 0,
+          "ds_store": 32,
+          "ds_write": 0,
+          "s_waitcnt": 81,
+          "s_barrier": 5
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_02.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0006.o",
+        "symbol": "Cijk_Ailk_Bjlk_SB_MT32x32x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+        "address": 12054784,
+        "bytes": 9984,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 4096,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "ce0912773fb687b247fca7f1bd396a0ebdf7152169322f1d5be21c74f092ca6f",
+        "object_sha256": "f4a6c15043c8b50354d142292b393a6c4e1e7059a921431d76059fd4dbade3f1",
+        "code_object_resources": {
+          "vgpr_count": 51,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 3584,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Ailk_Bjlk_SB_MT32x32x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_16_1_WGM1": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0006.o",
+        "symbol": "Cijk_Ailk_Bjlk_SB_MT32x32x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_16_1_WGM1",
+        "address": 12136448,
+        "bytes": 6400,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 8192,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "4cc1e781b45c8398407dfba493cb9a24e36e3ebee002873ecad37ed304fc7fb2",
+        "object_sha256": "f4a6c15043c8b50354d142292b393a6c4e1e7059a921431d76059fd4dbade3f1",
+        "code_object_resources": {
+          "vgpr_count": 27,
+          "sgpr_count": 57,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 16384,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 268,
+          "v_fmac": 268,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 24,
+          "flat_load": 0,
+          "ds_load": 256,
+          "ds_read": 0,
+          "ds_store": 16,
+          "ds_write": 0,
+          "s_waitcnt": 91,
+          "s_barrier": 5
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_01.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0006.o",
+        "symbol": "Cijk_Ailk_Bjlk_SB_MT32x32x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_16_1_WGM1",
+        "address": 12136448,
+        "bytes": 6400,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 8192,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "4cc1e781b45c8398407dfba493cb9a24e36e3ebee002873ecad37ed304fc7fb2",
+        "object_sha256": "f4a6c15043c8b50354d142292b393a6c4e1e7059a921431d76059fd4dbade3f1",
+        "code_object_resources": {
+          "vgpr_count": 27,
+          "sgpr_count": 57,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 16384,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Ailk_Bjlk_SB_MT64x32x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM4": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0006.o",
+        "symbol": "Cijk_Ailk_Bjlk_SB_MT64x32x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM4",
+        "address": 12342784,
+        "bytes": 9984,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 7168,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "f2afd1e0ee832d1a5665a8fd25c37db5e9d3ff7ed1f6fe5119a29f8a3904e619",
+        "object_sha256": "f4a6c15043c8b50354d142292b393a6c4e1e7059a921431d76059fd4dbade3f1",
+        "code_object_resources": {
+          "vgpr_count": 49,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 8192,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 560,
+          "v_fmac": 560,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 56,
+          "flat_load": 0,
+          "ds_load": 256,
+          "ds_read": 0,
+          "ds_store": 24,
+          "ds_write": 0,
+          "s_waitcnt": 77,
+          "s_barrier": 5
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_03.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0006.o",
+        "symbol": "Cijk_Ailk_Bjlk_SB_MT64x32x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT4_4_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM4",
+        "address": 12342784,
+        "bytes": 9984,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 7168,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "f2afd1e0ee832d1a5665a8fd25c37db5e9d3ff7ed1f6fe5119a29f8a3904e619",
+        "object_sha256": "f4a6c15043c8b50354d142292b393a6c4e1e7059a921431d76059fd4dbade3f1",
+        "code_object_resources": {
+          "vgpr_count": 49,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 8192,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Alik_Bjlk_SB_MT128x128x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM4": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0007.o",
+        "symbol": "Cijk_Alik_Bjlk_SB_MT128x128x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM4",
+        "address": 4582656,
+        "bytes": 56064,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 32768,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "5bd0d1d2c907941c4ad0bdf307f06e72eeeb9b112994d00ae3d382d43550a818",
+        "object_sha256": "2080ad9b8eb74faec9797b140b9535980591489c3380a09f64b02af1cf19e62a",
+        "code_object_resources": {
+          "vgpr_count": 225,
+          "sgpr_count": 58,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 57344,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 6528,
+          "v_fmac": 6528,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 208,
+          "flat_load": 0,
+          "ds_load": 288,
+          "ds_read": 0,
+          "ds_store": 60,
+          "ds_write": 0,
+          "s_waitcnt": 105,
+          "s_barrier": 4
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_09.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0007.o",
+        "symbol": "Cijk_Alik_Bjlk_SB_MT128x128x16_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS3_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS0_ELFLR0_EMLL0_FSSC10_FL0_GLVWA4_GLVWB4_GRCGA1_GRCGB1_GRPM1_GRVW4_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW4_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT8_16_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW4_VWB4_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM4",
+        "address": 4582656,
+        "bytes": 56064,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 32768,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "5bd0d1d2c907941c4ad0bdf307f06e72eeeb9b112994d00ae3d382d43550a818",
+        "object_sha256": "2080ad9b8eb74faec9797b140b9535980591489c3380a09f64b02af1cf19e62a",
+        "code_object_resources": {
+          "vgpr_count": 225,
+          "sgpr_count": 58,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 57344,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Alik_Bjlk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0007.o",
+        "symbol": "Cijk_Alik_Bjlk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+        "address": 6448128,
+        "bytes": 4608,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 2048,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "84ca68e748b003c856e836d96511af3d80efc1be74c0a347c34cc688270548cf",
+        "object_sha256": "2080ad9b8eb74faec9797b140b9535980591489c3380a09f64b02af1cf19e62a",
+        "code_object_resources": {
+          "vgpr_count": 27,
+          "sgpr_count": 57,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 7168,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 140,
+          "v_fmac": 140,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 24,
+          "flat_load": 0,
+          "ds_load": 128,
+          "ds_read": 0,
+          "ds_store": 16,
+          "ds_write": 0,
+          "s_waitcnt": 59,
+          "s_barrier": 5
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_11.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0007.o",
+        "symbol": "Cijk_Alik_Bjlk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+        "address": 6448128,
+        "bytes": 4608,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 2048,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "84ca68e748b003c856e836d96511af3d80efc1be74c0a347c34cc688270548cf",
+        "object_sha256": "2080ad9b8eb74faec9797b140b9535980591489c3380a09f64b02af1cf19e62a",
+        "code_object_resources": {
+          "vgpr_count": 27,
+          "sgpr_count": 57,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 7168,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Alik_Bjlk_SB_MT16x16x32_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0007.o",
+        "symbol": "Cijk_Alik_Bjlk_SB_MT16x16x32_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+        "address": 6489856,
+        "bytes": 11264,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 8192,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "28dc6d874ce967ca69c83effa96a260240c262256e804dd017c9b5da9106718c",
+        "object_sha256": "2080ad9b8eb74faec9797b140b9535980591489c3380a09f64b02af1cf19e62a",
+        "code_object_resources": {
+          "vgpr_count": 39,
+          "sgpr_count": 68,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 2048,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 524,
+          "v_fmac": 524,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 72,
+          "flat_load": 0,
+          "ds_load": 512,
+          "ds_read": 0,
+          "ds_store": 64,
+          "ds_write": 0,
+          "s_waitcnt": 179,
+          "s_barrier": 5
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_10.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0007.o",
+        "symbol": "Cijk_Alik_Bjlk_SB_MT16x16x32_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU0_SUM0_SUS0_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+        "address": 6489856,
+        "bytes": 11264,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 8192,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "28dc6d874ce967ca69c83effa96a260240c262256e804dd017c9b5da9106718c",
+        "object_sha256": "2080ad9b8eb74faec9797b140b9535980591489c3380a09f64b02af1cf19e62a",
+        "code_object_resources": {
+          "vgpr_count": 39,
+          "sgpr_count": 68,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 2048,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Alik_Bjlk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0007.o",
+        "symbol": "Cijk_Alik_Bjlk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+        "address": 6501120,
+        "bytes": 4864,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 2048,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "d2c7525c12cb4906bdcdf107921b3dc878d275710846b225b95e76d170e1aa6d",
+        "object_sha256": "2080ad9b8eb74faec9797b140b9535980591489c3380a09f64b02af1cf19e62a",
+        "code_object_resources": {
+          "vgpr_count": 27,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 4096,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 140,
+          "v_fmac": 140,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 24,
+          "flat_load": 0,
+          "ds_load": 128,
+          "ds_read": 0,
+          "ds_store": 16,
+          "ds_write": 0,
+          "s_waitcnt": 59,
+          "s_barrier": 5
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_12.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0007.o",
+        "symbol": "Cijk_Alik_Bjlk_SB_MT16x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG8_8_1_WGM1",
+        "address": 6501120,
+        "bytes": 4864,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 2048,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "d2c7525c12cb4906bdcdf107921b3dc878d275710846b225b95e76d170e1aa6d",
+        "object_sha256": "2080ad9b8eb74faec9797b140b9535980591489c3380a09f64b02af1cf19e62a",
+        "code_object_resources": {
+          "vgpr_count": 27,
+          "sgpr_count": 62,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 4096,
+          "wavefront_size": 32
+        }
+      }
+    ],
+    "Cijk_Alik_Bjlk_SB_MT32x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM1": [
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0007.o",
+        "symbol": "Cijk_Alik_Bjlk_SB_MT32x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM1",
+        "address": 6516480,
+        "bytes": 4864,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 3584,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "ac6580cdec6e5631930a6a0776bd1e717879fee7cb54d66be33ea5d4c4661c43",
+        "object_sha256": "2080ad9b8eb74faec9797b140b9535980591489c3380a09f64b02af1cf19e62a",
+        "code_object_resources": {
+          "vgpr_count": 26,
+          "sgpr_count": 61,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 7168,
+          "wavefront_size": 32
+        },
+        "static_instruction_counts": {
+          "v_wmma": 0,
+          "v_mfma": 0,
+          "v_fma": 140,
+          "v_fmac": 140,
+          "v_dual": 0,
+          "global_load": 0,
+          "buffer_load": 20,
+          "flat_load": 0,
+          "ds_load": 128,
+          "ds_read": 0,
+          "ds_store": 12,
+          "ds_write": 0,
+          "s_waitcnt": 57,
+          "s_barrier": 5
+        },
+        "static_count_note": "Prefix counts can overlap (v_fma includes v_fmac); static code, not dynamic execution counts.",
+        "disassembly_file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/assembly/kernel_13.s"
+      },
+      {
+        "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0007.o",
+        "symbol": "Cijk_Alik_Bjlk_SB_MT32x16x8_SN_1LDSB0_APM1_ABV0_ACED0_AF0EM1_AF1EM1_AMAS0_ASE_ASGT_ASLT_ASM_ASAE01_ASCE01_ASEM1_AAC0_BL1_BS1_CLR0_DTLA0_DTLB0_DTVA0_DTVB0_DVO0_ETSP_EPS1_ELFLR0_EMLL0_FSSC10_FL0_GLVWA1_GLVWB1_GRCGA1_GRCGB1_GRPM1_GRVW1_GSU1_GSUASB_GLS0_ISA1100_IU1_K1_KLA_LBSPPA0_LBSPPB0_LPA0_LPB0_LDL1_LRVW1_LWPMn1_LDW0_FMA_MIAV0_MDA2_MO40_MMFGLC_MKFGSU256_NTA0_NTB0_NTC0_NTD0_NEPBS0_NLCA1_NLCB1_ONLL1_OPLV0_PK0_PAP0_PGR1_PLR1_PKA0_SIA1_SLW1_SS0_SU32_SUM3_SUS128_SCIUI1_SPO0_SRVW0_SSO0_SVW4_SNLL0_TSGRA0_TSGRB0_TT2_2_TLDS0_UMLDSA0_UMLDSB0_U64SL1_USFGROn1_VAW1_VSn1_VW1_VWB1_VFLRP0_WSGRA0_WSGRB0_WS32_WG16_8_1_WGM1",
+        "address": 6516480,
+        "bytes": 4864,
+        "declared_symbol_bytes": 0,
+        "kernel_descriptor": {
+          "group_segment_bytes": 3584,
+          "private_segment_bytes": 0,
+          "kernarg_field": 0
+        },
+        "span_includes_possible_alignment_padding": true,
+        "code_sha256": "ac6580cdec6e5631930a6a0776bd1e717879fee7cb54d66be33ea5d4c4661c43",
+        "object_sha256": "2080ad9b8eb74faec9797b140b9535980591489c3380a09f64b02af1cf19e62a",
+        "code_object_resources": {
+          "vgpr_count": 26,
+          "sgpr_count": 61,
+          "private_segment_fixed_size": 0,
+          "group_segment_fixed_size": 7168,
+          "wavefront_size": 32
+        }
+      }
+    ]
+  },
+  "unmatched": []
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "api": "rocblas_sgemm_strided_batched",
+    "transpose_a": "N",
+    "transpose_b": "N",
+    "library_M": 1024,
+    "library_N": 32,
+    "K": 128
+  },
+  {
+    "api": "rocblas_sgemm",
+    "transpose_a": "N",
+    "transpose_b": "N",
+    "library_M": 129,
+    "library_N": 65,
+    "K": 8192
+  },
+  {
+    "api": "rocblas_sgemm",
+    "transpose_a": "N",
+    "transpose_b": "T",
+    "library_M": 129,
+    "library_N": 65,
+    "K": 8192
+  },
+  {
+    "api": "rocblas_sgemm_strided_batched",
+    "transpose_a": "N",
+    "transpose_b": "N",
+    "library_M": 8192,
+    "library_N": 8192,
+    "K": 128
+  },
+  {
+    "api": "rocblas_sgemm",
+    "transpose_a": "T",
+    "transpose_b": "N",
+    "library_M": 1,
+    "library_N": 1,
+    "K": 32
+  },
+  {
+    "api": "rocblas_sgemm_strided_batched",
+    "transpose_a": "N",
+    "transpose_b": "N",
+    "library_M": 257,
+    "library_N": 1,
+    "K": 72
+  },
+  {
+    "api": "rocblas_sgemm_strided_batched",
+    "transpose_a": "T",
+    "transpose_b": "N",
+    "library_M": 8192,
+    "library_N": 1,
+    "K": 32
+  }
+]

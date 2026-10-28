@@ -1,0 +1,11 @@
+{
+  "source_mismatches": [],
+  "historical_library_sha256": "1d61e79dc180748b3442d7ea7c2368dc7fe9e9ff776a8759ba6346162df164bd",
+  "rebuilt_library_sha256": "be61b50823294ac3911a30837c65af3ddcfa00ab628f6a4c1777d7e7dcd9d0f6",
+  "exact_binary_match": false,
+  "small_status_counts": {
+    "skipped": 108,
+    "complete": 93
+  },
+  "historical_device": "_CudaDeviceProperties(name='AMD Radeon Graphics', major=11, minor=0, gcnArchName='gfx1100', total_memory=49136MB, multi_processor_count=48, uuid=31393437-6332-3331-6362-653138643831, pci_bus_id=195, pci_device_id=0, pci_domain_id=0, L2_cache_size=6MB)"
+}

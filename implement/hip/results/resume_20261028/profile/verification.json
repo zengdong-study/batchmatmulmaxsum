@@ -1,0 +1,72 @@
+{
+  "successful_operator_calls": 12,
+  "fused_small_kernels": 8,
+  "fused_split_b_kernels": 4,
+  "launch_api_calls": 12,
+  "invalid_calls_without_launch": 3,
+  "one_kernel_per_call": true,
+  "external_kernels": 32,
+  "correlations": [
+    {
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "correlation_id": "50",
+      "api": "hipLaunchKernel"
+    },
+    {
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "correlation_id": "96",
+      "api": "hipLaunchKernel"
+    },
+    {
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, true, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "correlation_id": "142",
+      "api": "hipLaunchKernel"
+    },
+    {
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, true, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "correlation_id": "188",
+      "api": "hipLaunchKernel"
+    },
+    {
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "correlation_id": "238",
+      "api": "hipLaunchKernel"
+    },
+    {
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)1, true, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "correlation_id": "284",
+      "api": "hipLaunchKernel"
+    },
+    {
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1, 1>(bmms::detail::KernelArguments)",
+      "correlation_id": "330",
+      "api": "hipLaunchKernel"
+    },
+    {
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)2, 32>(bmms::detail::KernelArguments)",
+      "correlation_id": "376",
+      "api": "hipLaunchKernel"
+    },
+    {
+      "kernel": "void bmms::detail::fused_split_b<(bmms::DataType)0, false, false, 4>(bmms::detail::KernelArguments)",
+      "correlation_id": "422",
+      "api": "hipLaunchKernel"
+    },
+    {
+      "kernel": "void bmms::detail::fused_split_b<(bmms::DataType)0, false, true, 4>(bmms::detail::KernelArguments)",
+      "correlation_id": "468",
+      "api": "hipLaunchKernel"
+    },
+    {
+      "kernel": "void bmms::detail::fused_split_b<(bmms::DataType)0, true, false, 4>(bmms::detail::KernelArguments)",
+      "correlation_id": "514",
+      "api": "hipLaunchKernel"
+    },
+    {
+      "kernel": "void bmms::detail::fused_split_b<(bmms::DataType)0, true, true, 4>(bmms::detail::KernelArguments)",
+      "correlation_id": "560",
+      "api": "hipLaunchKernel"
+    }
+  ],
+  "note": "External memcpy/runtime kernels are excluded only after HIP correlation matching; no elapsed timings from profiler used as formal performance results."
+}

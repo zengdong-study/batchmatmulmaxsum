@@ -1,0 +1,6 @@
+{
+  "scope": "40 Matrix kernel specializations; unchanged SIMD kernels excluded because their compiler-generated partial VMEM waits require queue-aware analysis",
+  "local_basic_block_pending_read_flags": [],
+  "flag_count": 0,
+  "limitation": "Local basic-block scan only, clears state at block labels and vmcnt(0); not a full control-flow or ISA hazard proof."
+}

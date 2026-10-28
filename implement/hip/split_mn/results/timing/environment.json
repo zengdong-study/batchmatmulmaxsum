@@ -1,0 +1,7 @@
+{
+  "device": "_CudaDeviceProperties(name='AMD Radeon Graphics', major=11, minor=0, gcnArchName='gfx1100', total_memory=49136MB, multi_processor_count=48, uuid=31353464-3836-6535-3866-633931636465, pci_bus_id=3, pci_device_id=0, pci_domain_id=0, L2_cache_size=6MB)",
+  "torch": "2.9.1+gitff65f5b",
+  "hip": "7.2.53211-e1a6bc5663",
+  "timing": "10 untimed calls, one graph containing 100 calls, one timed replay, device elapsed/100 arithmetic mean",
+  "excludes": "input copies/conversion, allocations, graph capture, validation, workspace setup"
+}

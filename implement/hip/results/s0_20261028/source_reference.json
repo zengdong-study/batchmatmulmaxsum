@@ -1,0 +1,12 @@
+{
+  "file": "/opt/venv/lib/python3.12/site-packages/torch/include/ATen/native/cuda/Reduce.cuh",
+  "sha256": "6ba87be6dcd1306f31d5085b915274424446edfca96d912ca9b5c3a6f25f0808",
+  "torch_commit": "ff65f5bc672795c5e5033900ea0a0c4f8566c8cf",
+  "relevant_lines": [
+    87,
+    103,
+    1226,
+    1262
+  ],
+  "scope": "Installed header supporting reference; actual execution and code object are primary."
+}

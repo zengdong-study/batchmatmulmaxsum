@@ -1,0 +1,26 @@
+{
+  "case": 31,
+  "shape": [
+    2,
+    17,
+    129,
+    128
+  ],
+  "baseline_us": 17.4228298664093,
+  "total_device_ms": 1.7422829866409302,
+  "warmups": 10,
+  "iterations": 100,
+  "max_abs": 0.0,
+  "max_rel": 0.0,
+  "fp32_a_stride": [
+    2176,
+    1,
+    17
+  ],
+  "fp32_b_stride": [
+    16512,
+    1,
+    128
+  ],
+  "similarity_bytes": 17544
+}

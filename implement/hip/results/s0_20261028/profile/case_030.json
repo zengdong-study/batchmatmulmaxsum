@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "case": 30,
+  "metadata": {
+    "shape": [
+      2,
+      33,
+      65,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "t1": true,
+    "t2": false,
+    "kind": "cancellation",
+    "id": 30,
+    "seed": 20261057,
+    "version": 1
+  },
+  "chain": null,
+  "stages": {},
+  "start_unix": 1793197145.8409648,
+  "end_unix": 1793197146.0591586,
+  "a_stride": [
+    270336,
+    1,
+    33
+  ],
+  "b_stride": [
+    532480,
+    65,
+    1
+  ],
+  "golden": "passed",
+  "distinction": "Stage timings are standalone hot-intermediate diagnostics; do not sum them to replace measured whole-chain time. Profile durations are not formal timing."
+}

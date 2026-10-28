@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "family": "simd",
+  "case": 18,
+  "config": "simd_k1",
+  "shape": [
+    1,
+    65,
+    129,
+    8192
+  ],
+  "dtype": "float16",
+  "t1": false,
+  "t2": true,
+  "golden_passed": true,
+  "max_abs": 6.103515625e-05,
+  "max_rel": 6.390388855161837e-08,
+  "device_us": 128229.716796875,
+  "total_device_ms": 12822.9716796875,
+  "warmups": 10,
+  "iterations": 100,
+  "repeat_equal": true
+}

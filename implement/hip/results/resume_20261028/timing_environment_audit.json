@@ -1,0 +1,60 @@
+{
+  "measurement_intervals": [
+    {
+      "name": "coalesced_current",
+      "start_utc": "2026-10-28T12:57:00.038268+00:00",
+      "end_utc": "2026-10-28T12:57:09.130203+00:00"
+    },
+    {
+      "name": "halves_current",
+      "start_utc": "2026-10-28T12:57:33.263031+00:00",
+      "end_utc": "2026-10-28T12:57:42.248966+00:00"
+    },
+    {
+      "name": "tail_current",
+      "start_utc": "2026-10-28T13:00:33.535748+00:00",
+      "end_utc": "2026-10-28T13:00:41.421692+00:00"
+    },
+    {
+      "name": "pipeline_current",
+      "start_utc": "2026-10-28T13:01:39.433281+00:00",
+      "end_utc": "2026-10-28T13:01:49.085213+00:00"
+    },
+    {
+      "name": "pipeline2_current",
+      "start_utc": "2026-10-28T13:05:01.480857+00:00",
+      "end_utc": "2026-10-28T13:05:09.836798+00:00"
+    },
+    {
+      "name": "balanced_current",
+      "start_utc": "2026-10-28T13:06:22.959285+00:00",
+      "end_utc": "2026-10-28T13:06:30.983228+00:00"
+    },
+    {
+      "name": "baseline_current",
+      "start_utc": "2026-10-28T13:02:46.974804+00:00",
+      "end_utc": "2026-10-28T13:03:22.914551+00:00"
+    },
+    {
+      "name": "coalesced_large_current",
+      "start_utc": "2026-10-28T13:07:20.455881+00:00",
+      "end_utc": "2026-10-28T13:08:44.041295+00:00"
+    },
+    {
+      "name": "final_current",
+      "start_utc": "2026-10-28T13:09:59.482767+00:00",
+      "end_utc": "2026-10-28T13:11:12.129259+00:00"
+    },
+    {
+      "name": "final_simd_current",
+      "start_utc": "2026-10-28T13:11:52.274979+00:00",
+      "end_utc": "2026-10-28T13:30:39.184679+00:00"
+    }
+  ],
+  "other_task_log_interval_utc": [
+    "2026-10-28T13:02:50.976776+00:00",
+    "2026-10-28T13:04:09.286224+00:00"
+  ],
+  "finding": "First large-B split baseline interval overlaps the other timing log interval. Initial case15 record predates it, so its cause remains unknown. Before/final fused measurement windows are outside that initial cross-task interval; later independent-path tooling rejects another active Python benchmark before GPU work.",
+  "resolution": "Completed all34 eligible baselines again in baseline_isolated after checking no other Python GPU process was active. Final baseline comparisons use only this isolated run; initial and two-case diagnostic recheck are preserved."
+}

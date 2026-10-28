@@ -1,0 +1,42 @@
+[
+  {
+    "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0005.o",
+    "sha256": "eafdbf00fbe9a4ee1e03f6fd344535b4aeb2c005d015ba64fe6b95e3fdda7825",
+    "identical_to_initial_dump": true
+  },
+  {
+    "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0004.o",
+    "sha256": "b51fafc3e38e37f31390f67df4387d181644d47310b957acf6f41e2a608ca30f",
+    "identical_to_initial_dump": true
+  },
+  {
+    "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0001.o",
+    "sha256": "2d55e72f2cd08cec1af9d037a5bf01911af4556672b1ae703278b88a6e639c77",
+    "identical_to_initial_dump": true
+  },
+  {
+    "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0007.o",
+    "sha256": "2080ad9b8eb74faec9797b140b9535980591489c3380a09f64b02af1cf19e62a",
+    "identical_to_initial_dump": true
+  },
+  {
+    "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0002.o",
+    "sha256": "939af39879185be9e22b422c371227f3fe3993a116556e845556e6ad3cfddcb2",
+    "identical_to_initial_dump": true
+  },
+  {
+    "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0003.o",
+    "sha256": "cf59778ef9eed695b9a181c705ad2493b3c482c4b03f480a533fd7e43ec6c112",
+    "identical_to_initial_dump": true
+  },
+  {
+    "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0000.o",
+    "sha256": "f4a12b74a681da824936ddf62c39cff39a84fa3e734f240066376e09da9791ec",
+    "identical_to_initial_dump": true
+  },
+  {
+    "file": "/root/batchmatmulmaxsum/implement/hip/results/s0_20261028/code_objects/_code_object0006.o",
+    "sha256": "f4a6c15043c8b50354d142292b393a6c4e1e7059a921431d76059fd4dbade3f1",
+    "identical_to_initial_dump": true
+  }
+]
