@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-"""Generate persistent BatchMatmulMaxSum inputs and FP64-reference outputs."""
+"""Reproduce the frozen cases into an ignored local cache, without editing references."""
 import argparse
 import hashlib
+import fcntl
 import json
 import os
 from pathlib import Path
 import time
+import tempfile
 
 import torch
 
+DEFAULT_CACHE = Path(os.environ.get("BMMS_CASE_CACHE", str(Path(tempfile.gettempdir())/f"batchmatmulmaxsum-{os.getuid()}"/"cases-v1")))
 VERSION = 1
 
 def specs():
@@ -125,51 +128,102 @@ def save_json(path,value):
     temp.write_text(json.dumps(value,indent=2)+'\n')
     temp.replace(path)
 
+def _tensor_hash(tensor):
+    h=hashlib.sha256()
+    h.update(str(tensor.dtype).encode());h.update(str(tuple(tensor.shape)).encode())
+    h.update(tensor.contiguous().reshape(-1).view(torch.uint8).numpy().tobytes())
+    return h.hexdigest()
+
+
+def ensure_cases(output, ids, device=None, overwrite=False, verify=True, mb=1024, nb=2048, references=None):
+    """Materialize only requested original cases, before any benchmark capture/timing.
+
+    Tracked manifest/JSON are immutable references. Per-cache receipts and locks
+    are ignored. Regeneration must reproduce original FP32 golden bit-for-bit.
+    """
+    output=Path(output);references=Path(references) if references else Path(__file__).resolve().parents[1]/'cases'
+    manifest=json.loads((references/'manifest.json').read_text())
+    content_reference=references/'content_hashes.json'
+    if not content_reference.exists():raise RuntimeError('Missing frozen tensor-content hashes')
+    content=json.loads(content_reference.read_text())
+    if content['version']!=VERSION:raise RuntimeError('Tensor-content reference version mismatch')
+    if manifest['cases']!=specs():raise RuntimeError('Generator definitions differ from frozen manifest')
+    ids=sorted(set(ids))
+    if any(i<1 or i>40 for i in ids):raise ValueError('case IDs must be in 1..40')
+    if mb<1 or nb<1:raise ValueError('Block sizes must be positive')
+    output.mkdir(parents=True,exist_ok=True)
+    if output.resolve()!=references.resolve():
+        with (output/'.references.lock').open('a+') as metadata_lock:
+            fcntl.flock(metadata_lock,fcntl.LOCK_EX)
+            target=output/'manifest.json'
+            if target.exists() and target.read_bytes()!=(references/'manifest.json').read_bytes():
+                raise RuntimeError('Output manifest differs from frozen reference')
+            if not target.exists():target.write_bytes((references/'manifest.json').read_bytes())
+            content_target=output/'content_hashes.json'
+            if content_target.exists() and content_target.read_bytes()!=content_reference.read_bytes():raise RuntimeError('Cache tensor references differ from tracked references')
+            if not content_target.exists():content_target.write_bytes(content_reference.read_bytes())
+            for i in range(1,41):
+                source=references/f'case_{i:03d}.json';target=output/source.name
+                if target.exists() and target.read_bytes()!=source.read_bytes():raise RuntimeError(f'Reference metadata changed: {target}')
+                if not target.exists():target.write_bytes(source.read_bytes())
+    receipts=[]
+    for i in ids:
+        s=manifest['cases'][i-1];reference=json.loads((references/f'case_{i:03d}.json').read_text())
+        if reference['spec']!=s:raise RuntimeError(f'Reference spec mismatch: {i}')
+        path=output/f'case_{i:03d}.pt';receipt=output/f'case_{i:03d}.cache.json'
+        with (output/f'case_{i:03d}.lock').open('a+') as lock:
+            fcntl.flock(lock,fcntl.LOCK_EX)
+            pointer=False
+            if path.exists():
+                with path.open('rb') as f:pointer=f.read(80).startswith(b'version https://git-lfs.github.com/spec/v1')
+            if path.exists() and not pointer and not overwrite:
+                digest=sha256(path) if verify else None
+                known_original=path.stat().st_size==reference['bytes'] and (not verify or digest==reference['sha256'])
+                cached=json.loads(receipt.read_text()) if receipt.exists() else None
+                known_cache=cached and cached['spec']==s and cached['reference_sha256']==sha256(references/f'case_{i:03d}.json') and cached.get('content_reference_sha256')==sha256(content_reference) and cached.get('tensor_sha256')==content['cases'][str(i)] and cached['bytes']==path.stat().st_size and (not verify or cached['sha256']==digest)
+                if not known_original and not known_cache:
+                    raise RuntimeError(f'Unverified or corrupt cache: {path}; regenerate explicitly with --overwrite')
+                print(f'[{i:02d}/40] verified cache {path.name}',flush=True)
+                receipts.append(path);continue
+            generation_device=device or ('cuda' if torch.cuda.is_available() else 'cpu')
+            old_threads=torch.get_num_threads();old_deterministic=torch.are_deterministic_algorithms_enabled();old_warn=torch.is_deterministic_algorithms_warn_only_enabled()
+            start=time.monotonic()
+            try:
+                torch.set_num_threads(min(8,os.cpu_count() or 1));torch.use_deterministic_algorithms(True)
+                print(f'[{i:02d}/40] generating original inputs and FP64 golden ({generation_device})',flush=True)
+                x1,x2=inputs(s)
+                tensor_hashes={name:_tensor_hash(t) for name,t in [('x1',x1),('x2',x2)]}
+                if any(tensor_hashes[n]!=content['cases'][str(i)][n] for n in tensor_hashes):
+                    raise RuntimeError(f'Case {i}: generated inputs differ from frozen tensor content; use recorded PyTorch {reference["torch_version"]} or investigate before changing references')
+                y=golden(x1,x2,s,generation_device,mb,nb)
+                tensor_hashes['golden']=_tensor_hash(y)
+                if tensor_hashes!=content['cases'][str(i)]:raise RuntimeError(f'Case {i}: recomputed golden differs from frozen tensor content')
+                expected=torch.tensor(reference['golden'],dtype=torch.float32)
+                torch.testing.assert_close(y,expected,rtol=0,atol=0)
+                temp=path.with_suffix('.pt.tmp')
+                torch.save(dict(x1=x1,x2=x2,golden=y,metadata=s),temp);temp.replace(path)
+                save_json(receipt,dict(spec=s,sha256=sha256(path),bytes=path.stat().st_size,
+                    reference_sha256=sha256(references/f'case_{i:03d}.json'),content_reference_sha256=sha256(content_reference),generator_sha256=sha256(Path(__file__)),
+                    tensor_sha256=tensor_hashes,
+                    golden_bitwise_matches_reference=True,torch_version=str(torch.__version__),device=str(generation_device),m_block=mb,n_block=nb,
+                    seconds=time.monotonic()-start,note='Local cache receipt; original manifest and JSON are never overwritten. Serialized pt SHA may differ while tensor content matches.'))
+            finally:
+                torch.set_num_threads(old_threads);torch.use_deterministic_algorithms(old_deterministic,warn_only=old_warn)
+            receipts.append(path)
+    return receipts
+
+
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--output',type=Path,default=Path(__file__).resolve().parents[1]/'cases')
+    p.add_argument('--output',type=Path,default=DEFAULT_CACHE)
     p.add_argument('--group',choices=['all','basic','numeric','extreme'],default='all')
-    p.add_argument('--ids',type=int,nargs='+',help='Generate only these case IDs')
-    p.add_argument('--device',default='cuda' if torch.cuda.is_available() else 'cpu')
-    p.add_argument('--m-block',type=int,default=1024)
-    p.add_argument('--n-block',type=int,default=2048)
-    p.add_argument('--verify',action='store_true',help='Verify cached SHA256 before skipping')
-    p.add_argument('--overwrite',action='store_true')
-    args=p.parse_args()
-    if args.m_block<1 or args.n_block<1: p.error('Block sizes must be positive')
-    if args.ids and any(i<1 or i>40 for i in args.ids): p.error('IDs must be in 1..40')
-    torch.set_num_threads(min(8,os.cpu_count() or 1))
-    torch.use_deterministic_algorithms(True)
-    args.output.mkdir(parents=True,exist_ok=True)
-    all_specs=specs()
-    save_json(args.output/'manifest.json',{'version':VERSION,'cases':all_specs,'format':'case_XXX.pt: x1, x2, golden, metadata; companion JSON marks completed files'})
-    for s in all_specs:
-        i=s['id']
-        if args.ids and i not in args.ids: continue
-        if args.group=='basic' and i>24: continue
-        if args.group=='numeric' and not 25<=i<=32: continue
-        if args.group=='extreme' and i<33: continue
-        path=args.output/f'case_{i:03d}.pt'; meta=path.with_suffix('.json')
-        if path.exists() and meta.exists() and not args.overwrite:
-            cached=json.loads(meta.read_text())
-            if cached['spec']!=s or cached['bytes']!=path.stat().st_size:
-                raise RuntimeError(f'Cache mismatch: {path}; use --overwrite')
-            if args.verify and cached['sha256']!=sha256(path):
-                raise RuntimeError(f'Checksum mismatch: {path}')
-            print(f'[{i:02d}/40] cached {path.name}',flush=True)
-            continue
-        start=time.monotonic()
-        print(f'[{i:02d}/40] generating {s}',flush=True)
-        x1,x2=inputs(s)
-        y=golden(x1,x2,s,args.device,args.m_block,args.n_block)
-        # Exact independent expectations for analytic special cases.
-        expected={25:[-6.],26:[-5.,-5.],28:[0.,119.],29:[19.125,38.25],32:[512.,-256.]}.get(i)
-        if expected is not None:
-            torch.testing.assert_close(y,torch.tensor(expected),rtol=0,atol=0)
-        temp=path.with_suffix('.pt.tmp')
-        torch.save({'x1':x1,'x2':x2,'golden':y,'metadata':s},temp)
-        temp.replace(path)
-        save_json(meta,{'spec':s,'bytes':path.stat().st_size,'sha256':sha256(path),'golden':y.tolist(),'seconds':time.monotonic()-start,'torch_version':str(torch.__version__),'device':args.device,'reference':'FP64 dot -> Max(N) -> FP64 Sum(M) -> FP32'})
-        print(f'[{i:02d}/40] saved, {time.monotonic()-start:.2f}s; golden range [{y.min().item():.8g}, {y.max().item():.8g}]',flush=True)
+    p.add_argument('--ids',type=int,nargs='+')
+    p.add_argument('--device',default=None)
+    p.add_argument('--m-block',type=int,default=1024);p.add_argument('--n-block',type=int,default=2048)
+    p.add_argument('--verify',action='store_true',help='Compatibility flag; cache SHA verification is always enabled')
+    p.add_argument('--overwrite',action='store_true',help='Rebuild local cache only; never overwrite tracked references')
+    a=p.parse_args()
+    ids=a.ids if a.ids is not None else [s['id'] for s in specs() if a.group=='all' or a.group=='basic' and s['id']<=24 or a.group=='numeric' and 25<=s['id']<=32 or a.group=='extreme' and s['id']>=33]
+    ensure_cases(a.output,ids,a.device,a.overwrite,True,a.m_block,a.n_block)
 
-if __name__=='__main__': main()
+if __name__=='__main__':main()

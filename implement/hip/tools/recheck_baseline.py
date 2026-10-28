@@ -5,6 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 import torch
+from case_cache import ensure_cases, DEFAULT_CASES
 from benchmark_baseline import measure
 from experiment_split_b import release
 from benchmark_revision import save, sha
@@ -12,9 +13,9 @@ ROOT=Path(__file__).resolve().parents[1]
 @torch.inference_mode()
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--cases',type=Path,default=ROOT.parent/'cases')
+    p.add_argument('--cases',type=Path,default=DEFAULT_CASES)
     p.add_argument('--output',type=Path,default=ROOT/'results/resume_20261028/baseline_recheck')
-    a=p.parse_args();a.output.mkdir(parents=True,exist_ok=True);items=a.output/'items';items.mkdir(exist_ok=True)
+    a=p.parse_args();ensure_cases(a.cases,[11,15]);a.output.mkdir(parents=True,exist_ok=True);items=a.output/'items';items.mkdir(exist_ok=True)
     identity=dict(device=str(torch.cuda.get_device_properties(0)),torch=str(torch.__version__),hip=torch.version.hip,
         baseline_helper_sha256=sha(ROOT/'tools/benchmark_baseline.py'),script_sha256=sha(Path(__file__)),
         manifest_sha256=sha(a.cases/'manifest.json'),warmups=10,iterations=100,ids=[11,15],

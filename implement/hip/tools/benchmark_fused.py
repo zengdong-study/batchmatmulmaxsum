@@ -10,6 +10,7 @@ from pathlib import Path
 import time
 
 import torch
+from case_cache import ensure_cases, DEFAULT_CASES
 from experiment_small import Runner, PATHS
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -83,7 +84,9 @@ def refresh(output, baseline, specs):
 def run(args):
     args.output.mkdir(parents=True, exist_ok=True)
     (args.output / 'items').mkdir(exist_ok=True)
+    ensure_cases(args.cases, [])
     specs = json.loads((args.cases / 'manifest.json').read_text())['cases']
+    ensure_cases(args.cases, [s['id'] for s in specs if selected(s)])
     if [s['id'] for s in specs] != list(range(1, 41)):
         raise ValueError('Expected exactly 40 cases')
     baseline = {int(r['case']): r for r in csv.DictReader(args.baseline.open())}
@@ -199,7 +202,7 @@ def run(args):
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--library', type=Path, default=Path('/tmp/bmms-build/libbmms_small.so'))
-    p.add_argument('--cases', type=Path, default=ROOT.parent / 'cases')
+    p.add_argument('--cases', type=Path, default=DEFAULT_CASES)
     p.add_argument('--baseline', type=Path, default=ROOT / 'results/baseline_device_10_100/baseline.csv')
     p.add_argument('--output', type=Path, default=ROOT / 'results/fused_small_device_10_100')
     p.add_argument('--import-from', type=Path, default=ROOT / 'results/fused_device_10_100')

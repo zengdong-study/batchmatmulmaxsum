@@ -1,5 +1,7 @@
 # Split-M 与 Split-N 单 kernel 路径
 
+> 数据已改为按需生成：仓库不再保存case `.pt`，活跃入口默认使用仓库外缓存。详见[数据与缓存说明](../../script/README.md)。以下历史实验中的LFS/持久化路径描述保留为当时记录，复现旧快照需先生成缓存并传入 `--cases`。
+
 这是独立实验模块，提供 `bmms::split_mn::make_plan/launch` 和 C ABI，不改变 Small/Split-B 的源码、ABI、构建目标或调优结果。当前支持 gfx1100 / wave32、FP16/BF16、四种连续存储布局。配置显式指定，尚无 Auto 分派。
 
 ## 计算与单 kernel 收尾

@@ -4,6 +4,7 @@ import argparse
 import json
 from pathlib import Path
 import torch
+from case_cache import ensure_cases, DEFAULT_CASES
 from experiment_small import Runner as SmallRunner
 from experiment_split_b import Runner as SplitRunner, check
 ROOT=Path(__file__).resolve().parents[1]
@@ -11,9 +12,9 @@ ROOT=Path(__file__).resolve().parents[1]
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--library',type=Path,required=True)
-    p.add_argument('--cases',type=Path,default=ROOT.parent/'cases')
+    p.add_argument('--cases',type=Path,default=DEFAULT_CASES)
     p.add_argument('--output',type=Path,required=True)
-    a=p.parse_args();small,split=SmallRunner(a.library),SplitRunner(a.library)
+    a=p.parse_args();ensure_cases(a.cases,[1,2,3,4,17,25,30]);small,split=SmallRunner(a.library),SplitRunner(a.library)
     jobs=[('small',i,True,8) for i in (1,2,3,4,17,30,25)]
     jobs += [('small',25,False,32)]
     jobs += [('split',i,True,8) for i in (1,2,3,4)]

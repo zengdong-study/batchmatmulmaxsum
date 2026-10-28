@@ -6,6 +6,7 @@ import hashlib
 import json
 from pathlib import Path
 import torch
+from case_cache import ensure_cases, DEFAULT_CASES
 from benchmark_baseline import measure as split_measure
 from benchmark_fused import selected, error_stats
 from experiment_small import Runner as SmallRunner, PATHS
@@ -27,10 +28,11 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--library', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
-    p.add_argument('--cases', type=Path, default=ROOT.parent/'cases')
+    p.add_argument('--cases', type=Path, default=DEFAULT_CASES)
     p.add_argument('--families', nargs='+', choices=['baseline','small','simd','split','large'], default=['small','split','large'])
     a = p.parse_args(); a.output.mkdir(parents=True, exist_ok=True)
     items = a.output/'items'; items.mkdir(exist_ok=True)
+    ensure_cases(a.cases, [])
     specs = json.loads((a.cases/'manifest.json').read_text())['cases']
     small_ids = [s['id'] for s in specs if selected(s)]
     assert len(small_ids) == 22
@@ -45,6 +47,7 @@ def main():
         jobs += [('split',i,'gb%d_w%d_n%d'%c,c) for i in range(9,17) for c in CONFIGS]
     if 'large' in a.families:
         jobs += [('large',i,'gb1_w4_n64',(1,4,64)) for i in range(37,41)]
+    ensure_cases(a.cases, sorted({j[1] for j in jobs}))
     identity = dict(library_sha256=sha(a.library), script_sha256=sha(Path(__file__)),
         helpers={f:sha(ROOT/'tools'/f) for f in ['benchmark_baseline.py','benchmark_fused.py','experiment_small.py','experiment_split_b.py']},
         manifest_sha256=sha(a.cases/'manifest.json'), warmups=10, iterations=100,

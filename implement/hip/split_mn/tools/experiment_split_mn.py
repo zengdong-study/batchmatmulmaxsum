@@ -15,6 +15,7 @@ ROOT=Path(__file__).resolve().parents[1]
 HIP=ROOT.parent
 sys.path.insert(0,str(HIP/'tools'))
 from benchmark_baseline import measure as baseline_measure
+from case_cache import ensure_cases, DEFAULT_CASES
 
 
 def save(path,obj):
@@ -74,12 +75,13 @@ def counters(w,offset,b):
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--library',type=Path,default=Path('/tmp/bmms-split-mn-build/libbmms_split_mn.so'))
-    p.add_argument('--cases',type=Path,default=HIP.parent/'cases')
+    p.add_argument('--cases',type=Path,default=DEFAULT_CASES)
     p.add_argument('--output',type=Path,default=ROOT/'results/initial')
     p.add_argument('--mode',choices=['validate','time','smoke'],default='validate')
     p.add_argument('--balanced',action='store_true',help='time explicit M group16/wave1 and N group64/waves2; no Auto dispatch')
     a=p.parse_args();a.output.mkdir(parents=True,exist_ok=True)
     idle()
+    ensure_cases(a.cases,range(1,33))
     device_identity=dict(device=str(torch.cuda.get_device_properties(0)),torch=str(torch.__version__),hip=torch.version.hip)
     identity=dict(library_sha256=sha(a.library),script_sha256=sha(Path(__file__)),**device_identity,
         manifest_sha256=sha(a.cases/'manifest.json'),mode=a.mode,balanced=a.balanced,

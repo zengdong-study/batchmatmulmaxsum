@@ -8,6 +8,7 @@ import hashlib
 import json
 from pathlib import Path
 import torch
+from case_cache import ensure_cases, DEFAULT_CASES
 
 ROOT=Path(__file__).resolve().parents[1]
 # groupB, wavesPerBatch, groupBaseN; no configuration has >8 waves/block.
@@ -190,12 +191,13 @@ def summarize(args,rows,jobs,pilots):
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--library',type=Path,default=Path('/tmp/bmms-splitb-build/libbmms_small.so'))
-    p.add_argument('--cases',type=Path,default=ROOT.parent/'cases')
+    p.add_argument('--cases',type=Path,default=DEFAULT_CASES)
     p.add_argument('--baseline',type=Path,default=ROOT/'results/baseline_device_10_100/baseline.csv')
     p.add_argument('--output',type=Path,default=ROOT/'results/split_b_v1')
     p.add_argument('--large-limit-ms',type=float,default=50.,help='single pilot feasibility limit; not a performance result')
     p.add_argument('--mode',choices=['all','smoke','large'],default='all')
     args=p.parse_args();args.output.mkdir(parents=True,exist_ok=True)
+    ensure_cases(args.cases, [1] if args.mode=='smoke' else list(range(37,41)) if args.mode=='large' else list(range(1,33))+list(range(37,41)))
     runner=Runner(args.library)
     if args.mode=='smoke':
         c,x,z,y=load(args,1)

@@ -10,9 +10,11 @@ from pathlib import Path
 import subprocess
 import time
 from gpu_exclusive import GPUExclusive
+from case_cache import ensure_cases, DEFAULT_CASES
 
 ROOT=Path(__file__).resolve().parents[1]
-CASES=ROOT.parent/'cases'
+REFERENCES=ROOT.parent/'cases'
+CASES=DEFAULT_CASES
 
 def sha(path):
     with Path(path).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
@@ -23,17 +25,17 @@ def save(path,obj):
 def freeze(out):
     if (out/'freeze.json').exists():
         raise RuntimeError('Frozen S0 output already exists; choose a new output directory, do not overwrite the freeze')
-    specs=json.loads((CASES/'manifest.json').read_text())['cases'];assert len(specs)==40
+    specs=json.loads((REFERENCES/'manifest.json').read_text())['cases'];assert len(specs)==40
     rows=[]
     small=set(range(1,9))|set(range(17,27))|set(range(28,32))
     prior=ROOT/'results/resume_20261028'
     for s in specs:
-        i=s['id'];p=CASES/f'case_{i:03d}.pt';meta=json.loads(p.with_suffix('.json').read_text());raw=p.open('rb').read(150)
-        restored=not raw.startswith(b'version https://git-lfs.github.com/spec/v1')
+        i=s['id'];p=CASES/f'case_{i:03d}.pt';meta=json.loads((REFERENCES/f'case_{i:03d}.json').read_text());raw=p.open('rb').read(150) if p.exists() else b''
+        restored=p.exists() and not raw.startswith(b'version https://git-lfs.github.com/spec/v1')
         actual=sha(p) if restored else None
         if restored:assert actual==meta['sha256'] and p.stat().st_size==meta['bytes']
         b,m,n,k=s['shape'];sim=4*b*m*n;rows.append(dict(case=i,shape=s['shape'],dtype=s['dtype'],t1=s['t1'],t2=s['t2'],
-            data_status='verified original data' if restored else 'LFS pointer; restore at S5',expected_sha256=meta['sha256'],expected_bytes=meta['bytes'],actual_sha256=actual,
+            data_status='verified original data' if restored else 'local cache missing; generate on demand',expected_sha256=meta['sha256'],expected_bytes=meta['bytes'],actual_sha256=actual,
             small_formal=i in small,split_b_formal=i in set(range(9,17))|set(range(37,41)),
             split_mn_validated=i<=32,split_mn_extremes_validated=False,
             current_same_device_chain_baseline=(prior/'baseline_isolated/items'/f'baseline_{i:03d}_fp32_split.json').exists(),
@@ -43,12 +45,12 @@ def freeze(out):
             mandatory_similarity_write_read_bytes=2*sim,extra_row_max_write_read_bytes=8*b*m,
             split_m_partial_float_bytes_64=4*b*((m+63)//64),split_n_partial_float_bytes_64=4*b*((n+63)//64)*m,
             split_mn_counters_bytes=4*b))
-    files=[ROOT/'CMakeLists.txt',ROOT.parent.parent/'BatchMatmulMaxSum.md',CASES/'manifest.json',
+    files=[ROOT/'CMakeLists.txt',ROOT.parent.parent/'BatchMatmulMaxSum.md',REFERENCES/'manifest.json',
         *sorted((ROOT/'include').rglob('*.*')),*sorted((ROOT/'src').glob('*')),
         *sorted((ROOT/'split_mn/include').rglob('*.*')),*sorted((ROOT/'split_mn/src').glob('*')),
         *sorted((ROOT/'tools').glob('*.py'))]
     libraries=list((ROOT/'archive').glob('final*/lib*.so'))+list((ROOT/'split_mn/results/artifacts').glob('*.so'))
-    frozen=dict(case_manifest_sha256=sha(CASES/'manifest.json'),files={str(p):sha(p) for p in files if p.is_file()},
+    frozen=dict(case_manifest_sha256=sha(REFERENCES/'manifest.json'),files={str(p):sha(p) for p in files if p.is_file()},
         libraries={str(p):sha(p) for p in libraries},baseline='FP32 torch.bmm -> torch.amax(N) -> torch.sum(M, FP32)',
         precision='highest, allow_tf32=False; actual low-precision input values converted before timing; no extra contiguous conversion',
         warmups=10,iterations=100,criterion='abs <= 1e-4 + 1e-4*abs(golden), existing provisional criterion',
@@ -73,16 +75,17 @@ def main():
     p.add_argument('--mode',choices=['freeze','measure','profile'],required=True);p.add_argument('--ids',type=int,nargs='*')
     a=p.parse_args();a.output.mkdir(parents=True,exist_ok=True)
     if a.mode=='freeze':freeze(a.output);return
-    rows=json.loads((a.output/'coverage.json').read_text());ids=a.ids or [r['case'] for r in rows if r['actual_sha256']]
-    assert all(1<=i<=40 and rows[i-1]['actual_sha256'] for i in ids)
+    rows=json.loads((a.output/'coverage.json').read_text());ids=a.ids or list(range(1,33))+list(range(37,41))
+    assert all(1<=i<=40 for i in ids)
     with GPUExclusive(a.output/f'{a.mode}_gpu_audit.json') as guard:
         import torch
         from benchmark_baseline import measure
         torch.cuda.init();guard.adopt_context()
+        ensure_cases(CASES,ids)
         torch.set_float32_matmul_precision('highest');torch.backends.cuda.matmul.allow_tf32=False
         identity=dict(device=str(torch.cuda.get_device_properties(0)),torch=str(torch.__version__),torch_commit=torch.version.git_version,hip=torch.version.hip,
             script_sha256=sha(Path(__file__)),baseline_helper_sha256=sha(ROOT/'tools/benchmark_baseline.py'),guard_sha256=sha(ROOT/'tools/gpu_exclusive.py'),
-            manifest_sha256=sha(CASES/'manifest.json'),ids=ids,mode=a.mode,warmups=10,iterations=100 if a.mode=='measure' else 1)
+            manifest_sha256=sha(REFERENCES/'manifest.json'),ids=ids,mode=a.mode,warmups=10,iterations=100 if a.mode=='measure' else 1)
         config=a.output/f'{a.mode}_identity.json'
         if config.exists() and json.loads(config.read_text())!=identity:raise RuntimeError('Identity changed: new output required')
         save(config,identity)
@@ -98,7 +101,7 @@ def main():
                 assert json.loads(dest.read_text())['status']=='complete';continue
             guard.check();start_wall=time.time();save(a.output/f'{a.mode}_progress.json',dict(status='running',case=i,started_unix=start_wall))
             c=torch.load(CASES/f'case_{i:03d}.pt',weights_only=True,map_location='cpu');s=c['metadata']
-            assert s==json.loads((CASES/'manifest.json').read_text())['cases'][i-1]
+            assert s==json.loads((REFERENCES/'manifest.json').read_text())['cases'][i-1]
             chain=measure(c,torch.device('cuda')) if a.mode=='measure' else None
             b,m,n,k=s['shape'];x1,x2=c['x1'].cuda(),c['x2'].cuda()
             x=(x1.transpose(1,2) if s['t1'] else x1).float();z=(x2.transpose(1,2) if s['t2'] else x2).float()

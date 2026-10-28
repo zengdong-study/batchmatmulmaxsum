@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 
 import torch
+from case_cache import ensure_cases, DEFAULT_CASES
 
 ROOT = Path(__file__).resolve().parents[1]
 WARMUPS = 10
@@ -72,11 +73,12 @@ def measure(case, device):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--cases', type=Path, default=ROOT.parent / 'cases')
+    parser.add_argument('--cases', type=Path, default=DEFAULT_CASES)
     parser.add_argument('--output', type=Path, default=ROOT / 'results' / 'baseline_device_10_100')
     args = parser.parse_args()
     if not torch.cuda.is_available():
         parser.error('A HIP/CUDA device is required; CPU wall time is not a fallback')
+    ensure_cases(args.cases, range(1,41))
     args.output.mkdir(parents=True, exist_ok=True)
     torch.set_float32_matmul_precision('highest')
     torch.backends.cuda.matmul.allow_tf32 = False

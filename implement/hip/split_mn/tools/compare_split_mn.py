@@ -5,18 +5,20 @@ import json
 from pathlib import Path
 import torch
 from experiment_split_mn import ROOT,HIP,idle,sha,save,baseline_measure
+from case_cache import ensure_cases, DEFAULT_CASES
 
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--mode',choices=['baseline','summarize'],default='summarize')
-    p.add_argument('--cases',type=Path,default=HIP.parent/'cases')
+    p.add_argument('--cases',type=Path,default=DEFAULT_CASES)
     p.add_argument('--timing',type=Path,default=ROOT/'results/timing')
     p.add_argument('--output',type=Path,default=ROOT/'results/baseline')
     a=p.parse_args()
     if a.mode=='baseline':
         a.output.mkdir(parents=True,exist_ok=True);items=a.output/'items';items.mkdir(exist_ok=True)
         idle()
+        ensure_cases(a.cases,range(1,33))
         env=dict(device=str(torch.cuda.get_device_properties(0)),torch=str(torch.__version__),hip=torch.version.hip,
             script_sha256=sha(Path(__file__)),helper_sha256=sha(HIP/'tools/benchmark_baseline.py'),
             manifest_sha256=sha(a.cases/'manifest.json'),case_sha256={str(i):sha(a.cases/f'case_{i:03d}.pt') for i in range(1,33)},

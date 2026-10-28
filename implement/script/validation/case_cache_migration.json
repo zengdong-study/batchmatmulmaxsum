@@ -1,0 +1,130 @@
+{
+  "removed_tracked_cases": 40,
+  "repository_pt_files": 0,
+  "regenerated_original_cases": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "all_original_serialized_hashes_matched": true,
+  "input_and_golden_content_hashes": "content_hashes.json; frozen after reproducing all original PT hashes",
+  "golden": "FP64 recomputation matched original FP32 values bit-for-bit",
+  "cache_location": "external temporary directory by default; BMMS_CASE_CACHE override",
+  "cpu_cache_lifecycle_tests": 4,
+  "empty_cache_small_entry": "Matrix and SIMD smoke passed",
+  "cold_cache_profile": {
+    "successful_operator_calls": 12,
+    "fused_small_kernels": 8,
+    "fused_split_b_kernels": 4,
+    "launch_api_calls": 12,
+    "operator_launch_api_calls": 12,
+    "all_launch_api_calls": 205,
+    "preflight_generation_launch_api_calls": 193,
+    "invalid_calls_without_launch": 3,
+    "one_kernel_per_call": true,
+    "external_kernels": 291,
+    "correlations": [
+      {
+        "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+        "correlation_id": "2545",
+        "api": "hipLaunchKernel"
+      },
+      {
+        "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+        "correlation_id": "2591",
+        "api": "hipLaunchKernel"
+      },
+      {
+        "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, true, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+        "correlation_id": "2637",
+        "api": "hipLaunchKernel"
+      },
+      {
+        "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, true, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+        "correlation_id": "2683",
+        "api": "hipLaunchKernel"
+      },
+      {
+        "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+        "correlation_id": "2729",
+        "api": "hipLaunchKernel"
+      },
+      {
+        "kernel": "void bmms::detail::fused_small<(bmms::DataType)1, true, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+        "correlation_id": "2775",
+        "api": "hipLaunchKernel"
+      },
+      {
+        "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1, 1>(bmms::detail::KernelArguments)",
+        "correlation_id": "2821",
+        "api": "hipLaunchKernel"
+      },
+      {
+        "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)2, 32>(bmms::detail::KernelArguments)",
+        "correlation_id": "2867",
+        "api": "hipLaunchKernel"
+      },
+      {
+        "kernel": "void bmms::detail::fused_split_b<(bmms::DataType)0, false, false, 4>(bmms::detail::KernelArguments)",
+        "correlation_id": "2913",
+        "api": "hipLaunchKernel"
+      },
+      {
+        "kernel": "void bmms::detail::fused_split_b<(bmms::DataType)0, false, true, 4>(bmms::detail::KernelArguments)",
+        "correlation_id": "2959",
+        "api": "hipLaunchKernel"
+      },
+      {
+        "kernel": "void bmms::detail::fused_split_b<(bmms::DataType)0, true, false, 4>(bmms::detail::KernelArguments)",
+        "correlation_id": "3005",
+        "api": "hipLaunchKernel"
+      },
+      {
+        "kernel": "void bmms::detail::fused_split_b<(bmms::DataType)0, true, true, 4>(bmms::detail::KernelArguments)",
+        "correlation_id": "3051",
+        "api": "hipLaunchKernel"
+      }
+    ],
+    "note": "External memcpy/runtime kernels are excluded only after HIP correlation matching; no elapsed timings from profiler used as formal performance results."
+  },
+  "references_overwritten": false,
+  "git_history_rewritten": false,
+  "lfs_history_pruned": false
+}

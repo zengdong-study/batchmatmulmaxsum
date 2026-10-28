@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 import statistics
 import torch
+from case_cache import ensure_cases, DEFAULT_CASES
 
 ROOT=Path(__file__).resolve().parents[1]
 PATHS=[('matrix',True,8)]+[(f'simd_k{k}',False,k) for k in (1,4,8,16,32)]
@@ -134,7 +135,7 @@ def scan(runner,args):
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--library',type=Path,default=Path('/tmp/bmms-build/libbmms_small.so'))
-    p.add_argument('--cases',type=Path,default=ROOT.parent/'cases')
+    p.add_argument('--cases',type=Path,default=DEFAULT_CASES)
     p.add_argument('--output',type=Path,default=ROOT/'results'/'small_baseline')
     p.add_argument('--mode',choices=['validate','scan','all','smoke'],default='all')
     p.add_argument('--extended',action='store_true',help='validate cases 1-32 including N=1 long sums and lanesK=2')
@@ -146,6 +147,8 @@ def main():
     args=p.parse_args()
     if args.repeats<1:p.error('--repeats must be positive')
     args.output.mkdir(parents=True,exist_ok=True)
+    ids=([25] if args.mode=='smoke' else list(range(1,33)) if args.extended else list(range(1,27))+list(range(28,32)))
+    if args.mode!='scan':ensure_cases(args.cases,ids)
     runner=Runner(args.library)
     if args.extended: PATHS.append(('simd_k2',False,2))
     if args.mode=='smoke':

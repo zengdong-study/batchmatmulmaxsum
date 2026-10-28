@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Reproducible case/golden caches; only specs, references and scripts are versioned.
+*.pt
+*.pt.tmp
+/implement/cases/*.cache.json
+/implement/cases/*.cache.json.tmp
+/implement/cases/*.lock

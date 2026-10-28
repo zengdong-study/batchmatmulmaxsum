@@ -1,5 +1,7 @@
 # HIP 融合算子：Small 与 SplitB 分支
 
+> 数据已改为按需生成：仓库不再保存case `.pt`，活跃入口默认使用仓库外缓存。详见[数据与缓存说明](../script/README.md)。以下历史实验中的LFS/持久化路径描述保留为当时记录，复现旧快照需先生成缓存并传入 `--cases`。
+
 S0阶段已完成：40case规格冻结、36case原生整链及独立阶段10/100、22case原生kernel跟踪和实际汇编匹配；融合实现未改。见[S0结论](results/s0_20261028/S0结论.md)与[S0报告](results/s0_20261028/S0报告.md)。后续性能比较以阶段身份明确的基线为准，不把不同轮次计时直接拼接。
 
 > 2026-10-28 更新：当前源码已经使用原生 gfx1100 WMMA、寄存器内 Max、1–8 wave 的 Small Matrix、按布局选择的 K 预取流水和不规则 M tile 负载平衡。下文早期“单 wave / rocWMMA / LDS 整理”等描述为初版实验记录；最新实现、10/100 同机对照和限制见 [续测分析](results/resume_20261028/analysis.md) 与 [逐 case 比较](results/resume_20261028/comparison.md)。原始实验结果保留。
