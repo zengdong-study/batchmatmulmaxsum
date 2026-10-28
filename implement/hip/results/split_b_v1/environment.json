@@ -1,0 +1,18 @@
+{
+  "device": "_CudaDeviceProperties(name='AMD Radeon Graphics', major=11, minor=0, gcnArchName='gfx1100', total_memory=49136MB, multi_processor_count=48, uuid=31393437-6332-3331-6362-653138643831, pci_bus_id=195, pci_device_id=0, pci_domain_id=0, L2_cache_size=6MB)",
+  "torch": "2.9.1+gitff65f5b",
+  "library_sha256": "3f6257c9f6e965f0c22398d7bc9fcb009f3da987b750a3f14e3a7b2908cbbd66",
+  "sources": {
+    "tools/experiment_split_b.py": "e17a30926aa6514df6f852258685818f78caf71abcd6119868ec86a48fd58b03",
+    "src/batch_matmul_max_sum.hip": "f30b266afc6efb77ac0f0554080ab1237c695e8bc64df7cde4d87e69610f974f",
+    "include/bmms/batch_matmul_max_sum.h": "81d76920a328fcdb76d7a20198091a62ba61bef1c97b4916fd453a0209d3caab",
+    "include/bmms/kernels.hip.h": "8ec75314adeddbc20895ddba48257170bba2e97ac73d77d06908626c87d98ae9",
+    "include/bmms/small_c.h": "ae7e63b13979e9136d7df9aaff532b74cd1f40f604f9282ea850360c5eb90539",
+    "include/bmms/small_impl.hip.h": "b702ae4830a7c7f198d8f71ea670764f3e5bd738f928915a8ebdd98c7bca00e6",
+    "include/bmms/split_b_c.h": "f671f8209357f3b52901db9a4815ab28f9e5ab32da5e5e732644ddedef4aa48b",
+    "include/bmms/split_b_impl.hip.h": "ef669b5357c421e6f4ef0b0c795d668266d1059ed125c01849837094847d1b53"
+  },
+  "timing": "10 warmups, 100 calls in one graph, one timed replay, device event arithmetic mean",
+  "baseline_sha256": "6c67aad9b108738694d53ac1db8649114fd4aee74571a5f9e9d6868f2d7f0d14",
+  "large_limit_ms": 50.0
+}

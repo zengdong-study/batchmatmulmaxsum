@@ -1,0 +1,103 @@
+{
+  "target": "gfx1100",
+  "split_b_specializations": 24,
+  "all_contain_wmma": true,
+  "kernels": [
+    {
+      "symbol": "000000000000e300 <void bmms::detail::fused_split_b<(bmms::DataType)0, true, true, 1>(bmms::detail::KernelArguments)>:",
+      "wmma": 1
+    },
+    {
+      "symbol": "000000000000f000 <void bmms::detail::fused_split_b<(bmms::DataType)0, true, true, 2>(bmms::detail::KernelArguments)>:",
+      "wmma": 2
+    },
+    {
+      "symbol": "0000000000010100 <void bmms::detail::fused_split_b<(bmms::DataType)0, true, true, 4>(bmms::detail::KernelArguments)>:",
+      "wmma": 4
+    },
+    {
+      "symbol": "0000000000012800 <void bmms::detail::fused_split_b<(bmms::DataType)0, true, false, 1>(bmms::detail::KernelArguments)>:",
+      "wmma": 1
+    },
+    {
+      "symbol": "0000000000013700 <void bmms::detail::fused_split_b<(bmms::DataType)0, true, false, 2>(bmms::detail::KernelArguments)>:",
+      "wmma": 2
+    },
+    {
+      "symbol": "0000000000014b00 <void bmms::detail::fused_split_b<(bmms::DataType)0, true, false, 4>(bmms::detail::KernelArguments)>:",
+      "wmma": 4
+    },
+    {
+      "symbol": "0000000000017700 <void bmms::detail::fused_split_b<(bmms::DataType)0, false, true, 1>(bmms::detail::KernelArguments)>:",
+      "wmma": 1
+    },
+    {
+      "symbol": "0000000000018200 <void bmms::detail::fused_split_b<(bmms::DataType)0, false, true, 2>(bmms::detail::KernelArguments)>:",
+      "wmma": 2
+    },
+    {
+      "symbol": "0000000000019100 <void bmms::detail::fused_split_b<(bmms::DataType)0, false, true, 4>(bmms::detail::KernelArguments)>:",
+      "wmma": 4
+    },
+    {
+      "symbol": "000000000001b600 <void bmms::detail::fused_split_b<(bmms::DataType)0, false, false, 1>(bmms::detail::KernelArguments)>:",
+      "wmma": 1
+    },
+    {
+      "symbol": "000000000001c300 <void bmms::detail::fused_split_b<(bmms::DataType)0, false, false, 2>(bmms::detail::KernelArguments)>:",
+      "wmma": 2
+    },
+    {
+      "symbol": "000000000001d600 <void bmms::detail::fused_split_b<(bmms::DataType)0, false, false, 4>(bmms::detail::KernelArguments)>:",
+      "wmma": 4
+    },
+    {
+      "symbol": "0000000000020000 <void bmms::detail::fused_split_b<(bmms::DataType)1, true, true, 1>(bmms::detail::KernelArguments)>:",
+      "wmma": 1
+    },
+    {
+      "symbol": "0000000000020d00 <void bmms::detail::fused_split_b<(bmms::DataType)1, true, true, 2>(bmms::detail::KernelArguments)>:",
+      "wmma": 2
+    },
+    {
+      "symbol": "0000000000021e00 <void bmms::detail::fused_split_b<(bmms::DataType)1, true, true, 4>(bmms::detail::KernelArguments)>:",
+      "wmma": 4
+    },
+    {
+      "symbol": "0000000000024500 <void bmms::detail::fused_split_b<(bmms::DataType)1, true, false, 1>(bmms::detail::KernelArguments)>:",
+      "wmma": 1
+    },
+    {
+      "symbol": "0000000000025400 <void bmms::detail::fused_split_b<(bmms::DataType)1, true, false, 2>(bmms::detail::KernelArguments)>:",
+      "wmma": 2
+    },
+    {
+      "symbol": "0000000000026800 <void bmms::detail::fused_split_b<(bmms::DataType)1, true, false, 4>(bmms::detail::KernelArguments)>:",
+      "wmma": 4
+    },
+    {
+      "symbol": "0000000000029400 <void bmms::detail::fused_split_b<(bmms::DataType)1, false, true, 1>(bmms::detail::KernelArguments)>:",
+      "wmma": 1
+    },
+    {
+      "symbol": "0000000000029f00 <void bmms::detail::fused_split_b<(bmms::DataType)1, false, true, 2>(bmms::detail::KernelArguments)>:",
+      "wmma": 2
+    },
+    {
+      "symbol": "000000000002ae00 <void bmms::detail::fused_split_b<(bmms::DataType)1, false, true, 4>(bmms::detail::KernelArguments)>:",
+      "wmma": 4
+    },
+    {
+      "symbol": "000000000002d300 <void bmms::detail::fused_split_b<(bmms::DataType)1, false, false, 1>(bmms::detail::KernelArguments)>:",
+      "wmma": 1
+    },
+    {
+      "symbol": "000000000002e000 <void bmms::detail::fused_split_b<(bmms::DataType)1, false, false, 2>(bmms::detail::KernelArguments)>:",
+      "wmma": 2
+    },
+    {
+      "symbol": "000000000002f300 <void bmms::detail::fused_split_b<(bmms::DataType)1, false, false, 4>(bmms::detail::KernelArguments)>:",
+      "wmma": 4
+    }
+  ]
+}

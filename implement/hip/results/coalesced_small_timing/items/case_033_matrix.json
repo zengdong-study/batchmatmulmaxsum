@@ -1,0 +1,14 @@
+{
+  "case": 33,
+  "path": "matrix",
+  "status": "skipped",
+  "B": 1,
+  "M": 8192,
+  "N": 8192,
+  "K": 8192,
+  "dtype": "float16",
+  "t1": false,
+  "t2": false,
+  "baseline_us": 51657.6611328125,
+  "skip_reason": "User scope: require B<=8, M<=128, N<=257"
+}

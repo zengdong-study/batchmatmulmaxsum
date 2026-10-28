@@ -1,0 +1,15 @@
+{
+  "status": "stopped",
+  "stage": "measurement",
+  "pid": 27345,
+  "current_case": 18,
+  "path": "simd_k8",
+  "shape": [
+    1,
+    65,
+    129,
+    8192
+  ],
+  "started_unix": 1793090830.8143523,
+  "reason": "User explicitly requested interruption; continue later"
+}

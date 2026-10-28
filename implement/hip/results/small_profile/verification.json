@@ -1,0 +1,16 @@
+{
+  "operator_calls": {
+    "matrix": 1,
+    "simd": 1
+  },
+  "fused_kernels": 2,
+  "runtime_copy_kernels_outside_operator": 4,
+  "total_trace_kernels": 6,
+  "one_fused_kernel_per_call": true,
+  "fused_correlation_ids": [
+    "46",
+    "61"
+  ],
+  "trace": "small_kernel_trace.csv",
+  "api_trace": "small_hip_api_trace.csv"
+}

@@ -1,0 +1,8 @@
+{
+  "src/batch_matmul_max_sum.hip": "8b3598b7141a67d63ec5f38236ec74ade8bd5e3c46e9483fe818380483de65c4",
+  "include/bmms/batch_matmul_max_sum.h": "e74a521f6ac91bed57d2d0fc59bfea4c69bd66197f994f2ff7eff6d93ccf6f6d",
+  "include/bmms/kernels.hip.h": "9b216e565c4f7e1b72afdbc5b0cdf5577414ad2de92af578c30941205ccf457f",
+  "include/bmms/small_c.h": "ae7e63b13979e9136d7df9aaff532b74cd1f40f604f9282ea850360c5eb90539",
+  "include/bmms/small_impl.hip.h": "b702ae4830a7c7f198d8f71ea670764f3e5bd738f928915a8ebdd98c7bca00e6",
+  "tools/experiment_small.py": "87ec46ec90d06d6bf859ed3ddc71f2c7554451cd53861fae5eb8039d2db248e8"
+}

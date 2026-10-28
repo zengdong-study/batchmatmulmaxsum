@@ -1,0 +1,38 @@
+{
+  "kind": "single un-warmed feasibility/correctness check, NOT a 10/100 performance result",
+  "policy": "full 10/100 timing only if pilot <= 50.0ms; engineering runtime budget, not dispatch threshold",
+  "results": [
+    {
+      "case": 37,
+      "single_device_ms": 240.32766723632812,
+      "config": "gb1_w4_n64",
+      "max_abs": 0.0009765625,
+      "max_rel": 3.632192228688634e-07,
+      "eligible_for_full_timing": false
+    },
+    {
+      "case": 38,
+      "single_device_ms": 106.0285873413086,
+      "config": "gb1_w4_n64",
+      "max_abs": 0.001220703125,
+      "max_rel": 4.544470874077166e-07,
+      "eligible_for_full_timing": false
+    },
+    {
+      "case": 39,
+      "single_device_ms": 268.2522277832031,
+      "config": "gb1_w4_n64",
+      "max_abs": 0.000732421875,
+      "max_rel": 2.724103356839924e-07,
+      "eligible_for_full_timing": false
+    },
+    {
+      "case": 40,
+      "single_device_ms": 139.7259063720703,
+      "config": "gb1_w4_n64",
+      "max_abs": 0.00146484375,
+      "max_rel": 5.44805929231889e-07,
+      "eligible_for_full_timing": false
+    }
+  ]
+}

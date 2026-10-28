@@ -1,0 +1,8 @@
+{
+  "correctness_checks": 384,
+  "performance_rows": 96,
+  "preflight_checks": 4,
+  "golden": "all passed, provisional mixed tolerance",
+  "max_abs": 3.814697265625e-06,
+  "max_rel": 4.207845696615167e-07
+}

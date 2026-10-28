@@ -1,0 +1,22 @@
+{
+  "case": 29,
+  "path": "matrix",
+  "B": 2,
+  "M": 17,
+  "N": 33,
+  "K": 64,
+  "dtype": "float16",
+  "t1": false,
+  "t2": true,
+  "warmups": 10,
+  "iterations": 100,
+  "baseline_us": 16.459619998931885,
+  "golden_passed": true,
+  "max_abs": 0.0,
+  "max_rel": 0.0,
+  "fused_us": 42.914090156555176,
+  "total_device_ms": 4.291409015655518,
+  "status": "complete",
+  "speedup": 0.3835481525737919,
+  "imported_from": "/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_029_matrix.json"
+}

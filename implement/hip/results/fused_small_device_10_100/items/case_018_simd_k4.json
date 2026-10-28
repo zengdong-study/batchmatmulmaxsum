@@ -1,0 +1,21 @@
+{
+  "case": 18,
+  "path": "simd_k4",
+  "B": 1,
+  "M": 65,
+  "N": 129,
+  "K": 8192,
+  "dtype": "float16",
+  "t1": false,
+  "t2": true,
+  "warmups": 10,
+  "iterations": 100,
+  "baseline_us": 597.7878952026367,
+  "golden_passed": true,
+  "max_abs": 6.103515625e-05,
+  "max_rel": 6.390388855161837e-08,
+  "fused_us": 164769.0234375,
+  "total_device_ms": 16476.90234375,
+  "status": "complete",
+  "speedup": 0.003628035675221374
+}

@@ -1,0 +1,9 @@
+{
+  "completed_cases": 40,
+  "golden_checks": "all passed",
+  "warmups": 10,
+  "iterations": 100,
+  "statistical_method": "arithmetic mean",
+  "max_abs": 0.000244140625,
+  "max_rel": 2.5561555420647347e-07
+}

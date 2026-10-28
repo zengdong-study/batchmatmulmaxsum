@@ -1,0 +1,15 @@
+{
+  "status": "stopped",
+  "stage": "measurement",
+  "pid": 25281,
+  "current_case": 19,
+  "path": "simd_k1",
+  "shape": [
+    1,
+    65,
+    129,
+    8192
+  ],
+  "started_unix": 1793090298.8416338,
+  "reason": "Superseded by coalesced-load / multi-wave optimization experiment"
+}

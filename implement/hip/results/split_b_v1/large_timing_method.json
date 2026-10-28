@@ -1,0 +1,10 @@
+{
+  "config": "gb1_w4_n64",
+  "warmups": 10,
+  "iterations": 100,
+  "method": "device event, one graph of 100 calls, arithmetic mean; no replay warmup",
+  "reason": "pilot 142-317ms showed one representative config per large-B case is affordable; full multi-config tuning remains skipped",
+  "library_sha256": "3f6257c9f6e965f0c22398d7bc9fcb009f3da987b750a3f14e3a7b2908cbbd66",
+  "baseline_sha256": "6c67aad9b108738694d53ac1db8649114fd4aee74571a5f9e9d6868f2d7f0d14",
+  "script_sha256": "29511db8a2fb6e08d89f9ac9256fb8b79dfb3e0ef5db51e163cf5ffafbb200c5"
+}

@@ -1,0 +1,7 @@
+"Kind","Agent_Id","Queue_Id","Stream_Id","Thread_Id","Dispatch_Id","Kernel_Id","Kernel_Name","Correlation_Id","Start_Timestamp","End_Timestamp","LDS_Block_Size","Scratch_Size","VGPR_Count","Accum_VGPR_Count","SGPR_Count","Workgroup_Size_X","Workgroup_Size_Y","Workgroup_Size_Z","Grid_Size_X","Grid_Size_Y","Grid_Size_Z"
+"KERNEL_DISPATCH","Agent 2",1,0,12673,1,4,"__amd_rocclr_copyBuffer",24,10358016646911063,10358016646922183,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,12673,2,4,"__amd_rocclr_copyBuffer",35,10358016647101793,10358016647106193,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,12673,3,23,"void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1>(bmms::detail::KernelArguments)",46,10358016648558029,10358016648571829,2048,0,48,0,128,32,1,1,32,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,12673,4,4,"__amd_rocclr_copyBuffer",55,10358016648689089,10358016648693929,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,12673,5,27,"void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)2>(bmms::detail::KernelArguments)",61,10358016648832710,10358016648843030,0,0,32,0,128,32,1,1,32,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,12673,6,4,"__amd_rocclr_copyBuffer",70,10358016648893970,10358016648898130,0,0,16,0,128,512,1,1,512,1,1

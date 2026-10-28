@@ -1,0 +1,14 @@
+{
+  "case": 16,
+  "path": "simd_k8",
+  "status": "skipped",
+  "B": 4,
+  "M": 32,
+  "N": 1024,
+  "K": 128,
+  "dtype": "bfloat16",
+  "t1": true,
+  "t2": true,
+  "baseline_us": 23.234829902648926,
+  "skip_reason": "User scope: require B<=8, M<=128, N<=257"
+}

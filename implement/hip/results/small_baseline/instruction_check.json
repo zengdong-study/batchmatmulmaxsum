@@ -1,0 +1,8 @@
+{
+  "target": "gfx1100",
+  "WMMA_instructions": {
+    "v_wmma_f32_16x16x16_bf16": 4,
+    "v_wmma_f32_16x16x16_f16": 4
+  },
+  "host_api_invalid_and_unimplemented_cases": "passed"
+}

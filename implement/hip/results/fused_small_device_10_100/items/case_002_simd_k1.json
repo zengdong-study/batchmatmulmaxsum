@@ -1,0 +1,22 @@
+{
+  "case": 2,
+  "path": "simd_k1",
+  "B": 3,
+  "M": 17,
+  "N": 33,
+  "K": 40,
+  "dtype": "float16",
+  "t1": false,
+  "t2": true,
+  "warmups": 10,
+  "iterations": 100,
+  "baseline_us": 16.63681983947754,
+  "golden_passed": true,
+  "max_abs": 9.5367431640625e-07,
+  "max_rel": 7.434180368976213e-08,
+  "fused_us": 106.1513900756836,
+  "total_device_ms": 10.61513900756836,
+  "status": "complete",
+  "speedup": 0.15672729134885427,
+  "imported_from": "/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_002_simd_k1.json"
+}

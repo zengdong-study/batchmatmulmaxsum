@@ -1,0 +1,241 @@
+case,path,status,B,M,N,K,dtype,t1,t2,warmups,iterations,fused_us,total_device_ms,baseline_us,speedup,golden_passed,max_abs,max_rel,error,skip_reason,imported_from
+1,matrix,complete,3,17,33,40,float16,False,False,10,100,113.51029396057129,11.351029396057129,15.557639598846436,0.1370592838412568,True,1.9073486328125e-06,1.4868360737952427e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_001_matrix.json
+1,simd_k1,complete,3,17,33,40,float16,False,False,10,100,106.26017570495605,10.626017570495605,15.557639598846436,0.1464108213226003,True,9.5367431640625e-07,7.434180368976213e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_001_simd_k1.json
+1,simd_k16,complete,3,17,33,40,float16,False,False,10,100,196.23079299926758,19.623079299926758,15.557639598846436,0.07928235605155254,True,9.5367431640625e-07,6.812989700667209e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_001_simd_k16.json
+1,simd_k32,complete,3,17,33,40,float16,False,False,10,100,294.955997467041,29.4955997467041,15.557639598846436,0.05274562894956858,True,9.5367431640625e-07,6.812989700667209e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_001_simd_k32.json
+1,simd_k4,complete,3,17,33,40,float16,False,False,10,100,77.57493019104004,7.757493019104004,15.557639598846436,0.20054983691939376,True,1.9073486328125e-06,1.3625979401334418e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_001_simd_k4.json
+1,simd_k8,complete,3,17,33,40,float16,False,False,10,100,89.12775039672852,8.912775039672852,15.557639598846436,0.17455438434826115,True,9.5367431640625e-07,7.434180368976213e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_001_simd_k8.json
+2,matrix,complete,3,17,33,40,float16,False,True,10,100,33.770461082458496,3.3770461082458496,16.63681983947754,0.4926441424313054,True,1.9073486328125e-06,1.4868360737952427e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_002_matrix.json
+2,simd_k1,complete,3,17,33,40,float16,False,True,10,100,106.1513900756836,10.61513900756836,16.63681983947754,0.15672729134885427,True,9.5367431640625e-07,7.434180368976213e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_002_simd_k1.json
+2,simd_k16,complete,3,17,33,40,float16,False,True,10,100,201.84076309204102,20.1840763092041,16.63681983947754,0.08242547037880062,True,9.5367431640625e-07,6.812989700667209e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_002_simd_k16.json
+2,simd_k32,complete,3,17,33,40,float16,False,True,10,100,311.9049644470215,31.19049644470215,16.63681983947754,0.053339387748999365,True,9.5367431640625e-07,6.812989700667209e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_002_simd_k32.json
+2,simd_k4,complete,3,17,33,40,float16,False,True,10,100,77.7769422531128,7.777694225311279,16.63681983947754,0.21390426722274106,True,1.9073486328125e-06,1.3625979401334418e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_002_simd_k4.json
+2,simd_k8,complete,3,17,33,40,float16,False,True,10,100,95.24138450622559,9.524138450622559,16.63681983947754,0.1746805753163957,True,9.5367431640625e-07,7.434180368976213e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_002_simd_k8.json
+3,matrix,complete,3,17,33,40,float16,True,False,10,100,36.340460777282715,3.6340460777282715,15.660820007324219,0.43094720519102964,True,1.9073486328125e-06,1.4868360737952427e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_003_matrix.json
+3,simd_k1,complete,3,17,33,40,float16,True,False,10,100,123.33102226257324,12.333102226257324,15.660820007324219,0.12698200112200597,True,9.5367431640625e-07,7.434180368976213e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_003_simd_k1.json
+3,simd_k16,complete,3,17,33,40,float16,True,False,10,100,205.45156478881836,20.545156478881836,15.660820007324219,0.07622633599029446,True,9.5367431640625e-07,6.812989700667209e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_003_simd_k16.json
+3,simd_k32,complete,3,17,33,40,float16,True,False,10,100,308.1577682495117,30.815776824951172,15.660820007324219,0.0508207860417909,True,9.5367431640625e-07,6.812989700667209e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_003_simd_k32.json
+3,simd_k4,complete,3,17,33,40,float16,True,False,10,100,91.51535987854004,9.151535987854004,15.660820007324219,0.17112777601606322,True,1.9073486328125e-06,1.3625979401334418e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_003_simd_k4.json
+3,simd_k8,complete,3,17,33,40,float16,True,False,10,100,100.15578269958496,10.015578269958496,15.660820007324219,0.15636461106093594,True,9.5367431640625e-07,7.434180368976213e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_003_simd_k8.json
+4,matrix,complete,3,17,33,40,float16,True,True,10,100,30.72606086730957,3.072606086730957,14.89042043685913,0.48461859465693896,True,1.9073486328125e-06,1.4868360737952427e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_004_matrix.json
+4,simd_k1,complete,3,17,33,40,float16,True,True,10,100,107.00900077819824,10.700900077819824,14.89042043685913,0.13915110251074198,True,9.5367431640625e-07,7.434180368976213e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_004_simd_k1.json
+4,simd_k16,complete,3,17,33,40,float16,True,True,10,100,198.99648666381836,19.899648666381836,14.89042043685913,0.07482755442820847,True,9.5367431640625e-07,6.812989700667209e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_004_simd_k16.json
+4,simd_k32,complete,3,17,33,40,float16,True,True,10,100,301.67911529541016,30.167911529541016,14.89042043685913,0.049358472900181166,True,9.5367431640625e-07,6.812989700667209e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_004_simd_k32.json
+4,simd_k4,complete,3,17,33,40,float16,True,True,10,100,78.41535091400146,7.8415350914001465,14.89042043685913,0.18989165084767057,True,1.9073486328125e-06,1.3625979401334418e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_004_simd_k4.json
+4,simd_k8,complete,3,17,33,40,float16,True,True,10,100,95.28456687927246,9.528456687927246,14.89042043685913,0.15627316074937514,True,9.5367431640625e-07,7.434180368976213e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_004_simd_k8.json
+5,matrix,complete,3,17,33,40,bfloat16,False,False,10,100,38.26246976852417,3.826246976852417,15.606019496917725,0.4078675420413058,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_005_matrix.json
+5,simd_k1,complete,3,17,33,40,bfloat16,False,False,10,100,109.63261604309082,10.963261604309082,15.606019496917725,0.142348327169205,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_005_simd_k1.json
+5,simd_k16,complete,3,17,33,40,bfloat16,False,False,10,100,198.17920684814453,19.817920684814453,15.606019496917725,0.07874700754492316,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_005_simd_k16.json
+5,simd_k32,complete,3,17,33,40,bfloat16,False,False,10,100,297.2269821166992,29.722698211669922,15.606019496917725,0.05250539296863158,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_005_simd_k32.json
+5,simd_k4,complete,3,17,33,40,bfloat16,False,False,10,100,79.91375923156738,7.991375923156738,15.606019496917725,0.19528576364047537,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_005_simd_k4.json
+5,simd_k8,complete,3,17,33,40,bfloat16,False,False,10,100,95.25339126586914,9.525339126586914,15.606019496917725,0.16383689115444247,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_005_simd_k8.json
+6,matrix,complete,3,17,33,40,bfloat16,False,True,10,100,33.995258808135986,3.3995258808135986,16.43641948699951,0.4834915239140886,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_006_matrix.json
+6,simd_k1,complete,3,17,33,40,bfloat16,False,True,10,100,109.17740821838379,10.917740821838379,16.43641948699951,0.15054780796886394,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_006_simd_k1.json
+6,simd_k16,complete,3,17,33,40,bfloat16,False,True,10,100,203.97600173950195,20.397600173950195,16.43641948699951,0.08058016309188415,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_006_simd_k16.json
+6,simd_k32,complete,3,17,33,40,bfloat16,False,True,10,100,315.0198173522949,31.501981735229492,16.43641948699951,0.0521758269849361,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_006_simd_k32.json
+6,simd_k4,complete,3,17,33,40,bfloat16,False,True,10,100,79.73094940185547,7.973094940185547,16.43641948699951,0.20614854846588607,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_006_simd_k4.json
+6,simd_k8,complete,3,17,33,40,bfloat16,False,True,10,100,95.5849838256836,9.55849838256836,16.43641948699951,0.17195608378167723,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_006_simd_k8.json
+7,matrix,complete,3,17,33,40,bfloat16,True,False,10,100,36.24247074127197,3.6242470741271973,15.531220436096191,0.4285364689115868,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_007_matrix.json
+7,simd_k1,complete,3,17,33,40,bfloat16,True,False,10,100,126.29104614257812,12.629104614257812,15.531220436096191,0.12297958493876116,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_007_simd_k1.json
+7,simd_k16,complete,3,17,33,40,bfloat16,True,False,10,100,207.30104446411133,20.730104446411133,15.531220436096191,0.07492109109361005,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_007_simd_k16.json
+7,simd_k32,complete,3,17,33,40,bfloat16,True,False,10,100,308.8053321838379,30.88053321838379,15.531220436096191,0.05029453450904193,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_007_simd_k32.json
+7,simd_k4,complete,3,17,33,40,bfloat16,True,False,10,100,95.30657768249512,9.530657768249512,15.531220436096191,0.16296063518130918,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_007_simd_k4.json
+7,simd_k8,complete,3,17,33,40,bfloat16,True,False,10,100,101.04659080505371,10.104659080505371,15.531220436096191,0.1537035570656721,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_007_simd_k8.json
+8,matrix,complete,3,17,33,40,bfloat16,True,True,10,100,30.763659477233887,3.0763659477233887,14.794820547103882,0.48091874629065284,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_008_matrix.json
+8,simd_k1,complete,3,17,33,40,bfloat16,True,True,10,100,110.4802131652832,11.04802131652832,14.794820547103882,0.13391375815839698,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_008_simd_k1.json
+8,simd_k16,complete,3,17,33,40,bfloat16,True,True,10,100,202.58623123168945,20.258623123168945,14.794820547103882,0.07302974371532515,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_008_simd_k16.json
+8,simd_k32,complete,3,17,33,40,bfloat16,True,True,10,100,302.24496841430664,30.224496841430664,14.794820547103882,0.04894976622679015,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_008_simd_k32.json
+8,simd_k4,complete,3,17,33,40,bfloat16,True,True,10,100,80.27814865112305,8.027814865112305,14.794820547103882,0.18429449103765438,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_008_simd_k4.json
+8,simd_k8,complete,3,17,33,40,bfloat16,True,True,10,100,95.3837776184082,9.53837776184082,14.794820547103882,0.15510835192847947,True,1.9073486328125e-06,1.4865390175612287e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_008_simd_k8.json
+9,matrix,skipped,4,32,1024,128,float16,False,False,,,,,22.11683988571167,,,,,,"User scope: require B<=8, M<=128, N<=257",
+9,simd_k1,skipped,4,32,1024,128,float16,False,False,,,,,22.11683988571167,,,,,,"User scope: require B<=8, M<=128, N<=257",
+9,simd_k16,skipped,4,32,1024,128,float16,False,False,,,,,22.11683988571167,,,,,,"User scope: require B<=8, M<=128, N<=257",
+9,simd_k32,skipped,4,32,1024,128,float16,False,False,,,,,22.11683988571167,,,,,,"User scope: require B<=8, M<=128, N<=257",
+9,simd_k4,skipped,4,32,1024,128,float16,False,False,,,,,22.11683988571167,,,,,,"User scope: require B<=8, M<=128, N<=257",
+9,simd_k8,skipped,4,32,1024,128,float16,False,False,,,,,22.11683988571167,,,,,,"User scope: require B<=8, M<=128, N<=257",
+10,matrix,skipped,4,32,1024,128,float16,False,True,,,,,23.869240283966064,,,,,,"User scope: require B<=8, M<=128, N<=257",
+10,simd_k1,skipped,4,32,1024,128,float16,False,True,,,,,23.869240283966064,,,,,,"User scope: require B<=8, M<=128, N<=257",
+10,simd_k16,skipped,4,32,1024,128,float16,False,True,,,,,23.869240283966064,,,,,,"User scope: require B<=8, M<=128, N<=257",
+10,simd_k32,skipped,4,32,1024,128,float16,False,True,,,,,23.869240283966064,,,,,,"User scope: require B<=8, M<=128, N<=257",
+10,simd_k4,skipped,4,32,1024,128,float16,False,True,,,,,23.869240283966064,,,,,,"User scope: require B<=8, M<=128, N<=257",
+10,simd_k8,skipped,4,32,1024,128,float16,False,True,,,,,23.869240283966064,,,,,,"User scope: require B<=8, M<=128, N<=257",
+11,matrix,skipped,4,32,1024,128,float16,True,False,,,,,20.86042881011963,,,,,,"User scope: require B<=8, M<=128, N<=257",
+11,simd_k1,skipped,4,32,1024,128,float16,True,False,,,,,20.86042881011963,,,,,,"User scope: require B<=8, M<=128, N<=257",
+11,simd_k16,skipped,4,32,1024,128,float16,True,False,,,,,20.86042881011963,,,,,,"User scope: require B<=8, M<=128, N<=257",
+11,simd_k32,skipped,4,32,1024,128,float16,True,False,,,,,20.86042881011963,,,,,,"User scope: require B<=8, M<=128, N<=257",
+11,simd_k4,skipped,4,32,1024,128,float16,True,False,,,,,20.86042881011963,,,,,,"User scope: require B<=8, M<=128, N<=257",
+11,simd_k8,skipped,4,32,1024,128,float16,True,False,,,,,20.86042881011963,,,,,,"User scope: require B<=8, M<=128, N<=257",
+12,matrix,skipped,4,32,1024,128,float16,True,True,,,,,23.666861057281494,,,,,,"User scope: require B<=8, M<=128, N<=257",
+12,simd_k1,skipped,4,32,1024,128,float16,True,True,,,,,23.666861057281494,,,,,,"User scope: require B<=8, M<=128, N<=257",
+12,simd_k16,skipped,4,32,1024,128,float16,True,True,,,,,23.666861057281494,,,,,,"User scope: require B<=8, M<=128, N<=257",
+12,simd_k32,skipped,4,32,1024,128,float16,True,True,,,,,23.666861057281494,,,,,,"User scope: require B<=8, M<=128, N<=257",
+12,simd_k4,skipped,4,32,1024,128,float16,True,True,,,,,23.666861057281494,,,,,,"User scope: require B<=8, M<=128, N<=257",
+12,simd_k8,skipped,4,32,1024,128,float16,True,True,,,,,23.666861057281494,,,,,,"User scope: require B<=8, M<=128, N<=257",
+13,matrix,skipped,4,32,1024,128,bfloat16,False,False,,,,,22.010459899902344,,,,,,"User scope: require B<=8, M<=128, N<=257",
+13,simd_k1,skipped,4,32,1024,128,bfloat16,False,False,,,,,22.010459899902344,,,,,,"User scope: require B<=8, M<=128, N<=257",
+13,simd_k16,skipped,4,32,1024,128,bfloat16,False,False,,,,,22.010459899902344,,,,,,"User scope: require B<=8, M<=128, N<=257",
+13,simd_k32,skipped,4,32,1024,128,bfloat16,False,False,,,,,22.010459899902344,,,,,,"User scope: require B<=8, M<=128, N<=257",
+13,simd_k4,skipped,4,32,1024,128,bfloat16,False,False,,,,,22.010459899902344,,,,,,"User scope: require B<=8, M<=128, N<=257",
+13,simd_k8,skipped,4,32,1024,128,bfloat16,False,False,,,,,22.010459899902344,,,,,,"User scope: require B<=8, M<=128, N<=257",
+14,matrix,skipped,4,32,1024,128,bfloat16,False,True,,,,,23.580429553985596,,,,,,"User scope: require B<=8, M<=128, N<=257",
+14,simd_k1,skipped,4,32,1024,128,bfloat16,False,True,,,,,23.580429553985596,,,,,,"User scope: require B<=8, M<=128, N<=257",
+14,simd_k16,skipped,4,32,1024,128,bfloat16,False,True,,,,,23.580429553985596,,,,,,"User scope: require B<=8, M<=128, N<=257",
+14,simd_k32,skipped,4,32,1024,128,bfloat16,False,True,,,,,23.580429553985596,,,,,,"User scope: require B<=8, M<=128, N<=257",
+14,simd_k4,skipped,4,32,1024,128,bfloat16,False,True,,,,,23.580429553985596,,,,,,"User scope: require B<=8, M<=128, N<=257",
+14,simd_k8,skipped,4,32,1024,128,bfloat16,False,True,,,,,23.580429553985596,,,,,,"User scope: require B<=8, M<=128, N<=257",
+15,matrix,skipped,4,32,1024,128,bfloat16,True,False,,,,,20.799620151519775,,,,,,"User scope: require B<=8, M<=128, N<=257",
+15,simd_k1,skipped,4,32,1024,128,bfloat16,True,False,,,,,20.799620151519775,,,,,,"User scope: require B<=8, M<=128, N<=257",
+15,simd_k16,skipped,4,32,1024,128,bfloat16,True,False,,,,,20.799620151519775,,,,,,"User scope: require B<=8, M<=128, N<=257",
+15,simd_k32,skipped,4,32,1024,128,bfloat16,True,False,,,,,20.799620151519775,,,,,,"User scope: require B<=8, M<=128, N<=257",
+15,simd_k4,skipped,4,32,1024,128,bfloat16,True,False,,,,,20.799620151519775,,,,,,"User scope: require B<=8, M<=128, N<=257",
+15,simd_k8,skipped,4,32,1024,128,bfloat16,True,False,,,,,20.799620151519775,,,,,,"User scope: require B<=8, M<=128, N<=257",
+16,matrix,skipped,4,32,1024,128,bfloat16,True,True,,,,,23.234829902648926,,,,,,"User scope: require B<=8, M<=128, N<=257",
+16,simd_k1,skipped,4,32,1024,128,bfloat16,True,True,,,,,23.234829902648926,,,,,,"User scope: require B<=8, M<=128, N<=257",
+16,simd_k16,skipped,4,32,1024,128,bfloat16,True,True,,,,,23.234829902648926,,,,,,"User scope: require B<=8, M<=128, N<=257",
+16,simd_k32,skipped,4,32,1024,128,bfloat16,True,True,,,,,23.234829902648926,,,,,,"User scope: require B<=8, M<=128, N<=257",
+16,simd_k4,skipped,4,32,1024,128,bfloat16,True,True,,,,,23.234829902648926,,,,,,"User scope: require B<=8, M<=128, N<=257",
+16,simd_k8,skipped,4,32,1024,128,bfloat16,True,True,,,,,23.234829902648926,,,,,,"User scope: require B<=8, M<=128, N<=257",
+17,matrix,complete,1,65,129,8192,float16,False,False,10,100,51915.21484375,5191.521484375,1119.2939758300781,0.021560037441794935,True,0.02056884765625,2.153561044189539e-05,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_017_matrix.json
+17,simd_k1,complete,1,65,129,8192,float16,False,False,10,100,370907.1484375,37090.71484375,1119.2939758300781,0.003017720150569397,True,0.0003662109375,3.834233313097102e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_017_simd_k1.json
+17,simd_k16,complete,1,65,129,8192,float16,False,False,10,100,322473.84765625,32247.384765625,1119.2939758300781,0.0034709604638178933,True,0.00018310546875,1.917116656548551e-07,,,
+17,simd_k32,complete,1,65,129,8192,float16,False,False,10,100,339884.8828125,33988.48828125,1119.2939758300781,0.0032931561020545443,True,0.0001220703125,1.2780777710323673e-07,,,
+17,simd_k4,complete,1,65,129,8192,float16,False,False,10,100,325960.3515625,32596.03515625,1119.2939758300781,0.0034338347300974224,True,6.103515625e-05,6.390388855161837e-08,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_017_simd_k4.json
+17,simd_k8,complete,1,65,129,8192,float16,False,False,10,100,318658.90625,31865.890625,1119.2939758300781,0.0035125143339064546,True,0.0001220703125,1.2780777710323673e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_017_simd_k8.json
+18,matrix,complete,1,65,129,8192,float16,False,True,10,100,37948.5009765625,3794.85009765625,597.7878952026367,0.01575260892576069,True,0.02056884765625,2.153561044189539e-05,,,
+18,simd_k1,complete,1,65,129,8192,float16,False,True,10,100,199857.83203125,19985.783203125,597.7878952026367,0.0029910656446486715,True,0.0003662109375,3.834233313097102e-07,,,
+18,simd_k16,complete,1,65,129,8192,float16,False,True,10,100,181828.4375,18182.84375,597.7878952026367,0.0032876479797206456,True,0.00018310546875,1.917116656548551e-07,,,
+18,simd_k32,complete,1,65,129,8192,float16,False,True,10,100,220270.01953125,22027.001953125,597.7878952026367,0.00271388678529548,True,0.0001220703125,1.2780777710323673e-07,,,
+18,simd_k4,complete,1,65,129,8192,float16,False,True,10,100,164769.0234375,16476.90234375,597.7878952026367,0.003628035675221374,True,6.103515625e-05,6.390388855161837e-08,,,
+18,simd_k8,complete,1,65,129,8192,float16,False,True,10,100,166073.45703125,16607.345703125,597.7878952026367,0.003599539058732011,True,0.0001220703125,1.2780777710323673e-07,,,
+19,matrix,complete,1,65,129,8192,float16,True,False,10,100,47178.3935546875,4717.83935546875,336.1159896850586,0.00712436275083095,True,0.02056884765625,2.153561044189539e-05,,,
+19,simd_k1,complete,1,65,129,8192,float16,True,False,10,100,407818.5546875,40781.85546875,336.1159896850586,0.0008241802287358281,True,0.0003662109375,3.834233313097102e-07,,,
+19,simd_k16,complete,1,65,129,8192,float16,True,False,10,100,363810.15625,36381.015625,336.1159896850586,0.0009238774231857597,True,0.00018310546875,1.917116656548551e-07,,,
+19,simd_k32,complete,1,65,129,8192,float16,True,False,10,100,393995.859375,39399.5859375,336.1159896850586,0.0008530952335850512,True,0.0001220703125,1.2780777710323673e-07,,,
+19,simd_k4,complete,1,65,129,8192,float16,True,False,10,100,354709.2578125,35470.92578125,336.1159896850586,0.0009475816666243602,True,6.103515625e-05,6.390388855161837e-08,,,
+19,simd_k8,complete,1,65,129,8192,float16,True,False,10,100,352280.8203125,35228.08203125,336.1159896850586,0.0009541137930441346,True,0.0001220703125,1.2780777710323673e-07,,,
+20,matrix,complete,1,65,129,8192,float16,True,True,10,100,33239.6240234375,3323.96240234375,182.9928970336914,0.005505263745000899,True,0.02056884765625,2.153561044189539e-05,,,
+20,simd_k1,complete,1,65,129,8192,float16,True,True,10,100,376764.0625,37676.40625,182.9928970336914,0.00048569626258791976,True,0.0003662109375,3.834233313097102e-07,,,
+20,simd_k16,complete,1,65,129,8192,float16,True,True,10,100,320840.21484375,32084.021484375,182.9928970336914,0.0005703552378021234,True,0.00018310546875,1.917116656548551e-07,,,
+20,simd_k32,complete,1,65,129,8192,float16,True,True,10,100,336249.765625,33624.9765625,182.9928970336914,0.0005442171734857738,True,0.0001220703125,1.2780777710323673e-07,,,
+20,simd_k4,complete,1,65,129,8192,float16,True,True,10,100,323572.7734375,32357.27734375,182.9928970336914,0.0005655386115761608,True,6.103515625e-05,6.390388855161837e-08,,,
+20,simd_k8,complete,1,65,129,8192,float16,True,True,10,100,317566.73828125,31756.673828125,182.9928970336914,0.0005762344571226016,True,0.0001220703125,1.2780777710323673e-07,,,
+21,matrix,complete,1,65,129,8192,bfloat16,False,False,10,100,52052.099609375,5205.2099609375,1217.151870727539,0.02338333861384374,True,0.0130615234375,1.3677551718242435e-05,,,
+21,simd_k1,complete,1,65,129,8192,bfloat16,False,False,10,100,378089.6484375,37808.96484375,1217.151870727539,0.0032192150082858985,True,6.103515625e-05,6.391379307589922e-08,,,
+21,simd_k16,complete,1,65,129,8192,bfloat16,False,False,10,100,327939.84375,32793.984375,1217.151870727539,0.003711509576907088,True,6.103515625e-05,6.391379307589922e-08,,,
+21,simd_k32,complete,1,65,129,8192,bfloat16,False,False,10,100,342700.1171875,34270.01171875,1217.151870727539,0.0035516529165982285,True,6.103515625e-05,6.391379307589922e-08,,,
+21,simd_k4,complete,1,65,129,8192,bfloat16,False,False,10,100,328427.890625,32842.7890625,1217.151870727539,0.0037059942394395695,True,6.103515625e-05,6.391379307589922e-08,,,
+21,simd_k8,complete,1,65,129,8192,bfloat16,False,False,10,100,323931.2890625,32393.12890625,1217.151870727539,0.0037574384192713755,True,0.0,0.0,,,
+22,matrix,complete,1,65,129,8192,bfloat16,False,True,10,100,37784.14794921875,3778.414794921875,553.3199310302734,0.014644234713825649,True,0.0130615234375,1.3677551718242435e-05,,,
+22,simd_k1,complete,1,65,129,8192,bfloat16,False,True,10,100,206363.73046875,20636.373046875,553.3199310302734,0.00268128478668912,True,6.103515625e-05,6.391379307589922e-08,,,
+22,simd_k16,complete,1,65,129,8192,bfloat16,False,True,10,100,187201.85546875,18720.185546875,553.3199310302734,0.0029557395659608743,True,6.103515625e-05,6.391379307589922e-08,,,
+22,simd_k32,complete,1,65,129,8192,bfloat16,False,True,10,100,225330.1953125,22533.01953125,553.3199310302734,0.00245559602104325,True,6.103515625e-05,6.391379307589922e-08,,,
+22,simd_k4,complete,1,65,129,8192,bfloat16,False,True,10,100,169712.109375,16971.2109375,553.3199310302734,0.003260344433099021,True,6.103515625e-05,6.391379307589922e-08,,,
+22,simd_k8,complete,1,65,129,8192,bfloat16,False,True,10,100,171148.26171875,17114.826171875,553.3199310302734,0.0032329859822914867,True,0.0,0.0,,,
+23,matrix,complete,1,65,129,8192,bfloat16,True,False,10,100,47220.4345703125,4722.04345703125,337.11681365966797,0.007139214552498282,True,0.0130615234375,1.3677551718242435e-05,,,
+23,simd_k1,complete,1,65,129,8192,bfloat16,True,False,10,100,413145.625,41314.5625,337.11681365966797,0.000815975755908508,True,6.103515625e-05,6.391379307589922e-08,,,
+23,simd_k16,complete,1,65,129,8192,bfloat16,True,False,10,100,368663.5546875,36866.35546875,337.11681365966797,0.0009144294557280748,True,6.103515625e-05,6.391379307589922e-08,,,
+23,simd_k32,complete,1,65,129,8192,bfloat16,True,False,10,100,398798.4375,39879.84375,337.11681365966797,0.0008453313302153245,True,6.103515625e-05,6.391379307589922e-08,,,
+23,simd_k4,complete,1,65,129,8192,bfloat16,True,False,10,100,359468.75,35946.875,337.11681365966797,0.0009378195285672759,True,6.103515625e-05,6.391379307589922e-08,,,
+23,simd_k8,complete,1,65,129,8192,bfloat16,True,False,10,100,357156.0546875,35715.60546875,337.11681365966797,0.0009438921984806733,True,0.0,0.0,,,
+24,matrix,complete,1,65,129,8192,bfloat16,True,True,10,100,33070.37353515625,3307.037353515625,182.71879196166992,0.005525150532921146,True,0.0130615234375,1.3677551718242435e-05,,,
+24,simd_k1,complete,1,65,129,8192,bfloat16,True,True,10,100,382684.4921875,38268.44921875,182.71879196166992,0.0004774658908105037,True,6.103515625e-05,6.391379307589922e-08,,,
+24,simd_k16,complete,1,65,129,8192,bfloat16,True,True,10,100,325954.609375,32595.4609375,182.71879196166992,0.0005605651422203329,True,6.103515625e-05,6.391379307589922e-08,,,
+24,simd_k32,complete,1,65,129,8192,bfloat16,True,True,10,100,341278.0078125,34127.80078125,182.71879196166992,0.0005353957412399589,True,6.103515625e-05,6.391379307589922e-08,,,
+24,simd_k4,complete,1,65,129,8192,bfloat16,True,True,10,100,328647.4609375,32864.74609375,182.71879196166992,0.0005559720176764676,True,6.103515625e-05,6.391379307589922e-08,,,
+24,simd_k8,complete,1,65,129,8192,bfloat16,True,True,10,100,322350.91796875,32235.091796875,182.71879196166992,0.0005668319268735056,True,0.0,0.0,,,
+25,matrix,complete,1,1,1,32,float16,False,False,10,100,7.712839841842651,0.7712839841842651,14.032429456710815,1.819359632049402,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_025_matrix.json
+25,simd_k1,complete,1,1,1,32,float16,False,False,10,100,6.601240038871765,0.6601240038871765,14.032429456710815,2.1257262838618325,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_025_simd_k1.json
+25,simd_k16,complete,1,1,1,32,float16,False,False,10,100,4.670819938182831,0.4670819938182831,14.032429456710815,3.004275403981874,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_025_simd_k16.json
+25,simd_k32,complete,1,1,1,32,float16,False,False,10,100,4.58842009305954,0.458842009305954,14.032429456710815,3.058226834534248,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_025_simd_k32.json
+25,simd_k4,complete,1,1,1,32,float16,False,False,10,100,4.959630072116852,0.4959630072116852,14.032429456710815,2.829329859821893,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_025_simd_k4.json
+25,simd_k8,complete,1,1,1,32,float16,False,False,10,100,4.755220115184784,0.4755220115184784,14.032429456710815,2.9509526618759954,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_025_simd_k8.json
+26,matrix,complete,2,1,257,40,bfloat16,False,True,10,100,75.18139839172363,7.518139839172363,14.869240522384644,0.19777818503601455,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_026_matrix.json
+26,simd_k1,complete,2,1,257,40,bfloat16,False,True,10,100,30.940890312194824,3.0940890312194824,14.869240522384644,0.480569252285678,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_026_simd_k1.json
+26,simd_k16,complete,2,1,257,40,bfloat16,False,True,10,100,75.27247905731201,7.527247905731201,14.869240522384644,0.1975388708941457,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_026_simd_k16.json
+26,simd_k32,complete,2,1,257,40,bfloat16,False,True,10,100,194.18621063232422,19.418621063232422,14.869240522384644,0.0765720721052554,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_026_simd_k32.json
+26,simd_k4,complete,2,1,257,40,bfloat16,False,True,10,100,35.26249885559082,3.526249885559082,14.869240522384644,0.4216729104558949,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_026_simd_k4.json
+26,simd_k8,complete,2,1,257,40,bfloat16,False,True,10,100,46.86492919921875,4.686492919921875,14.869240522384644,0.3172786298081619,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_026_simd_k8.json
+27,matrix,skipped,3,257,1,72,float16,True,False,,,,,16.113619804382324,,,,,,"User scope: require B<=8, M<=128, N<=257",
+27,simd_k1,skipped,3,257,1,72,float16,True,False,,,,,16.113619804382324,,,,,,"User scope: require B<=8, M<=128, N<=257",
+27,simd_k16,skipped,3,257,1,72,float16,True,False,,,,,16.113619804382324,,,,,,"User scope: require B<=8, M<=128, N<=257",
+27,simd_k32,skipped,3,257,1,72,float16,True,False,,,,,16.113619804382324,,,,,,"User scope: require B<=8, M<=128, N<=257",
+27,simd_k4,skipped,3,257,1,72,float16,True,False,,,,,16.113619804382324,,,,,,"User scope: require B<=8, M<=128, N<=257",
+27,simd_k8,skipped,3,257,1,72,float16,True,False,,,,,16.113619804382324,,,,,,"User scope: require B<=8, M<=128, N<=257",
+28,matrix,complete,2,17,33,56,bfloat16,True,True,10,100,38.80887031555176,3.880887031555176,15.177220106124878,0.39107606025942365,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_028_matrix.json
+28,simd_k1,complete,2,17,33,56,bfloat16,True,True,10,100,209.6116065979004,20.96116065979004,15.177220106124878,0.072406391766461,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_028_simd_k1.json
+28,simd_k16,complete,2,17,33,56,bfloat16,True,True,10,100,221.41948699951172,22.141948699951172,15.177220106124878,0.06854509651247791,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_028_simd_k16.json
+28,simd_k32,complete,2,17,33,56,bfloat16,True,True,10,100,303.36055755615234,30.336055755615234,15.177220106124878,0.0500303013298476,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_028_simd_k32.json
+28,simd_k4,complete,2,17,33,56,bfloat16,True,True,10,100,108.23821067810059,10.823821067810059,15.177220106124878,0.1402205377476332,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_028_simd_k4.json
+28,simd_k8,complete,2,17,33,56,bfloat16,True,True,10,100,115.75155258178711,11.575155258178711,15.177220106124878,0.13111893333267421,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_028_simd_k8.json
+29,matrix,complete,2,17,33,64,float16,False,True,10,100,42.914090156555176,4.291409015655518,16.459619998931885,0.3835481525737919,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_029_matrix.json
+29,simd_k1,complete,2,17,33,64,float16,False,True,10,100,222.08524703979492,22.208524703979492,16.459619998931885,0.07411397298255712,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_029_simd_k1.json
+29,simd_k16,complete,2,17,33,64,float16,False,True,10,100,221.204833984375,22.1204833984375,16.459619998931885,0.0744089525642759,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_029_simd_k16.json
+29,simd_k32,complete,2,17,33,64,float16,False,True,10,100,310.54298400878906,31.054298400878906,16.459619998931885,0.05300271088547935,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_029_simd_k32.json
+29,simd_k4,complete,2,17,33,64,float16,False,True,10,100,115.2158260345459,11.52158260345459,16.459619998931885,0.14285902002730677,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_029_simd_k4.json
+29,simd_k8,complete,2,17,33,64,float16,False,True,10,100,123.1186294555664,12.31186294555664,16.459619998931885,0.13368911002109696,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_029_simd_k8.json
+30,matrix,complete,2,33,65,8192,bfloat16,True,False,10,100,15658.92578125,1565.892578125,342.0796585083008,0.021845665742787224,True,9.5367431640625e-07,1.1908572648009267e-07,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_030_matrix.json
+30,simd_k1,complete,2,33,65,8192,bfloat16,True,False,10,100,126661.298828125,12666.1298828125,342.0796585083008,0.0027007433341773245,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_030_simd_k1.json
+30,simd_k16,complete,2,33,65,8192,bfloat16,True,False,10,100,94165.76171875,9416.576171875,342.0796585083008,0.0036327392490065414,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_030_simd_k16.json
+30,simd_k32,complete,2,33,65,8192,bfloat16,True,False,10,100,99262.1484375,9926.21484375,342.0796585083008,0.0034462246071944517,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_030_simd_k32.json
+30,simd_k4,complete,2,33,65,8192,bfloat16,True,False,10,100,97193.49609375,9719.349609375,342.0796585083008,0.0035195735543697365,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_030_simd_k4.json
+30,simd_k8,complete,2,33,65,8192,bfloat16,True,False,10,100,93500.146484375,9350.0146484375,342.0796585083008,0.0036586002415030057,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_030_simd_k8.json
+31,matrix,complete,2,17,129,128,float16,True,True,10,100,269.5817184448242,26.958171844482422,17.32282042503357,0.06425814229898925,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_031_matrix.json
+31,simd_k1,complete,2,17,129,128,float16,True,True,10,100,883.1265258789062,88.31265258789062,17.32282042503357,0.01961533247774834,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_031_simd_k1.json
+31,simd_k16,complete,2,17,129,128,float16,True,True,10,100,990.2691650390625,99.02691650390625,17.32282042503357,0.017493042332940103,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_031_simd_k16.json
+31,simd_k32,complete,2,17,129,128,float16,True,True,10,100,1444.2379760742188,144.42379760742188,17.32282042503357,0.011994436313135251,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_031_simd_k32.json
+31,simd_k4,complete,2,17,129,128,float16,True,True,10,100,766.4091491699219,76.64091491699219,17.32282042503357,0.022602575196023524,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_031_simd_k4.json
+31,simd_k8,complete,2,17,129,128,float16,True,True,10,100,821.4884185791016,82.14884185791016,17.32282042503357,0.021087114599857924,True,0.0,0.0,,,/workspace/batchmatmulmaxsum/implement/hip/results/fused_device_10_100/items/case_031_simd_k8.json
+32,matrix,skipped,2,8192,1,32,bfloat16,False,False,,,,,19.220019578933716,,,,,,"User scope: require B<=8, M<=128, N<=257",
+32,simd_k1,skipped,2,8192,1,32,bfloat16,False,False,,,,,19.220019578933716,,,,,,"User scope: require B<=8, M<=128, N<=257",
+32,simd_k16,skipped,2,8192,1,32,bfloat16,False,False,,,,,19.220019578933716,,,,,,"User scope: require B<=8, M<=128, N<=257",
+32,simd_k32,skipped,2,8192,1,32,bfloat16,False,False,,,,,19.220019578933716,,,,,,"User scope: require B<=8, M<=128, N<=257",
+32,simd_k4,skipped,2,8192,1,32,bfloat16,False,False,,,,,19.220019578933716,,,,,,"User scope: require B<=8, M<=128, N<=257",
+32,simd_k8,skipped,2,8192,1,32,bfloat16,False,False,,,,,19.220019578933716,,,,,,"User scope: require B<=8, M<=128, N<=257",
+33,matrix,skipped,1,8192,8192,8192,float16,False,False,,,,,51657.6611328125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+33,simd_k1,skipped,1,8192,8192,8192,float16,False,False,,,,,51657.6611328125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+33,simd_k16,skipped,1,8192,8192,8192,float16,False,False,,,,,51657.6611328125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+33,simd_k32,skipped,1,8192,8192,8192,float16,False,False,,,,,51657.6611328125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+33,simd_k4,skipped,1,8192,8192,8192,float16,False,False,,,,,51657.6611328125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+33,simd_k8,skipped,1,8192,8192,8192,float16,False,False,,,,,51657.6611328125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+34,matrix,skipped,1,8192,8192,8192,bfloat16,False,True,,,,,45701.650390625,,,,,,"User scope: require B<=8, M<=128, N<=257",
+34,simd_k1,skipped,1,8192,8192,8192,bfloat16,False,True,,,,,45701.650390625,,,,,,"User scope: require B<=8, M<=128, N<=257",
+34,simd_k16,skipped,1,8192,8192,8192,bfloat16,False,True,,,,,45701.650390625,,,,,,"User scope: require B<=8, M<=128, N<=257",
+34,simd_k32,skipped,1,8192,8192,8192,bfloat16,False,True,,,,,45701.650390625,,,,,,"User scope: require B<=8, M<=128, N<=257",
+34,simd_k4,skipped,1,8192,8192,8192,bfloat16,False,True,,,,,45701.650390625,,,,,,"User scope: require B<=8, M<=128, N<=257",
+34,simd_k8,skipped,1,8192,8192,8192,bfloat16,False,True,,,,,45701.650390625,,,,,,"User scope: require B<=8, M<=128, N<=257",
+35,matrix,skipped,1,8192,8192,8192,float16,True,False,,,,,46753.5546875,,,,,,"User scope: require B<=8, M<=128, N<=257",
+35,simd_k1,skipped,1,8192,8192,8192,float16,True,False,,,,,46753.5546875,,,,,,"User scope: require B<=8, M<=128, N<=257",
+35,simd_k16,skipped,1,8192,8192,8192,float16,True,False,,,,,46753.5546875,,,,,,"User scope: require B<=8, M<=128, N<=257",
+35,simd_k32,skipped,1,8192,8192,8192,float16,True,False,,,,,46753.5546875,,,,,,"User scope: require B<=8, M<=128, N<=257",
+35,simd_k4,skipped,1,8192,8192,8192,float16,True,False,,,,,46753.5546875,,,,,,"User scope: require B<=8, M<=128, N<=257",
+35,simd_k8,skipped,1,8192,8192,8192,float16,True,False,,,,,46753.5546875,,,,,,"User scope: require B<=8, M<=128, N<=257",
+36,matrix,skipped,1,8192,8192,8192,bfloat16,True,True,,,,,45228.271484375,,,,,,"User scope: require B<=8, M<=128, N<=257",
+36,simd_k1,skipped,1,8192,8192,8192,bfloat16,True,True,,,,,45228.271484375,,,,,,"User scope: require B<=8, M<=128, N<=257",
+36,simd_k16,skipped,1,8192,8192,8192,bfloat16,True,True,,,,,45228.271484375,,,,,,"User scope: require B<=8, M<=128, N<=257",
+36,simd_k32,skipped,1,8192,8192,8192,bfloat16,True,True,,,,,45228.271484375,,,,,,"User scope: require B<=8, M<=128, N<=257",
+36,simd_k4,skipped,1,8192,8192,8192,bfloat16,True,True,,,,,45228.271484375,,,,,,"User scope: require B<=8, M<=128, N<=257",
+36,simd_k8,skipped,1,8192,8192,8192,bfloat16,True,True,,,,,45228.271484375,,,,,,"User scope: require B<=8, M<=128, N<=257",
+37,matrix,skipped,64,8192,8192,128,bfloat16,False,False,,,,,70527.0751953125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+37,simd_k1,skipped,64,8192,8192,128,bfloat16,False,False,,,,,70527.0751953125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+37,simd_k16,skipped,64,8192,8192,128,bfloat16,False,False,,,,,70527.0751953125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+37,simd_k32,skipped,64,8192,8192,128,bfloat16,False,False,,,,,70527.0751953125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+37,simd_k4,skipped,64,8192,8192,128,bfloat16,False,False,,,,,70527.0751953125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+37,simd_k8,skipped,64,8192,8192,128,bfloat16,False,False,,,,,70527.0751953125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+38,matrix,skipped,64,8192,8192,128,float16,False,True,,,,,73576.4013671875,,,,,,"User scope: require B<=8, M<=128, N<=257",
+38,simd_k1,skipped,64,8192,8192,128,float16,False,True,,,,,73576.4013671875,,,,,,"User scope: require B<=8, M<=128, N<=257",
+38,simd_k16,skipped,64,8192,8192,128,float16,False,True,,,,,73576.4013671875,,,,,,"User scope: require B<=8, M<=128, N<=257",
+38,simd_k32,skipped,64,8192,8192,128,float16,False,True,,,,,73576.4013671875,,,,,,"User scope: require B<=8, M<=128, N<=257",
+38,simd_k4,skipped,64,8192,8192,128,float16,False,True,,,,,73576.4013671875,,,,,,"User scope: require B<=8, M<=128, N<=257",
+38,simd_k8,skipped,64,8192,8192,128,float16,False,True,,,,,73576.4013671875,,,,,,"User scope: require B<=8, M<=128, N<=257",
+39,matrix,skipped,64,8192,8192,128,bfloat16,True,False,,,,,69891.640625,,,,,,"User scope: require B<=8, M<=128, N<=257",
+39,simd_k1,skipped,64,8192,8192,128,bfloat16,True,False,,,,,69891.640625,,,,,,"User scope: require B<=8, M<=128, N<=257",
+39,simd_k16,skipped,64,8192,8192,128,bfloat16,True,False,,,,,69891.640625,,,,,,"User scope: require B<=8, M<=128, N<=257",
+39,simd_k32,skipped,64,8192,8192,128,bfloat16,True,False,,,,,69891.640625,,,,,,"User scope: require B<=8, M<=128, N<=257",
+39,simd_k4,skipped,64,8192,8192,128,bfloat16,True,False,,,,,69891.640625,,,,,,"User scope: require B<=8, M<=128, N<=257",
+39,simd_k8,skipped,64,8192,8192,128,bfloat16,True,False,,,,,69891.640625,,,,,,"User scope: require B<=8, M<=128, N<=257",
+40,matrix,skipped,64,8192,8192,128,float16,True,True,,,,,76478.828125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+40,simd_k1,skipped,64,8192,8192,128,float16,True,True,,,,,76478.828125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+40,simd_k16,skipped,64,8192,8192,128,float16,True,True,,,,,76478.828125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+40,simd_k32,skipped,64,8192,8192,128,float16,True,True,,,,,76478.828125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+40,simd_k4,skipped,64,8192,8192,128,float16,True,True,,,,,76478.828125,,,,,,"User scope: require B<=8, M<=128, N<=257",
+40,simd_k8,skipped,64,8192,8192,128,float16,True,True,,,,,76478.828125,,,,,,"User scope: require B<=8, M<=128, N<=257",

@@ -1,0 +1,12 @@
+{
+  "status": "stopped_by_user",
+  "signaled_processes": [
+    {
+      "pid": 27345,
+      "command": "/opt/venv/bin/python -u implement/hip/tools/benchmark_fused.py --library /tmp/bmms-coalesced-build/libbmms_small.so --import-from /tmp/bmms-no-import --output implement/hip/results/coalesced_small_timing"
+    }
+  ],
+  "latest_build": "/tmp/bmms-coalesced-build",
+  "latest_sources": "include/bmms/native_wmma.hip.h, small_impl.hip.h, split_b_impl.hip.h, src/batch_matmul_max_sum.hip",
+  "note": "No subsequent benchmark/optimization steps authorized now. Preserve existing results; latest performance validation not finalized."
+}

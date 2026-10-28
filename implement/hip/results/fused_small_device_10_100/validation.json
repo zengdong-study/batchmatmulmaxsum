@@ -1,0 +1,21 @@
+{
+  "selected_cases": 22,
+  "measured_configurations": 132,
+  "skipped_cases": 18,
+  "skipped_configurations": 108,
+  "failed": 0,
+  "warmups": 10,
+  "iterations": 100,
+  "arithmetic_mean_and_speedup_checks": "passed",
+  "golden_checks": "all passed, provisional mixed tolerance",
+  "imported_measurements": 88,
+  "cases_faster_than_baseline": [
+    25
+  ],
+  "best_path_counts": {
+    "simd": 3,
+    "matrix": 19
+  },
+  "max_abs": 0.02056884765625,
+  "max_rel": 2.153561044189539e-05
+}

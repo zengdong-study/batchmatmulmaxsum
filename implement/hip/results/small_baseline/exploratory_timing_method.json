@@ -1,0 +1,9 @@
+{
+  "method": "HIP events around a graph of repeated operator calls; 3 warmups, graph warmup, median of 3 batches",
+  "repeats_per_batch": 30,
+  "includes": "device execution and graph scheduling overhead; graph launch overhead amortized over repeats",
+  "excludes": "allocations, input generation, reference, host-device copies, compilation",
+  "warning": "initial one-wave baseline, not final hardware crossover or small-vs-split boundary",
+  "gpu": "_CudaDeviceProperties(name='AMD Radeon Graphics', major=11, minor=0, gcnArchName='gfx1100', total_memory=49136MB, multi_processor_count=48, uuid=31393437-6332-3331-6362-653138643831, pci_bus_id=195, pci_device_id=0, pci_domain_id=0, L2_cache_size=6MB)",
+  "torch": "2.9.1+gitff65f5b"
+}

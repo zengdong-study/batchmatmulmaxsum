@@ -1,0 +1,15 @@
+{
+  "status": "stopped",
+  "stage": "measurement",
+  "pid": 15671,
+  "current_case": 17,
+  "path": "simd_k16",
+  "shape": [
+    1,
+    65,
+    129,
+    8192
+  ],
+  "started_unix": 1793084764.786529,
+  "reason": "User narrowed scope to small BMN only; selected 22 cases continued in fused_small_device_10_100"
+}

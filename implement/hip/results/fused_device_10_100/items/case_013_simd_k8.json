@@ -1,0 +1,21 @@
+{
+  "case": 13,
+  "path": "simd_k8",
+  "B": 4,
+  "M": 32,
+  "N": 1024,
+  "K": 128,
+  "dtype": "bfloat16",
+  "t1": false,
+  "t2": false,
+  "warmups": 10,
+  "iterations": 100,
+  "baseline_us": 22.010459899902344,
+  "golden_passed": true,
+  "max_abs": 1.9073486328125e-06,
+  "max_rel": 2.1242334570805533e-07,
+  "fused_us": 11081.904296875,
+  "total_device_ms": 1108.1904296875,
+  "status": "complete",
+  "speedup": 0.0019861622434430427
+}

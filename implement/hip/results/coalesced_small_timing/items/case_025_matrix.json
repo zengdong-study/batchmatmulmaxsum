@@ -1,0 +1,21 @@
+{
+  "case": 25,
+  "path": "matrix",
+  "B": 1,
+  "M": 1,
+  "N": 1,
+  "K": 32,
+  "dtype": "float16",
+  "t1": false,
+  "t2": false,
+  "warmups": 10,
+  "iterations": 100,
+  "baseline_us": 14.032429456710815,
+  "golden_passed": true,
+  "max_abs": 0.0,
+  "max_rel": 0.0,
+  "fused_us": 6.909229755401611,
+  "total_device_ms": 0.6909229755401611,
+  "status": "complete",
+  "speedup": 2.030968711923397
+}

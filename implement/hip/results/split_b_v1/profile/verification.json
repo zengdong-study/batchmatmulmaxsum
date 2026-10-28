@@ -1,0 +1,7 @@
+{
+  "fused_kernels": 1,
+  "external_copy_kernels": 3,
+  "one_kernel_per_call": true,
+  "parameter_validation": "passed",
+  "performance_arithmetic": "all 96 rows passed"
+}

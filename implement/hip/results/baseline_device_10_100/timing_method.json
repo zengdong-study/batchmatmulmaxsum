@@ -1,0 +1,20 @@
+{
+  "scope": "exactly case_001.pt through case_040.pt; no shape scans",
+  "operator": "torch.bmm(FP32 logical inputs) -> torch.amax(N) -> torch.sum(M, FP32)",
+  "input_conversion": "actual FP16/BF16 values converted to FP32 before timing; logical transpose views, no explicit contiguous conversion",
+  "method": "device events around one HIP graph replay containing exactly 100 split calls; elapsed/100 arithmetic mean",
+  "warmups": 10,
+  "iterations": 100,
+  "statistic": "arithmetic mean, not median; no adaptive repetition",
+  "includes": "FP32 BMM and two separate reductions, intermediate global-memory traffic, device/graph scheduling",
+  "excludes": "file IO, host/device copies, dtype conversion, allocations, graph capture, reference checking, host wall time",
+  "output_buffers": "preallocated once per case and reused; similarity is temporary device memory, never persisted",
+  "numerical_check": "abs <= 1e-4 + 1e-4*abs(saved golden), provisional",
+  "float32_matmul_precision": "highest",
+  "allow_tf32": false,
+  "torch_version": "2.9.1+gitff65f5b",
+  "hip_version": "7.2.53211-e1a6bc5663",
+  "device": "_CudaDeviceProperties(name='AMD Radeon Graphics', major=11, minor=0, gcnArchName='gfx1100', total_memory=49136MB, multi_processor_count=48, uuid=31393437-6332-3331-6362-653138643831, pci_bus_id=195, pci_device_id=0, pci_domain_id=0, L2_cache_size=6MB)",
+  "script_sha256": "1de2f830875848c7b742e7e9ff006565a0ce646456b7817f50baa987006f79bc",
+  "comparison": "old fused timings use a different protocol; no direct speedup claimed"
+}
