@@ -1,0 +1,8 @@
+{
+  "cases": 40,
+  "sha256": "all passed",
+  "storage_shape_dtype_finiteness": "all passed",
+  "independent_full_cpu_fp64_reference": "cases 1-32 exactly match FP32 golden",
+  "layout_equivalence": "cases 1-24 passed",
+  "analytic_expectations": "cases 25,26,28,29,32 checked during generation"
+}

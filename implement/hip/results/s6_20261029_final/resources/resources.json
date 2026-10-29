@@ -1,0 +1,1072 @@
+{
+  "library_sha256": "2cd410092baf1873a9e6156a4a30bfbae09892a3da6e061d7cd02118e801f957",
+  "code_object_sha256": "08d17a01fd2646fe6d2ccf306263e9a8aa88a47ad12e62839144d5ce972c5d29",
+  "kernels": {
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi32ELi64ELNS_8DataTypeE1ELb1ELb1EEEvNS0_4ArgsE": {
+      "bytes": 15252,
+      "code_sha256": "bde0bc58fe16b28d9ae88cc3fae86c50b634ec3e8074209abebbb3bf0274df19",
+      "resources": {
+        "vgpr_count": 234,
+        "sgpr_count": 80,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 10560,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 32, 64, (bmms::DataType)1, true, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi64ELNS_8DataTypeE1ELb1ELb1EEEvNS0_4ArgsE": {
+      "bytes": 13356,
+      "code_sha256": "ab24a09d1d4caaec54c0490260da95c354d372cd85ba050cfb5999cbcad9f5d3",
+      "resources": {
+        "vgpr_count": 234,
+        "sgpr_count": 107,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12672,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 64, (bmms::DataType)1, true, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi32ELi64ELi64ELNS_8DataTypeE1ELb1ELb1EEEvNS0_4ArgsE": {
+      "bytes": 9808,
+      "code_sha256": "137bd1100aba6e72208782df538e532a028099fb4e3f2f1a3d8d3f59f049b37b",
+      "resources": {
+        "vgpr_count": 157,
+        "sgpr_count": 52,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 5440,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<32, 64, 64, (bmms::DataType)1, true, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi32ELNS_8DataTypeE1ELb1ELb1EEEvNS0_4ArgsE": {
+      "bytes": 8400,
+      "code_sha256": "6bb1a64c1519b27700cab9d912968ae1a0218534454d920b3258ae8c1327fedf",
+      "resources": {
+        "vgpr_count": 166,
+        "sgpr_count": 52,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8192,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 32, (bmms::DataType)1, true, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled11splitk_gemmILNS_8DataTypeE1ELb1ELb1EEEvNS0_4ArgsE": {
+      "bytes": 8876,
+      "code_sha256": "187324814e8747c212ffcc722592d9ce82225dca60db13f95c92d9b832e0e026",
+      "resources": {
+        "vgpr_count": 99,
+        "sgpr_count": 28,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 6336,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::splitk_gemm<(bmms::DataType)1, true, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi32ELi64ELNS_8DataTypeE1ELb1ELb0EEEvNS0_4ArgsE": {
+      "bytes": 16448,
+      "code_sha256": "36560a82c55f902a70fff6de1b5c1598c182a716eb798160887ff8a73e933916",
+      "resources": {
+        "vgpr_count": 216,
+        "sgpr_count": 22,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 10560,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 32, 64, (bmms::DataType)1, true, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi64ELNS_8DataTypeE1ELb1ELb0EEEvNS0_4ArgsE": {
+      "bytes": 14068,
+      "code_sha256": "6778fccd0ec2c94a2d72e35d0c9d916dc052d6fb153ee0932ade7a6b41b40257",
+      "resources": {
+        "vgpr_count": 231,
+        "sgpr_count": 23,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12672,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 64, (bmms::DataType)1, true, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi32ELi64ELi64ELNS_8DataTypeE1ELb1ELb0EEEvNS0_4ArgsE": {
+      "bytes": 10416,
+      "code_sha256": "39df8da8a9de7a06ad0b4f2055455f8817f360bd39686268bc3dc5387cc03b75",
+      "resources": {
+        "vgpr_count": 185,
+        "sgpr_count": 22,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 5440,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<32, 64, 64, (bmms::DataType)1, true, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi32ELNS_8DataTypeE1ELb1ELb0EEEvNS0_4ArgsE": {
+      "bytes": 8500,
+      "code_sha256": "0555ab6573d1feefe8bad3e2c87f52a233a04ca81a43e552ff29fc624ac89767",
+      "resources": {
+        "vgpr_count": 103,
+        "sgpr_count": 23,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8192,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 32, (bmms::DataType)1, true, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled11splitk_gemmILNS_8DataTypeE1ELb1ELb0EEEvNS0_4ArgsE": {
+      "bytes": 13468,
+      "code_sha256": "3b141e14c1a98b7777bfa84594c93590404954aa7e441725849a74d57c4ce29e",
+      "resources": {
+        "vgpr_count": 145,
+        "sgpr_count": 31,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 6336,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::splitk_gemm<(bmms::DataType)1, true, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi32ELi64ELNS_8DataTypeE1ELb0ELb1EEEvNS0_4ArgsE": {
+      "bytes": 13460,
+      "code_sha256": "4aac00c518bfb1b567fb8cce6febd265bcc88c1117fb8967f72afff41d7a1378",
+      "resources": {
+        "vgpr_count": 224,
+        "sgpr_count": 105,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 10560,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 32, 64, (bmms::DataType)1, false, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi64ELNS_8DataTypeE1ELb0ELb1EEEvNS0_4ArgsE": {
+      "bytes": 12084,
+      "code_sha256": "f5b33c6a3cbab863dddc8cba3b736423b03c819626e7550232ac60f57e228d3b",
+      "resources": {
+        "vgpr_count": 201,
+        "sgpr_count": 107,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12672,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 64, (bmms::DataType)1, false, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi32ELi64ELi64ELNS_8DataTypeE1ELb0ELb1EEEvNS0_4ArgsE": {
+      "bytes": 9484,
+      "code_sha256": "234aebc431c23729e69d7666197a6eddf29cabac05a4ef572818a7d193efa774",
+      "resources": {
+        "vgpr_count": 133,
+        "sgpr_count": 66,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 5440,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<32, 64, 64, (bmms::DataType)1, false, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi32ELNS_8DataTypeE1ELb0ELb1EEEvNS0_4ArgsE": {
+      "bytes": 8064,
+      "code_sha256": "a7d9cfc36687ab2ec759b3494971a82b04b1558b3dd6a91dd0b8430f4bbfde07",
+      "resources": {
+        "vgpr_count": 126,
+        "sgpr_count": 58,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8192,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 32, (bmms::DataType)1, false, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled11splitk_gemmILNS_8DataTypeE1ELb0ELb1EEEvNS0_4ArgsE": {
+      "bytes": 6376,
+      "code_sha256": "cf06d669e9d7ced1491db09ed72522afed17c7385edba0ec05cf525fd01e28f2",
+      "resources": {
+        "vgpr_count": 67,
+        "sgpr_count": 24,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 6336,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::splitk_gemm<(bmms::DataType)1, false, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi32ELi64ELNS_8DataTypeE1ELb0ELb0EEEvNS0_4ArgsE": {
+      "bytes": 14876,
+      "code_sha256": "cf6b462f03eedf3736f06a82feccfc47f94707986ef9a1b59fdf5839f18d5dba",
+      "resources": {
+        "vgpr_count": 247,
+        "sgpr_count": 50,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 10560,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 32, 64, (bmms::DataType)1, false, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi64ELNS_8DataTypeE1ELb0ELb0EEEvNS0_4ArgsE": {
+      "bytes": 13380,
+      "code_sha256": "09da18a1ff7fa84d6648275fe2a0cdb99ecf7c69a0746619bda708c964e07966",
+      "resources": {
+        "vgpr_count": 200,
+        "sgpr_count": 49,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12672,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 64, (bmms::DataType)1, false, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi32ELi64ELi64ELNS_8DataTypeE1ELb0ELb0EEEvNS0_4ArgsE": {
+      "bytes": 10244,
+      "code_sha256": "2e166acb240fa8225deb91a1b07566dafde9bffba4da270a0b2868c06b5a7208",
+      "resources": {
+        "vgpr_count": 169,
+        "sgpr_count": 36,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 5440,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<32, 64, 64, (bmms::DataType)1, false, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi32ELNS_8DataTypeE1ELb0ELb0EEEvNS0_4ArgsE": {
+      "bytes": 8344,
+      "code_sha256": "6d931c7fed9e9edd5a004c33c898df3de015abc9fbfa33c042f08ec2a021220b",
+      "resources": {
+        "vgpr_count": 120,
+        "sgpr_count": 27,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8192,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 32, (bmms::DataType)1, false, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled11splitk_gemmILNS_8DataTypeE1ELb0ELb0EEEvNS0_4ArgsE": {
+      "bytes": 11360,
+      "code_sha256": "59e74f7ea3181216d16007bb581b585846b3c57b3ca9ab711761f6d7e1344a43",
+      "resources": {
+        "vgpr_count": 119,
+        "sgpr_count": 29,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 6336,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::splitk_gemm<(bmms::DataType)1, false, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi32ELi64ELNS_8DataTypeE0ELb1ELb1EEEvNS0_4ArgsE": {
+      "bytes": 15252,
+      "code_sha256": "0cda0e039cc6db5888ee4760ee18edcf39a5696bcb87b322e21aba1049a766f3",
+      "resources": {
+        "vgpr_count": 234,
+        "sgpr_count": 80,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 10560,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 32, 64, (bmms::DataType)0, true, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi64ELNS_8DataTypeE0ELb1ELb1EEEvNS0_4ArgsE": {
+      "bytes": 13356,
+      "code_sha256": "c17bc354ddc933eaad0ccd9efa2cbf65ce65ede9d854c2426110526bb7006f3f",
+      "resources": {
+        "vgpr_count": 234,
+        "sgpr_count": 107,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12672,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 64, (bmms::DataType)0, true, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi32ELi64ELi64ELNS_8DataTypeE0ELb1ELb1EEEvNS0_4ArgsE": {
+      "bytes": 9808,
+      "code_sha256": "aa8753eaba42b95d29ed327f562b831ad10544aff671c7983eb5068b5367ab26",
+      "resources": {
+        "vgpr_count": 157,
+        "sgpr_count": 52,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 5440,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<32, 64, 64, (bmms::DataType)0, true, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi32ELNS_8DataTypeE0ELb1ELb1EEEvNS0_4ArgsE": {
+      "bytes": 8400,
+      "code_sha256": "5ad8bbf7dec61bd0a51b5d401293bac2e700d5ae5fac3d77b7e2695bea69d0b8",
+      "resources": {
+        "vgpr_count": 166,
+        "sgpr_count": 52,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8192,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 32, (bmms::DataType)0, true, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled11splitk_gemmILNS_8DataTypeE0ELb1ELb1EEEvNS0_4ArgsE": {
+      "bytes": 8876,
+      "code_sha256": "555f57f2456e95ddf5cf739ba2de7269d63a6d676f8d7cde9fa28087ef2cdde3",
+      "resources": {
+        "vgpr_count": 99,
+        "sgpr_count": 28,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 6336,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::splitk_gemm<(bmms::DataType)0, true, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi32ELi64ELNS_8DataTypeE0ELb1ELb0EEEvNS0_4ArgsE": {
+      "bytes": 16448,
+      "code_sha256": "367b23a4b461f94746c5434d1302b53f18375cdfcc9585db237f1a5129abc58a",
+      "resources": {
+        "vgpr_count": 216,
+        "sgpr_count": 22,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 10560,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 32, 64, (bmms::DataType)0, true, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi64ELNS_8DataTypeE0ELb1ELb0EEEvNS0_4ArgsE": {
+      "bytes": 14068,
+      "code_sha256": "38943cb3627ef1ea0bf914a9c72404a66cc5ec629958f5f266eac4384acb58b0",
+      "resources": {
+        "vgpr_count": 231,
+        "sgpr_count": 23,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12672,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 64, (bmms::DataType)0, true, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi32ELi64ELi64ELNS_8DataTypeE0ELb1ELb0EEEvNS0_4ArgsE": {
+      "bytes": 10416,
+      "code_sha256": "e7a703b8a7ce772deec96b661950f72ca1d811b8fd5e47421c2f138db8f8eebe",
+      "resources": {
+        "vgpr_count": 185,
+        "sgpr_count": 22,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 5440,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<32, 64, 64, (bmms::DataType)0, true, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi32ELNS_8DataTypeE0ELb1ELb0EEEvNS0_4ArgsE": {
+      "bytes": 8500,
+      "code_sha256": "3c56249c7b5e9a8b6ec5daefb212bdcf827d01c0814dfcb6c884b86a1f22fba2",
+      "resources": {
+        "vgpr_count": 103,
+        "sgpr_count": 23,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8192,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 32, (bmms::DataType)0, true, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled11splitk_gemmILNS_8DataTypeE0ELb1ELb0EEEvNS0_4ArgsE": {
+      "bytes": 13468,
+      "code_sha256": "0000f0dc684e1080d0f6ebebf05990db8bf8a8bbf545d38d7fad81ca6317199f",
+      "resources": {
+        "vgpr_count": 145,
+        "sgpr_count": 31,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 6336,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::splitk_gemm<(bmms::DataType)0, true, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi32ELi64ELNS_8DataTypeE0ELb0ELb1EEEvNS0_4ArgsE": {
+      "bytes": 13460,
+      "code_sha256": "e7364c3ebcbf11788c328f8f34ade003b53cfba3969b6390846976f3d5efd1a0",
+      "resources": {
+        "vgpr_count": 224,
+        "sgpr_count": 105,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 10560,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 32, 64, (bmms::DataType)0, false, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi64ELNS_8DataTypeE0ELb0ELb1EEEvNS0_4ArgsE": {
+      "bytes": 12084,
+      "code_sha256": "1fe897e0f42f477c6ee3cf6a1f84c5f7e62189d3dd300a8ea9c15d03bb1cc4a5",
+      "resources": {
+        "vgpr_count": 201,
+        "sgpr_count": 107,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12672,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 64, (bmms::DataType)0, false, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi32ELi64ELi64ELNS_8DataTypeE0ELb0ELb1EEEvNS0_4ArgsE": {
+      "bytes": 9484,
+      "code_sha256": "a101df85a207f49ce23348384c9dd7bfdc2e06f3ab04094c6e6163fe566f68ab",
+      "resources": {
+        "vgpr_count": 133,
+        "sgpr_count": 66,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 5440,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<32, 64, 64, (bmms::DataType)0, false, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi32ELNS_8DataTypeE0ELb0ELb1EEEvNS0_4ArgsE": {
+      "bytes": 8064,
+      "code_sha256": "d643afe00849aca85d1da3bf4e8dae7afe3259af84fe3d28afb2a187b70ef61c",
+      "resources": {
+        "vgpr_count": 126,
+        "sgpr_count": 58,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8192,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 32, (bmms::DataType)0, false, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled11splitk_gemmILNS_8DataTypeE0ELb0ELb1EEEvNS0_4ArgsE": {
+      "bytes": 6376,
+      "code_sha256": "a98eddeab2e6acd76c8d89c1867baad5967ac58e55a32d290dc260c268803f65",
+      "resources": {
+        "vgpr_count": 67,
+        "sgpr_count": 24,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 6336,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::splitk_gemm<(bmms::DataType)0, false, true>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi32ELi64ELNS_8DataTypeE0ELb0ELb0EEEvNS0_4ArgsE": {
+      "bytes": 14876,
+      "code_sha256": "2306922f0a53d71e57c4c7819f8888788cb453425d535fd4cb94dea87aaf8976",
+      "resources": {
+        "vgpr_count": 247,
+        "sgpr_count": 50,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 10560,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 32, 64, (bmms::DataType)0, false, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi64ELNS_8DataTypeE0ELb0ELb0EEEvNS0_4ArgsE": {
+      "bytes": 13380,
+      "code_sha256": "369316ccecb5ed56d73fc356e03370dad84b2bc5ad4873f0ae494fe1be732610",
+      "resources": {
+        "vgpr_count": 200,
+        "sgpr_count": 49,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12672,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 64, (bmms::DataType)0, false, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi32ELi64ELi64ELNS_8DataTypeE0ELb0ELb0EEEvNS0_4ArgsE": {
+      "bytes": 10244,
+      "code_sha256": "ef5a39214b2dcbec053000a40a4f8a0fe272f6e869bd47cde4c010a4648667f5",
+      "resources": {
+        "vgpr_count": 169,
+        "sgpr_count": 36,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 5440,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<32, 64, 64, (bmms::DataType)0, false, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled10tiled_gemmILi16ELi64ELi32ELNS_8DataTypeE0ELb0ELb0EEEvNS0_4ArgsE": {
+      "bytes": 8344,
+      "code_sha256": "501669d815255ce06c25cbd93bd004b957cfe2f734281e79b3d86bd46c676ee5",
+      "resources": {
+        "vgpr_count": 120,
+        "sgpr_count": 27,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8192,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::tiled_gemm<16, 64, 32, (bmms::DataType)0, false, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled11splitk_gemmILNS_8DataTypeE0ELb0ELb0EEEvNS0_4ArgsE": {
+      "bytes": 11360,
+      "code_sha256": "e7a07c9aaa25c4b20e2c839e34e18e101eb5dbfc8dfc9014aa4bc1a0c6178c66",
+      "resources": {
+        "vgpr_count": 119,
+        "sgpr_count": 29,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12948,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::splitk_gemm<(bmms::DataType)0, false, false>(bmms::tiled::Args)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi32ELi64ELi64ELNS_8DataTypeE1ELb1ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 10320,
+      "code_sha256": "099f7daf5b2ddc644629048028a0099533fd125a8d52739176938328e88af424",
+      "resources": {
+        "vgpr_count": 157,
+        "sgpr_count": 57,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 26436,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<32, 64, 64, (bmms::DataType)1, true, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi64ELi128ELi64ELNS_8DataTypeE1ELb1ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 7300,
+      "code_sha256": "b1ea2ae079107a8bab7291eb7c0b0615bf16dc44181721649ec56b62164e8299",
+      "resources": {
+        "vgpr_count": 96,
+        "sgpr_count": 40,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 19588,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<64, 128, 64, (bmms::DataType)1, true, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi128ELi128ELi32ELNS_8DataTypeE1ELb1ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 4936,
+      "code_sha256": "3d8de2d485868154702a8b74ccfbf9e00a699dd17c9a0a4fab32d0c148cdd3f4",
+      "resources": {
+        "vgpr_count": 78,
+        "sgpr_count": 27,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8212,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<128, 128, 32, (bmms::DataType)1, true, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi4ELb0ELNS_8DataTypeE1ELb1ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 9512,
+      "code_sha256": "9a2beca1c1cfceff66a67d98fcd7510b050777f8fbc21e0ba8d73697cdbfa0a2",
+      "resources": {
+        "vgpr_count": 98,
+        "sgpr_count": 33,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)1, true, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb0ELNS_8DataTypeE1ELb1ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 10280,
+      "code_sha256": "a9e9f7f7b24f5579065616b88562b4f47f79599263a0a8ce898f5bd4ede0315e",
+      "resources": {
+        "vgpr_count": 98,
+        "sgpr_count": 33,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, false, (bmms::DataType)1, true, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb1ELNS_8DataTypeE1ELb1ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 11748,
+      "code_sha256": "c6df775270129b6999ebc7f2fb99325984414eeb82520e88000d2c3ac5091437",
+      "resources": {
+        "vgpr_count": 91,
+        "sgpr_count": 30,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12948,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, true, (bmms::DataType)1, true, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi32ELi64ELi64ELNS_8DataTypeE1ELb1ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 10804,
+      "code_sha256": "c370cb636cd7ffc5e5acadb7edd9cfaa996f9fa447497a38ced0cb3dd5fe9705",
+      "resources": {
+        "vgpr_count": 185,
+        "sgpr_count": 26,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 26436,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<32, 64, 64, (bmms::DataType)1, true, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi64ELi128ELi64ELNS_8DataTypeE1ELb1ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 7636,
+      "code_sha256": "59b60c84deaa2353020a93d31f290c864a7128bd21c3d630f16310f01e80c5f1",
+      "resources": {
+        "vgpr_count": 100,
+        "sgpr_count": 25,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 19588,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<64, 128, 64, (bmms::DataType)1, true, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi128ELi128ELi32ELNS_8DataTypeE1ELb1ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 4924,
+      "code_sha256": "04b1d05a2338469efea15219677890275c8ba2cd630cdc57130acffa1d3fa612",
+      "resources": {
+        "vgpr_count": 90,
+        "sgpr_count": 25,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8212,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<128, 128, 32, (bmms::DataType)1, true, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi4ELb0ELNS_8DataTypeE1ELb1ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 14056,
+      "code_sha256": "33cd013fff46a20edbee4b5cd59bd1402b9d83858c0a473cfd3bb3e721baedfc",
+      "resources": {
+        "vgpr_count": 144,
+        "sgpr_count": 38,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)1, true, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb0ELNS_8DataTypeE1ELb1ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 14760,
+      "code_sha256": "8ede9b2cfe76f84575a1be158aa0836689ac2081ead14dae2e207bdeb254e859",
+      "resources": {
+        "vgpr_count": 144,
+        "sgpr_count": 38,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, false, (bmms::DataType)1, true, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb1ELNS_8DataTypeE1ELb1ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 14124,
+      "code_sha256": "ef2a9a1a28c54fbfd1062a501b973cc44d94de78acdee73d0f5a882e8d5ecda6",
+      "resources": {
+        "vgpr_count": 102,
+        "sgpr_count": 31,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12948,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, true, (bmms::DataType)1, true, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi32ELi64ELi64ELNS_8DataTypeE1ELb0ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 10024,
+      "code_sha256": "faccb1fe30942df61ba8479f712f0d3f43d56ee59a371d58c760f60d28995e01",
+      "resources": {
+        "vgpr_count": 133,
+        "sgpr_count": 70,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 26436,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<32, 64, 64, (bmms::DataType)1, false, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi64ELi128ELi64ELNS_8DataTypeE1ELb0ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 7112,
+      "code_sha256": "f57a201b5b82770194a7ab3eab667f6d6e5e207fd9855b58409ad905664b069c",
+      "resources": {
+        "vgpr_count": 95,
+        "sgpr_count": 46,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 19588,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<64, 128, 64, (bmms::DataType)1, false, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi128ELi128ELi32ELNS_8DataTypeE1ELb0ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 4824,
+      "code_sha256": "27ddf281077b95a70c3153a6e0dbf65d6dbb279183f6835ef74a90f221c8b3c9",
+      "resources": {
+        "vgpr_count": 76,
+        "sgpr_count": 29,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8212,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<128, 128, 32, (bmms::DataType)1, false, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi4ELb0ELNS_8DataTypeE1ELb0ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 7076,
+      "code_sha256": "2e9290172e00bd843679dfc51f6c9101831deb040cb7c8c045b63d18c99b75be",
+      "resources": {
+        "vgpr_count": 65,
+        "sgpr_count": 28,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)1, false, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb0ELNS_8DataTypeE1ELb0ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 7908,
+      "code_sha256": "dc3b4e6cc79e2f2fec393f66da8da866ad7291bd6490fba8b77e28efb8e51c25",
+      "resources": {
+        "vgpr_count": 65,
+        "sgpr_count": 28,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, false, (bmms::DataType)1, false, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb1ELNS_8DataTypeE1ELb0ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 10340,
+      "code_sha256": "220644146c39d3ac972d49c823f79950f40c0e17f7d6b7d15055e1b65c0155f4",
+      "resources": {
+        "vgpr_count": 81,
+        "sgpr_count": 32,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12948,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, true, (bmms::DataType)1, false, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi32ELi64ELi64ELNS_8DataTypeE1ELb0ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 10784,
+      "code_sha256": "841c84e1750afd298b566107a94885e30c6d54c9034de506b5ae39badaf6fc45",
+      "resources": {
+        "vgpr_count": 168,
+        "sgpr_count": 40,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 26436,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<32, 64, 64, (bmms::DataType)1, false, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi64ELi128ELi64ELNS_8DataTypeE1ELb0ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 7508,
+      "code_sha256": "f08fbdf77ab0132c95f01cdb1196ca8d8e18d3ef703fa958bfba86050b11a359",
+      "resources": {
+        "vgpr_count": 97,
+        "sgpr_count": 31,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 19588,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<64, 128, 64, (bmms::DataType)1, false, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi128ELi128ELi32ELNS_8DataTypeE1ELb0ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 4956,
+      "code_sha256": "3bcdaa7ed13ee6e41037f2f5d1810954ffbb4df49d255c3f4169b1b5d79b52f8",
+      "resources": {
+        "vgpr_count": 78,
+        "sgpr_count": 27,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8212,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<128, 128, 32, (bmms::DataType)1, false, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi4ELb0ELNS_8DataTypeE1ELb0ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 12008,
+      "code_sha256": "d4c4c8dbb9cb8224420290f0d7983c9782d8e75143975bf8228f71df791f69a2",
+      "resources": {
+        "vgpr_count": 119,
+        "sgpr_count": 38,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)1, false, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb0ELNS_8DataTypeE1ELb0ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 12776,
+      "code_sha256": "8a669eda382ad3b4fb02eb5c017a03c824d76fc557e62625a58c52d3a3d1dd24",
+      "resources": {
+        "vgpr_count": 119,
+        "sgpr_count": 38,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, false, (bmms::DataType)1, false, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb1ELNS_8DataTypeE1ELb0ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 12900,
+      "code_sha256": "611bbf7b6f3d5661c34796169d94b9c0c6fb83e575a5bdffd0633c458ec36033",
+      "resources": {
+        "vgpr_count": 94,
+        "sgpr_count": 29,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12948,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, true, (bmms::DataType)1, false, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi32ELi64ELi64ELNS_8DataTypeE0ELb1ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 10320,
+      "code_sha256": "93bdb469ae1049c87d49aa4d4083700f00040b00ee3b572689e4c08654c3e8ed",
+      "resources": {
+        "vgpr_count": 157,
+        "sgpr_count": 57,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 26436,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<32, 64, 64, (bmms::DataType)0, true, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi64ELi128ELi64ELNS_8DataTypeE0ELb1ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 7300,
+      "code_sha256": "8b405798dfccdcb72f2953b0df34e61049e40d3468bb95d8071f96eb9f2edf9f",
+      "resources": {
+        "vgpr_count": 96,
+        "sgpr_count": 40,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 19588,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<64, 128, 64, (bmms::DataType)0, true, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi128ELi128ELi32ELNS_8DataTypeE0ELb1ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 4936,
+      "code_sha256": "688bfe51a41d40c0b646393442fa3ab81461c7d12ae76c3f637ec5ddd4278900",
+      "resources": {
+        "vgpr_count": 78,
+        "sgpr_count": 27,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8212,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<128, 128, 32, (bmms::DataType)0, true, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi4ELb0ELNS_8DataTypeE0ELb1ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 9512,
+      "code_sha256": "1460a48b40345659aeea35661e1802926cdd312c5ae5a82ab30b4c0bca4b3b8e",
+      "resources": {
+        "vgpr_count": 98,
+        "sgpr_count": 33,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)0, true, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb0ELNS_8DataTypeE0ELb1ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 10280,
+      "code_sha256": "52c53bc47b5db08b5c9bde9ceef0fa144ce7038bfe6fd2e83d3b98b5199f8064",
+      "resources": {
+        "vgpr_count": 98,
+        "sgpr_count": 33,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, false, (bmms::DataType)0, true, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb1ELNS_8DataTypeE0ELb1ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 11748,
+      "code_sha256": "9518e1643c36c87cf3b3c08febde7e32e7db05380da5368b75da88157d2c2bc6",
+      "resources": {
+        "vgpr_count": 91,
+        "sgpr_count": 30,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12948,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, true, (bmms::DataType)0, true, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi32ELi64ELi64ELNS_8DataTypeE0ELb1ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 10804,
+      "code_sha256": "acdc80f7cb7437d31e2c61a1b53ef03b783e5258de7b2264b93b695aba1c94c4",
+      "resources": {
+        "vgpr_count": 185,
+        "sgpr_count": 26,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 26436,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<32, 64, 64, (bmms::DataType)0, true, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi64ELi128ELi64ELNS_8DataTypeE0ELb1ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 7636,
+      "code_sha256": "9915498b532b6974751cbd58a7b4439d27ec58d71914d062a36b06ef761dd18a",
+      "resources": {
+        "vgpr_count": 100,
+        "sgpr_count": 25,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 19588,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<64, 128, 64, (bmms::DataType)0, true, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi128ELi128ELi32ELNS_8DataTypeE0ELb1ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 4924,
+      "code_sha256": "54dc6e1a7a869f5654847532b98df6c6cf8414c6b0010e8df1340334c6707741",
+      "resources": {
+        "vgpr_count": 90,
+        "sgpr_count": 25,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8212,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<128, 128, 32, (bmms::DataType)0, true, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi4ELb0ELNS_8DataTypeE0ELb1ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 14056,
+      "code_sha256": "6cdb612d9a4dd46e7f02046672affa3010714683f834de2c8cc9cd6d5f083039",
+      "resources": {
+        "vgpr_count": 144,
+        "sgpr_count": 38,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)0, true, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb0ELNS_8DataTypeE0ELb1ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 14760,
+      "code_sha256": "984150d534e11fc18fe8c5f14b7d1efd619b483eb4f036f61d43c30f3016d92d",
+      "resources": {
+        "vgpr_count": 144,
+        "sgpr_count": 38,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, false, (bmms::DataType)0, true, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb1ELNS_8DataTypeE0ELb1ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 14124,
+      "code_sha256": "4d32e9084301c2b7d2930f471d2081daeb2d323dc56c0529a75656ae0127ed84",
+      "resources": {
+        "vgpr_count": 102,
+        "sgpr_count": 31,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12948,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, true, (bmms::DataType)0, true, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi32ELi64ELi64ELNS_8DataTypeE0ELb0ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 10024,
+      "code_sha256": "634b7450ee0f49e9799b366f18194eea3f8613f4c5e3f848d38e97c44b990739",
+      "resources": {
+        "vgpr_count": 133,
+        "sgpr_count": 70,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 26436,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<32, 64, 64, (bmms::DataType)0, false, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi64ELi128ELi64ELNS_8DataTypeE0ELb0ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 7112,
+      "code_sha256": "e1adbc88dfab86f8ac3fabb3c91acc63df82a6f7fcf4aee6f2a80ef70e185331",
+      "resources": {
+        "vgpr_count": 95,
+        "sgpr_count": 46,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 19588,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<64, 128, 64, (bmms::DataType)0, false, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi128ELi128ELi32ELNS_8DataTypeE0ELb0ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 4824,
+      "code_sha256": "bed483768323a44e42c30f86c6ad0bb1bee404318a452ee55539c141ab6c60f0",
+      "resources": {
+        "vgpr_count": 76,
+        "sgpr_count": 29,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8212,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<128, 128, 32, (bmms::DataType)0, false, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi4ELb0ELNS_8DataTypeE0ELb0ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 7076,
+      "code_sha256": "ae8db9231cc567cb5e1750c6fa48d90d829bfe72c98f74ced4905c6d7b4d9cee",
+      "resources": {
+        "vgpr_count": 65,
+        "sgpr_count": 28,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)0, false, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb0ELNS_8DataTypeE0ELb0ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 7908,
+      "code_sha256": "8e597fb43b3656d77e93852ccd360f08a20fcd6753c5d3019cc0870863557cde",
+      "resources": {
+        "vgpr_count": 65,
+        "sgpr_count": 28,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, false, (bmms::DataType)0, false, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb1ELNS_8DataTypeE0ELb0ELb1EEEvNS0_10FusionArgsE": {
+      "bytes": 10340,
+      "code_sha256": "92af8148ef4a93decac179a05f80a0b14a1c3a8680618fdf59eb775e046b36dc",
+      "resources": {
+        "vgpr_count": 81,
+        "sgpr_count": 32,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 12948,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, true, (bmms::DataType)0, false, true>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi32ELi64ELi64ELNS_8DataTypeE0ELb0ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 10784,
+      "code_sha256": "dcd1d31b1126c0614a64187b4998ff5c428b6fc2fccf5ccc5583035fb9e0f6cd",
+      "resources": {
+        "vgpr_count": 168,
+        "sgpr_count": 40,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 26436,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<32, 64, 64, (bmms::DataType)0, false, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi64ELi128ELi64ELNS_8DataTypeE0ELb0ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 7508,
+      "code_sha256": "5d298ce7ad2ceab5b68b006736c0d3659481a8830a7b21f6dfa68f3adbd5e3ab",
+      "resources": {
+        "vgpr_count": 97,
+        "sgpr_count": 31,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 19588,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<64, 128, 64, (bmms::DataType)0, false, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled17fused_tiled_largeILi128ELi128ELi32ELNS_8DataTypeE0ELb0ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 4956,
+      "code_sha256": "fdb98ffddb9aa717f3721a4eeae4f6d6ef19fa694f21e416a68b14a71391ae9d",
+      "resources": {
+        "vgpr_count": 78,
+        "sgpr_count": 27,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 8212,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled_large<128, 128, 32, (bmms::DataType)0, false, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi4ELb0ELNS_8DataTypeE0ELb0ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 12008,
+      "code_sha256": "f5f79b9d35444f30c767dc839578d84263cf4dad9f5aa9308a3cafe5974548c9",
+      "resources": {
+        "vgpr_count": 119,
+        "sgpr_count": 38,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)0, false, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb0ELNS_8DataTypeE0ELb0ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 12776,
+      "code_sha256": "ec5847e2df76612a68bf972ec45f8cbf3a9446bf0014013094a93ad16111f871",
+      "resources": {
+        "vgpr_count": 119,
+        "sgpr_count": 38,
+        "private_segment_fixed_size": 0,
+        "group_segment_fixed_size": 16420,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, false, (bmms::DataType)0, false, false>(bmms::tiled::FusionArgs)"
+    },
+    "_ZN4bmms5tiled11fused_tiledILi8ELb1ELNS_8DataTypeE0ELb0ELb0EEEvNS0_10FusionArgsE": {
+      "bytes": 12900,
+      "code_sha256": "a731f725d8f35867225e7a6de8dcd2489ac38bbf3ff64b44a8ab272fc4c69bdf",
+      "resources": {
+        "vgpr_count": 94,
+        "sgpr_count": 29,
+        "private_segment_fixed_size": 0,
+        "wavefront_size": 32
+      },
+      "demangled": "void bmms::tiled::fused_tiled<8, true, (bmms::DataType)0, false, false>(bmms::tiled::FusionArgs)"
+    }
+  },
+  "kernel_count": 88,
+  "scratch_kernels": [],
+  "instruction_counts": {
+    "v_wmma": 448,
+    "v_mfma": 0,
+    "s_barrier": 296,
+    "s_waitcnt": 7286,
+    "ds_read": 0,
+    "ds_write": 0
+  },
+  "note": "Actual code object metadata; LDS includes single-buffer staging and padding. No measured occupancy or bank-conflict claim."
+}

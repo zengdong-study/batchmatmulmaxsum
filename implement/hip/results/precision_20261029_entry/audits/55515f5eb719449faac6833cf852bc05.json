@@ -1,0 +1,5272 @@
+{
+  "bdf": "0000:03:00.0",
+  "allowed_pids": [
+    151187,
+    983320
+  ],
+  "host_pid_mapping": {
+    "namespace_pid": 151187,
+    "host_pid": 983320,
+    "evidence": "empty initial target-client set, unique client after context initialization, own target DRM fd; not inferred from process name"
+  },
+  "samples": [
+    {
+      "time_unix": 1793239843.9539695,
+      "management_pids": [],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": "No running processes detected"
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239844.2882583,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 0,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 0,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239845.412492,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 0,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 8,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239846.5362287,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 0,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 8,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239847.3082628,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 0,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 8,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239847.4663737,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243261440,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243261440,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 8,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239847.6310747,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243261440,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243261440,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 8,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239847.7562695,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245358592,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245358592,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 8,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239847.8818784,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245358592,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245358592,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 8,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239848.0444856,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243261440,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243261440,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239848.170088,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245358592,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245358592,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239848.3291235,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243261440,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243261440,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239848.4546537,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245358592,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245358592,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239848.613289,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243261440,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243261440,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239848.7383084,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245358592,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245358592,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239848.8958757,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243261440,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243261440,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239849.0194664,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243261440,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243261440,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239849.1444664,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245358592,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245358592,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239849.3025959,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243261440,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243261440,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239849.4278777,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245358592,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245358592,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239849.5837626,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243261440,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243261440,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239849.709036,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245358592,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245358592,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239849.864231,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243261440,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243261440,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239849.9960794,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245547008,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245547008,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239850.1194878,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243449856,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243449856,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239850.2424252,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243449856,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243449856,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239850.3686242,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245547008,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245547008,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239850.529422,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243449856,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243449856,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239850.656532,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245547008,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245547008,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239850.8159502,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243449856,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243449856,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239850.940987,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245547008,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245547008,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239851.1013546,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243449856,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243449856,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239851.2261167,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245547008,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245547008,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239851.3493278,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243449856,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243449856,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239851.473101,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243449856,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243449856,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239851.597683,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245547008,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245547008,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239851.7570717,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243449856,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243449856,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239851.8822722,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245547008,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245547008,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239852.0420692,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243449856,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243449856,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239852.1670613,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245547008,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245547008,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239852.3262596,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 243449856,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 243449856,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239852.458649,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 267960320,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 267960320,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239852.5836678,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239852.7078679,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239852.8338528,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 267960320,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 267960320,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239852.9935403,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239853.1198325,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 267960320,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 267960320,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239853.2779558,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239853.4053254,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 267960320,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 267960320,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239853.565475,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239853.6910098,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 267960320,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 267960320,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239853.8180544,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239853.9413812,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239854.0690646,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 267960320,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 267960320,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239854.2293217,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239854.3560793,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 267960320,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 267960320,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239854.5129972,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239854.6394138,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 267960320,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 267960320,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239854.7949138,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239854.9192665,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 246988800,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 246988800,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239855.0432274,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239855.166327,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239855.292087,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 246988800,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 246988800,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239855.4530432,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239855.5776622,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 246988800,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 246988800,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239855.732641,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239855.8579352,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 246988800,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 246988800,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239856.0135164,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239856.1385574,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 246988800,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 246988800,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239856.2630906,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239856.3868313,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239856.5121276,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 267960320,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 267960320,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239856.6723533,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239856.797493,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 246988800,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 246988800,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239856.9555767,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239857.0802782,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 246988800,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 246988800,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239857.2394643,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239857.38784,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239857.624354,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 536395776,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 536395776,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 14,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239857.80775,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 37,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239858.1695216,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 536395776,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 536395776,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 37,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239858.35337,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 52,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239858.5134842,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 513327104,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 513327104,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 52,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239858.7320466,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 536395776,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 536395776,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 52,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239858.9138067,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 76,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239859.2886376,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 536395776,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 536395776,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 76,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239859.4736528,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 244891648,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 244891648,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 91,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239859.6464403,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 515424256,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 515424256,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 91,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239860.1457624,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 1054556160,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 1054556160,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 91,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239860.3298602,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245055488,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245055488,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 105,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239860.7696538,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 1054556160,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 1054556160,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 105,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239860.952086,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 1054556160,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 1054556160,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 105,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239861.136252,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245055488,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245055488,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 132,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239861.8073575,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 1054556160,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 1054556160,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 138,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239861.9321747,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245055488,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245055488,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 154,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239862.057401,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245055488,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245055488,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 154,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239862.690019,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 1054556160,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 1054556160,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 154,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    },
+    {
+      "time_unix": 1793239862.873744,
+      "management_pids": [
+        983320
+      ],
+      "visible_drm_pids": [],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 983320,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 245055488,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 245055488,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 170,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {}
+    }
+  ],
+  "interference_errors": [],
+  "exception": null,
+  "valid": true,
+  "limitations": "Advisory per-BDF flock plus amd-smi and visible DRM fdinfo clients; cannot reserve hardware or see hidden clients; non-cooperating activity invalidates the run when observed."
+}

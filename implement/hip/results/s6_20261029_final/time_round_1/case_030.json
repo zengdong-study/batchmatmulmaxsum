@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "attempt": "e13ab64e0e144169a31bb08f03be8276",
+  "case": 30,
+  "metadata": {
+    "shape": [
+      2,
+      33,
+      65,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "t1": true,
+    "t2": false
+  },
+  "route": 5,
+  "workspace_bytes": 1536,
+  "counter_offset": 1280,
+  "conditional": true,
+  "order": [
+    "baseline",
+    "entry",
+    "previous"
+  ],
+  "baseline": {
+    "baseline_us": 349.0829086303711,
+    "total_device_ms": 34.90829086303711,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "fp32_a_stride": [
+      270336,
+      1,
+      33
+    ],
+    "fp32_b_stride": [
+      532480,
+      65,
+      1
+    ],
+    "similarity_bytes": 17160
+  },
+  "entry": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "device_us": 53.803348541259766,
+    "total_device_ms": 5.380334854125977,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "previous": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "device_us": 53.7853479385376,
+    "total_device_ms": 5.37853479385376,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "baseline_over_entry": 6.488126075697176,
+  "previous_over_entry": 0.9996654371296544,
+  "start_unix": 1793211410.1755984,
+  "end_unix": 1793211410.819043
+}

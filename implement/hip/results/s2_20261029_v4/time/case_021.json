@@ -1,0 +1,114 @@
+{
+  "status": "complete",
+  "attempt": "51b5e279a6624a87a4834f8d7c7ed33f",
+  "case": 21,
+  "metadata": {
+    "shape": [
+      1,
+      65,
+      129,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "t1": false,
+    "t2": false
+  },
+  "candidates": {
+    "0": {
+      "device_us": 988.7254333496094,
+      "total_device_ms": 98.87254333496094,
+      "warmups": 10,
+      "iterations": 100,
+      "extra_replay": true,
+      "tile": [
+        16,
+        32,
+        64
+      ],
+      "grid": 25,
+      "waves": 1,
+      "lds_input_bytes": 6336
+    },
+    "1": {
+      "device_us": 1037.8938293457031,
+      "total_device_ms": 103.78938293457031,
+      "warmups": 10,
+      "iterations": 100,
+      "extra_replay": true,
+      "tile": [
+        16,
+        64,
+        64
+      ],
+      "grid": 15,
+      "waves": 2,
+      "lds_input_bytes": 10560
+    },
+    "2": {
+      "device_us": 576.2016296386719,
+      "total_device_ms": 57.62016296386719,
+      "warmups": 10,
+      "iterations": 100,
+      "extra_replay": true,
+      "tile": [
+        32,
+        64,
+        64
+      ],
+      "grid": 9,
+      "waves": 4,
+      "lds_input_bytes": 12672
+    },
+    "3": {
+      "device_us": 977.5550079345703,
+      "total_device_ms": 97.75550079345703,
+      "warmups": 10,
+      "iterations": 100,
+      "extra_replay": true,
+      "tile": [
+        16,
+        64,
+        32
+      ],
+      "grid": 15,
+      "waves": 2,
+      "lds_input_bytes": 5440
+    }
+  },
+  "diagnostic_only": true,
+  "native_gemm": {
+    "device_us": 1102.1397399902344,
+    "total_device_ms": 110.21397399902344,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay": true
+  },
+  "baseline": {
+    "baseline_us": 1109.6228790283203,
+    "total_device_ms": 110.96228790283203,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 6.103515625e-05,
+    "max_rel": 6.391379307589922e-08,
+    "fp32_a_stride": [
+      532480,
+      8192,
+      1
+    ],
+    "fp32_b_stride": [
+      1056768,
+      129,
+      1
+    ],
+    "similarity_bytes": 33540
+  },
+  "s1_entry": {
+    "max_abs": 0.0130615234375,
+    "max_rel": 1.3677551718242435e-05,
+    "device_us": 1687.7391052246094,
+    "total_device_ms": 168.77391052246094,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  }
+}

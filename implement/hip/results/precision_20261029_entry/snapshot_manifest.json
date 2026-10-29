@@ -1,0 +1,77 @@
+{
+  "files": [
+    {
+      "file": "snapshot/002_product_probe.hip",
+      "sha256": "547bfd3a120e5eb09f79d7709bb4c0255716b8b90d2ee7e290c57e03aec7886d"
+    },
+    {
+      "file": "snapshot/013_libbmms_accurate.so",
+      "sha256": "170083cd79e20d65408e8e5684655b33d418f31492bddd9863f9679abcf0401e"
+    },
+    {
+      "file": "snapshot/010_benchmark_baseline.py",
+      "sha256": "2fbafb83addb3a193e404158b356a659dc1a22e26e4cfbf8d002896504d8031a"
+    },
+    {
+      "file": "snapshot/017_libbmms_tiled.so",
+      "sha256": "2cd410092baf1873a9e6156a4a30bfbae09892a3da6e061d7cd02118e801f957"
+    },
+    {
+      "file": "snapshot/016_libbmms_s5.so",
+      "sha256": "2ac23c731a40316e1ad73406aaab6a0149fc1b8fea6e14c59a60a39c68c771e0"
+    },
+    {
+      "file": "snapshot/011_s1_runner.py",
+      "sha256": "bded5abf2c9e8aea203629ff9249e5371ea7407b299b5fb9bea21ad63c090016"
+    },
+    {
+      "file": "snapshot/000_entry.hip",
+      "sha256": "3f58619ad5fdf87a6776d1e68a0233f04e1e0d48cf59c085d35d2a1c21c1c32d"
+    },
+    {
+      "file": "snapshot/007_CMakeLists.txt",
+      "sha256": "baf1e2ce0e10846a0e3a9faa822beb55eaadf335e818559fbcdfb9cdeabad3ac"
+    },
+    {
+      "file": "snapshot/014_libbmms_precision.so",
+      "sha256": "19d772105064c01f08247e326acba37078541f1b5676000f6d7578569a76db43"
+    },
+    {
+      "file": "snapshot/004_probe.py",
+      "sha256": "ae3b2d48ef396ebf6baa00a61c556b3b987caae2e62a41a1899eb5afd2588bd9"
+    },
+    {
+      "file": "snapshot/001_precision.hip",
+      "sha256": "17789a64455230740c002f780db9aee7cd875b174a2fcbc0c9298bad4c92e653"
+    },
+    {
+      "file": "snapshot/015_libbmms_refine.so",
+      "sha256": "937632baeac0dc8786a038e87a762b783c2ca391e3b62bd138c4a0f8cef9cd24"
+    },
+    {
+      "file": "snapshot/003_refine.hip",
+      "sha256": "830c7f2a243aa84231ff87bd67fa52ea36611c3bed5d3340af5d4e5e689a795d"
+    },
+    {
+      "file": "snapshot/009_gpu_exclusive.py",
+      "sha256": "ead71960d063d95617d49de21fc9223aa6dce3d501551c57b8e5639fa5af326e"
+    },
+    {
+      "file": "snapshot/008_CMakeCache.txt",
+      "sha256": "c3a571b4d940c9e2e969c223e6e6b9ff72238b28cadc4cab2d0052bdd02326fd"
+    },
+    {
+      "file": "snapshot/012_fused_runner.py",
+      "sha256": "d2bc0ff4c8e03b0fa8fe5bc5218314035362dfcfa1722702ee1840075926716a"
+    },
+    {
+      "file": "snapshot/005_run.py",
+      "sha256": "2d590258261005f8f584f9194a52e9dc4b7a96b3aa622e4ea1a62f615cc32db0"
+    },
+    {
+      "file": "snapshot/006_validate.py",
+      "sha256": "f850e4e666469d4888ea9510e664c6220482044b45d8f099a26b167a6c9600e3"
+    }
+  ],
+  "identity_sha256": "e50abee8d334bd0501918ad1f6faedf5566a51c6f792b2d731a8168375243d9f"
+}

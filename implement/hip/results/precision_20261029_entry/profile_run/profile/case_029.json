@@ -1,0 +1,14 @@
+{
+  "case": 29,
+  "route": 0,
+  "attempt": "b508302c80a6479aaba51290cc998b8d",
+  "strict": {
+    "output": [
+      19.125,
+      38.25
+    ],
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "passed": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "attempt": "ad37b487124a4acd82e4627c5d154470",
+  "case": 27,
+  "metadata": {
+    "shape": [
+      3,
+      257,
+      1,
+      72
+    ],
+    "dtype": "float16",
+    "t1": true,
+    "t2": false
+  },
+  "route": 3,
+  "workspace_bytes": 512,
+  "counter_offset": 256,
+  "conditional": true,
+  "entry": {
+    "max_abs": 0.0,
+    "max_rel": 0.0
+  },
+  "operator_calls": 1,
+  "pilot_device_ms": 0.0823109969496727,
+  "formal_performance": false,
+  "start_unix": 1793211711.1063352,
+  "end_unix": 1793211711.3105748
+}

@@ -1,0 +1,62 @@
+{
+  "status": "complete",
+  "attempt": "3478f7a0feb140a1af753bad2bf576d7",
+  "case": 6,
+  "metadata": {
+    "shape": [
+      3,
+      17,
+      33,
+      40
+    ],
+    "dtype": "bfloat16",
+    "t1": false,
+    "t2": true
+  },
+  "route": 0,
+  "conditional": false,
+  "workspace_bytes": 0,
+  "counter_offset": 0,
+  "control_name": "original_small_matrix",
+  "entry": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "device_us": 5.965210199356079,
+    "total_device_ms": 0.5965210199356079,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "control": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "device_us": 5.812010169029236,
+    "total_device_ms": 0.5812010169029236,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "baseline": {
+    "baseline_us": 16.6008198261261,
+    "total_device_ms": 1.6600819826126099,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 9.5367431640625e-07,
+    "max_rel": 7.432695087806144e-08,
+    "fp32_a_stride": [
+      680,
+      40,
+      1
+    ],
+    "fp32_b_stride": [
+      1320,
+      1,
+      40
+    ],
+    "similarity_bytes": 6732
+  },
+  "baseline_over_entry": 2.782939623471792,
+  "control_over_entry": 0.9743177482088761,
+  "start_unix": 1793208741.56228,
+  "end_unix": 1793208741.7004058
+}

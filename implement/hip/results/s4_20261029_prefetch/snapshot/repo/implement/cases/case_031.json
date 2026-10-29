@@ -1,0 +1,27 @@
+{
+  "spec": {
+    "shape": [
+      2,
+      17,
+      129,
+      128
+    ],
+    "dtype": "float16",
+    "t1": true,
+    "t2": true,
+    "kind": "ties",
+    "id": 31,
+    "seed": 20261058,
+    "version": 1
+  },
+  "bytes": 77061,
+  "sha256": "335ae7bed2ccb4d8b5b531688696af715141414a0135c0d5d08aeaa739bbaf42",
+  "golden": [
+    13.0,
+    13.0
+  ],
+  "seconds": 0.0015283729881048203,
+  "torch_version": "2.9.1+gitff65f5b",
+  "device": "cuda",
+  "reference": "FP64 dot -> Max(N) -> FP64 Sum(M) -> FP32"
+}

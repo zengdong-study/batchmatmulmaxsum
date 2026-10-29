@@ -1,0 +1,63 @@
+{
+  "library_sha256": "937632baeac0dc8786a038e87a762b783c2ca391e3b62bd138c4a0f8cef9cd24",
+  "code_object_sha256": "0d689a1003ea51bbb05638970e61a35fadb4645ae42a12f56b8ff2a53dc434de",
+  "kernels": {
+    "_ZN12_GLOBAL__N_113certified_fmaILb1ELb1ELb1EEEvNS_4ArgsE": {
+      "vgpr_count": 94,
+      "sgpr_count": 45,
+      "private_segment_fixed_size": 0,
+      "group_segment_fixed_size": 8840,
+      "wavefront_size": 32
+    },
+    "_ZN12_GLOBAL__N_113certified_fmaILb1ELb1ELb0EEEvNS_4ArgsE": {
+      "vgpr_count": 94,
+      "sgpr_count": 40,
+      "private_segment_fixed_size": 0,
+      "group_segment_fixed_size": 8840,
+      "wavefront_size": 32
+    },
+    "_ZN12_GLOBAL__N_113certified_fmaILb1ELb0ELb1EEEvNS_4ArgsE": {
+      "vgpr_count": 89,
+      "sgpr_count": 46,
+      "private_segment_fixed_size": 0,
+      "group_segment_fixed_size": 8840,
+      "wavefront_size": 32
+    },
+    "_ZN12_GLOBAL__N_113certified_fmaILb1ELb0ELb0EEEvNS_4ArgsE": {
+      "vgpr_count": 94,
+      "sgpr_count": 41,
+      "private_segment_fixed_size": 0,
+      "group_segment_fixed_size": 8840,
+      "wavefront_size": 32
+    },
+    "_ZN12_GLOBAL__N_113certified_fmaILb0ELb1ELb1EEEvNS_4ArgsE": {
+      "vgpr_count": 94,
+      "sgpr_count": 45,
+      "private_segment_fixed_size": 0,
+      "group_segment_fixed_size": 8840,
+      "wavefront_size": 32
+    },
+    "_ZN12_GLOBAL__N_113certified_fmaILb0ELb1ELb0EEEvNS_4ArgsE": {
+      "vgpr_count": 94,
+      "sgpr_count": 40,
+      "private_segment_fixed_size": 0,
+      "group_segment_fixed_size": 8840,
+      "wavefront_size": 32
+    },
+    "_ZN12_GLOBAL__N_113certified_fmaILb0ELb0ELb1EEEvNS_4ArgsE": {
+      "vgpr_count": 89,
+      "sgpr_count": 46,
+      "private_segment_fixed_size": 0,
+      "group_segment_fixed_size": 8840,
+      "wavefront_size": 32
+    },
+    "_ZN12_GLOBAL__N_113certified_fmaILb0ELb0ELb0EEEvNS_4ArgsE": {
+      "vgpr_count": 94,
+      "sgpr_count": 41,
+      "private_segment_fixed_size": 0,
+      "wavefront_size": 32
+    }
+  },
+  "scratch_kernels": [],
+  "note": "Static code object metadata, not measured occupancy."
+}

@@ -1,0 +1,10 @@
+{
+  "original": "implement/hip/results/s6_20261029_interrupted",
+  "reused_correctness_cases": 40,
+  "identity_sha256": "bdc079fe289b5dc4d197b5515f79ad774f7a5d4a850e556f833f18e4e774413a",
+  "validation_audits": [
+    "48bdb9d6c39c474899d201ae68dde2cb"
+  ],
+  "invalid_timing_reused": false,
+  "reason": "Foreign GPU client detected during time attempt. Entire interrupted time attempt excluded; validation completed in a separate valid audited process."
+}

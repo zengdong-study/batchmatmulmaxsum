@@ -1,0 +1,46 @@
+{
+  "identical_s3_config4_kernels": 8,
+  "kernels": [
+    {
+      "s3": "void bmms::tiled::fused_tiled<(bmms::DataType)1, true, true>(bmms::tiled::FusionArgs)",
+      "s4": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)1, true, true>(bmms::tiled::FusionArgs)",
+      "code_sha256": "9a2beca1c1cfceff66a67d98fcd7510b050777f8fbc21e0ba8d73697cdbfa0a2"
+    },
+    {
+      "s3": "void bmms::tiled::fused_tiled<(bmms::DataType)1, true, false>(bmms::tiled::FusionArgs)",
+      "s4": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)1, true, false>(bmms::tiled::FusionArgs)",
+      "code_sha256": "33cd013fff46a20edbee4b5cd59bd1402b9d83858c0a473cfd3bb3e721baedfc"
+    },
+    {
+      "s3": "void bmms::tiled::fused_tiled<(bmms::DataType)1, false, true>(bmms::tiled::FusionArgs)",
+      "s4": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)1, false, true>(bmms::tiled::FusionArgs)",
+      "code_sha256": "2e9290172e00bd843679dfc51f6c9101831deb040cb7c8c045b63d18c99b75be"
+    },
+    {
+      "s3": "void bmms::tiled::fused_tiled<(bmms::DataType)1, false, false>(bmms::tiled::FusionArgs)",
+      "s4": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)1, false, false>(bmms::tiled::FusionArgs)",
+      "code_sha256": "d4c4c8dbb9cb8224420290f0d7983c9782d8e75143975bf8228f71df791f69a2"
+    },
+    {
+      "s3": "void bmms::tiled::fused_tiled<(bmms::DataType)0, true, true>(bmms::tiled::FusionArgs)",
+      "s4": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)0, true, true>(bmms::tiled::FusionArgs)",
+      "code_sha256": "1460a48b40345659aeea35661e1802926cdd312c5ae5a82ab30b4c0bca4b3b8e"
+    },
+    {
+      "s3": "void bmms::tiled::fused_tiled<(bmms::DataType)0, true, false>(bmms::tiled::FusionArgs)",
+      "s4": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)0, true, false>(bmms::tiled::FusionArgs)",
+      "code_sha256": "6cdb612d9a4dd46e7f02046672affa3010714683f834de2c8cc9cd6d5f083039"
+    },
+    {
+      "s3": "void bmms::tiled::fused_tiled<(bmms::DataType)0, false, true>(bmms::tiled::FusionArgs)",
+      "s4": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)0, false, true>(bmms::tiled::FusionArgs)",
+      "code_sha256": "ae8db9231cc567cb5e1750c6fa48d90d829bfe72c98f74ced4905c6d7b4d9cee"
+    },
+    {
+      "s3": "void bmms::tiled::fused_tiled<(bmms::DataType)0, false, false>(bmms::tiled::FusionArgs)",
+      "s4": "void bmms::tiled::fused_tiled<4, false, (bmms::DataType)0, false, false>(bmms::tiled::FusionArgs)",
+      "code_sha256": "f5f79b9d35444f30c767dc839578d84263cf4dad9f5aa9308a3cafe5974548c9"
+    }
+  ],
+  "note": "Early same-SONAME current/previous wrappers may bind the same backend. All 8 S3 config4 kernel bodies are byte-identical in S4; measured configs and semantics preserved. S5 onward separate SONAMEs and actual maps are recorded."
+}

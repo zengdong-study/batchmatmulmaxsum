@@ -1,0 +1,10 @@
+{
+  "strict_pass": [],
+  "strict_fail": [
+    37,
+    38,
+    39,
+    40
+  ],
+  "performance_run": false
+}

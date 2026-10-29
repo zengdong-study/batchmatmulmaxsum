@@ -1,0 +1,53 @@
+{
+  "status": "complete",
+  "attempt": "0aaf822e473e4f90828d210d8c5ab5a2",
+  "case": 16,
+  "metadata": {
+    "shape": [
+      4,
+      32,
+      1024,
+      128
+    ],
+    "dtype": "bfloat16",
+    "t1": true,
+    "t2": true
+  },
+  "route": 2,
+  "workspace_bytes": 8448,
+  "counter_offset": 8192,
+  "conditional": true,
+  "entry": {
+    "max_abs": 9.5367431640625e-07,
+    "max_rel": 1.0621167285402767e-07,
+    "repeat_equal": true,
+    "poison_overwritten": true,
+    "extra_repeats": 3,
+    "streams": 2,
+    "calls_per_stream": 20,
+    "independent_workspace": true,
+    "counter_reset": true
+  },
+  "fresh_workspace": {
+    "max_abs": 9.5367431640625e-07,
+    "max_rel": 1.0621167285402767e-07
+  },
+  "input_unchanged": true,
+  "output_canaries": true,
+  "workspace_canary": true,
+  "invalid_workspace_rejected": true,
+  "actual_output": [
+    9.064496994018555,
+    9.224777221679688,
+    8.978996276855469,
+    9.06517505645752
+  ],
+  "golden": [
+    9.064496994018555,
+    9.224778175354004,
+    8.978997230529785,
+    9.065176010131836
+  ],
+  "start_unix": 1793211358.2033021,
+  "end_unix": 1793211358.3412147
+}

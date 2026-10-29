@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "attempt": "3b9ac66b00974f82b8b6d9aa5690bd97",
+  "case": 30,
+  "metadata": {
+    "shape": [
+      2,
+      33,
+      65,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "t1": true,
+    "t2": false
+  },
+  "route": 4,
+  "workspace_bytes": 1536,
+  "counter_offset": 1280,
+  "conditional": true,
+  "order": [
+    "baseline",
+    "entry",
+    "previous"
+  ],
+  "baseline": {
+    "baseline_us": 354.5066452026367,
+    "total_device_ms": 35.45066452026367,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "fp32_a_stride": [
+      270336,
+      1,
+      33
+    ],
+    "fp32_b_stride": [
+      532480,
+      65,
+      1
+    ],
+    "similarity_bytes": 17160
+  },
+  "entry": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "device_us": 207.55468368530273,
+    "total_device_ms": 20.755468368530273,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "previous": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "device_us": 699.9385070800781,
+    "total_device_ms": 69.99385070800781,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "baseline_over_entry": 1.7080156366894836,
+  "previous_over_entry": 3.3723089002478717,
+  "start_unix": 1793210039.1482182,
+  "end_unix": 1793210039.887742
+}

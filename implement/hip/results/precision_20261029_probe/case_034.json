@@ -1,0 +1,53 @@
+{
+  "case": 34,
+  "metadata": {
+    "shape": [
+      1,
+      8192,
+      8192,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "t1": false,
+    "t2": true
+  },
+  "route": 6,
+  "threads": 1024,
+  "current": {
+    "output": [
+      344.52532958984375
+    ],
+    "max_abs": 0.00579833984375,
+    "max_rel": 1.6829654488964883e-05,
+    "passed": false
+  },
+  "current_rows_fp64_sum": {
+    "output": [
+      344.52532958984375
+    ],
+    "max_abs": 0.00579833984375,
+    "max_rel": 1.6829654488964883e-05,
+    "passed": false
+  },
+  "exact_rows_old_fp32_sum": {
+    "output": [
+      344.5311279296875
+    ],
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "passed": true
+  },
+  "exact_rows_fp64_sum": {
+    "output": [
+      344.5311279296875
+    ],
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "passed": true
+  },
+  "row_max_abs": 1.3647668311023153e-06,
+  "row_signed_error_sum": [
+    -0.005791002330532945
+  ],
+  "current_sum_emulator_equal": true
+}

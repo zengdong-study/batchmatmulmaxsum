@@ -1,0 +1,83 @@
+{
+  "status": "complete",
+  "attempt": "c6921a3ab56a4280b5834da5b3e01483",
+  "case": 19,
+  "metadata": {
+    "shape": [
+      1,
+      65,
+      129,
+      8192
+    ],
+    "dtype": "float16",
+    "t1": true,
+    "t2": false
+  },
+  "candidates": {
+    "0": {
+      "full_dot_max_abs": 0.0006008148193359375,
+      "full_dot_max_error_over_bound": 0.003786290940418234,
+      "golden_max_abs": 0.0205078125,
+      "repeat_equal": true,
+      "poison_overwritten": true,
+      "streams": 2,
+      "tile": [
+        16,
+        32,
+        64
+      ],
+      "grid": 25,
+      "waves": 1,
+      "lds_input_bytes": 6336
+    },
+    "1": {
+      "full_dot_max_abs": 0.0006008148193359375,
+      "full_dot_max_error_over_bound": 0.003786290940418234,
+      "golden_max_abs": 0.0205078125,
+      "repeat_equal": true,
+      "poison_overwritten": true,
+      "streams": 2,
+      "tile": [
+        16,
+        64,
+        64
+      ],
+      "grid": 15,
+      "waves": 2,
+      "lds_input_bytes": 10560
+    },
+    "2": {
+      "full_dot_max_abs": 0.0006008148193359375,
+      "full_dot_max_error_over_bound": 0.003786290940418234,
+      "golden_max_abs": 0.0205078125,
+      "repeat_equal": true,
+      "poison_overwritten": true,
+      "streams": 2,
+      "tile": [
+        32,
+        64,
+        64
+      ],
+      "grid": 9,
+      "waves": 4,
+      "lds_input_bytes": 12672
+    },
+    "3": {
+      "full_dot_max_abs": 0.0006008148193359375,
+      "full_dot_max_error_over_bound": 0.003786290940418234,
+      "golden_max_abs": 0.0205078125,
+      "repeat_equal": true,
+      "poison_overwritten": true,
+      "streams": 2,
+      "tile": [
+        16,
+        64,
+        32
+      ],
+      "grid": 15,
+      "waves": 2,
+      "lds_input_bytes": 5440
+    }
+  },
+  "diagnostic_only": true
+}

@@ -1,0 +1,70 @@
+{
+  "status": "complete",
+  "attempt": "9aab7d0ad55a4d908cdfa351fc904b4e",
+  "case": 36,
+  "route": 9,
+  "metadata": {
+    "shape": [
+      1,
+      8192,
+      8192,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "t1": true,
+    "t2": true
+  },
+  "workspace_bytes": 4194560,
+  "strict": {
+    "output": [
+      343.73370361328125
+    ],
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "passed": true
+  },
+  "entry": {
+    "device_us": 104940.99609375,
+    "total_device_ms": 10494.099609375,
+    "warmups": 10,
+    "iterations": 100
+  },
+  "strict_after_timing": {
+    "output": [
+      343.73370361328125
+    ],
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "passed": true
+  },
+  "baseline": {
+    "baseline_us": 46047.1923828125,
+    "total_device_ms": 4604.71923828125,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "fp32_a_stride": [
+      67108864,
+      1,
+      8192
+    ],
+    "fp32_b_stride": [
+      67108864,
+      1,
+      8192
+    ],
+    "similarity_bytes": 268435456
+  },
+  "s6": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "device_us": 104013.4765625,
+    "total_device_ms": 10401.34765625,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "baseline_over_entry": 0.4387912645852515,
+  "s6_over_entry": 0.9911615139385432
+}

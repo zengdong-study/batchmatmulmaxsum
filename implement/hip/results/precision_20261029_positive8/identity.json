@@ -1,0 +1,23 @@
+{
+  "library": "/tmp/bmms-precision-positive8/libbmms_precision.so",
+  "library_sha256": "4d3840f3f060bfd59bfefd6dc763bfe2493e490da07f72e9468dfa76837c1d77",
+  "sources": {
+    "/root/batchmatmulmaxsum/implement/hip/precision/src/precision.hip": "740af61e310fb2dd6e9b1e61e2a662b19f5eee16b5b62f614a2313e4bcdeb937",
+    "/root/batchmatmulmaxsum/implement/hip/precision/tools/validate.py": "5d1f0f2b104e90a447c438e83d31db07cf8e87e0692f3329b8e881049addf6f2",
+    "/root/batchmatmulmaxsum/implement/hip/tools/gpu_exclusive.py": "ead71960d063d95617d49de21fc9223aa6dce3d501551c57b8e5639fa5af326e"
+  },
+  "ids": [
+    37,
+    38,
+    39,
+    40
+  ],
+  "torch": "2.9.1+gitff65f5b",
+  "device": "_CudaDeviceProperties(name='AMD Radeon Graphics', major=11, minor=0, gcnArchName='gfx1100', total_memory=49136MB, multi_processor_count=48, uuid=31353464-3836-6535-3866-633931636465, pci_bus_id=3, pci_device_id=0, pci_domain_id=0, L2_cache_size=6MB)",
+  "cases": {
+    "37": "27f06e2d98e7ac01cc226b5a9cf42622f88b84a3500cbc66d9c376e8b3794f96",
+    "38": "d82b664f60003fc1a065c8023efcc96643e55fea8e6627eae61ae58bde64f2c6",
+    "39": "a9b44777fc88230ead1e8983487649dcd522b08aef09de8662a5146b9027144d",
+    "40": "073667b27df3e9eeea1e614fb7a28e9fb4ea0eb58b011e01a91fadbf0f58c7eb"
+  }
+}

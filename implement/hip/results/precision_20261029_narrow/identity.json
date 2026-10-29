@@ -1,0 +1,28 @@
+{
+  "library": "/tmp/bmms-precision-narrow/libbmms_precision.so",
+  "library_sha256": "d0990a4dd8b7e3b05a53377bb6dc702c90e89ecdceebee2dc60a86f55140bbe1",
+  "sources": {
+    "/root/batchmatmulmaxsum/implement/hip/precision/src/entry.hip": "3f58619ad5fdf87a6776d1e68a0233f04e1e0d48cf59c085d35d2a1c21c1c32d",
+    "/root/batchmatmulmaxsum/implement/hip/precision/src/precision.hip": "0f6bfc883ea0c406ecbb02adeb8f209655bc77ede01dbd81ddef04d901ef2879",
+    "/root/batchmatmulmaxsum/implement/hip/precision/src/product_probe.hip": "547bfd3a120e5eb09f79d7709bb4c0255716b8b90d2ee7e290c57e03aec7886d",
+    "/root/batchmatmulmaxsum/implement/hip/precision/src/refine.hip": "74d25fd1de3e88642b89420470728017ce58eb62d56d5765b02e3549107dd9b1",
+    "/root/batchmatmulmaxsum/implement/hip/precision/CMakeLists.txt": "2fd216c84e5514bb6ba8f4c9969b2ae9364f81c24b1ed9523167d5dc18898466",
+    "/tmp/bmms-precision-narrow/CMakeCache.txt": "36294e9c33eb4d91e5e10dc45a64b49b53adc4803b4e4846c88708aa6868fe89",
+    "/root/batchmatmulmaxsum/implement/hip/precision/tools/validate.py": "f850e4e666469d4888ea9510e664c6220482044b45d8f099a26b167a6c9600e3",
+    "/root/batchmatmulmaxsum/implement/hip/tools/gpu_exclusive.py": "ead71960d063d95617d49de21fc9223aa6dce3d501551c57b8e5639fa5af326e"
+  },
+  "ids": [
+    33,
+    34,
+    35,
+    36
+  ],
+  "torch": "2.9.1+gitff65f5b",
+  "device": "_CudaDeviceProperties(name='AMD Radeon Graphics', major=11, minor=0, gcnArchName='gfx1100', total_memory=49136MB, multi_processor_count=48, uuid=31353464-3836-6535-3866-633931636465, pci_bus_id=3, pci_device_id=0, pci_domain_id=0, L2_cache_size=6MB)",
+  "cases": {
+    "33": "4f7f1939fb286a8e9cb28a000569059a4bb6ef9a74addaf20cb7f1c0b73fcab4",
+    "34": "be0d452dd9a95da2651b2e338de3caa6990844d33573ded2628104c50cfd480d",
+    "35": "11ae48b8669888d52dd5a262ece764a6aaf7991512253e8020caaade85f06938",
+    "36": "95b6fc9a42a8c97b88027ce24d33947ff87f646939a152b5f49f67d661b919ea"
+  }
+}

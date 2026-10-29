@@ -1,0 +1,15 @@
+{
+  "strict_passed": 40,
+  "wins": 32,
+  "misses": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "all_measurement_audits_valid": true
+}

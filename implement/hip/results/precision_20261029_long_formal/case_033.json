@@ -1,0 +1,36 @@
+{
+  "case": 33,
+  "mean_ms": 94.02615234375,
+  "warmups": 10,
+  "iterations": 100,
+  "formal": true,
+  "strict": {
+    "output": [
+      344.0860290527344
+    ],
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "passed": true
+  },
+  "library_sha256": "d0990a4dd8b7e3b05a53377bb6dc702c90e89ecdceebee2dc60a86f55140bbe1",
+  "baseline": {
+    "baseline_us": 53448.96484375,
+    "total_device_ms": 5344.896484375,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "fp32_a_stride": [
+      67108864,
+      8192,
+      1
+    ],
+    "fp32_b_stride": [
+      67108864,
+      8192,
+      1
+    ],
+    "similarity_bytes": 268435456
+  },
+  "speedup": 0.5684478574465756
+}

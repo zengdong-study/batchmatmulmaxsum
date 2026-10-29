@@ -1,0 +1,9 @@
+{
+  "snapshot_files": 77,
+  "snapshot_hashes_pass": true,
+  "gpu_runs": 0,
+  "build_test": "not_run",
+  "correctness": "not_run",
+  "performance": "not_run",
+  "s1_complete": false
+}

@@ -1,0 +1,9 @@
+{
+  "script_sha256": "507221f3ae514dba0f5ee3736c2128c2ceda3aa88cf84cc67f2bc0da65eb31a6",
+  "libraries": {
+    "/tmp/bmms-precision-final/libbmms_accurate.so": "170083cd79e20d65408e8e5684655b33d418f31492bddd9863f9679abcf0401e",
+    "/tmp/bmms-precision-final/libbmms_precision.so": "19d772105064c01f08247e326acba37078541f1b5676000f6d7578569a76db43",
+    "/tmp/bmms-precision-final/libbmms_refine.so": "937632baeac0dc8786a038e87a762b783c2ca391e3b62bd138c4a0f8cef9cd24"
+  },
+  "scope": "original40 one call each; no profiler durations used as formal results"
+}

@@ -1,0 +1,70 @@
+{
+  "status": "complete",
+  "attempt": "9aab7d0ad55a4d908cdfa351fc904b4e",
+  "case": 20,
+  "route": 9,
+  "metadata": {
+    "shape": [
+      1,
+      65,
+      129,
+      8192
+    ],
+    "dtype": "float16",
+    "t1": true,
+    "t2": true
+  },
+  "workspace_bytes": 3584,
+  "strict": {
+    "output": [
+      955.1085815429688
+    ],
+    "max_abs": 6.103515625e-05,
+    "max_rel": 6.390388855161837e-08,
+    "passed": true
+  },
+  "entry": {
+    "device_us": 64.76196765899658,
+    "total_device_ms": 6.476196765899658,
+    "warmups": 10,
+    "iterations": 100
+  },
+  "strict_after_timing": {
+    "output": [
+      955.1085815429688
+    ],
+    "max_abs": 6.103515625e-05,
+    "max_rel": 6.390388855161837e-08,
+    "passed": true
+  },
+  "baseline": {
+    "baseline_us": 182.57823944091797,
+    "total_device_ms": 18.257823944091797,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 0.000244140625,
+    "max_rel": 2.5561555420647347e-07,
+    "fp32_a_stride": [
+      532480,
+      1,
+      65
+    ],
+    "fp32_b_stride": [
+      1056768,
+      1,
+      8192
+    ],
+    "similarity_bytes": 33540
+  },
+  "s6": {
+    "max_abs": 6.103515625e-05,
+    "max_rel": 6.390388855161837e-08,
+    "device_us": 64.83077049255371,
+    "total_device_ms": 6.483077049255371,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "baseline_over_entry": 2.819220076855627,
+  "s6_over_entry": 1.001062395662828
+}

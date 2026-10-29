@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "attempt": "9cdd62a20e724e79a3ed598dd57b25a4",
+  "case": 19,
+  "metadata": {
+    "shape": [
+      1,
+      65,
+      129,
+      8192
+    ],
+    "dtype": "float16",
+    "t1": true,
+    "t2": false
+  },
+  "candidates": {
+    "4": {
+      "full_dot_max_abs": 0.0001396673856106645,
+      "full_dot_max_error_over_bound": 0.0008670141148503491,
+      "golden_max_abs": 0.00518798828125,
+      "repeat_equal": true,
+      "poison_overwritten": true,
+      "streams": 2,
+      "tile": [
+        16,
+        32,
+        16
+      ],
+      "grid": 25,
+      "waves": 4,
+      "lds_input_bytes": 8192
+    }
+  },
+  "diagnostic_only": true
+}

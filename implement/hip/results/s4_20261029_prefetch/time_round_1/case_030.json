@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "attempt": "5f9666c56a5142aa93a595ab4ef78875",
+  "case": 30,
+  "metadata": {
+    "shape": [
+      2,
+      33,
+      65,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "t1": true,
+    "t2": false
+  },
+  "route": 4,
+  "workspace_bytes": 1536,
+  "counter_offset": 1280,
+  "conditional": true,
+  "order": [
+    "baseline",
+    "entry",
+    "previous"
+  ],
+  "baseline": {
+    "baseline_us": 349.35997009277344,
+    "total_device_ms": 34.935997009277344,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "fp32_a_stride": [
+      270336,
+      1,
+      33
+    ],
+    "fp32_b_stride": [
+      532480,
+      65,
+      1
+    ],
+    "similarity_bytes": 17160
+  },
+  "entry": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "device_us": 53.39799880981445,
+    "total_device_ms": 5.339799880981445,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "previous": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "device_us": 190.39358139038086,
+    "total_device_ms": 19.039358139038086,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "baseline_over_entry": 6.542566723091535,
+  "previous_over_entry": 3.565556493390289,
+  "start_unix": 1793210265.3428533,
+  "end_unix": 1793210265.9379435
+}

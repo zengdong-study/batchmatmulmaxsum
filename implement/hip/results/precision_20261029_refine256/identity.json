@@ -1,0 +1,44 @@
+{
+  "library": "/tmp/bmms-precision-refine256/libbmms_refine.so",
+  "library_sha256": "c099fb01f2247185c2e67d131473da63830e5c37ac70a44b15955529401affad",
+  "sources": {
+    "/root/batchmatmulmaxsum/implement/hip/precision/src/entry.hip": "3f58619ad5fdf87a6776d1e68a0233f04e1e0d48cf59c085d35d2a1c21c1c32d",
+    "/root/batchmatmulmaxsum/implement/hip/precision/src/precision.hip": "17789a64455230740c002f780db9aee7cd875b174a2fcbc0c9298bad4c92e653",
+    "/root/batchmatmulmaxsum/implement/hip/precision/src/product_probe.hip": "547bfd3a120e5eb09f79d7709bb4c0255716b8b90d2ee7e290c57e03aec7886d",
+    "/root/batchmatmulmaxsum/implement/hip/precision/src/refine.hip": "74d25fd1de3e88642b89420470728017ce58eb62d56d5765b02e3549107dd9b1",
+    "/root/batchmatmulmaxsum/implement/hip/precision/CMakeLists.txt": "e096fc18c6dcefce5ed8e4ef647a95fe4fffed337989b7105fa238d5af2b19fe",
+    "/tmp/bmms-precision-refine256/CMakeCache.txt": "d7e91ddcf3a72d005f199971e31588a8ec1ce63888f3c1a4e191fb3d971d3c49",
+    "/root/batchmatmulmaxsum/implement/hip/precision/tools/validate.py": "f850e4e666469d4888ea9510e664c6220482044b45d8f099a26b167a6c9600e3",
+    "/root/batchmatmulmaxsum/implement/hip/tools/gpu_exclusive.py": "ead71960d063d95617d49de21fc9223aa6dce3d501551c57b8e5639fa5af326e"
+  },
+  "ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    37,
+    38,
+    39,
+    40
+  ],
+  "torch": "2.9.1+gitff65f5b",
+  "device": "_CudaDeviceProperties(name='AMD Radeon Graphics', major=11, minor=0, gcnArchName='gfx1100', total_memory=49136MB, multi_processor_count=48, uuid=31353464-3836-6535-3866-633931636465, pci_bus_id=3, pci_device_id=0, pci_domain_id=0, L2_cache_size=6MB)",
+  "cases": {
+    "1": "8113f03d1b843d919b8c28ef65ad28c94fc30277da79b6bbef59ad7ffebb7470",
+    "2": "4c2c0e07810f58b3466198ab4821a3bd763227bb580658327c3155ac9aea45fe",
+    "3": "ccd5d1ac35407a534d1b7b1f37b082cc93dd02419d3e42f0fd80c721e4161465",
+    "4": "1a0df7739a831e659fcfa9f1de777228c881c261e1d67dc16c5fa88b0c7d7a48",
+    "5": "02682c762e0b1117eed785479ce8c74e8169b7d945d48602e55841737b847f29",
+    "6": "a55142f10c2bd4e7220314c4ee811202dba7af1d03c9b5ccb99da5e78367562e",
+    "7": "b469bdb5c4e660c3035d3c958092b417ad1218c638d9c88fa85da7fcdd87851d",
+    "8": "1cab9040933ecd5f0468e7021b9985460b0accd23ded6a70c449f7cb8f91dea0",
+    "37": "27f06e2d98e7ac01cc226b5a9cf42622f88b84a3500cbc66d9c376e8b3794f96",
+    "38": "d82b664f60003fc1a065c8023efcc96643e55fea8e6627eae61ae58bde64f2c6",
+    "39": "a9b44777fc88230ead1e8983487649dcd522b08aef09de8662a5146b9027144d",
+    "40": "073667b27df3e9eeea1e614fb7a28e9fb4ea0eb58b011e01a91fadbf0f58c7eb"
+  }
+}

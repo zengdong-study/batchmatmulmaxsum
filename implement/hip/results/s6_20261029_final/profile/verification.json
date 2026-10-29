@@ -1,0 +1,569 @@
+{
+  "one_kernel_per_call": true,
+  "calls": 40,
+  "correlations": [
+    {
+      "case": 1,
+      "route": 0,
+      "correlation_id": "71",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "168",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 2,
+      "route": 0,
+      "correlation_id": "157",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 3,
+      "route": 0,
+      "correlation_id": "243",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, true, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "184",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 4,
+      "route": 0,
+      "correlation_id": "329",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, true, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "168",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 5,
+      "route": 0,
+      "correlation_id": "415",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)1, false, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "168",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 6,
+      "route": 0,
+      "correlation_id": "501",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)1, false, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 7,
+      "route": 0,
+      "correlation_id": "587",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)1, true, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "184",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 8,
+      "route": 0,
+      "correlation_id": "673",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)1, true, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "168",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 9,
+      "route": 2,
+      "correlation_id": "765",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, false, false, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 10,
+      "route": 2,
+      "correlation_id": "864",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, false, true, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "80",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 11,
+      "route": 2,
+      "correlation_id": "963",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, true, false, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "144",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 12,
+      "route": 2,
+      "correlation_id": "1062",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, true, true, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 13,
+      "route": 2,
+      "correlation_id": "1161",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)1, false, false, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 14,
+      "route": 2,
+      "correlation_id": "1260",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)1, false, true, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "80",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 15,
+      "route": 2,
+      "correlation_id": "1359",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)1, true, false, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "144",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 16,
+      "route": 2,
+      "correlation_id": "1458",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)1, true, true, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 17,
+      "route": 5,
+      "correlation_id": "1561",
+      "kernel": "void bmms::tiled::fused_tiled<8, true, (bmms::DataType)0, false, false>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "16896",
+        "Scratch_Size": "0",
+        "VGPR_Count": "96",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 18,
+      "route": 5,
+      "correlation_id": "1665",
+      "kernel": "void bmms::tiled::fused_tiled<8, false, (bmms::DataType)0, false, true>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "16896",
+        "Scratch_Size": "0",
+        "VGPR_Count": "72",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 19,
+      "route": 5,
+      "correlation_id": "1769",
+      "kernel": "void bmms::tiled::fused_tiled<8, true, (bmms::DataType)0, true, false>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "16896",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 20,
+      "route": 5,
+      "correlation_id": "1873",
+      "kernel": "void bmms::tiled::fused_tiled<8, false, (bmms::DataType)0, true, true>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "16896",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 21,
+      "route": 5,
+      "correlation_id": "1977",
+      "kernel": "void bmms::tiled::fused_tiled<8, true, (bmms::DataType)1, false, false>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "16896",
+        "Scratch_Size": "0",
+        "VGPR_Count": "96",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 22,
+      "route": 5,
+      "correlation_id": "2081",
+      "kernel": "void bmms::tiled::fused_tiled<8, false, (bmms::DataType)1, false, true>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "16896",
+        "Scratch_Size": "0",
+        "VGPR_Count": "72",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 23,
+      "route": 5,
+      "correlation_id": "2185",
+      "kernel": "void bmms::tiled::fused_tiled<8, true, (bmms::DataType)1, true, false>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "16896",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 24,
+      "route": 5,
+      "correlation_id": "2289",
+      "kernel": "void bmms::tiled::fused_tiled<8, false, (bmms::DataType)1, true, true>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "16896",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 25,
+      "route": 0,
+      "correlation_id": "2383",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1, 1>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "160",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "32",
+        "Grid_Size_X": "32"
+      }
+    },
+    {
+      "case": 26,
+      "route": 0,
+      "correlation_id": "2469",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)1, false, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "512"
+      }
+    },
+    {
+      "case": 27,
+      "route": 3,
+      "correlation_id": "2561",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, true, false, false>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "1920"
+      }
+    },
+    {
+      "case": 28,
+      "route": 0,
+      "correlation_id": "2654",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)1, true, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "168",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "256"
+      }
+    },
+    {
+      "case": 29,
+      "route": 0,
+      "correlation_id": "2740",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "256"
+      }
+    },
+    {
+      "case": 30,
+      "route": 5,
+      "correlation_id": "2836",
+      "kernel": "void bmms::tiled::fused_tiled<8, true, (bmms::DataType)1, true, false>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "16896",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "4608"
+      }
+    },
+    {
+      "case": 31,
+      "route": 0,
+      "correlation_id": "2930",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, true, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "168",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "512"
+      }
+    },
+    {
+      "case": 32,
+      "route": 3,
+      "correlation_id": "3022",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)1, false, false, false>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "32768"
+      }
+    },
+    {
+      "case": 33,
+      "route": 6,
+      "correlation_id": "3133",
+      "kernel": "void bmms::tiled::fused_tiled_large<128, 128, 32, (bmms::DataType)0, false, false>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "19968",
+        "Scratch_Size": "0",
+        "VGPR_Count": "80",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "1024",
+        "Grid_Size_X": "4194304"
+      }
+    },
+    {
+      "case": 34,
+      "route": 6,
+      "correlation_id": "3242",
+      "kernel": "void bmms::tiled::fused_tiled_large<128, 128, 32, (bmms::DataType)1, false, true>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "19968",
+        "Scratch_Size": "0",
+        "VGPR_Count": "80",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "1024",
+        "Grid_Size_X": "4194304"
+      }
+    },
+    {
+      "case": 35,
+      "route": 6,
+      "correlation_id": "3351",
+      "kernel": "void bmms::tiled::fused_tiled_large<128, 128, 32, (bmms::DataType)0, true, false>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "19968",
+        "Scratch_Size": "0",
+        "VGPR_Count": "96",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "1024",
+        "Grid_Size_X": "4194304"
+      }
+    },
+    {
+      "case": 36,
+      "route": 6,
+      "correlation_id": "3460",
+      "kernel": "void bmms::tiled::fused_tiled_large<128, 128, 32, (bmms::DataType)1, true, true>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "19968",
+        "Scratch_Size": "0",
+        "VGPR_Count": "80",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "1024",
+        "Grid_Size_X": "4194304"
+      }
+    },
+    {
+      "case": 37,
+      "route": 7,
+      "correlation_id": "3573",
+      "kernel": "void bmms::tiled::fused_tiled_large<64, 128, 64, (bmms::DataType)1, false, false>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "26624",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "512",
+        "Grid_Size_X": "268435456"
+      }
+    },
+    {
+      "case": 38,
+      "route": 7,
+      "correlation_id": "3687",
+      "kernel": "void bmms::tiled::fused_tiled_large<64, 128, 64, (bmms::DataType)0, false, true>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "26624",
+        "Scratch_Size": "0",
+        "VGPR_Count": "96",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "512",
+        "Grid_Size_X": "268435456"
+      }
+    },
+    {
+      "case": 39,
+      "route": 7,
+      "correlation_id": "3801",
+      "kernel": "void bmms::tiled::fused_tiled_large<64, 128, 64, (bmms::DataType)1, true, false>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "26624",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "512",
+        "Grid_Size_X": "268435456"
+      }
+    },
+    {
+      "case": 40,
+      "route": 7,
+      "correlation_id": "3915",
+      "kernel": "void bmms::tiled::fused_tiled_large<64, 128, 64, (bmms::DataType)0, true, true>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "26624",
+        "Scratch_Size": "0",
+        "VGPR_Count": "96",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "512",
+        "Grid_Size_X": "268435456"
+      }
+    }
+  ],
+  "operator_allocations_or_copies": 0,
+  "note": "Every successful call individually range/correlation checked; profiler times are not formal performance data.",
+  "kernel_names_match_host_routes": true
+}

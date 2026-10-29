@@ -1,0 +1,22 @@
+{
+  "case": 30,
+  "config": 6,
+  "output": [
+    8.008251190185547,
+    8.008252143859863
+  ],
+  "max_abs": 4.9591064453125e-05,
+  "max_rel": 6.192457776964819e-06,
+  "passed": true,
+  "lifecycle": {
+    "max_abs": 4.9591064453125e-05,
+    "max_rel": 6.192457776964819e-06,
+    "repeat_equal": true,
+    "poison_overwritten": true,
+    "extra_repeats": 3,
+    "streams": 2,
+    "calls_per_stream": 20,
+    "independent_workspace": true,
+    "counter_reset": true
+  }
+}

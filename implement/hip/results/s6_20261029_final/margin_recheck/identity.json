@@ -1,0 +1,64 @@
+{
+  "ids": [
+    11,
+    15
+  ],
+  "symbol": "bmms_s5",
+  "candidate": null,
+  "previous_symbol": "bmms_s1",
+  "sources": {
+    "/root/batchmatmulmaxsum/implement/hip/tiled/CMakeLists.txt": "8f7817f6e542ac3574d37acb9f481ef6be2ccfa6892023011991d9f4b927c7e7",
+    "/root/batchmatmulmaxsum/implement/hip/tiled/src/s3_entry.hip": "76d3c8a118d8b65d773cccce46a5aae3eee377be19b62627504a1a35aa0cf67d",
+    "/root/batchmatmulmaxsum/implement/hip/tiled/src/s4_entry.hip": "43c791e72773135c3c2b46ecd7a95b6cfc4c61f9435a87f9a6e70a3a8dcc4d24",
+    "/root/batchmatmulmaxsum/implement/hip/tiled/src/s5_entry.hip": "340b2da288e3045aac9a9c0d9361a5991fa38f4662c5a84c8e62ca2381cb86e9",
+    "/root/batchmatmulmaxsum/implement/hip/tiled/src/tiled.hip": "58f820e5e407a6cc9a83dc73c149d246551118b0ec2eb605a56ee94224a363d5",
+    "/root/batchmatmulmaxsum/implement/hip/tiled/include/tiled.h": "c3b1477c0c4a67b9ae506cfc97a077ded9b4fafa8cfd0535d5d8a71cf2637805",
+    "/root/batchmatmulmaxsum/implement/hip/tiled/tools/artifacts.py": "9a992a5f8bcd5837c1a35ce9cb9d1c947554ba7a1a2b26fe5789bd3cadedf7d7",
+    "/root/batchmatmulmaxsum/implement/hip/tiled/tools/fused_runner.py": "d2bc0ff4c8e03b0fa8fe5bc5218314035362dfcfa1722702ee1840075926716a",
+    "/root/batchmatmulmaxsum/implement/hip/tiled/tools/host_checks.py": "b4ebafc8720a3b829438877b5be584436bf96d1740f23c6e1273497def0295db",
+    "/root/batchmatmulmaxsum/implement/hip/tiled/tools/s2_runner.py": "f4399793c6ffb8fe5b3cbd2f12b2957e9097a50d7a37280e719d6b0092367a56",
+    "/root/batchmatmulmaxsum/implement/hip/tiled/tools/summarize_stages.py": "f79061a03316ded216e48776822052ad073041d842c195dfc49aad572451496a",
+    "/root/batchmatmulmaxsum/implement/hip/tiled/tools/verify_profile.py": "1ec4f4ea448625d78beeb58843cc93196cb98fd6bdcd12e6f815ea2fdd7800ef",
+    "/root/batchmatmulmaxsum/implement/hip/tools/s1_runner.py": "bded5abf2c9e8aea203629ff9249e5371ea7407b299b5fb9bea21ad63c090016",
+    "/root/batchmatmulmaxsum/implement/hip/tools/gpu_exclusive.py": "ead71960d063d95617d49de21fc9223aa6dce3d501551c57b8e5639fa5af326e",
+    "/root/batchmatmulmaxsum/implement/hip/tools/benchmark_baseline.py": "2fbafb83addb3a193e404158b356a659dc1a22e26e4cfbf8d002896504d8031a",
+    "/root/batchmatmulmaxsum/implement/hip/tools/case_cache.py": "fb48e568ad639510bf359ac7e4312ecdd40c5b1734b3985051301214466b86e9",
+    "/root/batchmatmulmaxsum/implement/script/generate_cases.py": "42387e3f91d312472b90fd6363ba3cf4f01f2fc094b9525c212e4bf9263d8cca",
+    "/root/batchmatmulmaxsum/implement/hip/include/bmms/batch_matmul_max_sum.h": "81d76920a328fcdb76d7a20198091a62ba61bef1c97b4916fd453a0209d3caab",
+    "/root/batchmatmulmaxsum/implement/hip/include/bmms/kernels.hip.h": "16ca7c983ef920818217e76f2470e78dcead33f417e13b86914ea2392894008b",
+    "/root/batchmatmulmaxsum/implement/hip/include/bmms/native_wmma.hip.h": "18b06ace0c7d10965712181776a2a4c3ef37b7b7294a9803ce882b3b69b48b13",
+    "/root/batchmatmulmaxsum/implement/hip/include/bmms/s1_c.h": "a1047d74b5856bdb230c7713be31336a3a87c446baead9671a852fd4441ffe74",
+    "/root/batchmatmulmaxsum/implement/hip/include/bmms/small_c.h": "ae7e63b13979e9136d7df9aaff532b74cd1f40f604f9282ea850360c5eb90539",
+    "/root/batchmatmulmaxsum/implement/hip/include/bmms/small_impl.hip.h": "05629cad457998356ce8e328c6f4cce0e90a46f9904c8694b31d4bf46d554004",
+    "/root/batchmatmulmaxsum/implement/hip/include/bmms/split_b_c.h": "f671f8209357f3b52901db9a4815ab28f9e5ab32da5e5e732644ddedef4aa48b",
+    "/root/batchmatmulmaxsum/implement/hip/include/bmms/split_b_impl.hip.h": "b4f2f49332b131a03df4ec92a53d499f452651a90bbbee7aeb836ccfaa3d0e1a",
+    "/root/batchmatmulmaxsum/implement/cases/manifest.json": "e017661d506da0bd4f6c34f806acfcecc605719a258cf857b4416230bc862889",
+    "/root/batchmatmulmaxsum/implement/cases/content_hashes.json": "fdc3639bc85eae1354d577814dd6e4379bb69d7632428e14aca1ff5454c9d5b4"
+  },
+  "libraries": {
+    "/tmp/bmms-tiled-s6-build/libbmms_tiled.so": "2cd410092baf1873a9e6156a4a30bfbae09892a3da6e061d7cd02118e801f957",
+    "/tmp/bmms-s1-build/libbmms_s1.so": "651d9f8ad925980b09bb0e6c548c9c42dfe5135da2c4ba9b3f0d61238d9ddc70",
+    "/tmp/bmms-s1-build/libbmms_small.so": "7766fc3c850fbd130009bceb156ce3dcff12c71ca74fd5f289de31d5bd4eddd8",
+    "/tmp/bmms-s1-build/split_mn/libbmms_split_mn.so": "5215130c54241850ace63132435efead472aa7ed4b7537a6d2c0695ae39e98e4",
+    "/tmp/bmms-tiled-s6-build/libbmms_s5.so": "2ac23c731a40316e1ad73406aaab6a0149fc1b8fea6e14c59a60a39c68c771e0"
+  },
+  "cases": {
+    "11": "c0a5a25515cb58018917dcd37cef9ecada82bc467147e69bdd8ce30d49e43d94",
+    "15": "7af244099ce6af910ef9645f7f60285529e35495f0ec9d541155e2a3d9856f98"
+  },
+  "device": "_CudaDeviceProperties(name='AMD Radeon Graphics', major=11, minor=0, gcnArchName='gfx1100', total_memory=49136MB, multi_processor_count=48, uuid=31353464-3836-6535-3866-633931636465, pci_bus_id=3, pci_device_id=0, pci_domain_id=0, L2_cache_size=6MB)",
+  "torch": "2.9.1+gitff65f5b",
+  "torch_commit": "ff65f5bc672795c5e5033900ea0a0c4f8566c8cf",
+  "hip": "7.2.53211-e1a6bc5663",
+  "runtime_libraries": {
+    "/opt/rocm-7.2.1/lib/libamdhip64.so.7.2.70201": "0bfd6cb0b010626f333bd8d96a01df1b7e2cb825c961f5a7ecce7c28a5c717ab",
+    "/opt/rocm-7.2.1/lib/libhipblas.so.3.2.70201": "fc7b5b3f21be0869f9b70a11cf72f837b1dd0e25fb9a0f30fd23eef1e20efeaf",
+    "/opt/rocm-7.2.1/lib/libhipblaslt.so.1.2.70201": "c40df6fe45de5ae3ee60eccf5885536b21486cfff7d361ccdf4955a1db971c1f",
+    "/opt/rocm-7.2.1/lib/libhiprtc.so.7.2.70201": "5eb3328fd01edf48b423c8737c2a9ea9eb8430afa43f96b195404c02bee3c72e",
+    "/opt/rocm-7.2.1/lib/librocblas.so.5.2.70201": "c580f03e7c77e81fc2a041787d247a3cfec9d4035cc9c75c2d2171421fedb9cd",
+    "/opt/venv/lib/python3.12/site-packages/torch/lib/libtorch_hip.so": "6ed74fed896527d746820922bff18b8237c770375967d73bfd637c9187edad2d"
+  },
+  "warmups": 10,
+  "iterations": 100,
+  "criterion": "original 1e-4 mixed final golden, unchanged"
+}

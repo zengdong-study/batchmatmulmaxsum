@@ -1,0 +1,62 @@
+{
+  "status": "complete",
+  "attempt": "3478f7a0feb140a1af753bad2bf576d7",
+  "case": 13,
+  "metadata": {
+    "shape": [
+      4,
+      32,
+      1024,
+      128
+    ],
+    "dtype": "bfloat16",
+    "t1": false,
+    "t2": false
+  },
+  "route": 2,
+  "conditional": true,
+  "workspace_bytes": 8448,
+  "counter_offset": 8192,
+  "control_name": "original_split_b_gb1_w8_n32",
+  "baseline": {
+    "baseline_us": 22.682430744171143,
+    "total_device_ms": 2.2682430744171143,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "fp32_a_stride": [
+      4096,
+      128,
+      1
+    ],
+    "fp32_b_stride": [
+      131072,
+      1024,
+      1
+    ],
+    "similarity_bytes": 524288
+  },
+  "entry": {
+    "max_abs": 9.5367431640625e-07,
+    "max_rel": 1.0621167285402767e-07,
+    "device_us": 16.131620407104492,
+    "total_device_ms": 1.6131620407104492,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "control": {
+    "max_abs": 9.5367431640625e-07,
+    "max_rel": 1.0621167285402767e-07,
+    "device_us": 46.82045936584473,
+    "total_device_ms": 4.682045936584473,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "baseline_over_entry": 1.4060850783583787,
+  "control_over_entry": 2.902402745927782,
+  "start_unix": 1793208743.069639,
+  "end_unix": 1793208743.2198253
+}

@@ -1,0 +1,28 @@
+{
+  "ids": [
+    2,
+    25,
+    28
+  ],
+  "rounds": 5,
+  "warmups": 10,
+  "iterations": 100,
+  "torch": "2.9.1+gitff65f5b",
+  "hip": "7.2.53211-e1a6bc5663",
+  "device": "_CudaDeviceProperties(name='AMD Radeon Graphics', major=11, minor=0, gcnArchName='gfx1100', total_memory=49136MB, multi_processor_count=48, uuid=31353464-3836-6535-3866-633931636465, pci_bus_id=3, pci_device_id=0, pci_domain_id=0, L2_cache_size=6MB)",
+  "cases": {
+    "2": "4c2c0e07810f58b3466198ab4821a3bd763227bb580658327c3155ac9aea45fe",
+    "25": "1be054c4e0ede5f5f7cffbf3226ade9f71aa4e85964f5b5de36946a2fb99f490",
+    "28": "7486852ac17a51f71aa05439e0b0791e52c647fd8ccf29a2d3061e4034e56352"
+  },
+  "sources": {
+    "/root/batchmatmulmaxsum/implement/hip/tools/s1_recheck.py": "8cd9a3add82a0add4c66490c76da6c67007f32fc0202c2157e04ecb56b56c13e",
+    "/root/batchmatmulmaxsum/implement/hip/tools/s1_runner.py": "bded5abf2c9e8aea203629ff9249e5371ea7407b299b5fb9bea21ad63c090016",
+    "/root/batchmatmulmaxsum/implement/hip/tools/gpu_exclusive.py": "02b7ad257edddfdc7ebea4e014cff266246b60bcef8cbc114084b8d0dc55cecc"
+  },
+  "libraries": {
+    "/tmp/bmms-s1-build/libbmms_s1.so": "651d9f8ad925980b09bb0e6c548c9c42dfe5135da2c4ba9b3f0d61238d9ddc70",
+    "/tmp/bmms-s1-build/libbmms_small.so": "7766fc3c850fbd130009bceb156ce3dcff12c71ca74fd5f289de31d5bd4eddd8",
+    "/tmp/bmms-s1-build/split_mn/libbmms_split_mn.so": "5215130c54241850ace63132435efead472aa7ed4b7537a6d2c0695ae39e98e4"
+  }
+}

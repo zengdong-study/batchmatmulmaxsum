@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "attempt": "8c27775689ec449ea44c8a8bd55cc389",
+  "case": 27,
+  "route": 3,
+  "metadata": {
+    "shape": [
+      3,
+      257,
+      1,
+      72
+    ],
+    "dtype": "float16",
+    "t1": true,
+    "t2": false
+  },
+  "workspace_bytes": 512,
+  "strict": {
+    "output": [
+      -1.25,
+      -2.5,
+      -3.75
+    ],
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "passed": true
+  },
+  "lifecycle": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "repeat_equal": true,
+    "poison_overwritten": true,
+    "extra_repeats": 3,
+    "streams": 2,
+    "calls_per_stream": 20,
+    "independent_workspace": true,
+    "counter_reset": true
+  },
+  "input_unchanged": true
+}

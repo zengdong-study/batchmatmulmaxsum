@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "attempt": "6bdbaf84193c4198a24513ebb7bb3018",
+  "case": 12,
+  "metadata": {
+    "shape": [
+      4,
+      32,
+      1024,
+      128
+    ],
+    "dtype": "float16",
+    "t1": true,
+    "t2": true
+  },
+  "route": 2,
+  "conditional": true,
+  "workspace_bytes": 8448,
+  "counter_offset": 8192,
+  "control_name": "original_split_b_gb1_w8_n32",
+  "entry": {
+    "max_abs": 3.814697265625e-06,
+    "max_rel": 4.207845696615167e-07,
+    "repeat_equal": true,
+    "poison_overwritten": true,
+    "extra_repeats": 3,
+    "streams": 2,
+    "calls_per_stream": 20,
+    "independent_workspace": true,
+    "counter_reset": true
+  },
+  "control": {
+    "max_abs": 3.814697265625e-06,
+    "max_rel": 4.207845696615167e-07,
+    "repeat_equal": true,
+    "poison_overwritten": true,
+    "extra_repeats": 3,
+    "streams": 2,
+    "calls_per_stream": 20,
+    "independent_workspace": true,
+    "counter_reset": false
+  },
+  "selected_original_equal": true,
+  "start_unix": 1793208671.1627052,
+  "end_unix": 1793208671.2925005
+}

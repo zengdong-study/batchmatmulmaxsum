@@ -1,0 +1,606 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "shape": [
+        3,
+        17,
+        33,
+        40
+      ],
+      "dtype": "float16",
+      "t1": false,
+      "t2": false,
+      "kind": "random",
+      "id": 1,
+      "seed": 20261027,
+      "version": 1
+    },
+    {
+      "shape": [
+        3,
+        17,
+        33,
+        40
+      ],
+      "dtype": "float16",
+      "t1": false,
+      "t2": true,
+      "kind": "random",
+      "id": 2,
+      "seed": 20261027,
+      "version": 1
+    },
+    {
+      "shape": [
+        3,
+        17,
+        33,
+        40
+      ],
+      "dtype": "float16",
+      "t1": true,
+      "t2": false,
+      "kind": "random",
+      "id": 3,
+      "seed": 20261027,
+      "version": 1
+    },
+    {
+      "shape": [
+        3,
+        17,
+        33,
+        40
+      ],
+      "dtype": "float16",
+      "t1": true,
+      "t2": true,
+      "kind": "random",
+      "id": 4,
+      "seed": 20261027,
+      "version": 1
+    },
+    {
+      "shape": [
+        3,
+        17,
+        33,
+        40
+      ],
+      "dtype": "bfloat16",
+      "t1": false,
+      "t2": false,
+      "kind": "random",
+      "id": 5,
+      "seed": 20261027,
+      "version": 1
+    },
+    {
+      "shape": [
+        3,
+        17,
+        33,
+        40
+      ],
+      "dtype": "bfloat16",
+      "t1": false,
+      "t2": true,
+      "kind": "random",
+      "id": 6,
+      "seed": 20261027,
+      "version": 1
+    },
+    {
+      "shape": [
+        3,
+        17,
+        33,
+        40
+      ],
+      "dtype": "bfloat16",
+      "t1": true,
+      "t2": false,
+      "kind": "random",
+      "id": 7,
+      "seed": 20261027,
+      "version": 1
+    },
+    {
+      "shape": [
+        3,
+        17,
+        33,
+        40
+      ],
+      "dtype": "bfloat16",
+      "t1": true,
+      "t2": true,
+      "kind": "random",
+      "id": 8,
+      "seed": 20261027,
+      "version": 1
+    },
+    {
+      "shape": [
+        4,
+        32,
+        1024,
+        128
+      ],
+      "dtype": "float16",
+      "t1": false,
+      "t2": false,
+      "kind": "normalized",
+      "id": 9,
+      "seed": 20261028,
+      "version": 1
+    },
+    {
+      "shape": [
+        4,
+        32,
+        1024,
+        128
+      ],
+      "dtype": "float16",
+      "t1": false,
+      "t2": true,
+      "kind": "normalized",
+      "id": 10,
+      "seed": 20261028,
+      "version": 1
+    },
+    {
+      "shape": [
+        4,
+        32,
+        1024,
+        128
+      ],
+      "dtype": "float16",
+      "t1": true,
+      "t2": false,
+      "kind": "normalized",
+      "id": 11,
+      "seed": 20261028,
+      "version": 1
+    },
+    {
+      "shape": [
+        4,
+        32,
+        1024,
+        128
+      ],
+      "dtype": "float16",
+      "t1": true,
+      "t2": true,
+      "kind": "normalized",
+      "id": 12,
+      "seed": 20261028,
+      "version": 1
+    },
+    {
+      "shape": [
+        4,
+        32,
+        1024,
+        128
+      ],
+      "dtype": "bfloat16",
+      "t1": false,
+      "t2": false,
+      "kind": "normalized",
+      "id": 13,
+      "seed": 20261028,
+      "version": 1
+    },
+    {
+      "shape": [
+        4,
+        32,
+        1024,
+        128
+      ],
+      "dtype": "bfloat16",
+      "t1": false,
+      "t2": true,
+      "kind": "normalized",
+      "id": 14,
+      "seed": 20261028,
+      "version": 1
+    },
+    {
+      "shape": [
+        4,
+        32,
+        1024,
+        128
+      ],
+      "dtype": "bfloat16",
+      "t1": true,
+      "t2": false,
+      "kind": "normalized",
+      "id": 15,
+      "seed": 20261028,
+      "version": 1
+    },
+    {
+      "shape": [
+        4,
+        32,
+        1024,
+        128
+      ],
+      "dtype": "bfloat16",
+      "t1": true,
+      "t2": true,
+      "kind": "normalized",
+      "id": 16,
+      "seed": 20261028,
+      "version": 1
+    },
+    {
+      "shape": [
+        1,
+        65,
+        129,
+        8192
+      ],
+      "dtype": "float16",
+      "t1": false,
+      "t2": false,
+      "kind": "random",
+      "id": 17,
+      "seed": 20261029,
+      "version": 1
+    },
+    {
+      "shape": [
+        1,
+        65,
+        129,
+        8192
+      ],
+      "dtype": "float16",
+      "t1": false,
+      "t2": true,
+      "kind": "random",
+      "id": 18,
+      "seed": 20261029,
+      "version": 1
+    },
+    {
+      "shape": [
+        1,
+        65,
+        129,
+        8192
+      ],
+      "dtype": "float16",
+      "t1": true,
+      "t2": false,
+      "kind": "random",
+      "id": 19,
+      "seed": 20261029,
+      "version": 1
+    },
+    {
+      "shape": [
+        1,
+        65,
+        129,
+        8192
+      ],
+      "dtype": "float16",
+      "t1": true,
+      "t2": true,
+      "kind": "random",
+      "id": 20,
+      "seed": 20261029,
+      "version": 1
+    },
+    {
+      "shape": [
+        1,
+        65,
+        129,
+        8192
+      ],
+      "dtype": "bfloat16",
+      "t1": false,
+      "t2": false,
+      "kind": "random",
+      "id": 21,
+      "seed": 20261029,
+      "version": 1
+    },
+    {
+      "shape": [
+        1,
+        65,
+        129,
+        8192
+      ],
+      "dtype": "bfloat16",
+      "t1": false,
+      "t2": true,
+      "kind": "random",
+      "id": 22,
+      "seed": 20261029,
+      "version": 1
+    },
+    {
+      "shape": [
+        1,
+        65,
+        129,
+        8192
+      ],
+      "dtype": "bfloat16",
+      "t1": true,
+      "t2": false,
+      "kind": "random",
+      "id": 23,
+      "seed": 20261029,
+      "version": 1
+    },
+    {
+      "shape": [
+        1,
+        65,
+        129,
+        8192
+      ],
+      "dtype": "bfloat16",
+      "t1": true,
+      "t2": true,
+      "kind": "random",
+      "id": 24,
+      "seed": 20261029,
+      "version": 1
+    },
+    {
+      "shape": [
+        1,
+        1,
+        1,
+        32
+      ],
+      "dtype": "float16",
+      "t1": false,
+      "t2": false,
+      "kind": "exact",
+      "id": 25,
+      "seed": 20261052,
+      "version": 1
+    },
+    {
+      "shape": [
+        2,
+        1,
+        257,
+        40
+      ],
+      "dtype": "bfloat16",
+      "t1": false,
+      "t2": true,
+      "kind": "negative",
+      "id": 26,
+      "seed": 20261053,
+      "version": 1
+    },
+    {
+      "shape": [
+        3,
+        257,
+        1,
+        72
+      ],
+      "dtype": "float16",
+      "t1": true,
+      "t2": false,
+      "kind": "signed_sum",
+      "id": 27,
+      "seed": 20261054,
+      "version": 1
+    },
+    {
+      "shape": [
+        2,
+        17,
+        33,
+        56
+      ],
+      "dtype": "bfloat16",
+      "t1": true,
+      "t2": true,
+      "kind": "zero_batch",
+      "id": 28,
+      "seed": 20261055,
+      "version": 1
+    },
+    {
+      "shape": [
+        2,
+        17,
+        33,
+        64
+      ],
+      "dtype": "float16",
+      "t1": false,
+      "t2": true,
+      "kind": "structured",
+      "id": 29,
+      "seed": 20261056,
+      "version": 1
+    },
+    {
+      "shape": [
+        2,
+        33,
+        65,
+        8192
+      ],
+      "dtype": "bfloat16",
+      "t1": true,
+      "t2": false,
+      "kind": "cancellation",
+      "id": 30,
+      "seed": 20261057,
+      "version": 1
+    },
+    {
+      "shape": [
+        2,
+        17,
+        129,
+        128
+      ],
+      "dtype": "float16",
+      "t1": true,
+      "t2": true,
+      "kind": "ties",
+      "id": 31,
+      "seed": 20261058,
+      "version": 1
+    },
+    {
+      "shape": [
+        2,
+        8192,
+        1,
+        32
+      ],
+      "dtype": "bfloat16",
+      "t1": false,
+      "t2": false,
+      "kind": "long_sum",
+      "id": 32,
+      "seed": 20261059,
+      "version": 1
+    },
+    {
+      "shape": [
+        1,
+        8192,
+        8192,
+        8192
+      ],
+      "dtype": "float16",
+      "t1": false,
+      "t2": false,
+      "kind": "normalized",
+      "id": 33,
+      "seed": 20261060,
+      "version": 1
+    },
+    {
+      "shape": [
+        1,
+        8192,
+        8192,
+        8192
+      ],
+      "dtype": "bfloat16",
+      "t1": false,
+      "t2": true,
+      "kind": "normalized",
+      "id": 34,
+      "seed": 20261061,
+      "version": 1
+    },
+    {
+      "shape": [
+        1,
+        8192,
+        8192,
+        8192
+      ],
+      "dtype": "float16",
+      "t1": true,
+      "t2": false,
+      "kind": "normalized",
+      "id": 35,
+      "seed": 20261062,
+      "version": 1
+    },
+    {
+      "shape": [
+        1,
+        8192,
+        8192,
+        8192
+      ],
+      "dtype": "bfloat16",
+      "t1": true,
+      "t2": true,
+      "kind": "normalized",
+      "id": 36,
+      "seed": 20261063,
+      "version": 1
+    },
+    {
+      "shape": [
+        64,
+        8192,
+        8192,
+        128
+      ],
+      "dtype": "bfloat16",
+      "t1": false,
+      "t2": false,
+      "kind": "normalized",
+      "id": 37,
+      "seed": 20261064,
+      "version": 1
+    },
+    {
+      "shape": [
+        64,
+        8192,
+        8192,
+        128
+      ],
+      "dtype": "float16",
+      "t1": false,
+      "t2": true,
+      "kind": "normalized",
+      "id": 38,
+      "seed": 20261065,
+      "version": 1
+    },
+    {
+      "shape": [
+        64,
+        8192,
+        8192,
+        128
+      ],
+      "dtype": "bfloat16",
+      "t1": true,
+      "t2": false,
+      "kind": "normalized",
+      "id": 39,
+      "seed": 20261066,
+      "version": 1
+    },
+    {
+      "shape": [
+        64,
+        8192,
+        8192,
+        128
+      ],
+      "dtype": "float16",
+      "t1": true,
+      "t2": true,
+      "kind": "normalized",
+      "id": 40,
+      "seed": 20261067,
+      "version": 1
+    }
+  ],
+  "format": "case_XXX.pt: x1, x2, golden, metadata; companion JSON marks completed files"
+}

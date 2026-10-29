@@ -1,0 +1,114 @@
+{
+  "status": "complete",
+  "attempt": "51b5e279a6624a87a4834f8d7c7ed33f",
+  "case": 30,
+  "metadata": {
+    "shape": [
+      2,
+      33,
+      65,
+      8192
+    ],
+    "dtype": "bfloat16",
+    "t1": true,
+    "t2": false
+  },
+  "candidates": {
+    "0": {
+      "device_us": 1294.4920349121094,
+      "total_device_ms": 129.44920349121094,
+      "warmups": 10,
+      "iterations": 100,
+      "extra_replay": true,
+      "tile": [
+        16,
+        32,
+        64
+      ],
+      "grid": 18,
+      "waves": 1,
+      "lds_input_bytes": 6336
+    },
+    "1": {
+      "device_us": 1079.5346069335938,
+      "total_device_ms": 107.95346069335938,
+      "warmups": 10,
+      "iterations": 100,
+      "extra_replay": true,
+      "tile": [
+        16,
+        64,
+        64
+      ],
+      "grid": 12,
+      "waves": 2,
+      "lds_input_bytes": 10560
+    },
+    "2": {
+      "device_us": 708.0751037597656,
+      "total_device_ms": 70.80751037597656,
+      "warmups": 10,
+      "iterations": 100,
+      "extra_replay": true,
+      "tile": [
+        32,
+        64,
+        64
+      ],
+      "grid": 8,
+      "waves": 4,
+      "lds_input_bytes": 12672
+    },
+    "3": {
+      "device_us": 1131.8326568603516,
+      "total_device_ms": 113.18326568603516,
+      "warmups": 10,
+      "iterations": 100,
+      "extra_replay": true,
+      "tile": [
+        16,
+        64,
+        32
+      ],
+      "grid": 12,
+      "waves": 2,
+      "lds_input_bytes": 5440
+    }
+  },
+  "diagnostic_only": true,
+  "native_gemm": {
+    "device_us": 343.3663558959961,
+    "total_device_ms": 34.33663558959961,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay": true
+  },
+  "baseline": {
+    "baseline_us": 355.9960174560547,
+    "total_device_ms": 35.59960174560547,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "fp32_a_stride": [
+      270336,
+      1,
+      33
+    ],
+    "fp32_b_stride": [
+      532480,
+      65,
+      1
+    ],
+    "similarity_bytes": 17160
+  },
+  "s1_entry": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "device_us": 677.2975921630859,
+    "total_device_ms": 67.7297592163086,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  }
+}

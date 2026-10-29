@@ -1,0 +1,8 @@
+{
+  "default_build": "/tmp/bmms-precision-default",
+  "identical_compensated_fused_kernels": 48,
+  "refine_kernels": "Recompiled after template generalization; NOT claimed byte-identical. All 4 affected big-B cases plus 8 original tail/layout cases strictly revalidated.",
+  "refine_validation": "implement/hip/results/precision_20261029_default_refine",
+  "host_queries_passed": 80,
+  "all40_accepted_algorithm_retained": true
+}

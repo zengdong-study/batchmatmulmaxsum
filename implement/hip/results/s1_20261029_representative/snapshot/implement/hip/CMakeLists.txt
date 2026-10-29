@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 3.21)
+# Small and SplitB implementations are experimentally supported on gfx1100.
+if(NOT DEFINED CMAKE_HIP_ARCHITECTURES)
+    set(CMAKE_HIP_ARCHITECTURES gfx1100)
+endif()
+project(batch_matmul_max_sum LANGUAGES CXX HIP)
+
+add_library(bmms_objects OBJECT src/batch_matmul_max_sum.hip)
+target_include_directories(bmms_objects PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+set_target_properties(bmms_objects PROPERTIES HIP_STANDARD 17 HIP_STANDARD_REQUIRED YES POSITION_INDEPENDENT_CODE YES)
+target_compile_options(bmms_objects PRIVATE -Wall -Wextra -Werror)
+add_library(bmms STATIC $<TARGET_OBJECTS:bmms_objects>)
+add_library(bmms_small SHARED $<TARGET_OBJECTS:bmms_objects>)
+foreach(target bmms bmms_small)
+    target_include_directories(${target} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+    set_target_properties(${target} PROPERTIES LINKER_LANGUAGE HIP)
+endforeach()
+
+# Opt-in S1 entry; existing targets and their ABI remain independently usable.
+option(BMMS_BUILD_S1 "Build the metadata-dispatched S1 experimental entry" OFF)
+if(BMMS_BUILD_S1)
+    add_subdirectory(split_mn)
+    add_library(bmms_s1 SHARED src/s1_entry.hip)
+    target_include_directories(bmms_s1 PUBLIC include PRIVATE split_mn/include)
+    target_link_libraries(bmms_s1 PRIVATE bmms_small bmms_split_mn)
+    set_target_properties(bmms_s1 PROPERTIES HIP_STANDARD 17 HIP_STANDARD_REQUIRED YES)
+    target_compile_options(bmms_s1 PRIVATE -Wall -Wextra -Werror)
+endif()

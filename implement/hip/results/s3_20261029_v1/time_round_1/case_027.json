@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "attempt": "3b9ac66b00974f82b8b6d9aa5690bd97",
+  "case": 27,
+  "metadata": {
+    "shape": [
+      3,
+      257,
+      1,
+      72
+    ],
+    "dtype": "float16",
+    "t1": true,
+    "t2": false
+  },
+  "route": 3,
+  "workspace_bytes": 512,
+  "counter_offset": 256,
+  "conditional": true,
+  "order": [
+    "previous",
+    "entry",
+    "baseline"
+  ],
+  "previous": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "device_us": 10.851190090179443,
+    "total_device_ms": 1.0851190090179443,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "entry": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "device_us": 10.855590105056763,
+    "total_device_ms": 1.0855590105056763,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "baseline": {
+    "baseline_us": 19.432389736175537,
+    "total_device_ms": 1.9432389736175537,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "fp32_a_stride": [
+      18504,
+      1,
+      257
+    ],
+    "fp32_b_stride": [
+      72,
+      1,
+      72
+    ],
+    "similarity_bytes": 3084
+  },
+  "baseline_over_entry": 1.7900813818609014,
+  "previous_over_entry": 0.9995946775039646,
+  "start_unix": 1793210037.1165278,
+  "end_unix": 1793210037.6313655
+}

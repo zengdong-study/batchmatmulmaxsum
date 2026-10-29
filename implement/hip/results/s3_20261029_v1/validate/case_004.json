@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "attempt": "c05261b688ef4084a67dc10e64519938",
+  "case": 4,
+  "metadata": {
+    "shape": [
+      3,
+      17,
+      33,
+      40
+    ],
+    "dtype": "float16",
+    "t1": true,
+    "t2": true
+  },
+  "route": 0,
+  "workspace_bytes": 0,
+  "counter_offset": 0,
+  "conditional": false,
+  "entry": {
+    "max_abs": 1.9073486328125e-06,
+    "max_rel": 1.3625979401334418e-07,
+    "repeat_equal": true,
+    "poison_overwritten": true,
+    "extra_repeats": 3,
+    "streams": 2,
+    "calls_per_stream": 20,
+    "independent_workspace": true,
+    "counter_reset": false
+  },
+  "fresh_workspace": {
+    "max_abs": 1.9073486328125e-06,
+    "max_rel": 1.3625979401334418e-07
+  },
+  "start_unix": 1793210004.587602,
+  "end_unix": 1793210004.731803
+}

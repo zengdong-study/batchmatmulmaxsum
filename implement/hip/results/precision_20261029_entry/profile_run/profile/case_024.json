@@ -1,0 +1,13 @@
+{
+  "case": 24,
+  "route": 9,
+  "attempt": "b508302c80a6479aaba51290cc998b8d",
+  "strict": {
+    "output": [
+      954.9605712890625
+    ],
+    "max_abs": 6.103515625e-05,
+    "max_rel": 6.391379307589922e-08,
+    "passed": true
+  }
+}

@@ -12,11 +12,16 @@ import time
 class GPUExclusive:
     def __init__(self, output, bdf='0000:03:00.0'):
         self.output=Path(output);self.bdf=bdf;self.samples=[];self.errors=[]
-        self.allowed={os.getpid()};self.stop=threading.Event()
+        self.allowed={os.getpid()};self.stop=threading.Event();self.query_lock=threading.Lock()
     def aliases(self):
         text=Path('/proc/self/status').read_text()
         return {int(x) for line in text.splitlines() if line.startswith('NSpid:') for x in line.split()[1:]}|{os.getpid()}
     def clients(self):
+        # A background and foreground check must not see the other's
+        # temporary amd-smi DRM client while scanning /proc.
+        with self.query_lock:
+            return self._clients_serial()
+    def _clients_serial(self):
         result=subprocess.run(['amd-smi','process','--gpu',self.bdf,'--json'],capture_output=True,text=True,timeout=15)
         if result.returncode:raise RuntimeError('amd-smi client query failed: '+result.stderr)
         raw=json.loads(result.stdout);pids=set()
@@ -30,16 +35,19 @@ class GPUExclusive:
             elif isinstance(x,list):
                 for v in x:visit(v)
         visit(raw)
-        visible=[]
+        visible=[];visible_names={}
         for proc in Path('/proc').iterdir():
             if not proc.name.isdigit() or int(proc.name)==os.getpid():continue
             try:
                 for fd in (proc/'fdinfo').iterdir():
                     data=fd.read_text()
                     if 'drm-pdev:' in data and self.bdf in data:
-                        visible.append(int(proc.name));break
+                        visible.append(int(proc.name))
+                        try:visible_names[proc.name]=(proc/'comm').read_text().strip()
+                        except (FileNotFoundError,PermissionError,ProcessLookupError):visible_names[proc.name]='unavailable'
+                        break
             except (PermissionError,FileNotFoundError,ProcessLookupError):continue
-        return dict(time_unix=time.time(),management_pids=sorted(pids),visible_drm_pids=sorted(set(visible)),management_raw=raw)
+        return dict(time_unix=time.time(),management_pids=sorted(pids),visible_drm_pids=sorted(set(visible)),management_raw=raw,visible_drm_process_names=visible_names)
     def check(self):
         snap=self.clients();self.samples.append(snap)
         foreign=(set(snap['management_pids'])|set(snap['visible_drm_pids']))-self.allowed
@@ -84,7 +92,7 @@ class GPUExclusive:
         try:self.check()
         except Exception as exc:self.errors.append(str(exc))
         self.output.write_text(json.dumps(dict(bdf=self.bdf,allowed_pids=sorted(self.allowed),host_pid_mapping=getattr(self,'host_pid_mapping',None),samples=self.samples,
-            interference_errors=self.errors,valid=not self.errors and kind is None,
+            interference_errors=self.errors,exception=None if value is None else str(value),valid=not self.errors and kind is None,
             limitations='Advisory per-BDF flock plus amd-smi and visible DRM fdinfo clients; cannot reserve hardware or see hidden clients; non-cooperating activity invalidates the run when observed.'),indent=2)+'\n')
         fcntl.flock(self.lock,fcntl.LOCK_UN);self.lock.close()
         if kind is None and self.errors:raise RuntimeError(self.errors[0])

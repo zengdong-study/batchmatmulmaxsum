@@ -1,0 +1,28 @@
+{
+  "cases": [
+    11,
+    15
+  ],
+  "independent_rounds": 5,
+  "all_rounds_beats_baseline": true,
+  "all_rounds_above_5percent": true,
+  "by_case": {
+    "11": [
+      1.276546205281193,
+      1.1597511423676319,
+      1.1090051515520511,
+      1.1525246400272111,
+      1.1196580388335236
+    ],
+    "15": [
+      1.2871414145548559,
+      1.1393024212100684,
+      1.1453413124092553,
+      1.130766134958819,
+      1.1388949401151862
+    ]
+  },
+  "no_minimum_selection": true,
+  "all40_repeated_five_rounds": false,
+  "scope": "Five rounds for historical marginal cases11/15; initial full40 round retained separately."
+}

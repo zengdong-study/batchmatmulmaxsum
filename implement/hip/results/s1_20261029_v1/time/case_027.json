@@ -1,0 +1,62 @@
+{
+  "status": "complete",
+  "attempt": "f8b12121a55d478ebb30d218d36f7df4",
+  "case": 27,
+  "metadata": {
+    "shape": [
+      3,
+      257,
+      1,
+      72
+    ],
+    "dtype": "float16",
+    "t1": true,
+    "t2": false
+  },
+  "route": 3,
+  "conditional": true,
+  "workspace_bytes": 512,
+  "counter_offset": 256,
+  "control_name": "split_m_g16_w1",
+  "baseline": {
+    "baseline_us": 16.218019723892212,
+    "total_device_ms": 1.6218019723892212,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "fp32_a_stride": [
+      18504,
+      1,
+      257
+    ],
+    "fp32_b_stride": [
+      72,
+      1,
+      72
+    ],
+    "similarity_bytes": 3084
+  },
+  "entry": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "device_us": 10.357619524002075,
+    "total_device_ms": 1.0357619524002075,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "control": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "device_us": 10.335609912872314,
+    "total_device_ms": 1.0335609912872314,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "baseline_over_entry": 1.5658057033577673,
+  "control_over_entry": 0.9978750318952384,
+  "start_unix": 1793208704.134679,
+  "end_unix": 1793208704.2760909
+}

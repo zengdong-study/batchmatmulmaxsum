@@ -1,0 +1,99 @@
+{
+  "one_kernel_per_call": true,
+  "successful_calls": 6,
+  "rejected_calls_without_launch": 4,
+  "operator_allocations_or_copies": 0,
+  "host_routes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "correlations": [
+    {
+      "label": "S1/call_0/route_0",
+      "route": 0,
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "correlation_id": "63",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "168",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "label": "S1/call_1/route_1",
+      "route": 1,
+      "kernel": "void bmms::detail::fused_split_b<(bmms::DataType)0, false, false, 2>(bmms::detail::KernelArguments)",
+      "correlation_id": "121",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "168",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "1024"
+      }
+    },
+    {
+      "label": "S1/call_2/route_2",
+      "route": 2,
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, false, false, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "correlation_id": "189",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "label": "S1/call_3/route_3",
+      "route": 3,
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, true, false, false>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "correlation_id": "260",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "1920"
+      }
+    },
+    {
+      "label": "S1/call_4/route_3",
+      "route": 3,
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)1, false, false, false>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "correlation_id": "331",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "32768"
+      }
+    },
+    {
+      "label": "S1/call_5/route_0",
+      "route": 0,
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1, 1>(bmms::detail::KernelArguments)",
+      "correlation_id": "396",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "160",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "32",
+        "Grid_Size_X": "32"
+      }
+    }
+  ],
+  "scope": "Six successful calls individually bounded by ROCTX ranges; API/kernel correlation checked; runtime preparation kernels outside ranges excluded. Not performance data."
+}

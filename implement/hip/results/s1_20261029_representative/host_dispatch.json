@@ -1,0 +1,647 @@
+{
+  "status": "passed",
+  "queries": [
+    {
+      "case": 1,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 1,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 2,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 2,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 3,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 3,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 4,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 4,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 5,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 5,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 6,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 6,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 7,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 7,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 8,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 8,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 9,
+      "allow": false,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 9,
+      "allow": true,
+      "status": 0,
+      "route": 2,
+      "bytes": 8448,
+      "offset": 8192
+    },
+    {
+      "case": 10,
+      "allow": false,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 10,
+      "allow": true,
+      "status": 0,
+      "route": 2,
+      "bytes": 8448,
+      "offset": 8192
+    },
+    {
+      "case": 11,
+      "allow": false,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 11,
+      "allow": true,
+      "status": 0,
+      "route": 2,
+      "bytes": 8448,
+      "offset": 8192
+    },
+    {
+      "case": 12,
+      "allow": false,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 12,
+      "allow": true,
+      "status": 0,
+      "route": 2,
+      "bytes": 8448,
+      "offset": 8192
+    },
+    {
+      "case": 13,
+      "allow": false,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 13,
+      "allow": true,
+      "status": 0,
+      "route": 2,
+      "bytes": 8448,
+      "offset": 8192
+    },
+    {
+      "case": 14,
+      "allow": false,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 14,
+      "allow": true,
+      "status": 0,
+      "route": 2,
+      "bytes": 8448,
+      "offset": 8192
+    },
+    {
+      "case": 15,
+      "allow": false,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 15,
+      "allow": true,
+      "status": 0,
+      "route": 2,
+      "bytes": 8448,
+      "offset": 8192
+    },
+    {
+      "case": 16,
+      "allow": false,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 16,
+      "allow": true,
+      "status": 0,
+      "route": 2,
+      "bytes": 8448,
+      "offset": 8192
+    },
+    {
+      "case": 17,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 17,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 18,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 18,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 19,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 19,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 20,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 20,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 21,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 21,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 22,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 22,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 23,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 23,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 24,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 24,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 25,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 25,
+      "allow": true,
+      "status": 0,
+      "route": 3,
+      "bytes": 512,
+      "offset": 256
+    },
+    {
+      "case": 26,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 26,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 27,
+      "allow": false,
+      "status": 2,
+      "route": -1,
+      "bytes": 123,
+      "offset": 456
+    },
+    {
+      "case": 27,
+      "allow": true,
+      "status": 0,
+      "route": 3,
+      "bytes": 512,
+      "offset": 256
+    },
+    {
+      "case": 28,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 28,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 29,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 29,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 30,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 30,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 31,
+      "allow": false,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 31,
+      "allow": true,
+      "status": 0,
+      "route": 0,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 32,
+      "allow": false,
+      "status": 2,
+      "route": -1,
+      "bytes": 123,
+      "offset": 456
+    },
+    {
+      "case": 32,
+      "allow": true,
+      "status": 0,
+      "route": 3,
+      "bytes": 1280,
+      "offset": 1024
+    },
+    {
+      "case": 33,
+      "allow": false,
+      "status": 2,
+      "route": -1,
+      "bytes": 123,
+      "offset": 456
+    },
+    {
+      "case": 33,
+      "allow": true,
+      "status": 2,
+      "route": -1,
+      "bytes": 123,
+      "offset": 456
+    },
+    {
+      "case": 34,
+      "allow": false,
+      "status": 2,
+      "route": -1,
+      "bytes": 123,
+      "offset": 456
+    },
+    {
+      "case": 34,
+      "allow": true,
+      "status": 2,
+      "route": -1,
+      "bytes": 123,
+      "offset": 456
+    },
+    {
+      "case": 35,
+      "allow": false,
+      "status": 2,
+      "route": -1,
+      "bytes": 123,
+      "offset": 456
+    },
+    {
+      "case": 35,
+      "allow": true,
+      "status": 2,
+      "route": -1,
+      "bytes": 123,
+      "offset": 456
+    },
+    {
+      "case": 36,
+      "allow": false,
+      "status": 2,
+      "route": -1,
+      "bytes": 123,
+      "offset": 456
+    },
+    {
+      "case": 36,
+      "allow": true,
+      "status": 2,
+      "route": -1,
+      "bytes": 123,
+      "offset": 456
+    },
+    {
+      "case": 37,
+      "allow": false,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 37,
+      "allow": true,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 38,
+      "allow": false,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 38,
+      "allow": true,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 39,
+      "allow": false,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 39,
+      "allow": true,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 40,
+      "allow": false,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    },
+    {
+      "case": 40,
+      "allow": true,
+      "status": 0,
+      "route": 1,
+      "bytes": 0,
+      "offset": 0
+    }
+  ],
+  "invalid_queries": 3,
+  "metadata_only": true
+}

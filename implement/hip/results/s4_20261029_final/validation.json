@@ -1,0 +1,11 @@
+{
+  "stage": "S4",
+  "status": "complete_for_longK_and_32case_entry",
+  "golden_lifecycle": 32,
+  "same_round_baseline_wins": 32,
+  "policy": "longK: 8 within-CTA K partitions; prefetch iff t2=false; other routes unchanged S1",
+  "scratch_kernels": 0,
+  "s5_release": true,
+  "all40_acceptance": false,
+  "workspace": "still conditional"
+}

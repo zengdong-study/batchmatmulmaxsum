@@ -1,0 +1,74 @@
+{
+  "status": "complete",
+  "attempt": "9aab7d0ad55a4d908cdfa351fc904b4e",
+  "case": 27,
+  "route": 3,
+  "metadata": {
+    "shape": [
+      3,
+      257,
+      1,
+      72
+    ],
+    "dtype": "float16",
+    "t1": true,
+    "t2": false
+  },
+  "workspace_bytes": 512,
+  "strict": {
+    "output": [
+      -1.25,
+      -2.5,
+      -3.75
+    ],
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "passed": true
+  },
+  "entry": {
+    "device_us": 10.26286005973816,
+    "total_device_ms": 1.026286005973816,
+    "warmups": 10,
+    "iterations": 100
+  },
+  "strict_after_timing": {
+    "output": [
+      -1.25,
+      -2.5,
+      -3.75
+    ],
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "passed": true
+  },
+  "baseline": {
+    "baseline_us": 16.006089448928833,
+    "total_device_ms": 1.6006089448928833,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "fp32_a_stride": [
+      18504,
+      1,
+      257
+    ],
+    "fp32_b_stride": [
+      72,
+      1,
+      72
+    ],
+    "similarity_bytes": 3084
+  },
+  "s6": {
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "device_us": 10.383260250091553,
+    "total_device_ms": 1.0383260250091553,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "baseline_over_entry": 1.5596129495832962,
+  "s6_over_entry": 1.0117316410486519
+}

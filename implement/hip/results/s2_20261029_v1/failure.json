@@ -1,0 +1,7 @@
+{
+  "status": "failed_before_performance_scan",
+  "case": 17,
+  "config": 0,
+  "reason": "Extra diagnostic all-element 1e-4 FP64 check exceeded at 71/8385 values; maximum offending difference 0.00030517578125. No final-golden or timing conclusion.",
+  "next": "Use a documented FP32 dot forward-error bound for full intermediates; retain final golden 1e-4 mixed criterion unchanged."
+}

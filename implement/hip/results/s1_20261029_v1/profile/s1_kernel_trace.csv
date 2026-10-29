@@ -1,0 +1,31 @@
+"Kind","Agent_Id","Queue_Id","Stream_Id","Thread_Id","Dispatch_Id","Kernel_Id","Kernel_Name","Correlation_Id","Start_Timestamp","End_Timestamp","LDS_Block_Size","Scratch_Size","VGPR_Count","Accum_VGPR_Count","SGPR_Count","Workgroup_Size_X","Workgroup_Size_Y","Workgroup_Size_Z","Grid_Size_X","Grid_Size_Y","Grid_Size_Z"
+"KERNEL_DISPATCH","Agent 2",1,0,57911,1,7,"__amd_rocclr_copyBuffer",24,10482927003162181,10482927003173381,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,2,7,"__amd_rocclr_copyBuffer",35,10482927003306761,10482927003311561,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,3,49,"void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<float>, std::array<char*, 1ul> >(int, at::native::FillFunctor<float>, std::array<char*, 1ul>)",46,10482927016082396,10482927016087356,0,0,8,0,128,256,1,1,256,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,4,247,"void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",63,10482927223575617,10482927223612937,0,0,168,0,128,128,1,1,384,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,5,7,"__amd_rocclr_copyBuffer",72,10482927224303638,10482927224310158,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,6,49,"void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<float>, std::array<char*, 1ul> >(int, at::native::FillFunctor<float>, std::array<char*, 1ul>)",104,10482927230921530,10482927230925290,0,0,8,0,128,256,1,1,256,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,7,240,"void bmms::detail::fused_split_b<(bmms::DataType)0, false, false, 2>(bmms::detail::KernelArguments)",121,10482927433138522,10482927433226842,0,0,168,0,128,256,1,1,1024,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,8,7,"__amd_rocclr_copyBuffer",130,10482927433384062,10482927433386462,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,9,49,"void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<float>, std::array<char*, 1ul> >(int, at::native::FillFunctor<float>, std::array<char*, 1ul>)",166,10482927435389605,10482927435392685,0,0,8,0,128,256,1,1,256,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,10,7,"__amd_rocclr_copyBuffer",178,10482927435579386,10482927435583946,0,0,16,0,128,512,1,1,1024,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,11,282,"void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, false, false, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",189,10482927640257304,10482927640300744,512,0,120,0,128,64,1,1,4096,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,12,7,"__amd_rocclr_copyBuffer",198,10482927640441894,10482927640446934,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,13,7,"__amd_rocclr_copyBuffer",205,10482927640796374,10482927640800014,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,14,7,"__amd_rocclr_copyBuffer",227,10482927641743946,10482927641748186,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,15,49,"void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<float>, std::array<char*, 1ul> >(int, at::native::FillFunctor<float>, std::array<char*, 1ul>)",237,10482927641823156,10482927641827076,0,0,8,0,128,256,1,1,256,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,16,7,"__amd_rocclr_copyBuffer",249,10482927641891806,10482927641896806,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,17,276,"void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, true, false, false>(bmms::split_mn::(anonymous namespace)::KernelArgs)",260,10482927844454404,10482927844493884,512,0,120,0,128,128,1,1,1920,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,18,7,"__amd_rocclr_copyBuffer",269,10482927844637574,10482927844642974,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,19,7,"__amd_rocclr_copyBuffer",276,10482927844983944,10482927844988504,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,20,7,"__amd_rocclr_copyBuffer",298,10482927846080196,10482927846084956,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,21,49,"void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<float>, std::array<char*, 1ul> >(int, at::native::FillFunctor<float>, std::array<char*, 1ul>)",308,10482927846163116,10482927846166636,0,0,8,0,128,256,1,1,256,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,22,7,"__amd_rocclr_copyBuffer",320,10482927846232876,10482927846237236,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,23,272,"void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)1, false, false, false>(bmms::split_mn::(anonymous namespace)::KernelArgs)",331,10482928050093805,10482928050121925,512,0,120,0,128,128,1,1,32768,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,24,7,"__amd_rocclr_copyBuffer",340,10482928050266245,10482928050271365,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,25,7,"__amd_rocclr_copyBuffer",347,10482928050612625,10482928050616905,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,26,7,"__amd_rocclr_copyBuffer",358,10482928052057797,10482928052063357,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,27,7,"__amd_rocclr_copyBuffer",369,10482928052112757,10482928052117077,0,0,16,0,128,512,1,1,512,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,28,49,"void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<float>, std::array<char*, 1ul> >(int, at::native::FillFunctor<float>, std::array<char*, 1ul>)",379,10482928052189858,10482928052194338,0,0,8,0,128,256,1,1,256,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,29,246,"void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1, 1>(bmms::detail::KernelArguments)",396,10482928255499177,10482928255528817,0,0,160,0,128,32,1,1,32,1,1
+"KERNEL_DISPATCH","Agent 2",1,0,57911,30,7,"__amd_rocclr_copyBuffer",405,10482928255677047,10482928255681967,0,0,16,0,128,512,1,1,512,1,1

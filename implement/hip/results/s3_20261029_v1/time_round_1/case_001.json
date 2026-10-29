@@ -1,0 +1,66 @@
+{
+  "status": "complete",
+  "attempt": "3b9ac66b00974f82b8b6d9aa5690bd97",
+  "case": 1,
+  "metadata": {
+    "shape": [
+      3,
+      17,
+      33,
+      40
+    ],
+    "dtype": "float16",
+    "t1": false,
+    "t2": false
+  },
+  "route": 0,
+  "workspace_bytes": 0,
+  "counter_offset": 0,
+  "conditional": false,
+  "order": [
+    "previous",
+    "entry",
+    "baseline"
+  ],
+  "previous": {
+    "max_abs": 1.9073486328125e-06,
+    "max_rel": 1.3625979401334418e-07,
+    "device_us": 7.7643901109695435,
+    "total_device_ms": 0.7764390110969543,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "entry": {
+    "max_abs": 1.9073486328125e-06,
+    "max_rel": 1.3625979401334418e-07,
+    "device_us": 7.381590008735657,
+    "total_device_ms": 0.7381590008735657,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "baseline": {
+    "baseline_us": 15.625580549240112,
+    "total_device_ms": 1.5625580549240112,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 9.5367431640625e-07,
+    "max_rel": 6.788210941211242e-08,
+    "fp32_a_stride": [
+      680,
+      40,
+      1
+    ],
+    "fp32_b_stride": [
+      1320,
+      33,
+      1
+    ],
+    "similarity_bytes": 6732
+  },
+  "baseline_over_entry": 2.1168312695162155,
+  "previous_over_entry": 1.0518587596684272,
+  "start_unix": 1793210016.0261312,
+  "end_unix": 1793210016.74086
+}

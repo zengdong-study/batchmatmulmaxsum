@@ -1,0 +1,120 @@
+{
+  "one_kernel_per_call": true,
+  "calls": 8,
+  "correlations": [
+    {
+      "case": 1,
+      "route": 0,
+      "correlation_id": "71",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "168",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 9,
+      "route": 2,
+      "correlation_id": "163",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, false, false, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 17,
+      "route": 4,
+      "correlation_id": "266",
+      "kernel": "void bmms::tiled::fused_tiled<(bmms::DataType)0, false, false>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "8704",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "3200"
+      }
+    },
+    {
+      "case": 18,
+      "route": 4,
+      "correlation_id": "370",
+      "kernel": "void bmms::tiled::fused_tiled<(bmms::DataType)0, false, true>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "8704",
+        "Scratch_Size": "0",
+        "VGPR_Count": "72",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "3200"
+      }
+    },
+    {
+      "case": 19,
+      "route": 4,
+      "correlation_id": "474",
+      "kernel": "void bmms::tiled::fused_tiled<(bmms::DataType)0, true, false>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "8704",
+        "Scratch_Size": "0",
+        "VGPR_Count": "144",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "3200"
+      }
+    },
+    {
+      "case": 20,
+      "route": 4,
+      "correlation_id": "578",
+      "kernel": "void bmms::tiled::fused_tiled<(bmms::DataType)0, true, true>(bmms::tiled::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "8704",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "3200"
+      }
+    },
+    {
+      "case": 27,
+      "route": 3,
+      "correlation_id": "678",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, true, false, false>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "1920"
+      }
+    },
+    {
+      "case": 32,
+      "route": 3,
+      "correlation_id": "777",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)1, false, false, false>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "32768"
+      }
+    }
+  ],
+  "operator_allocations_or_copies": 0,
+  "note": "Every successful call individually range/correlation checked; profiler times are not formal performance data."
+}

@@ -1,0 +1,67 @@
+{
+  "policy": "S1-v1 fixed host metadata dispatch, conditional paths explicitly opted in",
+  "ids": [
+    1,
+    9,
+    11,
+    15,
+    27,
+    32
+  ],
+  "libraries": {
+    "/tmp/bmms-s1-build/libbmms_s1.so": "4414d0f1d9787bed3430ee5b6f6f685e8f2ada8fdf25bcebd9819dce29846435",
+    "/tmp/bmms-s1-build/libbmms_small.so": "7766fc3c850fbd130009bceb156ce3dcff12c71ca74fd5f289de31d5bd4eddd8",
+    "/tmp/bmms-s1-build/split_mn/libbmms_split_mn.so": "5215130c54241850ace63132435efead472aa7ed4b7537a6d2c0695ae39e98e4"
+  },
+  "sources": {
+    "implement/hip/CMakeLists.txt": "700bc752c0c8edbbbb59970320def954e3fcd7dae2a638a129597a362d445b9c",
+    "implement/hip/split_mn/CMakeLists.txt": "bf7c317b32394d3de6428b6d9d5f3b760efc76d13783276f0fc58b4f9f5b93c5",
+    "implement/hip/src/batch_matmul_max_sum.hip": "57899a38f28ba5045d566b4241209bdc98e1cc97f97980cedd7208a6a1d9fc67",
+    "implement/hip/src/s1_entry.hip": "a5da35223af208522b69515138994b3ddc9402b9c1fdccece25790aa2ac2f46e",
+    "implement/hip/include/bmms/batch_matmul_max_sum.h": "81d76920a328fcdb76d7a20198091a62ba61bef1c97b4916fd453a0209d3caab",
+    "implement/hip/include/bmms/kernels.hip.h": "16ca7c983ef920818217e76f2470e78dcead33f417e13b86914ea2392894008b",
+    "implement/hip/include/bmms/native_wmma.hip.h": "18b06ace0c7d10965712181776a2a4c3ef37b7b7294a9803ce882b3b69b48b13",
+    "implement/hip/include/bmms/s1_c.h": "a1047d74b5856bdb230c7713be31336a3a87c446baead9671a852fd4441ffe74",
+    "implement/hip/include/bmms/small_c.h": "ae7e63b13979e9136d7df9aaff532b74cd1f40f604f9282ea850360c5eb90539",
+    "implement/hip/include/bmms/small_impl.hip.h": "05629cad457998356ce8e328c6f4cce0e90a46f9904c8694b31d4bf46d554004",
+    "implement/hip/include/bmms/split_b_c.h": "f671f8209357f3b52901db9a4815ab28f9e5ab32da5e5e732644ddedef4aa48b",
+    "implement/hip/include/bmms/split_b_impl.hip.h": "b4f2f49332b131a03df4ec92a53d499f452651a90bbbee7aeb836ccfaa3d0e1a",
+    "implement/hip/split_mn/src/split_mn.hip": "b686b2b319e6132cd8053fbe989d4e05bfda1adfe20c18653b5b437fc269ae1b",
+    "implement/hip/split_mn/include/bmms/split_mn.h": "252258fceaa4f07e6ffb145a4edbbf469ec23290644dc7aa1c38740807f359e3",
+    "implement/hip/split_mn/include/bmms/wmma_load.hip.h": "6abe8960abff1835d4b2363cfd79fea4a6700bbe5471e25578f69a8efa89fb8f",
+    "implement/hip/tools/s1_runner.py": "55da5d6d1a3af3f09afb60e7321526611c678245c09ba1985a4cca5d69fac5e2",
+    "implement/hip/tools/gpu_exclusive.py": "02b7ad257edddfdc7ebea4e014cff266246b60bcef8cbc114084b8d0dc55cecc",
+    "implement/hip/tools/benchmark_baseline.py": "2fbafb83addb3a193e404158b356a659dc1a22e26e4cfbf8d002896504d8031a",
+    "implement/hip/tools/s0_native.py": "0ad4c0d5e55f20ae6b4211f8bb231e9fdee670afde98384a65d90e37185fe8b6",
+    "implement/hip/tools/experiment_small.py": "5f86dca45e657e6f369f7236a26bab4a86308cf1f105b9c4298f3c351a72da83",
+    "implement/hip/tools/experiment_split_b.py": "d5347570338763546004e742bb7d86f520ce50035b714c7557e1b4eed07d6268",
+    "implement/hip/split_mn/tools/experiment_split_mn.py": "475c475c7aa25dd85ebfd894e48b1d95fa9e3e59fa3faaefc900e1ea68aa09fb",
+    "implement/hip/tools/case_cache.py": "fb48e568ad639510bf359ac7e4312ecdd40c5b1734b3985051301214466b86e9",
+    "implement/script/generate_cases.py": "42387e3f91d312472b90fd6363ba3cf4f01f2fc094b9525c212e4bf9263d8cca",
+    "implement/cases/manifest.json": "e017661d506da0bd4f6c34f806acfcecc605719a258cf857b4416230bc862889",
+    "implement/cases/content_hashes.json": "fdc3639bc85eae1354d577814dd6e4379bb69d7632428e14aca1ff5454c9d5b4"
+  },
+  "cases": {
+    "1": "8113f03d1b843d919b8c28ef65ad28c94fc30277da79b6bbef59ad7ffebb7470",
+    "9": "5a1ac8a3bf3c9e2ca1c8ecdc57dd4dff31f22f09f1d38693c9ef8b5389964948",
+    "11": "c0a5a25515cb58018917dcd37cef9ecada82bc467147e69bdd8ce30d49e43d94",
+    "15": "7af244099ce6af910ef9645f7f60285529e35495f0ec9d541155e2a3d9856f98",
+    "27": "24455d30a06d18ec57ee981ada1d9878111ef14f659e243f891a35b39ed9e6e7",
+    "32": "0a212c332ffedf90059d9266be6728709f56854ec938bbc98cfe50c2ac59da5b"
+  },
+  "device": "_CudaDeviceProperties(name='AMD Radeon Graphics', major=11, minor=0, gcnArchName='gfx1100', total_memory=49136MB, multi_processor_count=48, uuid=31353464-3836-6535-3866-633931636465, pci_bus_id=3, pci_device_id=0, pci_domain_id=0, L2_cache_size=6MB)",
+  "torch": "2.9.1+gitff65f5b",
+  "torch_commit": "ff65f5bc672795c5e5033900ea0a0c4f8566c8cf",
+  "hip": "7.2.53211-e1a6bc5663",
+  "runtime_libraries": {
+    "/opt/rocm-7.2.1/lib/libamdhip64.so.7.2.70201": "0bfd6cb0b010626f333bd8d96a01df1b7e2cb825c961f5a7ecce7c28a5c717ab",
+    "/opt/rocm-7.2.1/lib/libhipblas.so.3.2.70201": "fc7b5b3f21be0869f9b70a11cf72f837b1dd0e25fb9a0f30fd23eef1e20efeaf",
+    "/opt/rocm-7.2.1/lib/libhipblaslt.so.1.2.70201": "c40df6fe45de5ae3ee60eccf5885536b21486cfff7d361ccdf4955a1db971c1f",
+    "/opt/rocm-7.2.1/lib/libhiprtc.so.7.2.70201": "5eb3328fd01edf48b423c8737c2a9ea9eb8430afa43f96b195404c02bee3c72e",
+    "/opt/rocm-7.2.1/lib/librocblas.so.5.2.70201": "c580f03e7c77e81fc2a041787d247a3cfec9d4035cc9c75c2d2171421fedb9cd",
+    "/opt/venv/lib/python3.12/site-packages/torch/lib/libtorch_hip.so": "6ed74fed896527d746820922bff18b8237c770375967d73bfd637c9187edad2d"
+  },
+  "warmups": 10,
+  "iterations": 100,
+  "criterion": "abs <= 1e-4 + 1e-4*abs(golden), provisional"
+}

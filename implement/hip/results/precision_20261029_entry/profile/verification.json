@@ -1,0 +1,569 @@
+{
+  "one_kernel_per_call": true,
+  "calls": 40,
+  "correlations": [
+    {
+      "case": 1,
+      "route": 0,
+      "correlation_id": "63",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "168",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 2,
+      "route": 0,
+      "correlation_id": "121",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 3,
+      "route": 0,
+      "correlation_id": "179",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, true, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "184",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 4,
+      "route": 0,
+      "correlation_id": "237",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, true, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "168",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 5,
+      "route": 0,
+      "correlation_id": "295",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)1, false, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "168",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 6,
+      "route": 0,
+      "correlation_id": "353",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)1, false, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 7,
+      "route": 0,
+      "correlation_id": "411",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)1, true, false, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "184",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 8,
+      "route": 0,
+      "correlation_id": "469",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)1, true, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "168",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "384"
+      }
+    },
+    {
+      "case": 9,
+      "route": 2,
+      "correlation_id": "533",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, false, false, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 10,
+      "route": 2,
+      "correlation_id": "601",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, false, true, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "80",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 11,
+      "route": 2,
+      "correlation_id": "665",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, true, false, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "144",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 12,
+      "route": 2,
+      "correlation_id": "729",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, true, true, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 13,
+      "route": 2,
+      "correlation_id": "793",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)1, false, false, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 14,
+      "route": 2,
+      "correlation_id": "857",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)1, false, true, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "80",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 15,
+      "route": 2,
+      "correlation_id": "921",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)1, true, false, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "144",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 16,
+      "route": 2,
+      "correlation_id": "985",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)1, true, true, true>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "64",
+        "Grid_Size_X": "4096"
+      }
+    },
+    {
+      "case": 17,
+      "route": 9,
+      "correlation_id": "1053",
+      "kernel": "void bmms::precision_impl::fused_tiled<8, true, (bmms::DataType)0, false, false>(bmms::precision_impl::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "33280",
+        "Scratch_Size": "0",
+        "VGPR_Count": "224",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 18,
+      "route": 9,
+      "correlation_id": "1117",
+      "kernel": "void bmms::precision_impl::fused_tiled<8, false, (bmms::DataType)0, false, true>(bmms::precision_impl::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "33280",
+        "Scratch_Size": "0",
+        "VGPR_Count": "224",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 19,
+      "route": 9,
+      "correlation_id": "1181",
+      "kernel": "void bmms::precision_impl::fused_tiled<8, true, (bmms::DataType)0, true, false>(bmms::precision_impl::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "33280",
+        "Scratch_Size": "0",
+        "VGPR_Count": "224",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 20,
+      "route": 9,
+      "correlation_id": "1245",
+      "kernel": "void bmms::precision_impl::fused_tiled<8, false, (bmms::DataType)0, true, true>(bmms::precision_impl::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "33280",
+        "Scratch_Size": "0",
+        "VGPR_Count": "224",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 21,
+      "route": 9,
+      "correlation_id": "1309",
+      "kernel": "void bmms::precision_impl::fused_tiled<8, true, (bmms::DataType)1, false, false>(bmms::precision_impl::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "33280",
+        "Scratch_Size": "0",
+        "VGPR_Count": "224",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 22,
+      "route": 9,
+      "correlation_id": "1373",
+      "kernel": "void bmms::precision_impl::fused_tiled<8, false, (bmms::DataType)1, false, true>(bmms::precision_impl::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "33280",
+        "Scratch_Size": "0",
+        "VGPR_Count": "224",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 23,
+      "route": 9,
+      "correlation_id": "1437",
+      "kernel": "void bmms::precision_impl::fused_tiled<8, true, (bmms::DataType)1, true, false>(bmms::precision_impl::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "33280",
+        "Scratch_Size": "0",
+        "VGPR_Count": "224",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 24,
+      "route": 9,
+      "correlation_id": "1501",
+      "kernel": "void bmms::precision_impl::fused_tiled<8, false, (bmms::DataType)1, true, true>(bmms::precision_impl::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "33280",
+        "Scratch_Size": "0",
+        "VGPR_Count": "224",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "6400"
+      }
+    },
+    {
+      "case": 25,
+      "route": 0,
+      "correlation_id": "1559",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, false, (bmms::ComputePath)1, 1>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "160",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "32",
+        "Grid_Size_X": "32"
+      }
+    },
+    {
+      "case": 26,
+      "route": 0,
+      "correlation_id": "1617",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)1, false, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "512"
+      }
+    },
+    {
+      "case": 27,
+      "route": 3,
+      "correlation_id": "1681",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)0, true, false, false>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "1920"
+      }
+    },
+    {
+      "case": 28,
+      "route": 0,
+      "correlation_id": "1739",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)1, true, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "168",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "256"
+      }
+    },
+    {
+      "case": 29,
+      "route": 0,
+      "correlation_id": "1797",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, false, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "104",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "256"
+      }
+    },
+    {
+      "case": 30,
+      "route": 9,
+      "correlation_id": "1861",
+      "kernel": "void bmms::precision_impl::fused_tiled<8, true, (bmms::DataType)1, true, false>(bmms::precision_impl::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "33280",
+        "Scratch_Size": "0",
+        "VGPR_Count": "224",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "4608"
+      }
+    },
+    {
+      "case": 31,
+      "route": 0,
+      "correlation_id": "1919",
+      "kernel": "void bmms::detail::fused_small<(bmms::DataType)0, true, true, (bmms::ComputePath)1, 8>(bmms::detail::KernelArguments)",
+      "resources": {
+        "LDS_Block_Size": "0",
+        "Scratch_Size": "0",
+        "VGPR_Count": "168",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "512"
+      }
+    },
+    {
+      "case": 32,
+      "route": 3,
+      "correlation_id": "1983",
+      "kernel": "void bmms::split_mn::(anonymous namespace)::fused_split_mn<(bmms::DataType)1, false, false, false>(bmms::split_mn::(anonymous namespace)::KernelArgs)",
+      "resources": {
+        "LDS_Block_Size": "512",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "128",
+        "Grid_Size_X": "32768"
+      }
+    },
+    {
+      "case": 33,
+      "route": 9,
+      "correlation_id": "2055",
+      "kernel": "void bmms::precision_impl::fused_tiled_large<128, 128, 32, (bmms::DataType)0, false, false>(bmms::precision_impl::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "22016",
+        "Scratch_Size": "0",
+        "VGPR_Count": "128",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "1024",
+        "Grid_Size_X": "4194304"
+      }
+    },
+    {
+      "case": 34,
+      "route": 9,
+      "correlation_id": "2127",
+      "kernel": "void bmms::precision_impl::fused_tiled_large<128, 128, 32, (bmms::DataType)1, false, true>(bmms::precision_impl::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "22016",
+        "Scratch_Size": "0",
+        "VGPR_Count": "128",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "1024",
+        "Grid_Size_X": "4194304"
+      }
+    },
+    {
+      "case": 35,
+      "route": 9,
+      "correlation_id": "2191",
+      "kernel": "void bmms::precision_impl::fused_tiled_large<128, 128, 32, (bmms::DataType)0, true, false>(bmms::precision_impl::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "22016",
+        "Scratch_Size": "0",
+        "VGPR_Count": "120",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "1024",
+        "Grid_Size_X": "4194304"
+      }
+    },
+    {
+      "case": 36,
+      "route": 9,
+      "correlation_id": "2255",
+      "kernel": "void bmms::precision_impl::fused_tiled_large<128, 128, 32, (bmms::DataType)1, true, true>(bmms::precision_impl::FusionArgs)",
+      "resources": {
+        "LDS_Block_Size": "22016",
+        "Scratch_Size": "0",
+        "VGPR_Count": "128",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "1024",
+        "Grid_Size_X": "4194304"
+      }
+    },
+    {
+      "case": 37,
+      "route": 8,
+      "correlation_id": "2323",
+      "kernel": "void (anonymous namespace)::certified_fma<true, false, false>((anonymous namespace)::Args)",
+      "resources": {
+        "LDS_Block_Size": "9216",
+        "Scratch_Size": "0",
+        "VGPR_Count": "96",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "268435456"
+      }
+    },
+    {
+      "case": 38,
+      "route": 8,
+      "correlation_id": "2391",
+      "kernel": "void (anonymous namespace)::certified_fma<false, false, true>((anonymous namespace)::Args)",
+      "resources": {
+        "LDS_Block_Size": "9216",
+        "Scratch_Size": "0",
+        "VGPR_Count": "96",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "268435456"
+      }
+    },
+    {
+      "case": 39,
+      "route": 8,
+      "correlation_id": "2455",
+      "kernel": "void (anonymous namespace)::certified_fma<true, true, false>((anonymous namespace)::Args)",
+      "resources": {
+        "LDS_Block_Size": "9216",
+        "Scratch_Size": "0",
+        "VGPR_Count": "96",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "268435456"
+      }
+    },
+    {
+      "case": 40,
+      "route": 8,
+      "correlation_id": "2519",
+      "kernel": "void (anonymous namespace)::certified_fma<false, true, true>((anonymous namespace)::Args)",
+      "resources": {
+        "LDS_Block_Size": "9216",
+        "Scratch_Size": "0",
+        "VGPR_Count": "96",
+        "SGPR_Count": "128",
+        "Workgroup_Size_X": "256",
+        "Grid_Size_X": "268435456"
+      }
+    }
+  ],
+  "operator_allocations_or_copies": 0,
+  "note": "Every successful call individually range/correlation checked; profiler times are not formal performance data.",
+  "new_backend_names_match_routes": true
+}

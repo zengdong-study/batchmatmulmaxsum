@@ -1,0 +1,5 @@
+{
+  "source_sha256": "8be51f1548b302aea27ee483cc4ed7c6fb50a5aa932281db3fa6fce5598b3446",
+  "library_sha256": "7ed3f18301b60bd4245608be244fc72f0f05d23c75768c7fa184f63606605b7e",
+  "scope": "Original case37 first16 rows/cols, all128 K positions individually; no new inputs or golden changes"
+}

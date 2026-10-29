@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "attempt": "55515f5eb719449faac6833cf852bc05",
+  "case": 7,
+  "route": 0,
+  "metadata": {
+    "shape": [
+      3,
+      17,
+      33,
+      40
+    ],
+    "dtype": "bfloat16",
+    "t1": true,
+    "t2": false
+  },
+  "workspace_bytes": 0,
+  "strict": {
+    "output": [
+      14.00531005859375,
+      12.830801010131836,
+      14.045341491699219
+    ],
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "passed": true
+  },
+  "device_ms": 0.07225000113248825,
+  "formal_performance": false
+}

@@ -1,0 +1,5 @@
+{
+  "vmem_wmma_wait_windows": 8,
+  "scope": "Textual instruction windows only, not a full control-flow/dependency proof",
+  "scratch_kernels": []
+}

@@ -1,0 +1,12 @@
+{
+  "stage": "S3",
+  "status": "complete_for_cases_1_32",
+  "golden_and_lifecycle_cases": 32,
+  "same_round_wins": 32,
+  "one_kernel_per_profiled_call": true,
+  "external_initialization": "conditional; unresolved final interface",
+  "kernel_count": 48,
+  "scratch_kernels": 0,
+  "s4_release": true,
+  "all40_acceptance": false
+}

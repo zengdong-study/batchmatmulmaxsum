@@ -1,0 +1,34 @@
+{
+  "stage": "S5",
+  "status": "engineering_checks_passed_with_explicit_interface_conditions",
+  "correctness_cases": 8,
+  "same_round_wins": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "same_round_misses": [],
+  "source_and_library_snapshot": "snapshot.json",
+  "kernel_count": 88,
+  "scratch_kernels": 0,
+  "external_first_counter_initialization": "conditional; no explicit problem-text authorization",
+  "final_precision": "unchanged mixed 1e-4 engineering criterion; strict abs/relative results reported separately",
+  "strict_abs_1e4_fail_cases": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "strict_rel_1e4_fail_cases": [],
+  "unconditional_final_acceptance": false,
+  "all40_engineering_pass": false
+}

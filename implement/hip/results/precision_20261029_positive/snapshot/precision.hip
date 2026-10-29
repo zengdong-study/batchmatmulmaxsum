@@ -1,0 +1,474 @@
+#include "tiled.h"
+#include "bmms/native_wmma.hip.h"
+#include <cstring>
+
+namespace bmms::tiled {
+using detail::Bits16;
+using detail::Float8;
+struct Args {
+    const unsigned short* x;
+    const unsigned short* z;
+    float* output;
+    int B,M,N,K;
+};
+struct Accumulators { Float8 lo{},hi{}; };
+
+#ifndef BMMS_PRECISION_CHUNK
+#define BMMS_PRECISION_CHUNK 128
+#endif
+struct WideSums { double lo[8]{},hi[8]{}; };
+#ifndef BMMS_PRECISION_KAHAN
+#define BMMS_PRECISION_KAHAN 0
+#endif
+#if BMMS_PRECISION_KAHAN
+struct RunningSums { float lo[8]{},hi[8]{},elo[8]{},ehi[8]{}; };
+#else
+using RunningSums=WideSums;
+#endif
+__device__ __forceinline__ double exact_lo(const RunningSums& s,int i) {
+#if BMMS_PRECISION_KAHAN
+    return static_cast<double>(s.lo[i])-s.elo[i];
+#else
+    return s.lo[i];
+#endif
+}
+__device__ __forceinline__ double exact_hi(const RunningSums& s,int i) {
+#if BMMS_PRECISION_KAHAN
+    return static_cast<double>(s.hi[i])-s.ehi[i];
+#else
+    return s.hi[i];
+#endif
+}
+__device__ __forceinline__ void commit(Accumulators& acc,RunningSums& total) {
+    #pragma unroll
+    for(int i=0;i<8;++i) {
+#if BMMS_PRECISION_KAHAN
+        float y=acc.lo[i]-total.elo[i],v=total.lo[i]+y;
+        total.elo[i]=(v-total.lo[i])-y;total.lo[i]=v;
+        y=acc.hi[i]-total.ehi[i];v=total.hi[i]+y;
+        total.ehi[i]=(v-total.hi[i])-y;total.hi[i]=v;
+#else
+        total.lo[i]+=acc.lo[i];total.hi[i]+=acc.hi[i];
+#endif
+    }
+    acc=Accumulators{};
+}
+__device__ __forceinline__ WideSums widened(const RunningSums& total) {
+    WideSums r;
+    #pragma unroll
+    for(int i=0;i<8;++i) {r.lo[i]=exact_lo(total,i);r.hi[i]=exact_hi(total,i);}
+    return r;
+}
+__device__ __forceinline__ Accumulators narrowed(const RunningSums& total) {
+    Accumulators result;
+    #pragma unroll
+    for(int i=0;i<8;++i) { result.lo[i]=exact_lo(total,i);result.hi[i]=exact_hi(total,i); }
+    return result;
+}
+
+#ifndef BMMS_PRECISION_TERMS
+#define BMMS_PRECISION_TERMS 8
+#endif
+#ifndef BMMS_PRECISION_POSITIVE
+#define BMMS_PRECISION_POSITIVE 0
+#endif
+template<DataType D,int Terms>
+__device__ __forceinline__ void precise_step(Bits16 av,Bits16 b0,Bits16 b1,Accumulators& acc,RunningSums& total) {
+    if constexpr(BMMS_PRECISION_POSITIVE) {
+        Bits16 ap{},an{},b0p{},b0n{},b1p{},b1n{};
+        #pragma unroll
+        for(int k=0;k<16;++k) {
+            ap[k]=(av[k]&0x8000) ? 0 : av[k];an[k]=(av[k]&0x8000) ? (av[k]&0x7fff) : 0;
+            b0p[k]=(b0[k]&0x8000) ? 0 : b0[k];b0n[k]=(b0[k]&0x8000) ? (b0[k]&0x7fff) : 0;
+            b1p[k]=(b1[k]&0x8000) ? 0 : b1[k];b1n[k]=(b1[k]&0x8000) ? (b1[k]&0x7fff) : 0;
+        }
+        Accumulators part;
+        part.lo=detail::native_mma<D>(ap,b0p,part.lo);part.hi=detail::native_mma<D>(ap,b1p,part.hi);commit(part,total);
+        part.lo=detail::native_mma<D>(an,b0n,part.lo);part.hi=detail::native_mma<D>(an,b1n,part.hi);commit(part,total);
+        part.lo=-detail::native_mma<D>(ap,b0n,part.lo);part.hi=-detail::native_mma<D>(ap,b1n,part.hi);commit(part,total);
+        part.lo=-detail::native_mma<D>(an,b0p,part.lo);part.hi=-detail::native_mma<D>(an,b1p,part.hi);commit(part,total);
+    } else     if constexpr(Terms==16) {
+        acc.lo=detail::native_mma<D>(av,b0,acc.lo);
+        acc.hi=detail::native_mma<D>(av,b1,acc.hi);
+    } else {
+        #pragma unroll
+        for(int begin=0;begin<16;begin+=Terms) {
+            Bits16 masked=av;
+            #pragma unroll
+            for(int k=0;k<16;++k)if(k<begin || k>=begin+Terms)masked[k]=0;
+            Accumulators part;
+            part.lo=detail::native_mma<D>(masked,b0,part.lo);
+            part.hi=detail::native_mma<D>(masked,b1,part.hi);
+            commit(part,total);
+        }
+    }
+}
+
+// A and B are staged once per CTA, in input-storage order for coalescing,
+// then reused by all waves. Padding changes consecutive row LDS bank mapping.
+// Single buffer: every producer/consumer, including masked tail lanes,
+// participates in both barriers. No input-dependent preprocessing off-kernel.
+template<int Rows,int TK,bool ContiguousK,int Threads>
+__device__ __forceinline__ void stage(const unsigned short* input,unsigned short* lds,
+    int origin,int tokens,int K,int k0) {
+    constexpr int Count=Rows*TK/Threads;
+    unsigned short values[Count];
+    // Queue independent loads before LDS stores; the first implementation's
+    // runtime-stride loop serialized VMEM -> wait -> DS for each scalar.
+    #pragma unroll
+    for(int j=0;j<Count;++j) {
+        const int i=threadIdx.x+j*Threads;
+        const int r=ContiguousK ? i/TK : i%Rows;
+        const int k=ContiguousK ? i%TK : i/Rows;
+        const int token=origin+r;
+        values[j]=token<tokens && k0+k<K ? input[ContiguousK ? token*K+k0+k : (k0+k)*tokens+token] : 0;
+    }
+    #pragma unroll
+    for(int j=0;j<Count;++j) {
+        const int i=threadIdx.x+j*Threads;
+        const int r=ContiguousK ? i/TK : i%Rows;
+        const int k=ContiguousK ? i%TK : i/Rows;
+        lds[r*(TK+2)+k]=values[j];
+    }
+}
+
+template<int TM,int TN,int TK,DataType D,bool T1,bool T2>
+__device__ __forceinline__ WideSums compute(Args a,unsigned short* sa,unsigned short* sb) {
+    const int mt=(a.M+TM-1)/TM,nt=(a.N+TN-1)/TN;
+    const int task=blockIdx.x%(mt*nt),batch=blockIdx.x/(mt*nt);
+    const int m0=(task/nt)*TM,n0=(task%nt)*TN;
+    const int lane=threadIdx.x&31,wave=threadIdx.x>>5;
+    const int wm=wave/(TN/32),wn=wave%(TN/32);
+    const auto* x=a.x+batch*a.M*a.K;
+    const auto* z=a.z+batch*a.N*a.K;
+    Accumulators acc;
+    RunningSums total;
+    for(int k0=0;k0<a.K;k0+=TK) {
+        stage<TM,TK,!T1,32*(TM/16)*(TN/32)>(x,sa,m0,a.M,a.K,k0);
+        stage<TN,TK,T2,32*(TM/16)*(TN/32)>(z,sb,n0,a.N,a.K,k0);
+        __syncthreads();
+        #pragma unroll
+        for(int k=0;k<TK;k+=16) {
+            Bits16 av,b0,b1;
+            __builtin_memcpy(&av,sa+(wm*16+(lane&15))*(TK+2)+k,32);
+            __builtin_memcpy(&b0,sb+(wn*32+(lane&15))*(TK+2)+k,32);
+            __builtin_memcpy(&b1,sb+(wn*32+16+(lane&15))*(TK+2)+k,32);
+            precise_step<D,(TM==64 && TN==128 && TK==64) ? BMMS_PRECISION_TERMS : 16>(av,b0,b1,acc,total);
+            if((k0+k+16)%BMMS_PRECISION_CHUNK==0 || k0+k+16>=a.K)commit(acc,total);
+        }
+        __syncthreads();
+    }
+    return widened(total);
+}
+
+template<int TM,int TN,int TK,DataType D,bool T1,bool T2>
+__global__ __launch_bounds__(32*(TM/16)*(TN/32)) void tiled_gemm(Args a) {
+    __shared__ unsigned short sa[TM*(TK+2)],sb[TN*(TK+2)];
+    const auto acc=compute<TM,TN,TK,D,T1,T2>(a,sa,sb);
+    const int mt=(a.M+TM-1)/TM,nt=(a.N+TN-1)/TN;
+    const int task=blockIdx.x%(mt*nt),batch=blockIdx.x/(mt*nt);
+    const int lane=threadIdx.x&31,wave=threadIdx.x>>5;
+    const int m0=(task/nt)*TM+(wave/(TN/32))*16;
+    const int n0=(task%nt)*TN+(wave%(TN/32))*32+(lane&15);
+    #pragma unroll
+    for(int i=0;i<8;++i) {
+        const int m=m0+2*i+(lane>>4);
+        if(m<a.M) {
+            if(n0<a.N)a.output[(static_cast<size_t>(batch)*a.M+m)*a.N+n0]=acc.lo[i];
+            if(n0+16<a.N)a.output[(static_cast<size_t>(batch)*a.M+m)*a.N+n0+16]=acc.hi[i];
+        }
+    }
+}
+
+// Within-CTA split-K increases independent waves for low-B problems. Every
+// C element is merged in fixed order BEFORE any Max; no cross-CTA split-K.
+template<DataType D,bool T1,bool T2>
+__global__ __launch_bounds__(128) void splitk_gemm(Args a) {
+    __shared__ float partial[4*16*32];
+    const int mt=(a.M+15)/16,nt=(a.N+31)/32;
+    const int task=blockIdx.x%(mt*nt),batch=blockIdx.x/(mt*nt);
+    const int m0=(task/nt)*16,n0=(task%nt)*32;
+    const int lane=threadIdx.x&31,wave=threadIdx.x>>5;
+    const int chunks=(a.K+15)/16,per=(chunks+3)/4;
+    const auto* x=a.x+batch*a.M*a.K;
+    const auto* z=a.z+batch*a.N*a.K;
+    Accumulators acc;
+    RunningSums total;
+    for(int kk=wave*per*16;kk<a.K && kk<(wave+1)*per*16;kk+=16) {
+        auto av=detail::load_native<!T1>(x,m0+(lane&15),kk,a.M,a.K);
+        auto b0=detail::load_native<T2>(z,n0+(lane&15),kk,a.N,a.K);
+        auto b1=detail::load_native<T2>(z,n0+16+(lane&15),kk,a.N,a.K);
+        precise_step<D,16>(av,b0,b1,acc,total);
+        if((kk+16)%BMMS_PRECISION_CHUNK==0 || kk+16>=min(a.K,(wave+1)*per*16))commit(acc,total);
+    }
+    acc=narrowed(total);
+    #pragma unroll
+    for(int i=0;i<8;++i) {
+        const int row=2*i+(lane>>4),col=lane&15;
+        partial[(wave*16+row)*32+col]=acc.lo[i];
+        partial[(wave*16+row)*32+col+16]=acc.hi[i];
+    }
+    __syncthreads();
+    if(wave==0) {
+        #pragma unroll
+        for(int i=0;i<8;++i) {
+            const int row=2*i+(lane>>4),col=lane&15;
+            double lo=0,hi=0;
+            #pragma unroll
+            for(int w=0;w<4;++w) {
+                lo+=partial[(w*16+row)*32+col];
+                hi+=partial[(w*16+row)*32+col+16];
+            }
+            if(m0+row<a.M) {
+                if(n0+col<a.N)a.output[(static_cast<size_t>(batch)*a.M+m0+row)*a.N+n0+col]=lo;
+                if(n0+col+16<a.N)a.output[(static_cast<size_t>(batch)*a.M+m0+row)*a.N+n0+col+16]=hi;
+            }
+        }
+    }
+}
+
+bool valid(int B,int M,int N,int K,int bf16,int t1,int t2,int config) {
+    return B>=1 && B<=64 && M>=1 && M<=8192 && N>=1 && N<=8192 && K>=32 && K<=8192 && K%8==0 &&
+           static_cast<long long>(B)*M*K<=(1LL<<26) && static_cast<long long>(B)*N*K<=(1LL<<26) &&
+           bf16>=0 && bf16<=1 && t1>=0 && t1<=1 && t2>=0 && t2<=1 && ((config>=0 && config<=6) || config==10 || config==13 || config==14);
+}
+
+template<DataType D,bool T1,bool T2>
+void enqueue(Args a,int config,hipStream_t stream) {
+    #define TILE(TM,TN,TK) hipLaunchKernelGGL((tiled_gemm<TM,TN,TK,D,T1,T2>),dim3(a.B*((a.M+TM-1)/TM)*((a.N+TN-1)/TN)),dim3(32*(TM/16)*(TN/32)),0,stream,a)
+    switch(config) {
+        case 0:TILE(16,32,64);break;
+        case 1:TILE(16,64,64);break;
+        case 2:TILE(32,64,64);break;
+        case 3:TILE(16,64,32);break;
+        case 4:hipLaunchKernelGGL((splitk_gemm<D,T1,T2>),dim3(a.B*((a.M+15)/16)*((a.N+31)/32)),dim3(128),0,stream,a);break;
+    }
+    #undef TILE
+}
+
+template<DataType D>
+void dispatch(Args a,bool t1,bool t2,int config,hipStream_t stream) {
+    if(t1) {if(t2)enqueue<D,true,true>(a,config,stream);else enqueue<D,true,false>(a,config,stream);}
+    else {if(t2)enqueue<D,false,true>(a,config,stream);else enqueue<D,false,false>(a,config,stream);}
+}
+}
+
+extern "C" int bmms_tiled_gemm(const void* x,const void* z,float* c,
+    int B,int M,int N,int K,int bf16,int t1,int t2,int config,void* stream) {
+    using namespace bmms::tiled;
+    if(config>4 || !x || !z || !c || !valid(B,M,N,K,bf16,t1,t2,config))return 1;
+    int device;hipDeviceProp_t p{};
+    if(hipGetDevice(&device)!=hipSuccess || hipGetDeviceProperties(&p,device)!=hipSuccess)return 3;
+    if(std::strncmp(p.gcnArchName,"gfx1100",7)!=0 || p.warpSize!=32)return 2;
+    Args a{static_cast<const unsigned short*>(x),static_cast<const unsigned short*>(z),c,B,M,N,K};
+    if(bf16)dispatch<bmms::DataType::BFloat16>(a,t1,t2,config,static_cast<hipStream_t>(stream));
+    else dispatch<bmms::DataType::Float16>(a,t1,t2,config,static_cast<hipStream_t>(stream));
+    return hipGetLastError()==hipSuccess ? 0 : 3;
+}
+
+namespace bmms::tiled {
+struct FusionArgs { Args dot; double* partial; unsigned* counters; };
+
+template<class T>
+__device__ T finish_sum(T value,T* scratch) {
+    const int lane=threadIdx.x&31,wave=threadIdx.x>>5;
+    for(int d=16;d;d>>=1)value+=__shfl_down(value,d,32);
+    if(lane==0)scratch[wave]=value;
+    __syncthreads();
+    value=threadIdx.x<blockDim.x/32 ? scratch[lane] : 0.0f;
+    if(wave==0)for(int d=16;d;d>>=1)value+=__shfl_down(value,d,32);
+    return value;
+}
+
+template<int Split,bool Prefetch,DataType D,bool T1,bool T2>
+__global__ __launch_bounds__(32*Split) void fused_tiled(FusionArgs f) {
+    __shared__ double shared[Split*16*32];
+    __shared__ double sums[Split];
+    __shared__ unsigned last;
+    const auto a=f.dot;
+    const int mt=(a.M+15)/16,nt=(a.N+31)/32,groups=mt*nt;
+    const int task=blockIdx.x%groups,batch=blockIdx.x/groups;
+    const int m0=(task/nt)*16,n0=(task%nt)*32;
+    const int lane=threadIdx.x&31,wave=threadIdx.x>>5;
+    const int chunks=(a.K+15)/16,per=(chunks+Split-1)/Split;
+    const auto* x=a.x+batch*a.M*a.K;
+    const auto* z=a.z+batch*a.N*a.K;
+    Accumulators acc;
+    RunningSums total;
+    if constexpr(Prefetch) {
+        const int begin=wave*per*16,end=min(a.K,(wave+1)*per*16);
+        if(begin<end) {
+            auto av=detail::finish_operand<!T1>(detail::issue_operand<!T1>(x,m0+(lane&15),begin,a.M,a.K));
+            auto b0=detail::finish_operand<T2>(detail::issue_operand<T2>(z,n0+(lane&15),begin,a.N,a.K));
+            auto b1=detail::finish_operand<T2>(detail::issue_operand<T2>(z,n0+16+(lane&15),begin,a.N,a.K));
+            for(int kk=begin;kk<end;kk+=16) {
+                detail::PendingOperand na{},nb0{},nb1{};
+                if(kk+16<end) {
+                    na=detail::issue_operand<!T1>(x,m0+(lane&15),kk+16,a.M,a.K);
+                    nb0=detail::issue_operand<T2>(z,n0+(lane&15),kk+16,a.N,a.K);
+                    nb1=detail::issue_operand<T2>(z,n0+16+(lane&15),kk+16,a.N,a.K);
+                }
+                precise_step<D,16>(av,b0,b1,acc,total);
+                if((kk+16)%BMMS_PRECISION_CHUNK==0 || kk+16>=end)commit(acc,total);
+#ifdef __HIP_DEVICE_COMPILE__
+                asm volatile("" :: "v"(acc.lo),"v"(acc.hi) : "memory");
+#endif
+                if(kk+16<end) {
+                    av=detail::finish_operand<!T1>(na);
+                    b0=detail::finish_operand<T2>(nb0);
+                    b1=detail::finish_operand<T2>(nb1);
+                }
+            }
+        }
+    } else {
+    for(int kk=wave*per*16;kk<a.K && kk<(wave+1)*per*16;kk+=16) {
+        auto av=detail::load_native<!T1>(x,m0+(lane&15),kk,a.M,a.K);
+        auto b0=detail::load_native<T2>(z,n0+(lane&15),kk,a.N,a.K);
+        auto b1=detail::load_native<T2>(z,n0+16+(lane&15),kk,a.N,a.K);
+        precise_step<D,16>(av,b0,b1,acc,total);
+        if((kk+16)%BMMS_PRECISION_CHUNK==0 || kk+16>=min(a.K,(wave+1)*per*16))commit(acc,total);
+    }
+    }
+    acc=narrowed(total);
+    #pragma unroll
+    for(int i=0;i<8;++i) {
+        const int row=2*i+(lane>>4),col=lane&15;
+        shared[(wave*16+row)*32+col]=exact_lo(total,i);
+        shared[(wave*16+row)*32+col+16]=exact_hi(total,i);
+    }
+    __syncthreads();
+    if(wave==0) {
+        #pragma unroll
+        for(int i=0;i<8;++i) {
+            const int row=2*i+(lane>>4),col=lane&15;
+            double lo=0,hi=0;
+            #pragma unroll
+            for(int w=0;w<Split;++w) {
+                lo+=shared[(w*16+row)*32+col];
+                hi+=shared[(w*16+row)*32+col+16];
+            }
+            // Full-K C is merged before Max. Tail N never contributes zero.
+            double maximum=fmax(n0+col<a.N ? lo : -INFINITY,n0+col+16<a.N ? hi : -INFINITY);
+            for(int d=8;d;d>>=1)maximum=fmax(maximum,__shfl_down(maximum,d,16));
+            if(col==0)f.partial[(batch*groups+task)*16+row]=maximum;
+        }
+    }
+    __syncthreads();
+    if(threadIdx.x==0) {
+        const unsigned ticket=__hip_atomic_fetch_add(f.counters+batch,1u,__ATOMIC_ACQ_REL,__HIP_MEMORY_SCOPE_AGENT);
+        last=ticket==static_cast<unsigned>(groups-1);
+    }
+    __syncthreads();
+    if(!last)return;
+    // Every finalizer thread acquires; finish_sum's barrier precedes reset.
+    (void)__hip_atomic_load(f.counters+batch,__ATOMIC_ACQUIRE,__HIP_MEMORY_SCOPE_AGENT);
+    double value=0;
+    for(int m=threadIdx.x;m<a.M;m+=blockDim.x) {
+        double maximum=-INFINITY;
+        for(int n=0;n<nt;++n)maximum=fmax(maximum,f.partial[(batch*groups+(m/16)*nt+n)*16+m%16]);
+        value+=maximum;
+    }
+    value=finish_sum(value,sums);
+    if(threadIdx.x==0) {
+        a.output[batch]=value;
+        __hip_atomic_store(f.counters+batch,0u,__ATOMIC_RELEASE,__HIP_MEMORY_SCOPE_AGENT);
+    }
+}
+
+// Large GEMM: cooperative single-buffer staging, many independent CTA tiles.
+// Each wave streams its completed C tile into a row maximum, never global C.
+template<int TM,int TN,int TK,DataType D,bool T1,bool T2>
+__global__ __launch_bounds__(32*(TM/16)*(TN/32)) void fused_tiled_large(FusionArgs f) {
+    constexpr int Waves=(TM/16)*(TN/32),WN=TN/32;
+    __shared__ unsigned short sa[TM*(TK+2)],sb[TN*(TK+2)];
+    __shared__ double rowMax[Waves*16];
+    __shared__ double sums[Waves];
+    __shared__ unsigned last;
+    const auto a=f.dot;
+    const auto acc=compute<TM,TN,TK,D,T1,T2>(a,sa,sb);
+    const int mt=(a.M+TM-1)/TM,nt=(a.N+TN-1)/TN,groups=mt*nt;
+    const int task=blockIdx.x%groups,batch=blockIdx.x/groups;
+    const int lane=threadIdx.x&31,wave=threadIdx.x>>5;
+    const int n0=(task%nt)*TN+(wave%WN)*32;
+    #pragma unroll
+    for(int i=0;i<8;++i) {
+        const int col=lane&15,row=2*i+(lane>>4);
+        double maximum=fmax(n0+col<a.N ? acc.lo[i] : -INFINITY,n0+col+16<a.N ? acc.hi[i] : -INFINITY);
+        for(int d=8;d;d>>=1)maximum=fmax(maximum,__shfl_down(maximum,d,16));
+        if(col==0)rowMax[wave*16+row]=maximum;
+    }
+    __syncthreads();
+    if(threadIdx.x<TM) {
+        const int row=threadIdx.x;
+        double maximum=-INFINITY;
+        #pragma unroll
+        for(int w=0;w<WN;++w)maximum=fmax(maximum,rowMax[((row/16)*WN+w)*16+row%16]);
+        f.partial[(static_cast<size_t>(batch)*groups+task)*TM+row]=maximum;
+    }
+    __syncthreads();
+    if(threadIdx.x==0) {
+        const unsigned ticket=__hip_atomic_fetch_add(f.counters+batch,1u,__ATOMIC_ACQ_REL,__HIP_MEMORY_SCOPE_AGENT);
+        last=ticket==static_cast<unsigned>(groups-1);
+    }
+    __syncthreads();
+    if(!last)return;
+    (void)__hip_atomic_load(f.counters+batch,__ATOMIC_ACQUIRE,__HIP_MEMORY_SCOPE_AGENT);
+    double value=0;
+    for(int m=threadIdx.x;m<a.M;m+=blockDim.x) {
+        double maximum=-INFINITY;
+        for(int n=0;n<nt;++n)maximum=fmax(maximum,f.partial[(static_cast<size_t>(batch)*groups+(m/TM)*nt+n)*TM+m%TM]);
+        value+=maximum;
+    }
+    value=finish_sum(value,sums);
+    if(threadIdx.x==0) {
+        a.output[batch]=value;
+        __hip_atomic_store(f.counters+batch,0u,__ATOMIC_RELEASE,__HIP_MEMORY_SCOPE_AGENT);
+    }
+}
+
+template<DataType D,bool T1,bool T2>
+void fused_enqueue(FusionArgs a,int config,hipStream_t stream) {
+    const dim3 grid(a.dot.B*((a.dot.M+15)/16)*((a.dot.N+31)/32));
+    #define LARGE(TM,TN,TK) hipLaunchKernelGGL((fused_tiled_large<TM,TN,TK,D,T1,T2>),dim3(a.dot.B*((a.dot.M+TM-1)/TM)*((a.dot.N+TN-1)/TN)),dim3(32*(TM/16)*(TN/32)),0,stream,a)
+    if(config==10) { LARGE(32,64,64); }
+    else if(config==13) { LARGE(64,128,64); }
+    else if(config==14) { LARGE(128,128,32); }
+    else if(config==4)hipLaunchKernelGGL((fused_tiled<4,false,D,T1,T2>),grid,dim3(128),0,stream,a);
+    else if(config==5)hipLaunchKernelGGL((fused_tiled<8,false,D,T1,T2>),grid,dim3(256),0,stream,a);
+    else hipLaunchKernelGGL((fused_tiled<8,true,D,T1,T2>),grid,dim3(256),0,stream,a);
+    #undef LARGE
+}
+
+template<DataType D>
+void fused_dispatch(FusionArgs a,bool t1,bool t2,int config,hipStream_t stream) {
+    if(t1) {if(t2)fused_enqueue<D,true,true>(a,config,stream);else fused_enqueue<D,true,false>(a,config,stream);}
+    else {if(t2)fused_enqueue<D,false,true>(a,config,stream);else fused_enqueue<D,false,false>(a,config,stream);}
+}
+}
+
+extern "C" int bmms_tiled_plan(int B,int M,int N,int K,int bf16,int t1,int t2,int config,size_t* bytes,size_t* offset) {
+    if(!bytes || !offset || (config!=4 && config!=5 && config!=6 && config!=10 && config!=13 && config!=14) || !bmms::tiled::valid(B,M,N,K,bf16,t1,t2,config))return 1;
+    const int tm=config==10 ? 32 : config==13 ? 64 : config==14 ? 128 : 16;
+    const int tn=config>=10 ? (config==10 ? 64 : 128) : 32;
+    const size_t parts=static_cast<size_t>(B)*((M+tm-1)/tm)*((N+tn-1)/tn)*tm;
+    const size_t off=(parts*sizeof(double)+255)&~size_t(255);
+    *bytes=(off+B*sizeof(unsigned)+255)&~size_t(255);*offset=off;
+    return 0;
+}
+
+extern "C" int bmms_tiled_fused(const void* x,const void* z,float* y,void* workspace,size_t bytes,
+    int B,int M,int N,int K,int bf16,int t1,int t2,int config,void* stream) {
+    using namespace bmms::tiled;
+    size_t required,offset;
+    const int code=bmms_tiled_plan(B,M,N,K,bf16,t1,t2,config,&required,&offset);
+    if(code)return code;
+    if(!x || !z || !y || !workspace || bytes<required || reinterpret_cast<uintptr_t>(workspace)%256)return 1;
+    int device;hipDeviceProp_t p{};
+    if(hipGetDevice(&device)!=hipSuccess || hipGetDeviceProperties(&p,device)!=hipSuccess)return 3;
+    if(std::strncmp(p.gcnArchName,"gfx1100",7)!=0 || p.warpSize!=32)return 2;
+    FusionArgs a{{static_cast<const unsigned short*>(x),static_cast<const unsigned short*>(z),y,B,M,N,K},
+        static_cast<double*>(workspace),reinterpret_cast<unsigned*>(static_cast<unsigned char*>(workspace)+offset)};
+    if(bf16)fused_dispatch<bmms::DataType::BFloat16>(a,t1,t2,config,static_cast<hipStream_t>(stream));
+    else fused_dispatch<bmms::DataType::Float16>(a,t1,t2,config,static_cast<hipStream_t>(stream));
+    return hipGetLastError()==hipSuccess ? 0 : 3;
+}

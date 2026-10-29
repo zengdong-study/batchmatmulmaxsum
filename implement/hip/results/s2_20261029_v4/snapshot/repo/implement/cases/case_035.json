@@ -1,0 +1,26 @@
+{
+  "spec": {
+    "shape": [
+      1,
+      8192,
+      8192,
+      8192
+    ],
+    "dtype": "float16",
+    "t1": true,
+    "t2": false,
+    "kind": "normalized",
+    "id": 35,
+    "seed": 20261062,
+    "version": 1
+  },
+  "bytes": 268437829,
+  "sha256": "11ae48b8669888d52dd5a262ece764a6aaf7991512253e8020caaade85f06938",
+  "golden": [
+    343.63397216796875
+  ],
+  "seconds": 3.0080556478351355,
+  "torch_version": "2.9.1+gitff65f5b",
+  "device": "cuda",
+  "reference": "FP64 dot -> Max(N) -> FP64 Sum(M) -> FP32"
+}

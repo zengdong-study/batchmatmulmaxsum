@@ -1,0 +1,76 @@
+{
+  "status": "complete",
+  "attempt": "9aab7d0ad55a4d908cdfa351fc904b4e",
+  "case": 14,
+  "route": 2,
+  "metadata": {
+    "shape": [
+      4,
+      32,
+      1024,
+      128
+    ],
+    "dtype": "bfloat16",
+    "t1": false,
+    "t2": true
+  },
+  "workspace_bytes": 8448,
+  "strict": {
+    "output": [
+      9.064496994018555,
+      9.224777221679688,
+      8.978996276855469,
+      9.06517505645752
+    ],
+    "max_abs": 9.5367431640625e-07,
+    "max_rel": 1.0621167285402767e-07,
+    "passed": true
+  },
+  "entry": {
+    "device_us": 11.42886996269226,
+    "total_device_ms": 1.142886996269226,
+    "warmups": 10,
+    "iterations": 100
+  },
+  "strict_after_timing": {
+    "output": [
+      9.064496994018555,
+      9.224777221679688,
+      8.978996276855469,
+      9.06517505645752
+    ],
+    "max_abs": 9.5367431640625e-07,
+    "max_rel": 1.0621167285402767e-07,
+    "passed": true
+  },
+  "baseline": {
+    "baseline_us": 24.260940551757812,
+    "total_device_ms": 2.4260940551757812,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "fp32_a_stride": [
+      4096,
+      128,
+      1
+    ],
+    "fp32_b_stride": [
+      131072,
+      1,
+      128
+    ],
+    "similarity_bytes": 524288
+  },
+  "s6": {
+    "max_abs": 9.5367431640625e-07,
+    "max_rel": 1.0621167285402767e-07,
+    "device_us": 11.587259769439697,
+    "total_device_ms": 1.1587259769439697,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "baseline_over_entry": 2.1227768476633138,
+  "s6_over_entry": 1.0138587460759003
+}

@@ -1,0 +1,48 @@
+{
+  "case": 2,
+  "round": 4,
+  "order": [
+    "baseline",
+    "direct",
+    "entry"
+  ],
+  "baseline": {
+    "baseline_us": 19.66961979866028,
+    "total_device_ms": 1.9669619798660278,
+    "warmups": 10,
+    "iterations": 100,
+    "max_abs": 9.5367431640625e-07,
+    "max_rel": 6.788210941211242e-08,
+    "fp32_a_stride": [
+      680,
+      40,
+      1
+    ],
+    "fp32_b_stride": [
+      1320,
+      1,
+      40
+    ],
+    "similarity_bytes": 6732
+  },
+  "direct": {
+    "max_abs": 1.9073486328125e-06,
+    "max_rel": 1.3625979401334418e-07,
+    "device_us": 6.7152100801467896,
+    "total_device_ms": 0.671521008014679,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "entry": {
+    "max_abs": 1.9073486328125e-06,
+    "max_rel": 1.3625979401334418e-07,
+    "device_us": 6.560810208320618,
+    "total_device_ms": 0.6560810208320618,
+    "warmups": 10,
+    "iterations": 100,
+    "extra_replay_pass": true
+  },
+  "baseline_over_entry": 2.9980473713009825,
+  "direct_over_entry": 1.0235336592468955
+}

@@ -1,0 +1,5 @@
+{
+  "status": "invalid_time_attempt",
+  "reason": "Other target-GPU client 71667 detected by GPUExclusive before saving case8. Cases1..7 retained only as invalid raw evidence.",
+  "next": "Use fresh final output; reuse only separate valid 40case validation; rerun all formal 10/100 after idle."
+}

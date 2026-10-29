@@ -1,0 +1,2082 @@
+[
+  {
+    "case": 1,
+    "shape": [
+      3,
+      17,
+      33,
+      40
+    ],
+    "diagnostic_C_bytes": 6732,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 12,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 768
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 6,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 3,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 6,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 384
+      }
+    ]
+  },
+  {
+    "case": 2,
+    "shape": [
+      3,
+      17,
+      33,
+      40
+    ],
+    "diagnostic_C_bytes": 6732,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 12,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 768
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 6,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 3,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 6,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 384
+      }
+    ]
+  },
+  {
+    "case": 3,
+    "shape": [
+      3,
+      17,
+      33,
+      40
+    ],
+    "diagnostic_C_bytes": 6732,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 12,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 768
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 6,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 3,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 6,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 384
+      }
+    ]
+  },
+  {
+    "case": 4,
+    "shape": [
+      3,
+      17,
+      33,
+      40
+    ],
+    "diagnostic_C_bytes": 6732,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 12,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 768
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 6,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 3,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 6,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 384
+      }
+    ]
+  },
+  {
+    "case": 5,
+    "shape": [
+      3,
+      17,
+      33,
+      40
+    ],
+    "diagnostic_C_bytes": 6732,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 12,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 768
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 6,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 3,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 6,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 384
+      }
+    ]
+  },
+  {
+    "case": 6,
+    "shape": [
+      3,
+      17,
+      33,
+      40
+    ],
+    "diagnostic_C_bytes": 6732,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 12,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 768
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 6,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 3,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 6,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 384
+      }
+    ]
+  },
+  {
+    "case": 7,
+    "shape": [
+      3,
+      17,
+      33,
+      40
+    ],
+    "diagnostic_C_bytes": 6732,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 12,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 768
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 6,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 3,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 6,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 384
+      }
+    ]
+  },
+  {
+    "case": 8,
+    "shape": [
+      3,
+      17,
+      33,
+      40
+    ],
+    "diagnostic_C_bytes": 6732,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 12,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 768
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 6,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 3,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 6,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 384
+      }
+    ]
+  },
+  {
+    "case": 9,
+    "shape": [
+      4,
+      32,
+      1024,
+      128
+    ],
+    "diagnostic_C_bytes": 524288,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 256,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 16384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 128,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 64,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 128,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 8192
+      }
+    ]
+  },
+  {
+    "case": 10,
+    "shape": [
+      4,
+      32,
+      1024,
+      128
+    ],
+    "diagnostic_C_bytes": 524288,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 256,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 16384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 128,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 64,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 128,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 8192
+      }
+    ]
+  },
+  {
+    "case": 11,
+    "shape": [
+      4,
+      32,
+      1024,
+      128
+    ],
+    "diagnostic_C_bytes": 524288,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 256,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 16384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 128,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 64,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 128,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 8192
+      }
+    ]
+  },
+  {
+    "case": 12,
+    "shape": [
+      4,
+      32,
+      1024,
+      128
+    ],
+    "diagnostic_C_bytes": 524288,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 256,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 16384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 128,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 64,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 128,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 8192
+      }
+    ]
+  },
+  {
+    "case": 13,
+    "shape": [
+      4,
+      32,
+      1024,
+      128
+    ],
+    "diagnostic_C_bytes": 524288,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 256,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 16384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 128,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 64,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 128,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 8192
+      }
+    ]
+  },
+  {
+    "case": 14,
+    "shape": [
+      4,
+      32,
+      1024,
+      128
+    ],
+    "diagnostic_C_bytes": 524288,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 256,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 16384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 128,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 64,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 128,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 8192
+      }
+    ]
+  },
+  {
+    "case": 15,
+    "shape": [
+      4,
+      32,
+      1024,
+      128
+    ],
+    "diagnostic_C_bytes": 524288,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 256,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 16384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 128,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 64,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 128,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 8192
+      }
+    ]
+  },
+  {
+    "case": 16,
+    "shape": [
+      4,
+      32,
+      1024,
+      128
+    ],
+    "diagnostic_C_bytes": 524288,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 256,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 16384
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 128,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 64,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 8192
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 128,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 8192
+      }
+    ]
+  },
+  {
+    "case": 17,
+    "shape": [
+      1,
+      65,
+      129,
+      8192
+    ],
+    "diagnostic_C_bytes": 33540,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 25,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 1600
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 15,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 960
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 9,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 1152
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 15,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 960
+      }
+    ]
+  },
+  {
+    "case": 18,
+    "shape": [
+      1,
+      65,
+      129,
+      8192
+    ],
+    "diagnostic_C_bytes": 33540,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 25,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 1600
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 15,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 960
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 9,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 1152
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 15,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 960
+      }
+    ]
+  },
+  {
+    "case": 19,
+    "shape": [
+      1,
+      65,
+      129,
+      8192
+    ],
+    "diagnostic_C_bytes": 33540,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 25,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 1600
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 15,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 960
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 9,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 1152
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 15,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 960
+      }
+    ]
+  },
+  {
+    "case": 20,
+    "shape": [
+      1,
+      65,
+      129,
+      8192
+    ],
+    "diagnostic_C_bytes": 33540,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 25,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 1600
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 15,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 960
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 9,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 1152
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 15,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 960
+      }
+    ]
+  },
+  {
+    "case": 21,
+    "shape": [
+      1,
+      65,
+      129,
+      8192
+    ],
+    "diagnostic_C_bytes": 33540,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 25,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 1600
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 15,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 960
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 9,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 1152
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 15,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 960
+      }
+    ]
+  },
+  {
+    "case": 22,
+    "shape": [
+      1,
+      65,
+      129,
+      8192
+    ],
+    "diagnostic_C_bytes": 33540,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 25,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 1600
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 15,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 960
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 9,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 1152
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 15,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 960
+      }
+    ]
+  },
+  {
+    "case": 23,
+    "shape": [
+      1,
+      65,
+      129,
+      8192
+    ],
+    "diagnostic_C_bytes": 33540,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 25,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 1600
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 15,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 960
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 9,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 1152
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 15,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 960
+      }
+    ]
+  },
+  {
+    "case": 24,
+    "shape": [
+      1,
+      65,
+      129,
+      8192
+    ],
+    "diagnostic_C_bytes": 33540,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 25,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 1600
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 15,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 960
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 9,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 1152
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 15,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 960
+      }
+    ]
+  },
+  {
+    "case": 25,
+    "shape": [
+      1,
+      1,
+      1,
+      32
+    ],
+    "diagnostic_C_bytes": 4,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 1,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 64
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 1,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 64
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 1,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 128
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 1,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 64
+      }
+    ]
+  },
+  {
+    "case": 26,
+    "shape": [
+      2,
+      1,
+      257,
+      40
+    ],
+    "diagnostic_C_bytes": 2056,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 18,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 1152
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 10,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 640
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 10,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 1280
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 10,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 640
+      }
+    ]
+  },
+  {
+    "case": 27,
+    "shape": [
+      3,
+      257,
+      1,
+      72
+    ],
+    "diagnostic_C_bytes": 3084,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 51,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 3264
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 51,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 3264
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 27,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 3456
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 51,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 3264
+      }
+    ]
+  },
+  {
+    "case": 28,
+    "shape": [
+      2,
+      17,
+      33,
+      56
+    ],
+    "diagnostic_C_bytes": 4488,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 8,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 512
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 4,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 256
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 2,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 256
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 4,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 256
+      }
+    ]
+  },
+  {
+    "case": 29,
+    "shape": [
+      2,
+      17,
+      33,
+      64
+    ],
+    "diagnostic_C_bytes": 4488,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 8,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 512
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 4,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 256
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 2,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 256
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 4,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 256
+      }
+    ]
+  },
+  {
+    "case": 30,
+    "shape": [
+      2,
+      33,
+      65,
+      8192
+    ],
+    "diagnostic_C_bytes": 17160,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 18,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 1152
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 12,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 768
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 8,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 1024
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 12,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 768
+      }
+    ]
+  },
+  {
+    "case": 31,
+    "shape": [
+      2,
+      17,
+      129,
+      128
+    ],
+    "diagnostic_C_bytes": 17544,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 20,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 1280
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 12,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 768
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 6,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 768
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 12,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 768
+      }
+    ]
+  },
+  {
+    "case": 32,
+    "shape": [
+      2,
+      8192,
+      1,
+      32
+    ],
+    "diagnostic_C_bytes": 65536,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 1024,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 65536
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 1024,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 65536
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 512,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 65536
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 1024,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 65536
+      }
+    ]
+  },
+  {
+    "case": 33,
+    "shape": [
+      1,
+      8192,
+      8192,
+      8192
+    ],
+    "diagnostic_C_bytes": 268435456,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 131072,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 8388608
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 65536,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 4194304
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 32768,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 4194304
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 65536,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 4194304
+      }
+    ]
+  },
+  {
+    "case": 34,
+    "shape": [
+      1,
+      8192,
+      8192,
+      8192
+    ],
+    "diagnostic_C_bytes": 268435456,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 131072,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 8388608
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 65536,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 4194304
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 32768,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 4194304
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 65536,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 4194304
+      }
+    ]
+  },
+  {
+    "case": 35,
+    "shape": [
+      1,
+      8192,
+      8192,
+      8192
+    ],
+    "diagnostic_C_bytes": 268435456,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 131072,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 8388608
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 65536,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 4194304
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 32768,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 4194304
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 65536,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 4194304
+      }
+    ]
+  },
+  {
+    "case": 36,
+    "shape": [
+      1,
+      8192,
+      8192,
+      8192
+    ],
+    "diagnostic_C_bytes": 268435456,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 131072,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 8388608
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 65536,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 4194304
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 32768,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 4194304
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 65536,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 4194304
+      }
+    ]
+  },
+  {
+    "case": 37,
+    "shape": [
+      64,
+      8192,
+      8192,
+      128
+    ],
+    "diagnostic_C_bytes": 17179869184,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 8388608,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 536870912
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 4194304,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 268435456
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 2097152,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 268435456
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 4194304,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 268435456
+      }
+    ]
+  },
+  {
+    "case": 38,
+    "shape": [
+      64,
+      8192,
+      8192,
+      128
+    ],
+    "diagnostic_C_bytes": 17179869184,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 8388608,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 536870912
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 4194304,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 268435456
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 2097152,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 268435456
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 4194304,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 268435456
+      }
+    ]
+  },
+  {
+    "case": 39,
+    "shape": [
+      64,
+      8192,
+      8192,
+      128
+    ],
+    "diagnostic_C_bytes": 17179869184,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 8388608,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 536870912
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 4194304,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 268435456
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 2097152,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 268435456
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 4194304,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 268435456
+      }
+    ]
+  },
+  {
+    "case": 40,
+    "shape": [
+      64,
+      8192,
+      8192,
+      128
+    ],
+    "diagnostic_C_bytes": 17179869184,
+    "candidates": [
+      {
+        "tile": [
+          16,
+          32,
+          64
+        ],
+        "grid": 8388608,
+        "lds_input_bytes": 6336,
+        "partial_rowmax_bytes": 536870912
+      },
+      {
+        "tile": [
+          16,
+          64,
+          64
+        ],
+        "grid": 4194304,
+        "lds_input_bytes": 10560,
+        "partial_rowmax_bytes": 268435456
+      },
+      {
+        "tile": [
+          32,
+          64,
+          64
+        ],
+        "grid": 2097152,
+        "lds_input_bytes": 12672,
+        "partial_rowmax_bytes": 268435456
+      },
+      {
+        "tile": [
+          16,
+          64,
+          32
+        ],
+        "grid": 4194304,
+        "lds_input_bytes": 5440,
+        "partial_rowmax_bytes": 268435456
+      }
+    ]
+  }
+]

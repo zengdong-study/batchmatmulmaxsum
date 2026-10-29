@@ -1,0 +1,24 @@
+{
+  "ids": [
+    17,
+    21,
+    33,
+    34,
+    37,
+    38
+  ],
+  "script_sha256": "661d7bbf6fe929a3e1607702aff3e60c06cf2f0c42db696a1ad8fb879dafe323",
+  "guard_sha256": "ead71960d063d95617d49de21fc9223aa6dce3d501551c57b8e5639fa5af326e",
+  "library_sha256": "2cd410092baf1873a9e6156a4a30bfbae09892a3da6e061d7cd02118e801f957",
+  "cases": {
+    "17": "d3b52076a1debefb2e430e864c235ceb46e210fdb723a0cb8159835c7549f4b7",
+    "21": "9d9694df0dcad736c76838cfa0c873eecb9bfb56f7b0d1dc58d38db320590af4",
+    "33": "4f7f1939fb286a8e9cb28a000569059a4bb6ef9a74addaf20cb7f1c0b73fcab4",
+    "34": "be0d452dd9a95da2651b2e338de3caa6990844d33573ded2628104c50cfd480d",
+    "37": "27f06e2d98e7ac01cc226b5a9cf42622f88b84a3500cbc66d9c376e8b3794f96",
+    "38": "d82b664f60003fc1a065c8023efcc96643e55fea8e6627eae61ae58bde64f2c6"
+  },
+  "torch": "2.9.1+gitff65f5b",
+  "device": "_CudaDeviceProperties(name='AMD Radeon Graphics', major=11, minor=0, gcnArchName='gfx1100', total_memory=49136MB, multi_processor_count=48, uuid=31353464-3836-6535-3866-633931636465, pci_bus_id=3, pci_device_id=0, pci_domain_id=0, L2_cache_size=6MB)",
+  "diagnostic_only": true
+}

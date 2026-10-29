@@ -1,0 +1,6 @@
+{
+  "first_workspace_initialization": "not explicitly authorized by problem text; user clarification pending",
+  "precision_interpretation": "Problem lists FP32 abs<1e-4 and rel<1e-4, FP16/BF16 abs<1e-3 and rel<1e-3, without specifying input/output tier or combination. Until clarified, use the conservative FP32 separate absolute and relative bounds for final acceptance; 16 cases currently fail absolute bound.",
+  "unconditional_final_acceptance": false,
+  "precision_acceptance": "User requires contest compliance. Official checker is authoritative; mixed engineering tolerance is not sufficient evidence of contest compliance."
+}

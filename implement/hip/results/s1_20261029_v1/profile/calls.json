@@ -1,0 +1,71 @@
+{
+  "operator_calls": 6,
+  "calls": [
+    {
+      "case": 1,
+      "allow": false,
+      "route": 0,
+      "label": "S1/call_0/route_0",
+      "max_abs": 1.9073486328125e-06,
+      "max_rel": 1.3625979401334418e-07
+    },
+    {
+      "case": 9,
+      "allow": false,
+      "route": 1,
+      "label": "S1/call_1/route_1",
+      "max_abs": 3.814697265625e-06,
+      "max_rel": 4.207845696615167e-07
+    },
+    {
+      "case": 9,
+      "allow": true,
+      "route": 2,
+      "label": "S1/call_2/route_2",
+      "max_abs": 3.814697265625e-06,
+      "max_rel": 4.207845696615167e-07
+    },
+    {
+      "case": 27,
+      "allow": true,
+      "route": 3,
+      "label": "S1/call_3/route_3",
+      "max_abs": 0.0,
+      "max_rel": 0.0
+    },
+    {
+      "case": 32,
+      "allow": true,
+      "route": 3,
+      "label": "S1/call_4/route_3",
+      "max_abs": 0.0,
+      "max_rel": 0.0
+    },
+    {
+      "case": 25,
+      "allow": true,
+      "route": 0,
+      "label": "S1/call_5/route_0",
+      "max_abs": 0.0,
+      "max_rel": 0.0
+    }
+  ],
+  "rejected_calls": 4,
+  "rejected_status": [
+    1,
+    1,
+    2,
+    2
+  ],
+  "libraries": {
+    "/tmp/bmms-s1-build/libbmms_s1.so": "651d9f8ad925980b09bb0e6c548c9c42dfe5135da2c4ba9b3f0d61238d9ddc70",
+    "/tmp/bmms-s1-build/libbmms_small.so": "7766fc3c850fbd130009bceb156ce3dcff12c71ca74fd5f289de31d5bd4eddd8",
+    "/tmp/bmms-s1-build/split_mn/libbmms_split_mn.so": "5215130c54241850ace63132435efead472aa7ed4b7537a6d2c0695ae39e98e4"
+  },
+  "sources": {
+    "/root/batchmatmulmaxsum/implement/hip/tools/s1_profile.py": "88207ccfa54763ab165b6839696d6d290abfc662e8ecac836b5eb99fb15f5a7a",
+    "/root/batchmatmulmaxsum/implement/hip/tools/s1_runner.py": "bded5abf2c9e8aea203629ff9249e5371ea7407b299b5fb9bea21ad63c090016",
+    "/root/batchmatmulmaxsum/implement/hip/tools/gpu_exclusive.py": "02b7ad257edddfdc7ebea4e014cff266246b60bcef8cbc114084b8d0dc55cecc"
+  },
+  "note": "Profiling only, not formal timing; all path choices execute on host."
+}

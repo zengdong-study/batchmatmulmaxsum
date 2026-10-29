@@ -1,0 +1,15 @@
+{
+  "stage": "S2",
+  "status": "complete_for_longK_architecture",
+  "original_cases": 13,
+  "selected_candidate": 4,
+  "full_dot_and_final_golden": "passed",
+  "lifecycle": "NaN overwrite, repeats, independent two streams passed",
+  "longK_native_gemm_wins": 9,
+  "extreme_operator_tests": "deferred to S5; budgets in s2_v3",
+  "s3_release": true,
+  "workspace": "diagnostic GEMM has no external initialization",
+  "fp32_full_dot_check": "gamma_K * sum(abs(a*b)) vs direct FP64; final golden still original 1e-4 mixed",
+  "kernel_count": 40,
+  "scratch_kernels": 0
+}

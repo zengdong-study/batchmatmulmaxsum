@@ -1,0 +1,10 @@
+{
+  "/tmp/bmms-s1-build/libbmms_s1.so": "651d9f8ad925980b09bb0e6c548c9c42dfe5135da2c4ba9b3f0d61238d9ddc70",
+  "/tmp/bmms-s1-build/libbmms_small.so": "7766fc3c850fbd130009bceb156ce3dcff12c71ca74fd5f289de31d5bd4eddd8",
+  "/tmp/bmms-s1-build/split_mn/libbmms_split_mn.so": "5215130c54241850ace63132435efead472aa7ed4b7537a6d2c0695ae39e98e4",
+  "/tmp/bmms-tiled-s4-build/libbmms_s4.so": "5ced2e277d1f413e0f00b8e3431e6f79071d8dbaf774f56ac73fbd00a868bdb9",
+  "/tmp/bmms-tiled-s4-build/libbmms_tiled.so": "81b2b940fbaef3fb75d55935d8cebe647736c9e68b399a91909b3c7d4b08db7d",
+  "/tmp/bmms-tiled-s5-final-build/libbmms_s4.so": "f750d5fe806cd16e9b49b77f7485d18a6a9ba37a625c3f38665bf7eb941c0db9",
+  "/tmp/bmms-tiled-s5-final-build/libbmms_s5.so": "3ad0984849104a70b78bafef210947673d12695f165d85cacaf19515f9a5747d",
+  "/tmp/bmms-tiled-s5-final-build/libbmms_tiled.so.5": "6615afdd8009ad478f879c6641f7ca93f40a9a67642e31b5de222acd3c387482"
+}

@@ -1,0 +1,16 @@
+{
+  "case": 35,
+  "mean_ms": 104.29832458496094,
+  "warmups": 10,
+  "iterations": 1,
+  "formal": false,
+  "strict": {
+    "output": [
+      343.63397216796875
+    ],
+    "max_abs": 0.0,
+    "max_rel": 0.0,
+    "passed": true
+  },
+  "library_sha256": "d0990a4dd8b7e3b05a53377bb6dc702c90e89ecdceebee2dc60a86f55140bbe1"
+}

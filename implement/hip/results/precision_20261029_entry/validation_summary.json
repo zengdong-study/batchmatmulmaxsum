@@ -1,0 +1,35 @@
+{
+  "status": "strict_accuracy_passed_performance_not_released",
+  "strict_accuracy_cases": 40,
+  "former_failed_cases": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "max_abs": 6.103515625e-05,
+  "max_rel": 6.192457776964819e-06,
+  "one_kernel_per_call": true,
+  "formal_all40_performance": false,
+  "performance_gate_passed": false,
+  "workspace_contract": "still conditional first counter zero initialization",
+  "preflight_rejections": [
+    {
+      "path": "implement/hip/results/precision_20261029_entry/audits/6752c58193f74674abb52f452fab61c6.json",
+      "exception": "Identity changed: new directory required",
+      "reason": "Identity changed before GPU case execution when a new offline tool temporarily appeared in source list; no measurements accepted."
+    }
+  ]
+}

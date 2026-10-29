@@ -1,0 +1,355 @@
+{
+  "hashes_verified": true,
+  "files": [
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/tiled/CMakeLists.txt",
+      "snapshot": "snapshot/repo/implement/hip/tiled/CMakeLists.txt",
+      "sha256": "8f7817f6e542ac3574d37acb9f481ef6be2ccfa6892023011991d9f4b927c7e7"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/tiled/include/tiled.h",
+      "snapshot": "snapshot/repo/implement/hip/tiled/include/tiled.h",
+      "sha256": "c3b1477c0c4a67b9ae506cfc97a077ded9b4fafa8cfd0535d5d8a71cf2637805"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/tiled/src/s3_entry.hip",
+      "snapshot": "snapshot/repo/implement/hip/tiled/src/s3_entry.hip",
+      "sha256": "76d3c8a118d8b65d773cccce46a5aae3eee377be19b62627504a1a35aa0cf67d"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/tiled/src/s4_entry.hip",
+      "snapshot": "snapshot/repo/implement/hip/tiled/src/s4_entry.hip",
+      "sha256": "43c791e72773135c3c2b46ecd7a95b6cfc4c61f9435a87f9a6e70a3a8dcc4d24"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/tiled/src/s5_entry.hip",
+      "snapshot": "snapshot/repo/implement/hip/tiled/src/s5_entry.hip",
+      "sha256": "340b2da288e3045aac9a9c0d9361a5991fa38f4662c5a84c8e62ca2381cb86e9"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/tiled/src/tiled.hip",
+      "snapshot": "snapshot/repo/implement/hip/tiled/src/tiled.hip",
+      "sha256": "cfe3aef014182ceee0afe0158cd3f670c60a174d4abfb505bee683222c7ebeb9"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/tiled/tools/artifacts.py",
+      "snapshot": "snapshot/repo/implement/hip/tiled/tools/artifacts.py",
+      "sha256": "d9f15928cd75e76b7eb1cc94dfa6aac4f792a1356d0a548c76436d95530e9ba3"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/tiled/tools/fused_runner.py",
+      "snapshot": "snapshot/repo/implement/hip/tiled/tools/fused_runner.py",
+      "sha256": "9ae891e8e45fbb336714eca801dbcbb7815da4796563c82776c8dd7ab54e9b6a"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/tiled/tools/host_checks.py",
+      "snapshot": "snapshot/repo/implement/hip/tiled/tools/host_checks.py",
+      "sha256": "b4ebafc8720a3b829438877b5be584436bf96d1740f23c6e1273497def0295db"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/tiled/tools/s2_runner.py",
+      "snapshot": "snapshot/repo/implement/hip/tiled/tools/s2_runner.py",
+      "sha256": "f4399793c6ffb8fe5b3cbd2f12b2957e9097a50d7a37280e719d6b0092367a56"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/tiled/tools/verify_profile.py",
+      "snapshot": "snapshot/repo/implement/hip/tiled/tools/verify_profile.py",
+      "sha256": "1ec4f4ea448625d78beeb58843cc93196cb98fd6bdcd12e6f815ea2fdd7800ef"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/include/bmms/batch_matmul_max_sum.h",
+      "snapshot": "snapshot/repo/implement/hip/include/bmms/batch_matmul_max_sum.h",
+      "sha256": "81d76920a328fcdb76d7a20198091a62ba61bef1c97b4916fd453a0209d3caab"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/include/bmms/kernels.hip.h",
+      "snapshot": "snapshot/repo/implement/hip/include/bmms/kernels.hip.h",
+      "sha256": "16ca7c983ef920818217e76f2470e78dcead33f417e13b86914ea2392894008b"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/include/bmms/native_wmma.hip.h",
+      "snapshot": "snapshot/repo/implement/hip/include/bmms/native_wmma.hip.h",
+      "sha256": "18b06ace0c7d10965712181776a2a4c3ef37b7b7294a9803ce882b3b69b48b13"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/include/bmms/s1_c.h",
+      "snapshot": "snapshot/repo/implement/hip/include/bmms/s1_c.h",
+      "sha256": "a1047d74b5856bdb230c7713be31336a3a87c446baead9671a852fd4441ffe74"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/include/bmms/small_c.h",
+      "snapshot": "snapshot/repo/implement/hip/include/bmms/small_c.h",
+      "sha256": "ae7e63b13979e9136d7df9aaff532b74cd1f40f604f9282ea850360c5eb90539"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/include/bmms/small_impl.hip.h",
+      "snapshot": "snapshot/repo/implement/hip/include/bmms/small_impl.hip.h",
+      "sha256": "05629cad457998356ce8e328c6f4cce0e90a46f9904c8694b31d4bf46d554004"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/include/bmms/split_b_c.h",
+      "snapshot": "snapshot/repo/implement/hip/include/bmms/split_b_c.h",
+      "sha256": "f671f8209357f3b52901db9a4815ab28f9e5ab32da5e5e732644ddedef4aa48b"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/include/bmms/split_b_impl.hip.h",
+      "snapshot": "snapshot/repo/implement/hip/include/bmms/split_b_impl.hip.h",
+      "sha256": "b4f2f49332b131a03df4ec92a53d499f452651a90bbbee7aeb836ccfaa3d0e1a"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/tools/gpu_exclusive.py",
+      "snapshot": "snapshot/repo/implement/hip/tools/gpu_exclusive.py",
+      "sha256": "02b7ad257edddfdc7ebea4e014cff266246b60bcef8cbc114084b8d0dc55cecc"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/tools/s1_runner.py",
+      "snapshot": "snapshot/repo/implement/hip/tools/s1_runner.py",
+      "sha256": "bded5abf2c9e8aea203629ff9249e5371ea7407b299b5fb9bea21ad63c090016"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/tools/benchmark_baseline.py",
+      "snapshot": "snapshot/repo/implement/hip/tools/benchmark_baseline.py",
+      "sha256": "2fbafb83addb3a193e404158b356a659dc1a22e26e4cfbf8d002896504d8031a"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/hip/tools/case_cache.py",
+      "snapshot": "snapshot/repo/implement/hip/tools/case_cache.py",
+      "sha256": "fb48e568ad639510bf359ac7e4312ecdd40c5b1734b3985051301214466b86e9"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/script/generate_cases.py",
+      "snapshot": "snapshot/repo/implement/script/generate_cases.py",
+      "sha256": "42387e3f91d312472b90fd6363ba3cf4f01f2fc094b9525c212e4bf9263d8cca"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_001.json",
+      "snapshot": "snapshot/repo/implement/cases/case_001.json",
+      "sha256": "963f32483e811812ff1f3e204a2e3dc85857178263d7c0e4f2ea355780425eaf"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_002.json",
+      "snapshot": "snapshot/repo/implement/cases/case_002.json",
+      "sha256": "0f733d1b845f0587af64d3168723031e55e146de648caf056e15fb57c18643bd"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_003.json",
+      "snapshot": "snapshot/repo/implement/cases/case_003.json",
+      "sha256": "acc0de0580f5fbf0388ca3a7f2c10fe4bad570698681fb1e9acf6d2585270493"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_004.json",
+      "snapshot": "snapshot/repo/implement/cases/case_004.json",
+      "sha256": "ec8b2ebf9335715c119e9e342c39f7eb42a28aceb8a401a4228152df91796319"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_005.json",
+      "snapshot": "snapshot/repo/implement/cases/case_005.json",
+      "sha256": "bb2016c033c5753b0043889695307cc3951d0cc23d7644c3acd2ef31e36088e2"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_006.json",
+      "snapshot": "snapshot/repo/implement/cases/case_006.json",
+      "sha256": "f6919c14c7c7170c6788850a00537079b5c296cf1c85feb6f15e4282b7f28e6d"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_007.json",
+      "snapshot": "snapshot/repo/implement/cases/case_007.json",
+      "sha256": "a79260d45e36301773d39ff2ef52bbdce1399eebdc222f730500e8e7934f7016"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_008.json",
+      "snapshot": "snapshot/repo/implement/cases/case_008.json",
+      "sha256": "b1a8f3c908c82d102fa1b1dd7532054d5d9d25874bd0f09f90a9028818cefba2"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_009.json",
+      "snapshot": "snapshot/repo/implement/cases/case_009.json",
+      "sha256": "c01d7a7eff676fb4d1ba126901edb1d7de4a4ee6cbb5eaf95978a7d35687d17c"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_010.json",
+      "snapshot": "snapshot/repo/implement/cases/case_010.json",
+      "sha256": "aaca5b238dcf5dbb60d19e4460bfe7e25414983bca58f3123891c63fb1eaf878"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_011.json",
+      "snapshot": "snapshot/repo/implement/cases/case_011.json",
+      "sha256": "8586b688cbbbdd6e8a394416139f277b72cb5d322019eaaee664efd2116a5604"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_012.json",
+      "snapshot": "snapshot/repo/implement/cases/case_012.json",
+      "sha256": "747062f0d624764f2d2fde4123f9304293e9cebbecf97299d34dda534d22a2f6"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_013.json",
+      "snapshot": "snapshot/repo/implement/cases/case_013.json",
+      "sha256": "68c57e5b8d1bd6917ecdf5f3be25f51e82b866c8fa3db95e10d19e3b890480d9"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_014.json",
+      "snapshot": "snapshot/repo/implement/cases/case_014.json",
+      "sha256": "bfe92b11d8e90ca081f44f97797574a0cc5ffec7ae2965a555bb87a4ba2aa948"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_015.json",
+      "snapshot": "snapshot/repo/implement/cases/case_015.json",
+      "sha256": "65e1a67399acc32ca4fd39b40bae9d58027a05ef30e7e0aee6a48d75b5f66ad4"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_016.json",
+      "snapshot": "snapshot/repo/implement/cases/case_016.json",
+      "sha256": "6f208c91fe17603cb0ebd9845fccc99734b907e21c46a189de4f7f6880d572f1"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_017.json",
+      "snapshot": "snapshot/repo/implement/cases/case_017.json",
+      "sha256": "f10b8c929c4080b94e1bd984a79dfbf6a479bc1cfe19c66a9dd2c820aee18c1e"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_018.json",
+      "snapshot": "snapshot/repo/implement/cases/case_018.json",
+      "sha256": "b9a504ed083b55194f223de3d1256e3415bb146c1a9c1b662f01e784409862b7"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_019.json",
+      "snapshot": "snapshot/repo/implement/cases/case_019.json",
+      "sha256": "d14eb5de008b53e2dbc20feb6606c0be6083199e3586eee3e99f61dfbdca74f4"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_020.json",
+      "snapshot": "snapshot/repo/implement/cases/case_020.json",
+      "sha256": "2a9ee189d6bde423c46da58e3c6b9dfb049124111fb80c1d2825f231a8a6c3e5"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_021.json",
+      "snapshot": "snapshot/repo/implement/cases/case_021.json",
+      "sha256": "a3d3495578640d769279ab00f0815ffef793efed531c2a48e1c83c31f56d7eb2"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_022.json",
+      "snapshot": "snapshot/repo/implement/cases/case_022.json",
+      "sha256": "fe8977e2efd90dc92b84f2590b07989c6c625d1c0fc6c4f3ae16af8b30a63a99"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_023.json",
+      "snapshot": "snapshot/repo/implement/cases/case_023.json",
+      "sha256": "d9e4506730bf50f48b5a098507c80913705eddf4ede73b6e674698e73d78323f"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_024.json",
+      "snapshot": "snapshot/repo/implement/cases/case_024.json",
+      "sha256": "baea0917ac68b1efb71681250154a38b48263444803721486e01e027efeb1320"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_025.json",
+      "snapshot": "snapshot/repo/implement/cases/case_025.json",
+      "sha256": "fdf72b51f7694a9dc85ca3f8945c9bf0d19a67dc364afd630d38c98ed98de258"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_026.json",
+      "snapshot": "snapshot/repo/implement/cases/case_026.json",
+      "sha256": "ab15c28d900ba50b2c7b77e6973ab469443d68420a58ff9fa03838187d877204"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_027.json",
+      "snapshot": "snapshot/repo/implement/cases/case_027.json",
+      "sha256": "80bac92604193d6ecb1decaea1e4177a0fdada13bf7de053647ec2836a78a583"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_028.json",
+      "snapshot": "snapshot/repo/implement/cases/case_028.json",
+      "sha256": "e526dd72eb2c943bf6bc7cbd1d4164c134dd272713f82011521dbbd6783d61cb"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_029.json",
+      "snapshot": "snapshot/repo/implement/cases/case_029.json",
+      "sha256": "f83e2ea701c823102d0d9a44c628f955b7bc42676c4b1b9b8a15ecfa5927db12"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_030.json",
+      "snapshot": "snapshot/repo/implement/cases/case_030.json",
+      "sha256": "2529fc48fb0149844be4d79f74e1f75198ea7240b8d3c628c830e10a77fa1ffc"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_031.json",
+      "snapshot": "snapshot/repo/implement/cases/case_031.json",
+      "sha256": "09d24e6f77eec345acb0f34feb081e962b280cb319a6a3da26eed00056b98a9e"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_032.json",
+      "snapshot": "snapshot/repo/implement/cases/case_032.json",
+      "sha256": "3dafe3ef9bc8214982921238d50267cd1343ee6b51948541280368e6e1cc6bd3"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_033.json",
+      "snapshot": "snapshot/repo/implement/cases/case_033.json",
+      "sha256": "559f7607a75b846f1dfc22c440e252c108f877b2553725e147b25d92bb756c10"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_034.json",
+      "snapshot": "snapshot/repo/implement/cases/case_034.json",
+      "sha256": "39f27057430ed4ecd495f2af88c2ca8c357da48d60712d5fb312d37d67895103"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_035.json",
+      "snapshot": "snapshot/repo/implement/cases/case_035.json",
+      "sha256": "20f30717f4a5ec34979db21a12154fe06c3ff055c681686be0196cca308c59ea"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_036.json",
+      "snapshot": "snapshot/repo/implement/cases/case_036.json",
+      "sha256": "f383572812f3414893f4b6ccb51eaa5c7954ac8f892147e4a450c0269d72fb95"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_037.json",
+      "snapshot": "snapshot/repo/implement/cases/case_037.json",
+      "sha256": "c5dd3a7cbe10ecd019f4d2bb05a4d389e20569f1b95b8d7f5ae034eb5c4c54d6"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_038.json",
+      "snapshot": "snapshot/repo/implement/cases/case_038.json",
+      "sha256": "354b30be8af4470af20bdddfb80692ff69013e8cb6e5c50bd0b75bcd5bd7080c"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_039.json",
+      "snapshot": "snapshot/repo/implement/cases/case_039.json",
+      "sha256": "89049ad6a931fedaa7ddf52962be66c5f7586a3e2a7ffc44641b8d9d879be8e3"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/case_040.json",
+      "snapshot": "snapshot/repo/implement/cases/case_040.json",
+      "sha256": "77ea43a9e1c4b60966bc477d11af0d940e0e801b3e2b38712a86a1cfa2914e76"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/content_hashes.json",
+      "snapshot": "snapshot/repo/implement/cases/content_hashes.json",
+      "sha256": "fdc3639bc85eae1354d577814dd6e4379bb69d7632428e14aca1ff5454c9d5b4"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/manifest.json",
+      "snapshot": "snapshot/repo/implement/cases/manifest.json",
+      "sha256": "e017661d506da0bd4f6c34f806acfcecc605719a258cf857b4416230bc862889"
+    },
+    {
+      "original": "/root/batchmatmulmaxsum/implement/cases/validation.json",
+      "snapshot": "snapshot/repo/implement/cases/validation.json",
+      "sha256": "11bfc0bad4924fddc99443d3fdd5c712925675b7a2edefedc24150ff8b58712f"
+    },
+    {
+      "original": "/tmp/bmms-tiled-s5-final-build/libbmms_tiled.so",
+      "snapshot": "snapshot/libraries/libbmms_tiled.so",
+      "sha256": "6615afdd8009ad478f879c6641f7ca93f40a9a67642e31b5de222acd3c387482"
+    },
+    {
+      "original": "/tmp/bmms-tiled-s5-final-build/libbmms_s4.so",
+      "snapshot": "snapshot/libraries/libbmms_s4.so",
+      "sha256": "f750d5fe806cd16e9b49b77f7485d18a6a9ba37a625c3f38665bf7eb941c0db9"
+    },
+    {
+      "original": "/tmp/bmms-tiled-s5-final-build/libbmms_s5.so",
+      "snapshot": "snapshot/libraries/libbmms_s5.so",
+      "sha256": "3ad0984849104a70b78bafef210947673d12695f165d85cacaf19515f9a5747d"
+    }
+  ]
+}

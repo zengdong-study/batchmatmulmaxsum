@@ -1,0 +1,69 @@
+{
+  "other_client_language": "C++",
+  "action": "hipMalloc(4) only; no kernel",
+  "rejected": true,
+  "error": "Other target-GPU clients detected: [76179, 2201978]; no process stopped",
+  "samples": [
+    {
+      "time_unix": 1793211769.654873,
+      "management_pids": [
+        2201978
+      ],
+      "visible_drm_pids": [
+        76179
+      ],
+      "management_raw": [
+        {
+          "gpu": 0,
+          "process_list": [
+            {
+              "process_info": {
+                "name": "N/A",
+                "pid": 2201978,
+                "memory_usage": {
+                  "gtt_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "cpu_mem": {
+                    "value": 0,
+                    "unit": "B"
+                  },
+                  "vram_mem": {
+                    "value": 2097152,
+                    "unit": "B"
+                  }
+                },
+                "mem_usage": {
+                  "value": 2097152,
+                  "unit": "B"
+                },
+                "usage": {
+                  "gfx": {
+                    "value": 0,
+                    "unit": "ns"
+                  },
+                  "enc": {
+                    "value": 0,
+                    "unit": "ns"
+                  }
+                },
+                "cu_occupancy": "N/A",
+                "evicted_time": {
+                  "value": 0,
+                  "unit": "ms"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "visible_drm_process_names": {
+        "76179": "bmms-s0-client"
+      }
+    }
+  ],
+  "no_external_process_stopped": true,
+  "controlled_client_exit": "stdin newline, graceful hipFree",
+  "source_sha256": "08e046d51d7d1dfd509a3286853bed113e53bada6a13b9b60a24ec1863511d6b"
+}
